@@ -1,0 +1,2 @@
+# wiki
+the wikijs test
