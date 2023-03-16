@@ -6,6 +6,8 @@ description: Quickly get 5v from those old Micro-USB cables you have lying aroun
 
 [![licensebuttons by](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)
 
+![](https://img.shields.io/badge/2023-v1.4-blue?style=for-the-badge)
+
 [![oshwa](https://img.shields.io/badge/US000128-OSHWA-blue?style=for-the-badge)](https://certification.oshwa.org/us000128.html)
 
 `A Type-C variant is on its way, so let us know what you'd like to see`
@@ -13,8 +15,6 @@ description: Quickly get 5v from those old Micro-USB cables you have lying aroun
 ## USB-BD
 
 A handy Micro-USB power and data breakout designed for breadboards, but useful in all kinds of projects. Put that drawer full of micro USB cables to good use.
-
-![version 1.4](https://img.shields.io/badge/2023-v1.4-blue?style=for-the-badge)
 
 ![Features Overview Diagram](https://raw.githubusercontent.com/vdbxio/USB-BD/master/git-docs-features-dark.png)
 
