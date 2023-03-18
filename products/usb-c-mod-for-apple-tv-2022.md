@@ -1,8 +1,12 @@
 ---
-description: ACTIVELY TESTING
+description: Power your Apple TV with USB-C
 ---
 
 # USB-C Mod for Apple TV 2022
+
+{% hint style="danger" %}
+This project is currently in TESTING phase and will be released when it's complete.
+{% endhint %}
 
 ## Summary
 
