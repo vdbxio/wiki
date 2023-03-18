@@ -6,7 +6,6 @@
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/page-1.md)
-* [CSR Adapter](products/page-2.md)
 * [USB-C Mod for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
 
 ## Other Stuff
@@ -19,6 +18,7 @@
   * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
     * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
 
-## Group 1
+## Still Available
 
-* [Page 1](group-1/page-1.md)
+* [Hactus](still-available/hactus.md)
+* [CSR Adapter](still-available/page-2.md)
