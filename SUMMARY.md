@@ -21,4 +21,4 @@
 ## Still Available
 
 * [Hactus](still-available/hactus.md)
-* [CSR Adapter](still-available/page-2.md)
+* [CSR8635 Adapter](products/page-2.md)
