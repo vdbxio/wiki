@@ -1,6 +1,9 @@
 ---
 description: The Hacker's Cactus
+oshwa_id: US000196
 ---
+
+[![oshwa](https://img.shields.io/badge/US000196-OSHWA-blue?style=for-the-badge)](https://certification.oshwa.org/us000196.html)
 
 # Hactus
 
