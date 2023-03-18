@@ -14,7 +14,9 @@ Note: There are three main variants of these boards with different pin layouts:
 2. Commonly listed as BTM835 - this board generally has it's chip angled at 45° and has an equal amount of pins on both of the long sides. This one generally has a blue solder mask.
 3. **Commonly listed as BC8635 -** Usually has green solder mask and the two long sides have 14 and 15 pins respectively.&#x20;
 
-<mark style="background-color:orange;">TODO: Add Representative Image of Module Options</mark>
+{% hint style="warning" %}
+TODO: Add picture of modules for comparison
+{% endhint %}
 
 AliExpress is my go-to for procuring them. Here are links to a couple:
 

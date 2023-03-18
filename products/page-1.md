@@ -10,7 +10,9 @@ The goal of the IOByte is to create a better breakout for the PCF8574 GPIO Exten
 
 The initial idea behind the PCB design was based on having it fit directly on a commonly available 8-Channel relay board, essentially turning it into an all-in-one i2c 8-channel relay board. Existing breakouts generally would require 10 DuPont leads (or other wire interface) to the relay board.
 
-* [ ] TODO - insert before after photo here
+{% hint style="warning" %}
+TODO - insert before after photo here
+{% endhint %}
 
 Further updates have focused on the input capabilities of the PCF8574 by adding enough VCC and GND pins to easily add high or low triggered switches. This is still being tested.
 
