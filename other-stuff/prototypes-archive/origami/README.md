@@ -1,7 +1,7 @@
 # Origami
 
 {% hint style="info" %}
-Some names have been redacted to remove unwanted association.&#x20;
+Some names have been redacted to remove unwanted association. This was a very early project that got ahead of me, but I'd love to revisit it one day. - @clomads&#x20;
 
 `Originally written 12/29/2017`
 {% endhint %}
