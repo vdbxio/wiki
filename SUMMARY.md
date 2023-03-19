@@ -10,10 +10,13 @@
 
 ## Other Stuff
 
-* [Archive](3d-models/page-3.md)
+* [Archive](other-stuff/page-3/README.md)
+  * [Concrete Card Holder](other-stuff/page-3/concrete-card-holder.md)
+  * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/page-3/super-ultra-low-profile-usb-2.0-header.md)
 * [3D Models](other-stuff/3d-models.md)
 * [PCBs](other-stuff/pcbs.md)
-* [Prototypes (Archive)](other-stuff/prototypes-archive.md)
+* [Prototypes (Archive)](other-stuff/prototypes-archive/README.md)
+  * [Aura Qi](other-stuff/prototypes-archive/aura-qi.md)
 * [Prototypes (Current)](other-stuff/prototypes-current/README.md)
   * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
     * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
