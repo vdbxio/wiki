@@ -15,7 +15,6 @@
   * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/page-3/super-ultra-low-profile-usb-2.0-header.md)
   * [Handy Jr.](other-stuff/page-3/handy-jr..md)
 * [3D Models](other-stuff/3d-models.md)
-* [PCBs](other-stuff/pcbs.md)
 * [Prototypes (Archive)](other-stuff/prototypes-archive.md)
   * [Aura Qi](other-stuff/prototypes-archive/aura-qi.md)
   * [Origami](other-stuff/prototypes-archive/origami/README.md)
