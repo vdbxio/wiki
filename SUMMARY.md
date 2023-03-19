@@ -5,7 +5,7 @@
 ## Products
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
-* [IOByte](products/page-1.md)
+* [IOByte](products/iobyte.md)
 * [USB-C Mod for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
 
 ## Other Stuff
