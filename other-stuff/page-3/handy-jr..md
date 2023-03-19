@@ -4,6 +4,8 @@ description: A concrete and bendy arm helping hands.
 
 # Handy Jr.
 
+<figure><img src="../../.gitbook/assets/handy-jr-promo-6.jpg" alt=""><figcaption><p>A late 2019 promotional image for the Handy Jr.</p></figcaption></figure>
+
 {% hint style="info" %}
 Handy Jr. was almost production ready in 2020 and was close to launch when COVID hit. We have indefinitely shifted focus away from concrete production and no longer have access to facilities to produce these items. This could change in the future and is a want, just not a current or near future priority.
 {% endhint %}
@@ -25,7 +27,7 @@ It was the idea that got Chloe Madison (@clomads) into production level manufact
 Chloe has a short YouTube video showcasing the early Handy Jr. and the thought process to scale up to a proto Handy Sr with no arms. [https://www.youtube.com/watch?v=KN8OaVveK0U](https://www.youtube.com/watch?v=KN8OaVveK0U)
 
 {% embed url="https://www.youtube.com/watch?v=KN8OaVveK0U" %}
-Very early prototyping with concrete molds featuring the Handy family before they were the Handy family
+2017/5/4 - Very early prototyping with concrete molds featuring the Handy family before they were the Handy family
 {% endembed %}
 
 ## Main Production Issues
@@ -62,9 +64,20 @@ The retention device for the alligator clips are drill depth gauges with set scr
 
 ## Design files
 
-The Handy Jr. was designed in Fusion 360, but is not parametric.&#x20;
+The Handy Jr. was designed in Fusion 360, but is not parametric and is more of a stream of consciousness design.&#x20;
 
 It contains a lot of undocumented items for various rabbit holes that were gone down through the years of attempting to bring it to market. One thing of note is a couple support pieces and a mold box that is intended to print in vase mode.
 
+{% file src="../../.gitbook/assets/HANDY JR v28.f3z" %}
 Last edited in March of 2020 - exported for open-source in March 2023
+{% endfile %}
 
+## Future
+
+The future is in question for all of Voidbox and Chloe's concrete work. We hope that as Voidbox grows, we can again have the facilities to do this work and revisit the projects that we love so dearly.
+
+## Name
+
+Yes, there is significant inuendo intended in the name. But it come from the fact that I was very amused by the fact that the colloquial term for a cellphone in germany is 'handy'  - Jr/Sr. naming was easy, but came from Pixar's Luxo Jr. lamp as I had made a one-off lamp with these goosenecks.
+
+Again, sorry for the tense change.
