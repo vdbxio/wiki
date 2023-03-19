@@ -17,6 +17,7 @@
 * [PCBs](other-stuff/pcbs.md)
 * [Prototypes (Archive)](other-stuff/prototypes-archive.md)
   * [Aura Qi](other-stuff/prototypes-archive/aura-qi.md)
+  * [Origami](other-stuff/prototypes-archive/origami.md)
 * [Prototypes (Current)](other-stuff/prototypes-current/README.md)
   * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
     * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
