@@ -23,4 +23,4 @@ In this configuration, current sensing will only be that which flows into and ou
 
 You'll note that in this example that the load side is connected to battery positive. This ensures that charging produces a positive current where a load will show negative.
 
-<figure><img src="../../.gitbook/assets/drawio.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/drawio.svg" alt=""><figcaption></figcaption></figure>
