@@ -10,10 +10,11 @@
 
 ## Other Stuff
 
-* [Archive](other-stuff/archive/README.md)
-  * [Concrete Card Holder](other-stuff/archive/concrete-card-holder.md)
-  * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/archive/super-ultra-low-profile-usb-2.0-header.md)
-  * [Handy Jr.](other-stuff/archive/handy-jr..md)
+* [Archive](3d-models/page-3.md)
+  * [Concrete Card Holder](other-stuff/page-3/concrete-card-holder.md)
+  * [Hactus](other-stuff/archive/hactus.md)
+  * [Handy Jr.](other-stuff/page-3/handy-jr..md)
+  * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/page-3/super-ultra-low-profile-usb-2.0-header.md)
 * [3D Models](other-stuff/3d-models.md)
 * [Prototypes (Archive)](other-stuff/prototypes-archive.md)
   * [Aura Qi](other-stuff/prototypes-archive/aura-qi.md)
@@ -24,10 +25,9 @@
     * [Design Reference](other-stuff/prototypes-archive/origami/design-reference.md)
     * [Display](other-stuff/prototypes-archive/origami/display.md)
 * [Prototypes (Current)](other-stuff/prototypes-current/README.md)
-  * [PwrTool 500](other-stuff/prototypes-current/pwrtool-500/README.md)
-    * [Installation](other-stuff/prototypes-current/pwrtool-500/installation.md)
+  * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
+    * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
 
 ## Still Available
 
-* [Hactus](still-available/hactus.md)
-* [CSR8635 Adapter](still-available/csr8635-adapter.md)
+* [CSR8635 Adapter](products/page-2.md)
