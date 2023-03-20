@@ -30,9 +30,7 @@ If you require the data pins in conjunction with a breadboard, we suggest not us
 
 The OTG solder jumper on the bottom pulls the ID pin to ground. It is there for your development needs. Have fun.
 
-### Open Source
 
-The USB-BD is open source and this git repo is intended as the main source of truth, though there may be varying info elsewhere as things change quickly. Feel free to ask us any questions in the issues tab above, we'd love to hear your feedback on how we can improve.
 
 ### Manufacturing
 

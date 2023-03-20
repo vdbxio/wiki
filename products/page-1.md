@@ -8,13 +8,11 @@ description: A modern take on a timeless I2C IO expander
 
 The goal of the IOByte is to create a better breakout for the PCF8574 GPIO Extender mostly focused on quickly deploying relays and switch panels via i2c.
 
-The initial idea behind the PCB design was based on having it fit directly on a commonly available 8-Channel relay board, essentially turning it into an all-in-one i2c 8-channel relay board. Existing breakouts generally would require 10 DuPont leads (or other wire interface) to the relay board.
+The initial idea behind the PCB design was based on having it fit directly on a commonly available 8-Channel relay board, essentially turning it into an all-in-one i2c 8-channel relay board. Existing breakouts generally would require 10 DuPont leads (or other wire interface) to the relay board. Super fast and cheap deployment.
 
-{% hint style="warning" %}
-TODO - insert before after photo here
-{% endhint %}
+<figure><img src="../.gitbook/assets/839298DD-CB0F-48A6-9CFE-BE4D96BBF20E_1_201_a.jpeg" alt=""><figcaption></figcaption></figure>
 
-Further updates have focused on the input capabilities of the PCF8574 by adding enough VCC and GND pins to easily add high or low triggered switches. This is still being tested.
+The IOByte can also act as a binary input device. The ground row of pins makes it easy to deploy simple switches connected from and of the 8 open-drain pins to ground. Quickly deploy switch panels with your favorite hardware.
 
 ## Changelog
 

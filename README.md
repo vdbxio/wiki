@@ -26,6 +26,6 @@ I found my bus in July 2020 and immediately started building and also moved in w
 
 I'm not upset by this despite missing it. I'm really excited about the work I've been able to do while building my house and the work I plan on doing this year, 2023. Being a part of the Home Assistant community brings me joy and while I may not be great with code, I seem to be pretty ok with hardware and I appreciate the many brilliant people who were able to create this app that lets me write some pretty extensive code with just a config file.&#x20;
 
-I hope to some day have the opportunity to turn VDBX.io into a worker co-op and manufacture for / promote other makers and artists, especially under-represented folks.  Today voidbox is just another brand to keep me from doing a 9-5... by the end of the year, I hope it's not just me... and next year more. I'm going to keep trying even though my track record isn't that great.
+I hope to some day have the opportunity to turn VDBX.io into a worker co-op that manufactures & retails open hardware for other makers and artists, especially under-represented folks.  Today voidbox is just another brand to keep me from doing a 9-5... by the end of the year, I hope it's not just me... and next year more. I'm going to keep trying even though my track record isn't that great.
 
-@clomads&#x20;
+@clomads

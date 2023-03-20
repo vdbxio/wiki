@@ -6,7 +6,6 @@
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/page-1.md)
-* [USB-C Mod for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
 
 ## Other Stuff
 
@@ -27,6 +26,7 @@
 * [Prototypes (Current)](other-stuff/prototypes-current/README.md)
   * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
     * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
+  * [USB-C Mod for Apple TV 2022](other-stuff/prototypes-current/usb-c-mod-for-apple-tv-2022.md)
 
 ## Still Available
 
