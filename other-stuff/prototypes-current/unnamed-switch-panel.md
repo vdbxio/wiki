@@ -50,3 +50,8 @@ When screw mounting, remove the cover-plate screws and mount the housing first, 
 
 [https://s.click.aliexpress.com/e/\_DefEShP](https://s.click.aliexpress.com/e/\_DefEShP) - Thin USB-A to C cables for placing next to an outlet with USB ports
 
+[https://s.click.aliexpress.com/e/\_DDbsYx7](https://s.click.aliexpress.com/e/\_DDbsYx7) - Thin C to C cable
+
+
+
+_<mark style="color:orange;">Affiliate links don't change your price, but give us a small percentage of sales.</mark>_
