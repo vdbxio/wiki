@@ -27,7 +27,9 @@
   * [PwrTool 500](products/usb-c-mod-kit-for-appletv-4k/README.md)
     * [Installation](products/usb-c-mod-kit-for-appletv-4k/installation.md)
   * [USB-C Mod for Apple TV 2022](other-stuff/prototypes-current/usb-c-mod-for-apple-tv-2022.md)
-  * [Unnamed Switch Panel](other-stuff/prototypes-current/unnamed-switch-panel.md)
+  * [Unnamed Switch Panel](other-stuff/prototypes-current/unnamed-switch-panel/README.md)
+    * [Installation](other-stuff/prototypes-current/unnamed-switch-panel/installation.md)
+    * [ESPHome](other-stuff/prototypes-current/unnamed-switch-panel/esphome.md)
 
 ## Still Available
 

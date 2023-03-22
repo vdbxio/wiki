@@ -10,27 +10,39 @@ A set of four (4) SPDT toggle switches in a modular wall enclosure and faceplate
 
 SPDT (Single Pole Dual Throw) - A dual throw switch has two distinct motions from its center. In a momentary version, it can toggle outward in two directions, for example up/down or left/right based on the physical orientation of the switch. Single pole refers to the fact that there is only one bank of connections being switched.&#x20;
 
+## How to install
+
+1. Power up: Use a USB-C cable or feed up to 60VDC to the spring terminals
+2. Connect to the `Unnamed Switch Panel XXXXX` Wifi and enter your Wifi credentials when the prompt comes up.&#x20;
+3. Check Home Assistant for a new device notification or check the integrations page for the switch panel
+4. Press configure and follow the steps
+5. Download this Blueprint and configure
+
+[Help Me -→](installation.md)
+
 ## User Experience
 
 SPDT momentary toggle switches allow for a direct UX comparison to legacy house switches when moving to smart/iot automation systems. Keeping the muscle memory of Up = On and Down = Off is important to a lot of us when much of the IOT landscape is trying to get us to learn new UX patterns.&#x20;
 
-{% hint style="info" %}
-Spacing between switches could be an issue. Test in real scenarios.
-{% endhint %}
+The spacing between switches was previously a concern, but no longer seems to be an issue. I'm actually really happy with the feel after playing with the design for a couple days and finally getting one wall mounted. If feedback comes in about it, it can be dealt with as a secondary option or a revision to the spec.&#x20;
 
 ## Design & Manufacturing
 
 The required depth of the components created a unique opportunity to be bold in our design choices. The spacious cover plate is larger and almost floats on top of the housing which is recessed behind it. In a vacuum, its shape evokes a mid-century modern design aesthetic, though color and material choices could adapt it to any decor.
 
-The cover-plate design is easily manufacturable from any material that is able to be laser cut or CNC machined from 2D design files.
+The cover-plate design is easily manufacturable via 2D machining methods (laser, basic cnc)
 
-The housing is 3D printable with the possibility of injection molding with the right modifications. Could theoretically be bent sheet metal.
+The housing is 3D printable with the possibility of injection molding with the right modifications. It could theoretically be bent sheet metal.
 
 ## Placement
 
-The design is intended for placement anywhere, and it was specifically designed so it could live next to an outlet/switch plate rather than in it. Blanking plates will be available optionally with and without AC transformers for this possible use, but we encourage an open mind when considering placement.&#x20;
+Originally intended to be mounted to a wall, it seems it may also work well on a desk as it stands up with little issue and could have power coming out the back. This changes some of the design work, but shouldn't be too big a deal.
 
-The rear of the housing is mostly open, but there are two areas that can be used for VHB or nano-style double-sided tape. Next to each one of those areas is a hole for screw mounting.
+It was specifically designed so it could live anywhere but in a standard wall box. Blanking plates will eventually be available optionally with and without AC transformers for this possible use, but we encourage an open mind when considering placement. Get one of those outlets with USB ports and put the switch panel next to it with a[ slim USB cable.](./#resources)&#x20;
+
+~~The rear of the housing is mostly open, but there are two areas that can be used for VHB or nano-style double-sided tape. Next to each one of those areas is a hole for screw mounting.~~
+
+Back should be closed, but interior markings could show where to make holes for certain things like mounting screws or alternate cable passthrus - should have a default cable passthru for USB-C.&#x20;
 
 When screw mounting, remove the cover-plate screws and mount the housing first, then re-attach the cover-plate and screws.
 
