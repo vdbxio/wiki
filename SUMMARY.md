@@ -30,6 +30,7 @@
   * [Unnamed Switch Panel](other-stuff/prototypes-current/unnamed-switch-panel/README.md)
     * [Installation](other-stuff/prototypes-current/unnamed-switch-panel/installation.md)
     * [ESPHome](other-stuff/prototypes-current/unnamed-switch-panel/esphome.md)
+  * [VDBX Flip Platform](other-stuff/prototypes-current/vdbx-flip-platform.md)
 
 ## Still Available
 
