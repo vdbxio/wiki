@@ -7,7 +7,7 @@ description: An ESP32-C3 module platform for VDBX.io products and general protot
 VDBX Flip is a modular microprocessor module designed the basis for our open-source home-automation hardware. The following is a list of its current features:
 
 * ESPHome is the core software platform with the intent for it to connect directly to Home Assistant. Being based on ESP32 makes it hackable and expandable.
-  * Flashing Tasmota or other firmware is likely trivial, but we don't currently keep aprised of its development.&#x20;
+  * Flashing Tasmota or other firmware is likely trivial, but we don't currently keep aprised of its development. - Most devices at this point are I2C and known to be working in ESPHome, or are in development by the community.
   * Should come with  polished firmware in box.  Doesn't need to be done, it just needs to work.
 * V1 back has four (4) 200ma LDOs in paralell that are tolerant to +60vdc
   * This is probably a terrible idea. We'll see.
