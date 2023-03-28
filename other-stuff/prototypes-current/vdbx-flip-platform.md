@@ -4,6 +4,8 @@ description: An ESP32-C3 platform for creating IOT devices on off-grid battery s
 
 # VDBX/Flip Platform
 
+<figure><img src="../../.gitbook/assets/20230328-FLIP-C3-render (1).jpg" alt=""><figcaption><p>A render of the FLIP-C3 close to finalization of part selection. 23/3/28</p></figcaption></figure>
+
 ## Summary
 
 * ESP32-C3 with ESPHome and Home Assistant as the target platforms
