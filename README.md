@@ -4,15 +4,22 @@ description: The official VDBX.io documentation
 
 # Welcome
 
-This is the official wiki/documentation site for Voidbox Industries/VDBX.io as of 2023. It is built with Gitbook and synced with Github, where you can submit a pull request or issue if you have questions or find a problem.
+This is the official wiki/documentation site for VDBX as of 2023. It is built with Gitbook and synced with Github, where you can submit a pull request or issue if you have questions or find a problem.
 
-All documentation and design files for projects are shared as "open source" under Creative Commons 4.0 Attribution Share Alike (CC-BY-SA). Branding and marketing content are reserved as copyrights of Voidbox Industries / VDBX.io
+All documentation and design files for projects are shared as "open source" under Creative Commons 4.0 Attribution Share Alike (CC-BY-SA). Branding and marketing content are reserved as copyrights of Voidbox Industries / VDBX
 
 ## About
 
-Voidbox Industries or VDBX.io (I pronounce it as voidbox considering the missing vowels are just the IO.) is currently focused on designing hardware for use with Home Assistant in off-grid, battery powered setups. Our hardware lineup for 2023 is expected to be highly integrated into HA by designing hardware that runs ESPHome and can directly plug into a 12-48v lithium battery. Useability and ease of deployment are high priorities for us to even design in the first place.&#x20;
+Voidbox Industries / VDBX / VDBX.io is currently focused on designing hardware for use with Home Assistant in off-grid, battery powered setups. Our hardware lineup for 2023 is expected to be highly integrated into HA by designing hardware that runs ESPHome and can directly plug into a 12-48v lithium battery. Useability and ease of deployment are high priorities for us to even design in the first place.&#x20;
 
 Chloe Madison, resident designer and founder currently lives full time in a converted "shorty" school bus that she's constantly still working on.
+
+## Support
+
+We make a lot of things that we sell, we also make a lot that is solely to be shared online freely... in either case, we provide all source files so you can hack or make these things yourself. The best way to support our work is to buy our products via our stores on Amazon, Tindie, and our website. If you'd like to show additional or alternate support, you can support any of our makers directly:
+
+* Chloe Madison - @clomads - [Patreon](https://www.patreon.com/clomads)&#x20;
+* More soon (hopefully)
 
 ## Message from Chloe
 
