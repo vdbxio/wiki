@@ -16,7 +16,9 @@ Chloe Madison, resident designer and founder currently lives full time in a conv
 
 ## Support
 
-We make a lot of things that we sell, we also make a lot that is solely to be shared online freely... in either case, we provide all source files so you can hack or make these things yourself. The best way to support our work is to buy our products via our stores on Amazon, Tindie, and our website. If you'd like to show additional or alternate support, you can support any of our makers directly:
+We make a lot of things that we sell, we also make a lot that is solely to be shared online freely... in either case, we provide all source files so you can hack or make these things yourself. The best way to support our work is to buy our products via our stores on Amazon, Tindie, and our website. You may also buy parts and products via our affiliate links.
+
+&#x20;If you'd like to show additional or alternate support, you can support any of our makers directly:
 
 * Chloe Madison - @clomads - [Patreon](https://www.patreon.com/clomads)&#x20;
 * More soon (hopefully)
@@ -36,3 +38,7 @@ I knew this was necessary when I moved everything into the bus, so I'm not upset
 I hope to someday have the opportunity to turn VDBX.io into a worker co-op that manufactures & retails open hardware for other makers and artists, especially under-represented folks.  Today voidbox is just another brand to keep me from doing a 9-5... by the end of the year, I hope it's not just me... and next year more. I'm going to keep trying even though my track record isn't that great.
 
 @clomads
+
+## Affiliate Marketing
+
+We are currently a part of the affiliate programs for Amazon and AliExpress with the potential for others. Any links to those platforms are likely to contain our affiliate code which tells them that we sent you. Your price doesn't change, but we may get a small kickback from your order for sending you over.

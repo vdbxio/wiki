@@ -4,11 +4,18 @@ description: 8-in-4 Home Assistant Remote
 
 # Unnamed Switch Panel
 
+<figure><img src="../../../.gitbook/assets/Shift-Prototype1@0.5x.jpg" alt=""><figcaption><p>Prototype 001 - fully 3d printed with gaffer tape covering housing</p></figcaption></figure>
+
+## Working Names
+
+* FLIP//Switch
+* FLIP//Shift
+
 ## Summary
 
-A set of four (4) SPDT toggle switches in a modular wall enclosure and faceplate system. It is designed to work directly with our PT/Flip node platform running ESPHome.  It is connected via an I2C interface allowing it also to be daisy chained to itself to create larger switch panels.&#x20;
+A set of four (4) dual-throw momentary toggle switches in a modular wall enclosure and faceplate system. It is designed to work directly with our FLIP platform running ESPHome.  It is connected via an I2C interface allowing it also to be daisy chained to itself to create larger switch panels.&#x20;
 
-SPDT (Single Pole Dual Throw) - A dual throw switch has two distinct motions from its center. In a momentary version, it can toggle outward in two directions, for example up/down or left/right based on the physical orientation of the switch. Single pole refers to the fact that there is only one bank of connections being switched.&#x20;
+**SPDT (Single Pole Dual Throw)** - A dual throw switch has two distinct motions from its center. In a momentary version, it can toggle outward in two directions, for example up/down or left/right based on the physical orientation of the switch. The most common of these is a window switch in a car. Single pole refers to the fact that there is only one bank of connections being switched. While single pole switches may be optimal, dual or triple pole may be necessary due to availability.
 
 ## How to install
 
@@ -22,9 +29,9 @@ SPDT (Single Pole Dual Throw) - A dual throw switch has two distinct motions fro
 
 ## User Experience
 
-SPDT momentary toggle switches allow for a direct UX comparison to legacy house switches when moving to smart/iot automation systems. Keeping the muscle memory of Up = On and Down = Off is important to a lot of us when much of the IOT landscape is trying to get us to learn new UX patterns.&#x20;
+Dual-throw momentary toggle switches allow for a direct UX comparison to legacy house switches when moving to smart automation systems. Keeping the muscle memory of Up = On and Down = Off is important to a lot of us when much of the IOT landscape is trying to get us to learn new UX patterns.&#x20;
 
-The spacing between switches was previously a concern, but no longer seems to be an issue. I'm actually really happy with the feel after playing with the design for a couple days and finally getting one wall mounted. If feedback comes in about it, it can be dealt with as a secondary option or a revision to the spec.&#x20;
+Spacing between switches was previously a concern, but no longer seems to be an issue. The first prototype has so far proven that spacing is more than adequate.&#x20;
 
 ## Design & Manufacturing
 
