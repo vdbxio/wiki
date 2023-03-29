@@ -7,6 +7,11 @@
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/page-1.md)
 
+## Circuit Boards <a href="#pcbs" id="pcbs"></a>
+
+* [PWM Lighting Adapter](pcbs/pwm-lighting-adapter.md)
+* [CSR8635 Adapter](pcbs/csr8635-adapter.md)
+
 ## Other Stuff
 
 * [Archive](3d-models/page-3.md)
@@ -31,7 +36,3 @@
     * [Installation](other-stuff/prototypes-current/unnamed-switch-panel/installation.md)
     * [ESPHome](other-stuff/prototypes-current/unnamed-switch-panel/esphome.md)
   * [VDBX/Flip Platform](other-stuff/prototypes-current/vdbx-flip-platform.md)
-
-## Still Available
-
-* [CSR8635 Adapter](products/page-2.md)
