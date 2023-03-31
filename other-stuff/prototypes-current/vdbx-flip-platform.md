@@ -8,7 +8,7 @@ description: An ESP32-C3 platform for creating IOT devices on off-grid battery s
 
 ## Summary
 
-* ESP32-C3 with ESPHome and Home Assistant as the target platforms
+* ESP32-C3 with ESPHome for Home Assistant as the target platform
 * 6-60VDC input covers 12-48v battery systems up to 16s Lithium-Ion
   * Low-profile press-in wire connector
     * 24-18AWG Solid
