@@ -4,21 +4,19 @@ description: Quickly get 5v from those old Micro-USB cables you have lying aroun
 
 # USB-BD v1.4
 
-[![licensebuttons by](https://licensebuttons.net/l/by-sa/3.0/88x31.png)](https://creativecommons.org/licenses/by-sa/4.0)
+{% hint style="info" %}
+A Type-C variant is on its way, so let us know what you'd like to see!
+{% endhint %}
 
-![](https://img.shields.io/badge/2023-v1.4-blue?style=for-the-badge)
+## Summary
 
 [![oshwa](https://img.shields.io/badge/US000128-OSHWA-blue?style=for-the-badge)](https://certification.oshwa.org/us000128.html)
 
-`A Type-C variant is on its way, so let us know what you'd like to see`
-
-## USB-BD
-
 A handy Micro-USB power and data breakout designed for breadboards, but useful in all kinds of projects. Put that drawer full of micro USB cables to good use.
 
-![Features Overview Diagram](https://raw.githubusercontent.com/vdbxio/USB-BD/master/git-docs-features-dark.png)
+![Features & Pin-Out Overview](https://raw.githubusercontent.com/vdbxio/USB-BD/master/git-docs-features-dark.png)
 
-### Summary
+### Overview
 
 The USB-BD breaks out the Micro-USB 5v vbus and data pair to standard pin headers on a 2.54mm/0.1" pitch grid. The pin headers are on opposite sides of the Micro-USB port for stability and strength when in used on a breadboard. A slide switch is optionally used to switch both 5v+ terminals simultaneously, otherwise solder the PWR jumper on the bottom to bypass the need for a switch and give yourself current capability boost.
 
