@@ -5,7 +5,8 @@
 ## Products
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
-* [IOByte](products/iobyte.md)
+* [IOByte](products/iobyte/README.md)
+  * [Docs](products/iobyte/docs.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
