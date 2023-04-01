@@ -5,7 +5,7 @@
 ## Products
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
-* [IOByte](products/page-1.md)
+* [IOByte](products/iobyte.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
@@ -14,11 +14,11 @@
 
 ## Other Stuff
 
-* [Archive](3d-models/page-3.md)
-  * [Concrete Card Holder](other-stuff/page-3/concrete-card-holder.md)
+* [Archive](other-stuff/archive/README.md)
+  * [Concrete Card Holder](other-stuff/archive/concrete-card-holder.md)
   * [Hactus](other-stuff/archive/hactus.md)
-  * [Handy Jr.](other-stuff/page-3/handy-jr..md)
-  * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/page-3/super-ultra-low-profile-usb-2.0-header.md)
+  * [Handy Jr.](other-stuff/archive/handy-jr..md)
+  * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/archive/super-ultra-low-profile-usb-2.0-header.md)
 * [3D Models](other-stuff/3d-models.md)
 * [Prototypes (Archive)](other-stuff/prototypes-archive.md)
   * [Aura Qi](other-stuff/prototypes-archive/aura-qi.md)
