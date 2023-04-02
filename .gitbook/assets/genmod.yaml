@@ -1,0 +1,139 @@
+
+# PowerTool Pro 23.02-working
+# Voidbox Industries & Chloe Madison
+# VDBX.io / @clomads
+# CC-BY-SA 4.0
+# Visit wiki.VDBX.io for more information
+
+
+substitutions:
+  name: genmod
+  friendly_name: "Genmod"
+  project_name: "vdbxio.genmod"
+  project_version: "0.5.0"
+  speed: 1s
+  
+
+### BEGIN ESPHOME ###
+esphome:
+  name: "${name}"
+  friendly_name: "${friendly_name}"
+  name_add_mac_suffix: true
+  project:
+    name: "${project_name}"
+    version: "${project_version}"
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+api:
+
+ota:
+
+wifi:
+  ap:
+    password: "GenericPassword"
+
+captive_portal:
+
+web_server:
+  local: True
+
+esp32_improv:
+  authorizer: none
+
+
+# DASHBOARD IMPORT FOR ESPHOME CONFIG
+dashboard_import:
+  package_import_url: github://vdbxio/pwrtools/pt500/pwrtool500.yaml@main
+  import_full_config: true
+
+time:
+  - platform: sntp
+
+i2c:
+  sda: 0
+  scl: 1
+  scan: true
+
+# uart:
+#   tx_pin: 20
+#   rx_pin: 21
+#   baud_rate: 9600
+
+# spi:
+#   clk_pin: GPIO14
+#   mosi_pin: GPIO13
+#   miso_pin: GPIO12
+
+light:
+  - platform: status_led
+    name: "Status LED"
+    pin: 10
+  - platform: neopixelbus
+    type: GRB
+    variant: WS2811
+    pin: 8
+    num_leds: 60
+    name: "NeoPixel Light"
+
+switch:
+  - platform: gpio
+    name: "Aux"
+    pin: 5
+
+sensor:
+  # - platform: max9611
+  #   shunt_resistance: 0.005 ohm
+  #   gain: '1X'
+  #   voltage:
+  #     name: ${fname} Voltage
+  #     id: shunt_volts
+  #   current:
+  #     name: ${fname} Current
+  #     id: shunt_amps
+  #   power:
+  #     name: ${fname} Watts
+  #     id: shunt_watts
+  #   temperature:
+  #     name: ${fname} Temperature
+  #   address: 0x70
+  #   update_interval: ${speed}
+
+  # - platform: total_daily_energy
+  #   name: "Total Daily Energy"
+  #   power_id: shunt_watts
+  #   filters:
+  #       # Multiplication factor from W to kW is 0.001
+  #       - multiply: 0.001
+  #   unit_of_measurement: kWh
+  #   restore: True
+  # - platform: integration
+  #   name: "Total Daily Energy"
+  #   sensor: shunt_watts
+  #   time_unit: min
+  #   restore: True
+### Wifi Signal Sensor in Diags
+  - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
+    name: "WiFi Signal dB"
+    id: wifi_signal_db
+    update_interval: 30s
+    entity_category: "diagnostic"
+
+  - platform: copy # Reports the WiFi signal strength in %
+    source_id: wifi_signal_db
+    name: "WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "%"
+    entity_category: "diagnostic"
+
+binary_sensor:
+  - platform: status
+    name: "Shunt Status"
+
