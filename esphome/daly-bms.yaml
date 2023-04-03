@@ -1,141 +1,78 @@
-esphome:
-  name: daly-bms
-  friendly_name: Daly BMS
+# Daly BMS 23.04-dev
+# Voidbox Industries & Chloe Madison
+# VDBX.io / @clomads
+# CC-BY-SA 4.0
 
-esp32:
-  board: esp32-c3-devkitm-1
-  framework:
-    type: arduino
+substitutions:
+  name: "flip-panel"
+  friendly_name: "Flip Panel"
+  project_name: "vdbxio.flip panel"
+  project_version: "0.9.0"
+  package_git: "github://vdbxio/wiki/esphome/daly-bms.yaml@main"
 
-ethernet:
-  type: LAN8720
-  mdc_pin: GPIO23
-  mdio_pin: GPIO18
-  clk_mode: GPIO0_IN
-  phy_addr: 1
-  power_pin: GPIO16
+packages:
+  flipc3: !include packages/flipc3-base.yaml
+  wifi: !include packages/flipc3-wifi.yaml
+  dash: !include packages/dash-import.yaml
+  uart: !include packages/flipc3-uart.yaml
+  # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
+  # shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , spdint: 1s}}
+  # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
 
-# Enable logging
-logger:
-  level: VERY_VERBOSE
+daly_bms:
+  update_interval: 5s
 
-# Enable Home Assistant API
-api:
-  encryption:
-    key: "1l5fZuxvU9FXtB99BnpXKaDe8x+LvAFW9klekdx9/GE="
+sensor:
+  - platform: daly_bms
+    voltage:
+      name: "Battery Voltage"
+    current:
+      name: "Battery Current"
+    battery_level:
+      name: "Battery Level"
+    max_cell_voltage:
+      name: "Max Cell Voltage"
+    max_cell_voltage_number:
+      name: "Max Cell Voltage Number"
+    min_cell_voltage:
+      name: "Min Cell Voltage"
+    min_cell_voltage_number:
+      name: "Min Cell Voltage Number"
+    max_temperature:
+      name: "Max Temperature"
+    max_temperature_probe_number:
+      name: "Max Temperature Probe Number"
+    min_temperature:
+      name: "Min Temperature"
+    min_temperature_probe_number:
+      name: "Min Temperature Probe Number"
+    remaining_capacity:
+      name: "Remaining Capacity"
+    cells_number:
+      name: "Cells Number"
+    temperature_1:
+      name: "Temperature 1"
+    temperature_2:
+      name: "Temperature 2"
+    cell_1_voltage:
+      name: "Cell 1 Voltage"
+    cell_2_voltage:
+      name: "Cell 2 Voltage"
+    cell_3_voltage:
+      name: "Cell 3 Voltage"
+    cell_4_voltage:
+      name: "Cell 4 Voltage"
 
-ota:
-  password: "39ca53485f24f933cbcfc34a75561e9c"
-
-esp32_ble_tracker:
-
-
-
-# ble_client:
-#   - mac_address: 96:69:08:05:32:35
-#     id: daly01
-
-# sensor:
-#   - platform: ble_client
-#     type: characteristic
-#     ble_client_id: daly01
-#     name: "Daly BMS Message"
-#     service_uuid: 'f000ffc0-0451-4000-b000-000000000000'
-#     characteristic_uuid: 'f000ffc1-0451-4000-b000-000000000000'
-#     notify: True
-
-# button:
-#   - platform: template
-#     name: "Get BMS Info"
-#     id: bmsinfo
-#     on_press:
-#       - ble_client.ble_write:
-#           id: daly01
-#           service_uuid: f000ffc0-0451-4000-b000-000000000000
-#           characteristic_uuid: f000ffc2-0451-4000-b000-000000000000
-#           # List of bytes to write.
-#           value: [0xa5, 0x01, 0x94, 0x08]
-
-
-# uart:
-#   - id: piss
-#     tx_pin: GPIO1
-#     rx_pin: GPIO3
-#     baud_rate: 9600
-#     rx_buffer_size: 512
-#   - id: shart
-#     tx_pin: GPIO12
-#     rx_pin: GPIO14
-#     baud_rate: 9600
-#     rx_buffer_size: 512
-
-
-# daly_bms:
-#   update_interval: 5s
-
-# sensor:
-#   - platform: daly_bms
-#     uart_id: piss
-#     voltage:
-#       name: "Battery Voltage"
-#     current:
-#       name: "Battery Current"
-#     battery_level:
-#       name: "Battery Level"
-#     max_cell_voltage:
-#       name: "Max Cell Voltage"
-#     max_cell_voltage_number:
-#       name: "Max Cell Voltage Number"
-#     min_cell_voltage:
-#       name: "Min Cell Voltage"
-#     min_cell_voltage_number:
-#       name: "Min Cell Voltage Number"
-#     max_temperature:
-#       name: "Max Temperature"
-#     max_temperature_probe_number:
-#       name: "Max Temperature Probe Number"
-#     min_temperature:
-#       name: "Min Temperature"
-#     min_temperature_probe_number:
-#       name: "Min Temperature Probe Number"
-#     remaining_capacity:
-#       name: "Remaining Capacity"
-#     cells_number:
-#       name: "Cells Number"
-#     temperature_1:
-#       name: "Temperature 1"
-#     temperature_2:
-#       name: "Temperature 2"
-#     cell_1_voltage:
-#       name: "Cell 1 Voltage"
-#     cell_2_voltage:
-#       name: "Cell 2 Voltage"
-#     cell_3_voltage:
-#       name: "Cell 3 Voltage"
-#     cell_4_voltage:
-#       name: "Cell 4 Voltage"
-
-# text_sensor:
-#   - platform: daly_bms
-#     status:
-#       name: "BMS Status"
+text_sensor:
+  - platform: daly_bms
+    status:
+      name: "BMS Status"
 
 
-# binary_sensor:
-#   - platform: daly_bms
-#     charging_mos_enabled:
-#       name: "Charging MOS"
-#     discharging_mos_enabled:
-#       name: "Discharging MOS"
+binary_sensor:
+  - platform: daly_bms
+    charging_mos_enabled:
+      name: "Charging MOS"
+    discharging_mos_enabled:
+      name: "Discharging MOS"
 
-# wifi:
-#   ssid: !secret wifi_ssid
-#   password: !secret wifi_password
-
-#   # Enable fallback hotspot (captive portal) in case wifi connection fails
-#   ap:
-#     ssid: "Daly-Bms Fallback Hotspot"
-#     password: "gOXyTeKpKqP2"
-
-# captive_portal:
-    

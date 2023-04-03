@@ -1,0 +1,55 @@
+# FLIP C3 Baseline Package 23.04-dev
+# Voidbox Industries & Chloe Madison
+# VDBX.io / @clomads
+# CC-BY-SA 4.0
+
+substitutions:
+  name: "flip-c3"
+  friendly_name: "Flip C3"
+  project_name: "vdbxio.Flip C3"
+  project_version: "0.9.0"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  name_add_mac_suffix: false
+  project:
+    name: "${project_name}"
+    version: "${project_version}"
+
+packages:
+  flipleds: !include flipc3-leds.yaml
+
+esp32:
+  board: esp32-c3-devkitm-1
+  framework:
+    type: arduino
+
+i2c:
+  sda: 3
+  scl: 2
+  scan: True
+  id: bus_a
+  frequency: 100k
+    
+logger:
+api:
+ota:
+
+
+
+time:
+  - platform: sntp
+
+sensor:
+  - platform: internal_temperature
+    name: "ESP32-C3 Temperature"
+
+   
+button:
+  - platform: restart
+    name: ${friendly_name} Restart
+  - platform: factory_reset
+    name: Restart with Factory Default Settings
+    disabled_by_default: True
+

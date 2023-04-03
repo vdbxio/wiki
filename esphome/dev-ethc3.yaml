@@ -1,3 +1,5 @@
+# A dev config to test W5500 external component
+
 esphome:
   name: ethc3
   friendly_name: ethC3
