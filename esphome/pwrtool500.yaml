@@ -21,3 +21,4 @@ packages:
   shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
   # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
 
+

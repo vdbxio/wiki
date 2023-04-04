@@ -34,3 +34,4 @@ binary_sensor:
       number: 9
       inverted: True
     name: "Boot Button"
+

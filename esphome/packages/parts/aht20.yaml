@@ -1,0 +1,7 @@
+sensor:
+  - platform: aht10
+    temperature:
+      name: "${friendly-name} Temperature"
+    humidity:
+      name: "${friendly-name} Humidity"
+    update_interval: 30s

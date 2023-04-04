@@ -6,7 +6,7 @@ sensor:
     shunt_resistance: 0.005 ohm
     gain: '1X'
     voltage:
-        name: ${friently_name} Voltage
+        name: ${friendly_name} Voltage
         id: ${entid}_volts
     current:
         name: ${friendly_name} Current
