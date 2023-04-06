@@ -1,21 +1,44 @@
 ---
-description: An ESP32-C3 platform for creating IOT devices on off-grid battery systems.
+description: A platform for creating IOT devices on off-grid battery systems.
 ---
 
 # VDBX/Flip Platform
 
-<figure><img src="../../.gitbook/assets/20230328-FLIP-C3-render (1).jpg" alt=""><figcaption><p>A render of the FLIP-C3 close to finalization of part selection. 23/3/28</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/FlIP-C3 render 0.9.0 23.4 (1).jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
 
-## Summary
+## Design Philosophy
 
-* ESP32-C3 with ESPHome for Home Assistant as the target platform
-* 6-60VDC input covers 12-48v battery systems up to 16s Lithium-Ion
-  * Low-profile press-in wire connector
-    * 24-18AWG Solid
-    * 22-20AWG Stranded
-  * 2x2P 2.0mm pass-through header&#x20;
+The FLIP platform is a set of standards between circuit designs with the intention of easy install within 12-48v lithium battery systems. It designed as a modular system to create IOT hardware for modern open-source automation systems. The platform will consist of mainboards which have processing and network capabilities and the modules which will provide or interface with switches, lighting, sensors, relays, dimmers, etc.
+
+The mainboards should be able to power themselves and basic modules from the on-board LDO array. More complex or power hungry modules may have their own LDO/switching regulator.&#x20;
+
+I2C should be considered a high-priority interconnect due to its capability for easy expansion and daisy-chaining. In as many situations as possible, modules should be able to function as either tethered I2C device or with a FLIP mainboard installed. A standalone device (mainboard with module) should be able to connect to it's mainboardless version of itself via the Qwiic & Stemma QT compatible connector. In some cases, smaller boards could stack infinitely, limited only by the available I2C addresses. We've currently coined these smaller boards as _backpacks_.
+
+* Up to 60v DC input covers up to 16s Lifepo4 systems
+  * USB-C as alternate power source
+* Standardized 2.54mm dual header layout between boards
+  * Passthrough stacking pin/socket headers included
+* Stemma QT & Qwiic compatible SH 1.0 connectors
+  * I2C & UART
+* Home Assistant as target platform
+  * ESP32 for Wifi and Ethernet
+    * ESPHome Firmware
+  * EBYTE Modules for Zigbee (future)
+    * PTVO Firmware
+  * Thread (Future)
+
+## FLIP-C3
+
+The first mainboard for the FLIP platform designed to run ESPHome firmware. It is easily flashable with custom firmware like Tasmota, WLED, etc. but these are not our target and you'll be on your own with those until community interest is&#x20;
+
+* ESP32-C3 designed for ESPHome and Home Assistant.
+* Low-profile press-in wire connector for 6-60VDC input
+  * Reverse polarity protection.
+  * 24-18AWG Solid
+  * 22-20AWG Stranded
+  * 2x2P 2.0mm pass-through header for stacking
 * USB-C input for alternate power and programming
-  * Reverse current protection via power switch triggered off by DC input
+  * Reverse current protection from DC input via diode
     * Allows for programming in place while protecting both devices.
 * LEDs on-board
   * WS2812B RGB - `GPIO8`
@@ -23,91 +46,27 @@ description: An ESP32-C3 platform for creating IOT devices on off-grid battery s
 * UART and I2C on Qwicc/Stemma QT compatible headers (SH 1.0-4P)
   * I2C:  `SCL0/SDA1`
   * UART:  `RX20/TX21`
-* ~~N-Channel Mosfet - `GPIO3`~~
-  * ~~Drive a contactor/LED light~~
-  * This will be better served by a 4x MOSFET backpack
 * Boot Button `GPIO9`
 * Reset Button `ENABLE`
 
-## Design Philosophy
-
-VDBX//Flip should focus on easy deployment in battery-powered systems up to 48v nominal. The ESP32 should be able to power itself and a handful of basic sensors or IO expanders, extended power needs should be able to be satisfied by an external buck circuit.
-
-In many cases I2C devices are addressable, meaning many can be attached to one microcontroller. By designing products around common I2C devices with a DIP header for a FLIP module, one could have multiple of one product nearby daisy chained to a main unit. Products also become interoperable with each other. For example, the switch panel could be added to the Branch Manager or a Lighting director. (See Products below)
-
-
-
-## Wants & Needs
-
-VDBX/Flip is a modular microprocessor module designed as the basis for our open-source home-automation hardware. The following is a list of the current wants and needs of the platform:
-
-* ESPHome is the core software platform with the intent for it to connect directly to Home Assistant. Being based on ESP32 makes it hackable and expandable.
-  * Flashing Tasmota or other firmware is likely trivial, but we don't currently keep aprised of its development. - Most devices at this point are I2C and known to be working in ESPHome, or are in development by the community.
-  * Should come with  polished firmware in box.  Doesn't need to be done, it just needs to work.
-* V1 back has four (4) 200ma LDOs in paralell that are tolerant to +60vdc
-  * This is probably a terrible idea. We'll see.
-  * Switching from 3v3 to 5v --- will run through VUSB to 3v3 Done 3/26
-    * Need interlocking 5V to prevent backfeeding the USB-C port... allowing flashing when powered via DC input. done- 3/26
-* Needs a standardized DIP pin layout for important protocols
-  * Also on SH 1.0 header like Qwicc and Stemma QT
-    * UART:  RX20/TX21
-    * I2C:  SCL0/SDA1 - Test this
-  * SPI is secondary, but there should be enough pins.&#x20;
-    * Check against W5500 mini ethernet module pin-out
-      * [https://github.com/esphome/feature-requests/issues/1235](https://github.com/esphome/feature-requests/issues/1235)
-      * [https://github.com/esphome/esphome/pull/4424](https://github.com/esphome/esphome/pull/4424)
-  * Don't feel the need to use the full pin header in designs, just enough for needed hookups and a solid connection.
-    * Need better source for low profile headers.
-* ~~Castellated holes would be a nice to have but would require redesigning to be single sided.~~
-* Do we put  house voltage on a header
-  * Its' own? -yes done 3/26
-
-## Products
-
-* Switch Panel (Unnamed)
-* PwrTool Family
-  * Large main system shunt
-  * Small Handheld device with XT60, PP45, screw-in, etc. connection options
-  * Branch Manager - Smart power distribution panel&#x20;
-    * 8x High power p-channel mosfets
-    * I2C IO expander allows panel to be expanded on itself
-    *
-  * Lighting Director - PWM Mosfet controller for DC lighting devices. Uses i2c IO
-* Backpacks - should be the same size as the FLIP itself.
-  * PWM mosfet 4x via direct connection to GPIO
-  * RS485 to TTL for Solar Chargers
-  * \~2-3A Switching power supply
-    * A few micro buck converter designs are in the works, this could just be an adapter.
-  * RGB Addressable&#x20;
-*
-
-## ESP32-C3
+### ESP32-C3
 
 The ESP32-C3 is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for Ethernet PHYs including the LAN8720 and W5500, though support for both are limited in ESPHome.
 
 It is likely that the C3 will not be enough as the platform grows and requires more of the processor. Our early planned product line should be more than covered by the capabilities of the C3... the biggest concern being limited to one I2C.
 
-## PINS RESEARCH
+## Future Products
 
-Make sure the pins make sense.
-
-QTPY-C3
-
-* RX: 20 / TX: 21
-  * also M5 Stamp C3
-* SCL: 6 / SDA: 5
-* SCK: 10 / MISO: 8 / MOSI: 7
-* Neopixel: 2
-* Boot: 9
-
-M5 Stamp C3 has two sets of four pin headers at the bottom of the board as part of the standard 2.54 header set on opposite sides. Just to the inside of each one is a 2.0 pitch replica header. For some reason one of the sets is pin 18/19 which is USB and the other is just 0/1 with no notes about what to do with this header you're given a special connector for.&#x20;
-
-ESP32-C3-DevKit-RUST-1
-
-* Neopixel: 2
-* SCL8/SDA10
-
-## Datasheets
-
-* 4x - [https://datasheet.lcsc.com/lcsc/2203221230\_Seaward-Elec-SE8650K1-HF\_C2838442.pdf](https://datasheet.lcsc.com/lcsc/2203221230\_Seaward-Elec-SE8650K1-HF\_C2838442.pdf)
-*
+* Switch Panel (Unnamed)
+* PwrTool Family
+  * Large main system shunt
+  * Small Handheld coulometer with XT60, PP45, screw-in, etc. connection options
+  * Branch Manager - Smart power distribution panel&#x20;
+    * 8x High power p-channel mosfets
+  * Lighting Director - PWM Mosfet controller for DC lighting devices.
+* Backpacks - should be the same size as the FLIP itself.
+  * PWM mosfet 4x via direct connection to GPIO
+  * RS485 to TTL for Solar Chargers
+  * \~2-3A Switching power supply
+    * A few micro buck converter designs are in the works, this could just be an adapter.
+  * RGB Addressable Led Driver
