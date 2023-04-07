@@ -1,8 +1,4 @@
----
-description: Specs & Schematics
----
-
-# Docs
+# Specs & Files
 
 ## Pinout
 

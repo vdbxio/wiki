@@ -6,7 +6,7 @@
 
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/iobyte/README.md)
-  * [Docs](products/iobyte/docs.md)
+  * [Specs & Files](products/iobyte/docs.md)
 * [Hactus](products/hactus.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
