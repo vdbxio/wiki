@@ -35,7 +35,7 @@ The Hactus is a manufacturable and functional art piece by Chloe Madison (@cloma
 
 For flower pot + mold box + mold insert
 
-PCB reference (not actual board specs) - the throughholes can be a performance killer
+PCB reference (not actual board specs) - the through-holes can be a performance killer
 
 [https://a360.co/2oIjCiu](https://a360.co/2oIjCiu)
 

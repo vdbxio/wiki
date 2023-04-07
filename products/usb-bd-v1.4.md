@@ -1,5 +1,7 @@
 ---
 description: Quickly get 5v from those old Micro-USB cables you have lying around.
+cover: ../.gitbook/assets/BBD-Hero.jpg
+coverY: 0
 ---
 
 # USB-BD v1.4
