@@ -1,6 +1,8 @@
 ---
 oshwa_id: US000196
 description: The Hacker's Cactus
+cover: ../.gitbook/assets/hactus-hero-splay.jpg
+coverY: 0
 ---
 
 # Hactus
