@@ -7,6 +7,7 @@
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/iobyte/README.md)
   * [Docs](products/iobyte/docs.md)
+* [Hactus](products/hactus.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
@@ -17,7 +18,6 @@
 
 * [Archive](other-stuff/archive/README.md)
   * [Concrete Card Holder](other-stuff/archive/concrete-card-holder.md)
-  * [Hactus](other-stuff/archive/hactus.md)
   * [Handy Jr.](other-stuff/archive/handy-jr..md)
   * [Super-Ultra Low-Profile USB 2.0 Header](other-stuff/archive/super-ultra-low-profile-usb-2.0-header.md)
 * [3D Models](other-stuff/3d-models.md)

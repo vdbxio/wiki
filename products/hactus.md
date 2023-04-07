@@ -19,8 +19,16 @@ The Hactus is a manufacturable and functional art piece by Chloe Madison (@cloma
 
 ### Source Files
 
-PCB Layout [https://easyeda.com/clomads/hacker-cactus](https://easyeda.com/clomads/hacker-cactus)
+#### PCB Files @ EasyEDA / OSHWLAB
 
-3D Model in Fusion360 - for flower pot, mold box, and basis of PCB (not actual board specs) [https://a360.co/2oIjCiu](https://a360.co/2oIjCiu)
+[https://oshwlab.com/clomads/hacker-cactus](https://oshwlab.com/clomads/hacker-cactus)
 
-<figure><img src="../../.gitbook/assets/hactus-main-cropped.jpeg" alt=""><figcaption><p>The Hactus on a white background.</p></figcaption></figure>
+#### 3D Model in Fusion360&#x20;
+
+For flower pot, mold box
+
+Basis of PCB (not actual board specs) - the throughholes can be a performance killer
+
+[https://a360.co/2oIjCiu](https://a360.co/2oIjCiu)
+
+<figure><img src="../.gitbook/assets/hactus-main-cropped.jpeg" alt=""><figcaption><p>The Hactus on a white background.</p></figcaption></figure>
