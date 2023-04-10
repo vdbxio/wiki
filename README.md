@@ -42,3 +42,5 @@ I hope to someday have the opportunity to turn VDBX.io into a worker co-op that 
 ## Affiliate Marketing
 
 We are currently a part of the affiliate programs for Amazon and AliExpress with the potential for others. Any links to those platforms are likely to contain our affiliate code which tells them that we sent you. Your price doesn't change, but we may get a small kickback from your order for sending you over.
+
+test
