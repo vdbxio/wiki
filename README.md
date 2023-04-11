@@ -29,7 +29,7 @@ Voidbox Industries is yet another one of my brands making sure I don't have to d
 
 In 2017 I decided to dive deeper into a maker hobby most people would have already assumed I had years of experience with. Starting with mold making, concrete pouring and mentally mapping basic material science; all while learning to 3D model and design circuits. But I've always been a designer first ... just with a serious interest in doing so with technology. Graphic design and video production with a baseline set of IT skills has been the definition of my life up until the time I decided to dive head first into a self taught electronics engineering degree.&#x20;
 
-When COVID hit, I was focused on making concrete [knicknacks](broken-reference) and my sales immediately dried up, but a few months later, my unemployment finally went thru and I decided to make some changes. At the time I was living in a van and had a small private art studio in Berkeley amongst a shared artist warehouse. I realized this wasn't tenable long-term and I wanted to consolidate even more so that I wouldn't run into a situation where not being able to pay rent would turn to dire circumstances.&#x20;
+When COVID hit, I was focused on making concrete [knicknacks](concrete/concrete-card-holder.md) and my sales immediately dried up, but a few months later, my unemployment finally went thru and I decided to make some changes. At the time I was living in a van and had a small private art studio in Berkeley amongst a shared artist warehouse. I realized this wasn't tenable long-term and I wanted to consolidate even more so that I wouldn't run into a situation where not being able to pay rent would turn to dire circumstances.&#x20;
 
 I found my bus in July 2020 and immediately started building and also moved in while it was still very much a prototype. Over the next couple years, I worked on building it closer and closer to my vision, while I prepped to get back to work as the world decided that COVID doesn't exist anymore. I spent  a significant amount of this time dealing with mental health issues , but I have recently gotten medial help and feel a lot better and am ready to go. Unfortunately this means I have to put my concrete work on hold until I can have a space to make that kind of mess again.
 
@@ -42,5 +42,3 @@ I hope to someday have the opportunity to turn VDBX.io into a worker co-op that 
 ## Affiliate Marketing
 
 We are currently a part of the affiliate programs for Amazon and AliExpress with the potential for others. Any links to those platforms are likely to contain our affiliate code which tells them that we sent you. Your price doesn't change, but we may get a small kickback from your order for sending you over.
-
-test

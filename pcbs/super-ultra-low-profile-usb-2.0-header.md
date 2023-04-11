@@ -4,6 +4,10 @@ description: For Motherboards
 
 # Super-Ultra Low-Profile USB 2.0 Header
 
+{% hint style="warning" %}
+These are no longer in production.
+{% endhint %}
+
 ## Summary
 
 A USB header for PC motherboards designed to be as minimal as possible. It may interfere with components on some motherboards. Its intended use is for keeping small flash-drives, wireless controllers, or USB license keys inside a computer enclosure.

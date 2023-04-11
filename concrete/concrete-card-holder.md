@@ -6,7 +6,9 @@ description: with Magnet & Steel Ball
 
 ## Summary
 
-A business card holder designed by Chloe Madison (@clomads) from a 3D model that was then 3D printed, molded, cast in concrete. Additionally it features a steel ball and magnet to keep cards in place. It is available for purchase from Chloe Madison's Etsy shop (clomads.etsy.com) or from Voidbox Industries via Amazon prime. You can make your own with the details in these docs.
+A business card holder designed by Chloe Madison (@clomads) as she was exploring concrete as a medium. It began as a 3D model that was 3D printed, molded, and then cast in concrete. It features a steel ball that interfaces with an embedded magnet to keep cards in place.
+
+It was sold via Chloe Madison's Etsy store and then under the Voidbox brand on Amazon through FBA. We no longer have the facilities to manufacture these, but hope to someday in the future.
 
 ## Source Overview
 

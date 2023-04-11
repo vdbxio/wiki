@@ -5,16 +5,28 @@ description: Power your Apple TV with USB-C
 # USB-C Mod for Apple TV 2022
 
 {% hint style="danger" %}
-This project is currently in TESTING phase and will be released when it's complete.
+Scheduled to be available by May 23
 {% endhint %}
 
 {% hint style="info" %}
-Make sure you have a 2022 Apple TV sometimes referred to as third generation (of the black box versions). This will not work on other Apple TVs due to changes in layout and voltage.
+Make sure you have a 2022 Apple TV, sometimes referred to as third generation (of the black box versions). This will not work on other Apple TVs due to changes in layout and voltage change from 12v to 4.3v
 {% endhint %}
 
-## Tools Needed
+## Tools Note
 
-Requires a Torx T7 and T5 bit but you might be able to get away with just a T6
+{% hint style="info" %}
+Torx T7 and T5 are used by Apple, but we've noticed a T6 should manage to get both. **We've included a T6 allen-key with your kit.**
+{% endhint %}
+
+## Included in kit:
+
+* 3x Guitar picks to open case
+* T6 Allen key to remove power supply & power connector
+* 3D Printed insert for power connector opening
+* 3D Printed spacer and insulator
+* The Modkit PCB with LDO
+* 2x M2.5x10mm Screws
+* Quick Start Card
 
 ## Summary
 
@@ -22,7 +34,7 @@ The AppleTV seems to have always been the only TV streaming box that isn't power
 
 ## Opening the Apple TV
 
-Use the included guitar picks to open the AppleTV by pyring between the bottom and side wall.&#x20;
+Use the included guitar picks to open the AppleTV by inserting them into the seam near the bottom edge to release some clips. This can be tricky if you aren't used to it as it is nearly right on the corner and very well hidden.&#x20;
 
 1. There is a slight lip inward and then it goes straight up.&#x20;
 2. There are three clips on each edge with the side clips about 5mm in from the corner radius
@@ -45,9 +57,17 @@ Use the included guitar picks to open the AppleTV by pyring between the bottom a
 6. Fasten the two M2.5 Torx head screws.
 7. Plug in any USB-C cable and charger.
 
+## Design Files
+
+Coming Soon
+
 ## Changelog
 
+23.04.10
 
+* Tested with 5.1v direct from USB, would not boot. Recovered when given its average 4.7v ish.
+* OE PSU was 4.3v, but Diode does about 4.7v and is not super stable based on current draw.
+* LDO add-on board designed and ordered.
 
 v1.0 - First run in testing
 
