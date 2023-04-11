@@ -22,12 +22,6 @@
 * [Handy Jr.](concrete/handy-jr..md)
 * [Aura Qi](concrete/aura-qi.md)
 
-## Other Stuff
-
-* [3D Models](other-stuff/3d-models.md)
-* [Prototypes (Archive)](other-stuff/prototypes-archive.md)
-* [Prototypes (Current)](other-stuff/prototypes-current.md)
-
 ## Prototypes
 
 * [VDBX/Flip Platform](prototypes/vdbx-flip-platform.md)
@@ -37,3 +31,7 @@
   * [Dimensions & Specs](prototypes/unnamed-switch-panel/dimensions-and-specs.md)
 * [PwrTool 500](prototypes/usb-c-mod-kit-for-appletv-4k/README.md)
   * [Installation](prototypes/usb-c-mod-kit-for-appletv-4k/installation.md)
+
+## 3D Models
+
+* [Coming Soon](3d-models/coming-soon.md)
