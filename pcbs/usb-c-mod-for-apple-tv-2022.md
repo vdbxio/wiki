@@ -2,10 +2,10 @@
 description: Power your Apple TV with USB-C
 ---
 
-# USB-C Mod for Apple TV 2022
+# USB-C Modkit for Apple TV 2022
 
 {% hint style="danger" %}
-Scheduled to be available by May 23
+Scheduled to be available by early to mid May 2023
 {% endhint %}
 
 {% hint style="info" %}

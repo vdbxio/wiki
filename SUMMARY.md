@@ -13,7 +13,7 @@
 
 * [PWM Lighting Adapter](pcbs/pwm-lighting-adapter.md)
 * [Super-Ultra Low-Profile USB 2.0 Header](pcbs/super-ultra-low-profile-usb-2.0-header.md)
-* [USB-C Mod for Apple TV 2022](pcbs/usb-c-mod-for-apple-tv-2022.md)
+* [USB-C Modkit for Apple TV 2022](pcbs/usb-c-mod-for-apple-tv-2022.md)
 * [CSR8635 Adapter](pcbs/csr8635-adapter.md)
 
 ## Concrete
