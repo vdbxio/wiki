@@ -70,11 +70,5 @@ This section assumes you've decided to use our mix above of Cement, Glass Fiber,
 
 We sand the outside surfaces with a random orbit sander at 60 grit to cut the 'skin', 220 to smooth it out, and 400 polishes it. The inside flat surfaces go through a similar grit cadence, but with an oscilating tool and triangular diamond pads. The cylindrical cavity for the ball is the hardest to sand. We're still looking for a good mechanical means to do this and have recently settled on a 1-inch dowel or pipe with sand paper around it and going at it by hand.
 
-Feel free to direct any questions about technique, etc. to the issues tab here on GitHub
+Feel free to direct any questions about technique, etc. to the issues tab on GitHub.
 
-## Materials
-
-TODO: Add Links
-
-[![Creative Commons License](https://camo.githubusercontent.com/0df8fd3e955d97ae69dedfa2568fb2dd4186cd60917ca40aefabb7466d5b46ce/68747470733a2f2f692e6372656174697665636f6d6d6f6e732e6f72672f6c2f62792d73612f342e302f38387833312e706e67)](http://creativecommons.org/licenses/by-sa/4.0/)\
-This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
