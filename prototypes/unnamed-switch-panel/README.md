@@ -4,7 +4,7 @@ description: 8-in-4 Home Assistant Remote
 
 # Unnamed Switch Panel
 
-<figure><img src="../../../.gitbook/assets/Shift-Prototype1@0.5x.jpg" alt=""><figcaption><p>Prototype 001 - fully 3d printed with gaffer tape covering housing</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Shift-Prototype1.jpg" alt=""><figcaption><p>Prototype 001 - fully 3d printed with gaffer tape covering housing</p></figcaption></figure>
 
 ## Working Names
 
