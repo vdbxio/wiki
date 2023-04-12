@@ -7,10 +7,8 @@ coverY: 0
 
 # Hactus
 
-[![oshwa](https://img.shields.io/badge/US000196-OSHWA-blue?style=for-the-badge)](https://certification.oshwa.org/us000196.html)
-
 {% hint style="warning" %}
-We currently do not have the resources for concrete production, but still have Hactus PCB sets for sale. A 3MF and STL file are provided for you to print the pots yourself. You can also place the Hactus in the ground next to your real plants!!!
+We no-longer have the resources for concrete production, but still have Hactus PCB sets for sale. A 3MF and STL file are provided for you to print the pots yourself. You can also place the Hactus in the ground next to your real plants!!!
 {% endhint %}
 
 {% file src="../.gitbook/assets/hactus-pot.3mf" %}
