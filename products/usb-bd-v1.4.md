@@ -18,7 +18,7 @@ A handy Micro-USB power and data breakout designed for breadboards, but useful i
 
 ![Features & Pin-Out Overview](https://raw.githubusercontent.com/vdbxio/USB-BD/master/git-docs-features-dark.png)
 
-### Overview
+## Overview
 
 The USB-BD breaks out the Micro-USB 5v vbus and data pair to standard pin headers on a 2.54mm/0.1" pitch grid. The pin headers are on opposite sides of the Micro-USB port for stability and strength when in used on a breadboard. A slide switch is optionally used to switch both 5v+ terminals simultaneously, otherwise solder the PWR jumper on the bottom to bypass the need for a switch and give yourself current capability boost.
 
@@ -32,13 +32,13 @@ The OTG solder jumper on the bottom pulls the ID pin to ground. It is there for 
 
 
 
-### Manufacturing
+## Manufacturing
 
 We currently have JLCPCB manufacture the USB-BD v1.4 with packing and logistics handled in California. They are currently being sold in 5-packs on Tindie with free shipping in the USA and are working to get them back on Amazon.
 
 Previous versions were pick & placed by hand with a significant error rate.
 
-### Background
+## Background
 
 By: Chloe Madison (@clomads)
 
@@ -46,7 +46,7 @@ I've always found myself doing electronics projects that require 5v... and speci
 
 USB-BD doesn't actually mean anything. It was a silly name an ex called them when I was first designing them. Pronounced "US Bibbity" I also call them "BBDs" for short.
 
-### Files
+## Design Files
 
 The USB-BD is currently being developed in EasyEDA Pro. The link below will take you to the public project where you can inspect and fork the schematic and board layout.
 
@@ -57,7 +57,7 @@ The USB-BD is currently being developed in EasyEDA Pro. The link below will take
 * Add exports to repo for backup and/or conversion to other formats.
 * More useage diagrams
 
-### Version history
+## Version history
 
 2023.2 (v1.4) - Swap push switch for slider switch, swap data JST2.0 for 2.54mm pin header, PWR jumper on bottom, JLCPCB
 
@@ -67,7 +67,7 @@ v1.0a/v1.1 - Changed footprint to LCSC USB port and made slight modifications to
 
 v1.0 - Initial release - First batch with short horn USB port from AliExpress
 
-### Changelog
+## Changelog
 
 March 2023
 
