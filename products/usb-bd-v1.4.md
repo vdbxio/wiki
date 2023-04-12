@@ -12,8 +12,6 @@ A Type-C variant is on its way, so let us know what you'd like to see!
 
 ## Summary
 
-[![oshwa](https://img.shields.io/badge/US000128-OSHWA-blue?style=for-the-badge)](https://certification.oshwa.org/us000128.html)
-
 A handy Micro-USB power and data breakout designed for breadboards, but useful in all kinds of projects. Put that drawer full of micro USB cables to good use.
 
 ![Features & Pin-Out Overview](https://raw.githubusercontent.com/vdbxio/USB-BD/master/git-docs-features-dark.png)
@@ -55,7 +53,8 @@ The USB-BD is currently being developed in EasyEDA Pro. The link below will take
 ### TODO
 
 * Add exports to repo for backup and/or conversion to other formats.
-* More useage diagrams
+* More usage diagrams
+* update OSHWA info schema
 
 ## Version history
 
