@@ -1,3 +1,5 @@
+substitutions:
+  entid: counter1
 
 globals:
   - id: ${entid}_hours

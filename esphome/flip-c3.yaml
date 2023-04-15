@@ -9,7 +9,7 @@ substitutions:
   name: "flip-c3"
   friendly_name: "FLIP-C3"
   project_name: "vdbxio.FLIP-C3"
-  project_version: "0.9.8"
+  project_version: "0.9.9"
   package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml"
   
 
@@ -22,5 +22,5 @@ packages:
   # aht20: !include packages/parts/aht20.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
   # shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
-  # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
+  hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
   # shunt226: !include  {file: "packages/parts/shunt226.yaml", vars: {address: 0x40, entid: shunt2}}
