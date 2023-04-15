@@ -2,6 +2,9 @@
 substitutions:
   ap_password: "GenericPassword"
 
+
+api:
+ota:
 # WIFI SHIT
 wifi:
   ssid: initial_ap            # !secret wifi_ssid
@@ -14,6 +17,10 @@ captive_portal:
 web_server:
   local: True
 
+time:
+  - platform: homeassistant
+
+  
 
 sensor:
   - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB

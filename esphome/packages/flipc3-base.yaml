@@ -28,13 +28,7 @@ i2c:
   frequency: 100k
     
 logger:
-api:
-ota:
 
-time:
-  - platform: homeassistant
-
-  
 button:
   - platform: restart
     name: ${friendly_name} Restart
@@ -43,30 +37,30 @@ button:
     disabled_by_default: True
 
 
-# WIFI SHIT
-wifi:
-  ap:
-    password: ${ap_password}
+# # WIFI SHIT
+# wifi:
+#   ap:
+#     password: ${ap_password}
 
-captive_portal:
+# captive_portal:
 
-web_server:
-  local: True
+# web_server:
+#   local: True
 
 
 sensor:
   - platform: internal_temperature
     name: "ESP32-C3 Temperature"
-  - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
-    name: "WiFi Signal dB"
-    id: wifi_signal_db
-    update_interval: 30s
-    entity_category: "diagnostic"
-  - platform: copy # Reports the WiFi signal strength in %
-    source_id: wifi_signal_db
-    name: "WiFi Signal Percent"
-    filters:
-      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
-    unit_of_measurement: "%"
-    entity_category: "diagnostic"
+  # - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
+  #   name: "WiFi Signal dB"
+  #   id: wifi_signal_db
+  #   update_interval: 30s
+  #   entity_category: "diagnostic"
+  # - platform: copy # Reports the WiFi signal strength in %
+  #   source_id: wifi_signal_db
+  #   name: "WiFi Signal Percent"
+  #   filters:
+  #     - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+  #   unit_of_measurement: "%"
+  #   entity_category: "diagnostic"
     
