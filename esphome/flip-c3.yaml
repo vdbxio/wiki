@@ -12,14 +12,15 @@ substitutions:
   project_version: "0.9.0"
   package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml@main"
   repo_path: "github://vdbxio/wiki/esphome/"
+  #repo_path: "!include "
 
 packages:
-  flipc3: !include ${repo_path}packages/flipc3-base.yaml
-  dash: !include ${repo_path}packages/dash-import.yaml
-  uart: !include ${repo_path}packages/flipc3-uart.yaml
-  wifi: !include ${repo_path}packages/flipc3-wifi.yaml
+  flipc3: github://vdbxio/wiki/esphome/packages/flipc3-base.yaml
+  dash: github://vdbxio/wiki/esphome/packages/dash-import.yaml
+  uart: github://vdbxio/wiki/esphome/packages/flipc3-uart.yaml
+  wifi: github://vdbxio/wiki/esphome/packages/flipc3-wifi.yaml
   # aht20: !include packages/parts/aht20.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
   # shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
-  hoursCounter: !include  {file: "${repo_path}packages/parts/hours-count.yaml", vars: { entid: counter1 }}
+  # hoursCounter: !include  {file: "${repo_path}packages/parts/hours-count.yaml", vars: { entid: counter1 }}
   # shunt226: !include  {file: "packages/parts/shunt226.yaml", vars: {address: 0x40, entid: shunt2}}
