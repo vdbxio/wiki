@@ -43,11 +43,8 @@ button:
     disabled_by_default: True
 
 
-
 # WIFI SHIT
 wifi:
-  ssid: initial_ap            # !secret wifi_ssid
-  password: averylongpassword  # !secret wifi_password
   ap:
     password: ${ap_password}
 

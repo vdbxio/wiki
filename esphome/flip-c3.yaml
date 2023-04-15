@@ -9,14 +9,14 @@ substitutions:
   name: "flip-c3"
   friendly_name: "FLIP-C3"
   project_name: "vdbxio.FLIP-C3"
-  project_version: "0.9.6"
+  project_version: "0.9.8"
   package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml"
   
 
 packages:
   flipc3: github://vdbxio/wiki/esphome/packages/flipc3-base.yaml
   dash: github://vdbxio/wiki/esphome/packages/dash-import.yaml
-  uart: github://vdbxio/wiki/esphome/packages/flipc3-uart.yaml
+  # uart: github://vdbxio/wiki/esphome/packages/flipc3-uart.yaml
   # wifi: github://vdbxio/wiki/esphome/packages/flipc3-wifi.yaml
   leds: github://vdbxio/wiki/esphome/packages/flipc3-leds.yaml
   # aht20: !include packages/parts/aht20.yaml
