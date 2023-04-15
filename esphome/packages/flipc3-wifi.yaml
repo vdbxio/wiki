@@ -7,11 +7,12 @@ api:
 ota:
 # WIFI SHIT
 wifi:
-  # ssid: initial_ap            # !secret wifi_ssid
-  # password: averylongpassword  # !secret wifi_password
+  ssid: initial_ap            # !secret wifi_ssid
+  password: averylongpassword  # !secret wifi_password
   fast_connect: True
   ap:
     password: ${ap_password}
+    ap_timeout: 2min
 
 captive_portal:
 
