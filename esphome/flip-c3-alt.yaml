@@ -6,9 +6,9 @@
 # 
 
 substitutions:
-  name: "flip-c3"
-  friendly_name: "FLIP-C3"
-  project_name: "vdbxio.FLIP-C3"
+  name: "flip-c3-alt"
+  friendly_name: "FLIP-C3 ALT"
+  project_name: "vdbxio.FLIP-C3-alt"
   project_version: "0.9.6"
   ap_password: "GenericPassword"
   package_git: "github://vdbxio/wiki/esphome/flip-c3-alt.yaml@main"
