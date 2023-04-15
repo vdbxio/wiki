@@ -4,8 +4,8 @@ substitutions:
 
 # WIFI SHIT
 wifi:
-  ssid: init_ssid
-  password: init_pass
+  ssid: initial_ap            # !secret wifi_ssid
+  password: averylongpassword  # !secret wifi_password
   ap:
     password: ${ap_password}
 
@@ -13,14 +13,6 @@ captive_portal:
 
 web_server:
   local: True
-
-#IMPROV
-esp32_improv:
-  authorizer: none
-
-# Improv Serial doesn't seem to work via C3's native usb connection
-# improv_serial:
-#   next_url: http://vdbx.io
 
 
 sensor:
