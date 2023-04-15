@@ -21,5 +21,5 @@ packages:
   # aht20: !include packages/parts/aht20.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
   # shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
-  # hoursCounter: !include  {file: "${repo_path}packages/parts/hours-count.yaml", vars: { entid: counter1 }}
+  hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
   # shunt226: !include  {file: "packages/parts/shunt226.yaml", vars: {address: 0x40, entid: shunt2}}
