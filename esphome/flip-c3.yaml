@@ -10,7 +10,7 @@ substitutions:
   friendly_name: "FLIP-C3"
   project_name: "vdbxio.FLIP-C3"
   project_version: "0.9.6"
-  package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml@main"
+  package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml"
   
 
 packages:

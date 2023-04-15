@@ -11,7 +11,7 @@ substitutions:
   project_name: "vdbxio.FLIP-C3-alt"
   project_version: "0.9.6"
   ap_password: "GenericPassword"
-  package_git: "github://vdbxio/wiki/esphome/flip-c3-alt.yaml@main"
+  package_git: "github://vdbxio/wiki/esphome/flip-c3-alt.yaml"
   status_pin: "10"
   rgb_pin: "8"
 

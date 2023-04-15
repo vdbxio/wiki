@@ -12,7 +12,7 @@ esp32:
     type: arduino
 
 dashboard_import:
-  package_import_url: github://vdbxio/wiki/esphome/prototype-main.yaml@main
+  package_import_url: github://vdbxio/wiki/esphome/prototype-main.yaml
 
 # Enable logging
 logger:
