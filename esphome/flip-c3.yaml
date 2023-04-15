@@ -11,6 +11,7 @@ substitutions:
   project_name: "vdbxio.FLIP-C3"
   project_version: "0.9.6"
   package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml@main"
+  
 
 packages:
   flipc3: github://vdbxio/wiki/esphome/packages/flipc3-base.yaml
