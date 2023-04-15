@@ -2,7 +2,7 @@ substitutions:
   name: flip-c3-00cca4
   friendly_name: FLIP-C3 00cca4
 packages:
-  vdbxio.FLIP-C3: github://vdbxio/wiki/esphome/flip-c3-alt.yaml@main
+  vdbxio.FLIP-C3: github://vdbxio/wiki/esphome/flip-c3.yaml@main
 esphome:
   name: ${name}
   name_add_mac_suffix: false

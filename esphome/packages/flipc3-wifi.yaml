@@ -4,6 +4,8 @@ substitutions:
 
 # WIFI SHIT
 wifi:
+  ssid: init_ssid
+  password: init_pass
   ap:
     password: ${ap_password}
 
