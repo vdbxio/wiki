@@ -111,7 +111,7 @@ sensor:
     - multiply: 2.0
   - platform: adc
     pin: 3
-    name: "ADC Pin 4"
+    name: "ADC Pin 3"
     accuracy_decimals: 5
     update_interval: 1s
     attenuation: auto
