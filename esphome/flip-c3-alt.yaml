@@ -14,7 +14,6 @@ substitutions:
   package_git: "github://vdbxio/wiki/esphome/flip-c3-alt.yaml@main"
   status_pin: "10"
   rgb_pin: "8"
-  #repo_path: "!include "
 
 # FLIP C3 Baseline Package 23.04-dev
 # Voidbox Industries & Chloe Madison
