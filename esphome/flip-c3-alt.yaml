@@ -9,10 +9,9 @@ substitutions:
   name: "flip-c3"
   friendly_name: "FLIP-C3"
   project_name: "vdbxio.FLIP-C3"
-  project_version: "0.9.4"
+  project_version: "0.9.5"
   ap_password: "GenericPassword"
   package_git: "github://vdbxio/wiki/esphome/flip-c3-alt.yaml@main"
-  repo_path: "github://vdbxio/wiki/esphome/"
   status_pin: "10"
   rgb_pin: "8"
   #repo_path: "!include "
@@ -22,6 +21,8 @@ substitutions:
 # VDBX.io / @clomads
 # CC-BY-SA 4.0
 
+dashboard_import:
+  package_import_url: ${package_git}
 
 esphome:
   name: ${name}
@@ -59,7 +60,7 @@ button:
     disabled_by_default: True
 
 
-# WIFI SHIT
+# WIFI
 wifi:
   ap:
     password: ${ap_password}
@@ -68,14 +69,6 @@ captive_portal:
 
 web_server:
   local: True
-
-#IMPROV
-esp32_improv:
-  authorizer: none
-
-# Improv Serial doesn't seem to work via C3's native usb connection
-# improv_serial:
-#   next_url: http://vdbx.io
 
 
 sensor:
