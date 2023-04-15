@@ -62,13 +62,32 @@ button:
 
 # WIFI
 wifi:
+  ssid: initial_ap            # !secret wifi_ssid
+  password: asdfasdfasdfasdf  # !secret wifi_password
   ap:
     password: ${ap_password}
+
+
+  # # default is 20, 17 is recommended.
+  # output_power: 17
+
+  # # using fast_connect as default since it is required for hidden networks.
+  # fast_connect: true
+
+  # forced_addr: 82
+  # global_addr: global_forced_addr
+
+  # ap:
+  #   ap_timeout: $wifi_ap_timeout
 
 captive_portal:
 
 web_server:
-  local: True
+
+  
+
+
+
 
 
 sensor:
