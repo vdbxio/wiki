@@ -3,6 +3,9 @@
 # VDBX.io / @clomads
 # CC-BY-SA 4.0
 
+substitutions:
+  ap_password: "GenericPassword"
+
 
 esphome:
   name: ${name}
@@ -42,3 +45,32 @@ button:
     name: Restart with Factory Default Settings
     disabled_by_default: True
 
+
+
+# WIFI SHIT
+wifi:
+  ssid: initial_ap            # !secret wifi_ssid
+  password: averylongpassword  # !secret wifi_password
+  ap:
+    password: ${ap_password}
+
+captive_portal:
+
+web_server:
+  local: True
+
+
+sensor:
+  - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
+    name: "WiFi Signal dB"
+    id: wifi_signal_db
+    update_interval: 30s
+    entity_category: "diagnostic"
+  - platform: copy # Reports the WiFi signal strength in %
+    source_id: wifi_signal_db
+    name: "WiFi Signal Percent"
+    filters:
+      - lambda: return min(max(2 * (x + 100.0), 0.0), 100.0);
+    unit_of_measurement: "%"
+        entity_category: "diagnostic"
+    

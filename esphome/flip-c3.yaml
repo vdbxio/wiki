@@ -16,7 +16,7 @@ packages:
   flipc3: github://vdbxio/wiki/esphome/packages/flipc3-base.yaml
   dash: github://vdbxio/wiki/esphome/packages/dash-import.yaml
   uart: github://vdbxio/wiki/esphome/packages/flipc3-uart.yaml
-  wifi: github://vdbxio/wiki/esphome/packages/flipc3-wifi.yaml
+  # wifi: github://vdbxio/wiki/esphome/packages/flipc3-wifi.yaml
   leds: github://vdbxio/wiki/esphome/packages/flipc3-leds.yaml
   # aht20: !include packages/parts/aht20.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
