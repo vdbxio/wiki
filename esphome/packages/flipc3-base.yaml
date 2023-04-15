@@ -21,8 +21,8 @@ esp32:
     type: arduino
 
 i2c:
-  sda: 3
-  scl: 2
+  sda: 1
+  scl: 0
   scan: True
   id: bus_a
   frequency: 100k
