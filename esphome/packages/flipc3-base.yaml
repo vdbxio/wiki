@@ -12,9 +12,6 @@ esphome:
     name: "${project_name}"
     version: "${project_version}"
 
-packages:
-  flipleds: !include flipc3-leds.yaml
-
 esp32:
   board: esp32-c3-devkitm-1
   framework:
@@ -31,15 +28,12 @@ logger:
 api:
 ota:
 
-
-
 time:
   - platform: homeassistant
 
 sensor:
   - platform: internal_temperature
     name: "ESP32-C3 Temperature"
-
    
 button:
   - platform: restart
