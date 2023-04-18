@@ -4,7 +4,7 @@ description: A platform for creating IOT devices on off-grid battery systems.
 
 # VDBX/Flip Platform
 
-<figure><img src="../.gitbook/assets/flip-c3-render-mktg-prelaunch-v090.jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/flip-c3-render-mktg-prelaunch-v090.jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
 
 ## Design Philosophy
 

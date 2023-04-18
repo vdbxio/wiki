@@ -24,7 +24,8 @@
 
 ## Prototypes
 
-* [VDBX/Flip Platform](prototypes/vdbx-flip-platform.md)
+* [VDBX/Flip Platform](prototypes/vdbx-flip-platform/README.md)
+  * [23.04 - First Batch Testing](prototypes/vdbx-flip-platform/23.04-first-batch-testing.md)
 * [Unnamed Switch Panel](prototypes/unnamed-switch-panel/README.md)
   * [Installation](prototypes/unnamed-switch-panel/installation.md)
   * [ESPHome](prototypes/unnamed-switch-panel/esphome.md)
