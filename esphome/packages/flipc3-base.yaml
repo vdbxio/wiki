@@ -51,6 +51,7 @@ button:
 sensor:
   - platform: internal_temperature
     name: "ESP32-C3 Temperature"
+    update_interval: 1s
   # - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
   #   name: "WiFi Signal dB"
   #   id: wifi_signal_db
