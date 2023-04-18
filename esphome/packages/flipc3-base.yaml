@@ -5,6 +5,10 @@
 
 substitutions:
   ap_password: "GenericPassword"
+  name: "flip-c3"
+  friendly_name: "FLIP-C3"
+  project_name: "vdbxio.Flip-C3"
+  project_version: "0.9.0"
 
 
 esphome:
