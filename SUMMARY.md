@@ -36,4 +36,5 @@
 
 ## 3D Models
 
-* [Coming Soon](3d-models/coming-soon.md)
+* [M12 Drill/Driver Friction Fit Holder](3d-models/m12-drill-driver-friction-fit-holder.md)
+* [More Coming Soon](3d-models/more-coming-soon.md)
