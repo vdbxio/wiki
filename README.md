@@ -25,7 +25,7 @@ We make a lot of things that we sell, we also make a lot that is solely to be sh
 
 ## Message from Chloe
 
-Voidbox Industries is yet another one of my brands making sure I don't have to do the standard 9-5 and instead can rely on my art. This time through has been a lot more of an event and the last two bosses I told to go fuck themself paid me pretty well so it's clearly not always worth it, but making art is a compulsion for me and I can't imagine doing anything else (aside from a new medium that my ADHD has taken a liking to). Also I'm autistic.... have fun with that.&#x20;
+Voidbox Industries is yet another one of my brands making sure I don't have to do a bland 9-5 and instead can rely on my art. It's not always worth it, but making art is a compulsion for me and I can't imagine doing anything else (aside from a new medium that my ADHD has taken a liking to). Also I'm autistic.... have fun with that.&#x20;
 
 In 2017 I decided to dive deeper into a maker hobby most people would have already assumed I had years of experience with. Starting with mold making, concrete pouring and mentally mapping basic material science; all while learning to 3D model and design circuits. But I've always been a designer first ... just with a serious interest in doing so with technology. Graphic design and video production with a baseline set of IT skills has been the definition of my life up until the time I decided to dive head first into a self taught electronics engineering degree.&#x20;
 
