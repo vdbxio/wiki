@@ -1,8 +1,8 @@
 ---
-description: A platform for creating IOT devices on off-grid battery systems.
+description: A platform to create IOT devices for 12-48v battery systems.
 ---
 
-# VDBX/Flip Platform
+# FLIP Platform
 
 <figure><img src="../.gitbook/assets/flip-c3-render-mktg-prelaunch-v090.jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
 
@@ -42,20 +42,20 @@ I2C should be considered a high-priority interconnect due to its capability for 
 
 The first mainboard for the FLIP platform is an ESP32-C3 board that can be deployed on any battery system up to 16s LifePO4.
 
-* On-board 2A buck-converter tolerant up to 60v DC
+* On-board 2A buck-converter tolerant **up to 60v DC**
 * Low-profile press-in wire connector for DC input
   * Reverse polarity protection.
   * 24-18AWG Solid
   * 22-20AWG Stranded
   * 2x2P 2.54mm pass-through header for stacking
-* ESP32-C3 designed for ESPHome and Home Assistant.
-* USB-C input for alt power and programming
+* **ESP32-C3** designed for ESPHome and Home Assistant.
+* **USB-C** input for alt power and programming
   * Reverse current protection from DC input via diode
     * Allows for programming in place while protecting both devices.
 * LEDs on-board
-  * WS2812B RGB - `GPIO8`
+  * **WS2812B RGB** - `GPIO8`
   * Purple(?) LED - `GPIO10`
-* UART and I2C on Qwicc/Stemma QT compatible headers (SH 1.0-4P)
+* UART and I2C on **Qwicc/Stemma QT** compatible headers (SH 1.0-4P)
   * I2C:  `SCL0/SDA1`
   * UART:  `RX20/TX21`
 * Boot Button `GPIO9`
@@ -79,9 +79,9 @@ It is likely that the C3 will not be enough as the platform grows and requires m
 * Backpacks - should be the same size as the FLIP itself.
   * PWM mosfet 4x via direct connection to GPIO
   * RS485 to TTL for Solar Chargers
-  * \~2-3A Switching power supply
-    * A few micro buck converter designs are in the works, this could just be an adapter.
-  * RGB Addressable Led Driver
+  * 3A+ Switching power supply
+    * 16020 has a 16030 pin compatible 3A version but will require external component selection. Good for LED control board?
+  * RGB Addressable LED control (with DC buck?)
 
 ## Changelog
 

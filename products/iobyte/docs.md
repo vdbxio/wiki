@@ -1,5 +1,7 @@
 # Specs & Files
 
+All off - Default address `0x20`
+
 ## Pinout
 
 <figure><img src="../../.gitbook/assets/iobyte-pinout.png" alt=""><figcaption><p>v1.2 Pinout</p></figcaption></figure>
