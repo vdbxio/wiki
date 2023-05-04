@@ -1,5 +1,6 @@
 ---
 description: with Magnet & Steel Ball
+coverY: 0
 ---
 
 # Concrete Card Holder
