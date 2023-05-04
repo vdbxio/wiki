@@ -1,5 +1,6 @@
 ---
 description: with Magnet & Steel Ball
+cover: ../.gitbook/assets/P1030731.jpg
 coverY: 0
 ---
 
@@ -72,4 +73,3 @@ This section assumes you've decided to use our mix above of Cement, Glass Fiber,
 We sand the outside surfaces with a random orbit sander at 60 grit to cut the 'skin', 220 to smooth it out, and 400 polishes it. The inside flat surfaces go through a similar grit cadence, but with an oscilating tool and triangular diamond pads. The cylindrical cavity for the ball is the hardest to sand. We're still looking for a good mechanical means to do this and have recently settled on a 1-inch dowel or pipe with sand paper around it and going at it by hand.
 
 Feel free to direct any questions about technique, etc. to the issues tab on GitHub.
-
