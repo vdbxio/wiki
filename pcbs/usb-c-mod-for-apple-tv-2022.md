@@ -5,26 +5,26 @@ description: Power your Apple TV with USB-C
 # USB-C Modkit for Apple TV 2022
 
 {% hint style="danger" %}
-Scheduled to be available by early to mid May 2023
+May 2023 - Packaging is being finalized and early models are available to ship without printed instructions.
 {% endhint %}
 
 {% hint style="info" %}
-Make sure you have a 2022 Apple TV, sometimes referred to as third generation (of the black box versions). This will not work on other Apple TVs due to changes in layout and voltage change from 12v to 4.3v
+**For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants.
 {% endhint %}
 
 ## Tools Note
 
 {% hint style="info" %}
-Torx T7 and T5 are used by Apple, but we've noticed a T6 should manage to get both. **We've included a T6 allen-key with your kit.**
+Torx T7 and T5 are used by Apple, but we've noticed a T6 _should_ manage to get both. **We've included a T6 allen-key with your kit.**
 {% endhint %}
 
 ## Included in kit:
 
+* 1x Modkit PCB with LDO
 * 3x Guitar picks to open case
 * T6 Allen key to remove power supply & power connector
-* 3D Printed insert for power connector opening
-* 3D Printed spacer and insulator
-* The Modkit PCB with LDO
+* Connector shroud - `3D Printed`
+* Insulating spacer - `3D Printed`
 * 2x M2.5x10mm Screws
 * Quick Start Card
 
@@ -34,7 +34,7 @@ The AppleTV seems to have always been the only TV streaming box that isn't power
 
 ## Opening the Apple TV
 
-Use the included guitar picks to open the AppleTV by inserting them into the seam near the bottom edge to release some clips. This can be tricky if you aren't used to it as it is nearly right on the corner and very well hidden.&#x20;
+Use the included guitar picks to open the Apple TV by inserting them into the seam near the bottom edge to release some clips. This can be tricky if you aren't used to it as it is nearly right on the corner and very well hidden.&#x20;
 
 1. There is a slight lip inward and then it goes straight up.&#x20;
 2. There are three clips on each edge with the side clips about 5mm in from the corner radius
@@ -45,23 +45,37 @@ Use the included guitar picks to open the AppleTV by inserting them into the sea
 
 1. &#x20;Remove the AC power supply&#x20;
    1. 4 GND + 1 PWR corner screws `TORX T7`
-   2. 2 screws for power connector
-2. Place the 3D printed baffle in the power plug opening,
-   1. It might snap in, it might not
+   2. 2 screws for power connector `TORX T5`
+2. Place the shroud in the power plug opening,
+   1. It _should_ snap in, it might not
    2. Holding it in place for a bit with the warmth of your hand may help.
    3. The next step might thank you&#x20;
-3. Assemble the mod kit if its not already
-   1. The two screws that came with the kit should be through the circuit board and 3D printed insulator. If you're lucky they're still friction fit into place from us and you can take the whole thing out as one piece.
+3. Pre-assemble the mod kit:
+   1. The two holes in the spacer are a bit smaller than the included M2.5 screws
+   2. Use this to your advantage to attach the spacer to the circuit board as shown in \[DIAGRAM]
+   3. The screw should go through the top of circuit board and into the spacer
+   4. The spacer is symmetrical and can be installed in any direction
 4. With the text up and 3d print down, align the USB-C port with the hole in the shroud we just put in.&#x20;
-5. You can then lay the board flat, following the contour of the chip's EMI shield and attempting to align the GND and PWR screws.
-6. Fasten the two M2.5 Torx head screws.
-7. Plug in any USB-C cable and charger.
+5. You can then lay the board flat, avoiding the silver shielding
+   1. Align the screw at the tip of the board with the inner of the two screw holes that are near each other.
+6. Fasten the two M2.5 screws until snug
+7. Plug in any USB-C cable and charger to test
+8. Replace cover.
 
 ## Design Files
 
-Coming Soon
+Circuit boards were designed in EasyEDA Pro and are available to fork via OSHWLab:
 
-## Changelog
+{% embed url="https://oshwlab.com/clomads/atv4k-usb" %}
+
+3D models were designed in Fusion 360 and **will be available soon**
+
+## Change Log
+
+23.05
+
+* LDO add-on board works and will be used to adapt the first batch for retail production
+* Re-design with LDO circuit on-board if first batch sells-out
 
 23.04.10
 
