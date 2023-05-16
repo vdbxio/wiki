@@ -68,11 +68,21 @@ Circuit boards were designed in EasyEDA Pro and are available to fork via OSHWLa
 
 {% embed url="https://oshwlab.com/clomads/atv4k-usb" %}
 
-3D models were designed in Fusion 360 and **will be available soon**
+3D models were designed in Fusion 360 (not parametric)
+
+{% file src="../.gitbook/assets/Apple TV USB-C Mod v21.f3d" %}
+ddddd
+{% endfile %}
+
+## Mesh files for Printing
+
+{% file src="../.gitbook/assets/Spacer-ATV2022Modkit.stl" %}
+
+{% file src="../.gitbook/assets/Shroud-ATV2022Modkit.stl" %}
 
 ## Change Log
 
-23.05
+d23.05
 
 * LDO add-on board works and will be used to adapt the first batch for retail production
 * Re-design with LDO circuit on-board if first batch sells-out
