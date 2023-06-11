@@ -8,6 +8,8 @@
 * [IOByte](products/iobyte/README.md)
   * [Specs & Files](products/iobyte/docs.md)
 * [Hactus](products/hactus.md)
+* [PwrTool 500](products/pwrtool500/README.md)
+  * [Installation](products/pwrtool500/installation.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
@@ -31,8 +33,6 @@
   * [Installation](prototypes/unnamed-switch-panel/installation.md)
   * [ESPHome](prototypes/unnamed-switch-panel/esphome.md)
   * [Dimensions & Specs](prototypes/unnamed-switch-panel/dimensions-and-specs.md)
-* [PwrTool 500](prototypes/usb-c-mod-kit-for-appletv-4k/README.md)
-  * [Installation](prototypes/usb-c-mod-kit-for-appletv-4k/installation.md)
 
 ## 3D Models
 
