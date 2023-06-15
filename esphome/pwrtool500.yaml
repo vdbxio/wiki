@@ -10,7 +10,7 @@ substitutions:
   friendly_name: "PwrTool500"
   project_name: "vdbxio.PwrTool500"
   project_version: "0.9.2"
-  package_git: "github://vdbxio/wiki/esphome/powertool500.yaml@main"
+  package_git: "github://vdbxio/wiki/esphome/pwrtool500.yaml@main"
 
 packages:
   flipc3: !include packages/flipc3-base.yaml
