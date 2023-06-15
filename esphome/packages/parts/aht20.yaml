@@ -4,4 +4,4 @@ sensor:
       name: "${friendly-name} Temperature"
     humidity:
       name: "${friendly-name} Humidity"
-    update_interval: 30s
+    update_interval: 15s

@@ -9,16 +9,18 @@ substitutions:
   name: pwrtool500
   friendly_name: "PwrTool500"
   project_name: "vdbxio.PwrTool500"
-  project_version: "0.9.1"
+  project_version: "0.9.2"
   package_git: "github://vdbxio/wiki/esphome/powertool500.yaml@main"
 
 packages:
   flipc3: !include packages/flipc3-base.yaml
   wifi: !include packages/flipc3-wifi.yaml
   dash: !include packages/dash-import.yaml
+  aht20: !include packages/parts/aht20.yaml
   # uart: !include packages/flipc3-uart.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
   shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
+
   # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
 
 
