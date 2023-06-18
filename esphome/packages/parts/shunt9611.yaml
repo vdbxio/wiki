@@ -3,7 +3,7 @@
 
 sensor:
   - platform: max9611
-    shunt_resistance: 0.005 ohm
+    shunt_resistance: 0.01 ohm
     gain: '1X'
     voltage:
         name: ${friendly_name} Voltage

@@ -20,7 +20,7 @@ packages:
   leds: !include packages/flipc3-leds.yaml
   # uart: !include packages/flipc3-uart.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
-  shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
+  # shunt9611: !include  {file: "packages/parts/shunt9611.yaml", vars: {address: 0x70, entid: shunt1 , interval: 1s }}
 
   # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
 
