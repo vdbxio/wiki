@@ -54,7 +54,7 @@ button:
 
 sensor:
   - platform: internal_temperature
-    name: "ESP32-C3 Temperature"
+    name: "FLIP-C3 Temperature"
     update_interval: 10s
 
     
