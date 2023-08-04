@@ -1,5 +1,21 @@
 ---
 description: The official VDBX.io documentation
+cover: .gitbook/assets/VDBX-CUBE-WHT@2x.png
+coverY: 132
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: false
+  outline:
+    visible: false
+  pagination:
+    visible: true
 ---
 
 # Welcome
@@ -10,7 +26,7 @@ All documentation and design files for projects are shared as "open source" unde
 
 ## About
 
-Voidbox Industries / VDBX / VDBX.io is currently focused on designing hardware for use with Home Assistant in off-grid, battery powered setups. Our hardware lineup for 2023 is expected to be highly integrated into HA by designing hardware that runs ESPHome and can directly plug into a 12-48v lithium battery. Useability and ease of deployment are high priorities for us to even design in the first place.&#x20;
+VDBX or "Voidbox Industries" is currently focused on designing hardware for use with Home Assistant in off-grid, battery powered setups. Our hardware lineup for 2023 is focused on the FLIP-C3 node platform for creating smart devices on off-grid and battery powered systems. The project takes a priority with integrating into Home Assistant via the ESPHome firmware, but can run anything an ESP32-C3 can.&#x20;
 
 Chloe Madison, resident designer and founder currently lives full time in a converted "shorty" school bus that she's constantly still working on.
 
