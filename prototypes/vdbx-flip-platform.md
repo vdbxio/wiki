@@ -56,17 +56,4 @@ I2C should be considered a high-priority interconnect due to its capability for 
     * 16020 has a 16030 pin compatible 3A version but will require external component selection. Good for LED control board?
   * RGB Addressable LED control (with DC buck?)
 
-## Changelog
-
-* 23.04.30 - Switching Buck Regulator
-  * LMR16020 - tested to work from 5 to 58v with only FLIP-C3 as load
-    * higher voltages seeing upwards of 0.6v wobble on output
-    * output is up to 0.7v higher at 58v input vs 5v input
-  * Missed output ground on test board and poor placement of VREF
-* 23.04.18 - LDO circuitry is not going to work, back to the drawing board.&#x20;
-  * Design and order tester for switching buck
-  * Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
-
-## Version History
-
-0.9.0 - LDO Circuit was a bad idea, EN pin not pulled-up
+##
