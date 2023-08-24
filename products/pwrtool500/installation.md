@@ -4,6 +4,10 @@ description: How to install the PwrTool 500
 
 # Installation
 
+{% hint style="info" %}
+This may be out of date since updates to hardware have been made as of 23.08
+{% endhint %}
+
 There are 3 quick steps to get going with the PwrTool 500
 
 1. Wiring

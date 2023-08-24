@@ -12,6 +12,7 @@
   * [History & Notes](products/flip\_c3/history-and-notes.md)
 * [PwrTool 500](products/pwrtool500/README.md)
   * [Installation](products/pwrtool500/installation.md)
+  * [History & Notes](products/pwrtool500/history-and-notes.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
