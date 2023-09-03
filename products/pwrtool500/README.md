@@ -1,7 +1,12 @@
+---
+description: 500A Smart Shunt for Home Assistant
+---
+
 # PwrTool 500
 
-{% hint style="info" %}
-PwrTool Hardware is in pre-production state but the software is still being worked on. If you would like to order heavily discounted pre-pro hardware for testing and development, please message us on our main site or find Chloe Madison via username @clomads on Twitter/Mastodon/Threads/Instagram/Bsky/TikTok/etc
+{% hint style="warning" %}
+* The INA237 component for ESPHome is currently in development and testing here: [https://github.com/vdbxio/ina237](https://github.com/vdbxio/ina237)&#x20;
+* The hardware we are testing on is available at a discount on[ vdbx.io](https://www.vdbx.io)&#x20;
 {% endhint %}
 
 ## Overview
