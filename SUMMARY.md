@@ -12,6 +12,7 @@
   * [ESPHome](products/flip\_c3/esphome.md)
   * [History & Notes](products/flip\_c3/history-and-notes.md)
 * [PwrTool 500](products/pwrtool500/README.md)
+  * [INA237](products/pwrtool500/ina237.md)
   * [Installation](products/pwrtool500/installation.md)
   * [History & Notes](products/pwrtool500/history-and-notes.md)
 
