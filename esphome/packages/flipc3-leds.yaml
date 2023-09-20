@@ -13,8 +13,10 @@ wled:
 light:
   - platform: status_led
     name: "Status LED"
+    id: status_led
     pin: ${status_pin}
   - platform: neopixelbus
+    id: onboard_rgb
     type: GRB
     variant: WS2812
     pin: ${rgb_pin}
