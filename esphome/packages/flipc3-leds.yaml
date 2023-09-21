@@ -16,6 +16,7 @@ light:
     id: onboard_led
     pin: ${status_pin}
   - platform: esp32_rmt_led_strip
+    id: onboard_rgb
     rgb_order: GRB
     rmt_channel: 0
     chipset: ws2812    
