@@ -15,14 +15,14 @@ light:
     name: "Status LED"
     id: onboard_led
     pin: ${status_pin}
-  - platform: neopixelbus
-    id: onboard_rgb
-    type: GRB
-    variant: WS2812
+  - platform: esp32_rmt_led_strip
+    rgb_order: GRB
+    rmt_channel: 0
+    chipset: ws2812    
     pin: ${rgb_pin}
     restore_mode: RESTORE_AND_OFF
     num_leds: 1
-    name: "RGB LEDs"
+    name: "RGB LED"
     effects:
       - pulse:
       - pulse:
@@ -30,7 +30,7 @@ light:
           transition_length: 2s
           update_interval: 2s
           min_brightness: 0%
-          max_brightness: 50%
+          max_brightness: 25%
       - pulse:
           name: "Slow Pulse"
           transition_length: 2s
