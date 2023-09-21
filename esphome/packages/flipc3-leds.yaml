@@ -26,13 +26,16 @@ light:
     effects:
       - pulse:
       - pulse:
-          name: "Fast Pulse"
-          transition_length: 0.5s
-          update_interval: 0.5s
+          name: "Chill Pulse"
+          transition_length: 2s
+          update_interval: 2s
+          min_brightness: 0%
+          max_brightness: 50%
       - pulse:
           name: "Slow Pulse"
           transition_length: 2s
           update_interval: 2s
+      - random:
       - strobe:
       - strobe:
           name: Strobe Custom
