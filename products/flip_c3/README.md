@@ -15,15 +15,16 @@ The first mainboard for the FLIP platform is an ESP32-C3 board that can be deplo
   * Reverse polarity protection.
   * 24-16AWG Solid
   * 22-18AWG Stranded - Ferrules are suggested
-  * 2x2P 2.54mm pass-through header for stacking
+  * 2x2P 2.54mm pass-through power header for stacking
 * **ESP32-C3** designed for ESPHome and Home Assistant.
 * **USB-C** input for alt power and programming
-  * Reverse current protection from DC input via diode (no data connection while powered by DC)
+  * Reverse current protection from DC input via diode&#x20;
+    * No data connection while powered by DC
 * LEDs on-board
   * **WS2812B RGB** - `GPIO8`
-    * Digital output available on header as L8 to drive short runs&#x20;
+    * Digital output available on header as `L8` to drive short runs&#x20;
   * Red Status LED - `GPIO10`
-* UART and I2C on **Qwicc/Stemma QT** compatible headers (SH 1.0-4P)
+* UART and I2C on **Qwiic/Stemma QT** compatible headers (SH 1.0-4P)
   * I2C:  `SCL0/SDA1`
   * UART:  `RX20/TX21`
 * Boot Button `GPIO9`
@@ -34,3 +35,7 @@ The first mainboard for the FLIP platform is an ESP32-C3 board that can be deplo
 The ESP32-C3 is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for Ethernet PHYs including the LAN8720 and W5500, though support for both are currently limited in ESPHome.
 
 Our early planned product line should be more than covered by the capabilities of the C3... the biggest concern being limited to one I2C bus, but we'll cross that bridge when we come to it.
+
+## Pinout
+
+<figure><img src="https://cdn.jsdelivr.net/gh/vdbxio/wiki@main/pcbs/flipc3-pinout.drawio.svg" alt=""><figcaption><p>Pinout of the FLIP_C3</p></figcaption></figure>
