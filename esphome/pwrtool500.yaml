@@ -16,7 +16,7 @@ packages:
   flipc3: !include packages/flipc3-base.yaml
   wifi: !include packages/flipc3-wifi.yaml
   dash: !include packages/dash-import.yaml
-  # aht20: !include packages/parts/aht20.yaml
+  shtc3: !include packages/parts/env_shtcx.yaml
   leds: !include packages/flipc3-leds.yaml
   # uart: !include packages/flipc3-uart.yaml
   # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}

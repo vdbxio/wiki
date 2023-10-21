@@ -1,8 +1,0 @@
-sensor:
-  - platform: aht10
-    temperature:
-      name: "${friendly_name} Temperature"
-    humidity:
-      name: "${friendly_name} Humidity"
-    update_interval: 90s
-    address: 0x38
