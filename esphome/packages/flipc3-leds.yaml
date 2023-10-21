@@ -63,7 +63,7 @@ light:
           width: 1
       - addressable_color_wipe:
       - addressable_color_wipe:
-          name: Color Wipe Custom
+          name: Color Wipe Fast
           add_led_interval: 100ms
           reverse: false
       - wled:
