@@ -1,23 +1,24 @@
-# All Modules 23.07-dev
+# FLIP_C3 23.10-dev
 # Voidbox Industries & Chloe Madison
 # VDBX.io / @clomads
 # CC-BY-SA 4.0
-# Use this as a baseline to connect VDBX Flip Modules
+# Baseline ESPHome YAML for FLIP_C3
 # 
 
 substitutions:
   name: "flip-c3"
   friendly_name: "FLIP-C3"
   project_name: "vdbxio.FLIP-C3"
-  project_version: "0.9.10"
+  project_version: "1.0.0"
   package_git: "github://vdbxio/wiki/esphome/flip-c3.yaml"
   
 
 packages:
   flipc3: !include packages/flipc3-base.yaml
   dash: !include packages/dash-import.yaml
-  #uart: !include packages/flipc3-uart.yaml
   wifi: !include packages/flipc3-wifi.yaml
   leds: !include packages/flipc3-leds.yaml
-  # switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
-  hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
+# Copy any of the following into your yaml
+  # qaset: !include packages/flipc3-qa.yaml
+  # uart: !include packages/flipc3-uart.yaml
+  # hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
