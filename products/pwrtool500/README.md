@@ -18,6 +18,7 @@ Unlike our competitors, this is your hardware and it is fully hackable. Extend i
 ## Features
 
 * Hot or Cold Side use (comes set to cold side via switch or jumper\*)
+  * Current beta hardware uses a switch - make sure it is in the correct position
 * Up to 60VDC Voltage works on up to 16s LiFePo4 systems
   * Bi-directional current and power up to 500A
   * Temp sensor on package placed near shunt&#x20;

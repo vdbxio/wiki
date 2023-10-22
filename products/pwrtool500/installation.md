@@ -15,7 +15,7 @@ There are 3 quick steps to get going with the PwrTool 500
 3. Adopt in Home Assistant
 4. Adopt into ESPHome `optional`
 
-> You can plug in any powered USB-C cable and jump to the WiFi & Home Assistant instructions if you'd like to tinker before wiring up. {.is-info}
+> You can plug in any powered USB-C cable and jump to the WiFi & Home Assistant instructions if you'd like to tinker before wiring up.  Once powered, USB connection is unavailable.
 
 ## Wiring Options
 
