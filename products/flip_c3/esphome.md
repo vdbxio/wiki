@@ -29,7 +29,7 @@ Direct reference to the YAML we ship with is available on Github:&#x20;
 
 We're still working on organizing and modularization. Feel free to help out.  There's a lot more in there than referenced here.
 
-## Board Definition
+### Board Definition
 
 If you like, you can easily start a blank ESPHome device based on the ESP32-C3 using `esp32-c3-devkitm-1` board type. (This is default in ESPHome)
 
