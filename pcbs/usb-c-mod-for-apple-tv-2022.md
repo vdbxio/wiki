@@ -9,7 +9,7 @@ May 2023 - Packaging is being finalized and early models are available to ship w
 {% endhint %}
 
 {% hint style="info" %}
-**For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants.
+**For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
 {% endhint %}
 
 ## Tools Note
