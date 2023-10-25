@@ -2,7 +2,7 @@
 
 ## Easy Installer
 
-Use any Chrome based browser (including Edge) to install our base firmware from your browser using a USB cable.
+Use any Chrome based browser (including Edge) to install our base firmware from your browser using a USB cable. Current versions cannot be connected to via USB when powered via the buck converter.
 
 [https://www.vdbx.io/install](https://www.vdbx.io/install)
 
