@@ -13,7 +13,7 @@ wled:
 light:
   - platform: status_led
     name: "Status LED"
-    id: onboard_led
+    id: status_led
     pin: ${status_pin}
   - platform: esp32_rmt_led_strip
     id: onboard_rgb
