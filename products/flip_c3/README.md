@@ -1,5 +1,5 @@
 ---
-description: An ESP32-C3 with a 60V/2A buck converter & other special sauce.
+description: An ESP32-C3 with a 50+v tolerant 5v/2A buck converter & other special sauce.
 ---
 
 # FLIP\_C3
@@ -8,14 +8,17 @@ description: An ESP32-C3 with a 60V/2A buck converter & other special sauce.
 
 The first mainboard for the FLIP platform is an ESP32-C3 board that can be deployed on any battery system up to 16s LifePO4. It is designed for use with ESPHome, but can be flashed with other popular firmwares such as TASMOTA and WLED. We have a whole line of smart products based on this as their main powerhouse.
 
-## Specifications
+## Specs & Features
 
-* On-board 5v/2A buck-converter tolerant **up to 60v DC**
+* On-board 5v/2A buck-converter tolerant **up to 50+v DC**
+  * 60v absolute max, but do not live connect over 50v
+    * Connect to battery when it is low
+    * Use a low value resistor to pre-charge circuit (pro move)
 * Low-profile press-in wire connector for DC input
-  * Reverse polarity protection.
   * 24-16AWG Solid
   * 22-18AWG Stranded - Ferrules are suggested
   * 2x2P 2.54mm pass-through power header for stacking
+  * Push release spring mechanism
 * **ESP32-C3** designed for ESPHome and Home Assistant.
 * **USB-C** input for alt power and programming
   * Reverse current protection from DC input via diode&#x20;
