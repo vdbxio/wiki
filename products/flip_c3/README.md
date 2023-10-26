@@ -39,3 +39,11 @@ Our early planned product line should be more than covered by the capabilities o
 ## Pinout
 
 <figure><img src="https://cdn.jsdelivr.net/gh/vdbxio/wiki@main/pcbs/flipc3-pinout.drawio.svg" alt=""><figcaption><p>Pinout of the FLIP_C3</p></figcaption></figure>
+
+## License & Files
+
+The FLIP\_C3 is offered as open source under the [Creative Commons 4.0 Attribution Share-Alike License](https://creativecommons.org/licenses/by-sa/4.0/) (CC 4.0 BY-SA)
+
+Original design was created in EasyEDA Pro and is available to modify and fork via its listing on OSHW Lab:
+
+{% embed url="https://oshwlab.com/vdbxio/flip_c3" %}
