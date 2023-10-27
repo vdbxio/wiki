@@ -8,6 +8,8 @@ description: An ESP32-C3 with a 50+v tolerant 5v/2A buck converter & other speci
 
 The first mainboard for the FLIP platform is an ESP32-C3 board that can be deployed on any battery system up to 16s LifePO4. It is designed for use with ESPHome, but can be flashed with other popular firmwares such as TASMOTA and WLED. We have a whole line of smart products based on this as their main powerhouse.
 
+Available for sale: [https://www.vdbx.io/product/flip-c3](https://www.vdbx.io/product/flip-c3)
+
 ## Specs & Features
 
 * On-board 5v/2A buck-converter tolerant **up to 50+v DC**
