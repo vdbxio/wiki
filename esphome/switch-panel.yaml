@@ -13,6 +13,6 @@ substitutions:
 
 packages:
   flipc3: !include packages/flipc3-base.yaml
-  # wifi: !include packages/flipc3-wifi.yaml
+  wifi: !include packages/flipc3-wifi.yaml
   dash: !include packages/dash-import.yaml
   switchset: !include  {file: "packages/flip-switch4.yaml", vars: {address: 0x20, entid: swset1 }}
