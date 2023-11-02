@@ -9,6 +9,7 @@
   * [Specs & Files](products/iobyte/docs.md)
 * [Hactus](products/hactus.md)
 * [FLIP\_C3](products/flip\_c3/README.md)
+  * [Home Assistant](products/flip\_c3/home-assistant.md)
   * [ESPHome](products/flip\_c3/esphome.md)
   * [History & Notes](products/flip\_c3/history-and-notes.md)
 * [PwrTool 500](products/pwrtool500/README.md)
