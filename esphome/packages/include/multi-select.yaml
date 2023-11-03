@@ -16,4 +16,8 @@
     - Hold Down
     - Hold Left
     - Hold Right
+    - Release Up
+    - Release Down
+    - Release Left
+    - Release Right
   initial_option: ${idle_verb}
