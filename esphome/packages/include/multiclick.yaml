@@ -11,7 +11,7 @@
   platform: gpio
   name: "sw${num}${ltr}"
   id: sw${num}${ltr}
-  internal: True
+  #internal: True
   pin:
     pcf8574: ${entid}
     number: ${pin}
