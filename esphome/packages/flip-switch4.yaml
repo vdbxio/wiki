@@ -24,10 +24,10 @@ binary_sensor:
   -  !include {file: "include/multiclick.yaml", vars: {num: 1, ltr: b, pin: 1 }}
   -  !include {file: "include/multiclick.yaml", vars: {num: 2, ltr: a, pin: 2 }}
   -  !include {file: "include/multiclick.yaml", vars: {num: 2, ltr: b, pin: 3 }}
-  -  !include {file: "include/multiclick.yaml", vars: {num: 3, ltr: b, pin: 4 }}
-  -  !include {file: "include/multiclick.yaml", vars: {num: 3, ltr: a, pin: 5 }}
-  -  !include {file: "include/multiclick.yaml", vars: {num: 4, ltr: b, pin: 6 }}
-  -  !include {file: "include/multiclick.yaml", vars: {num: 4, ltr: a, pin: 7 }}
+  -  !include {file: "include/multiclick.yaml", vars: {num: 3, ltr: a, pin: 4 }}
+  -  !include {file: "include/multiclick.yaml", vars: {num: 3, ltr: b, pin: 5 }}
+  -  !include {file: "include/multiclick.yaml", vars: {num: 4, ltr: a, pin: 6 }}
+  -  !include {file: "include/multiclick.yaml", vars: {num: 4, ltr: b, pin: 7 }}
 
 
 
