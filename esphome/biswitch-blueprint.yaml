@@ -1,0 +1,95 @@
+blueprint:
+  name: ESPhome switch SDTH
+  description: |
+    Different actions for different clicks. 
+    Based on text_sensor in ESPhome switch.
+    
+    ESPhome configuration example: https://gist.github.com/agdamsbo/819c27a5b986c38327d4b19057cbfb6d
+    
+    ## Inspiration ##
+    ESPhome decoupled approach: https://www.esphome-devices.com/devices/Shelly-1/
+    ESPhome text_sensor approach: https://gist.github.com/albertnis/f33066b0b3623a9839a3429c8f19f4d4
+    Blueprint: https://community.home-assistant.io/t/trigger-different-actions-on-a-single-double-or-double-click-on-a-binary-sensor/255902/15
+    
+  domain: automation
+  input:
+    text_sensor_id:
+      name: Binary sensor entity
+      description: The text sensor used to trigger the automation
+      selector:
+        entity:
+          domain: sensor
+    up_act:
+      name: Up Single action
+      description: The action(s) to launch for a single up click
+      default: []
+      selector:
+        action: {}
+    down_act:
+      name: Down Single click action
+      description: The action(s) to launch for a single down click
+      default: []
+      selector:
+        action: {}
+    dbl_up_act:
+      name: Double Up action
+      description: The action(s) to launch for a double up click
+      default: []
+      selector:
+        action: {}
+    dbl_down_act:
+      name: Double Down click action
+      description: The action(s) to launch for a double down click
+      default: []
+      selector:
+        action: {}
+    hold_up_act:
+      name: Hold Up action
+      description: The action(s) to launch for a hold up
+      default: []
+      selector:
+        action: {}
+    hold_down_act:
+      name: Hold Down action
+      description: The action(s) to launch for a hold down
+      default: []
+      selector:
+        action: {}
+    
+    
+  #source_url: https://gist.github.com/agdamsbo/f49277bd8dd9bbada055c49600bea9e2
+trigger:
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Up'
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Down'
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Double Up'
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Double Down'
+action:
+- choose:
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Up'
+    sequence: !input 'up_act'
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Down'
+    sequence: !input 'down_act'
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Double Up'
+    sequence: !input 'dbl_up_act'
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Double Down'
+    sequence: !input 'dbl_down_act'
