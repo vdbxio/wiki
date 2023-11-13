@@ -35,10 +35,10 @@
 * [FLIP Platform](prototypes/vdbx-flip-platform.md)
   * [Switching Buck Regulators](prototypes/vdbx-flip-platform/switching-buck-regulators.md)
   * [23.04 - First Batch Testing](prototypes/vdbx-flip-platform/23.04-first-batch-testing.md)
-* [Shift Deck](prototypes/unnamed-switch-panel/README.md)
-  * [Installation](prototypes/unnamed-switch-panel/installation.md)
-  * [ESPHome](prototypes/unnamed-switch-panel/esphome.md)
-  * [Dimensions & Specs](prototypes/unnamed-switch-panel/dimensions-and-specs.md)
+* [FLIP//Shift - Switch Panel](prototypes/flip-shift/README.md)
+  * [Installation](prototypes/flip-shift/installation.md)
+  * [ESPHome](prototypes/flip-shift/esphome.md)
+  * [Dimensions & Specs](prototypes/flip-shift/dimensions-and-specs.md)
 
 ## 3D Models
 
