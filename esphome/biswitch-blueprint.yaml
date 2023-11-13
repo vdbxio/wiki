@@ -1,23 +1,16 @@
 blueprint:
-  name: ESPhome switch SDTH
+  name: Bi-Directional Switch
   description: |
-    Different actions for different clicks. 
-    Based on text_sensor in ESPhome switch.
-    
-    ESPhome configuration example: https://gist.github.com/agdamsbo/819c27a5b986c38327d4b19057cbfb6d
-    
-    ## Inspiration ##
-    ESPhome decoupled approach: https://www.esphome-devices.com/devices/Shelly-1/
-    ESPhome text_sensor approach: https://gist.github.com/albertnis/f33066b0b3623a9839a3429c8f19f4d4
-    Blueprint: https://community.home-assistant.io/t/trigger-different-actions-on-a-single-double-or-double-click-on-a-binary-sensor/255902/15
-    
+    VDBX FLIP Shift - 4x Bidrectional Switch Panel presents four Text Sensors, import this into Home Assistant and create a new automation for each switch.
+    TODO: Needs Left/Right triggers
   domain: automation
   input:
     text_sensor_id:
-      name: Binary sensor entity
+      name: Text Sensor for Switch
       description: The text sensor used to trigger the automation
       selector:
         entity:
+          integration: esphome
           domain: sensor
     up_act:
       name: Up Single action
@@ -71,6 +64,12 @@ trigger:
 - platform: state
   entity_id: !input 'text_sensor_id'
   to: 'Double Down'
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Hold Up'
+- platform: state
+  entity_id: !input 'text_sensor_id'
+  to: 'Hold Down'
 action:
 - choose:
   - conditions:
@@ -93,3 +92,13 @@ action:
       entity_id: !input 'text_sensor_id'
       state: 'Double Down'
     sequence: !input 'dbl_down_act'
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Hold Up'
+    sequence: !input 'hold_up_act'
+  - conditions:
+    - condition: state
+      entity_id: !input 'text_sensor_id'
+      state: 'Hold Down'
+    sequence: !input 'hold_down_act'
