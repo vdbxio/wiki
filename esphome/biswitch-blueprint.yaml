@@ -8,11 +8,12 @@ blueprint:
     text_sensor_id:
       name: Text Sensor for Switch
       description: The text sensor used to trigger the automation
-      #selector:
-      filter:
-        - integration: esphome
-          domain: sensor
-          
+      selector:
+        entity:
+          filter:
+            - integration: esphome
+              domain: sensor
+              #device_class: enum
     up_act:
       name: Up Single action
       description: The action(s) to launch for a single up click
@@ -51,7 +52,7 @@ blueprint:
         action: {}
     
     
-  source_url: https://raw.githubusercontent.com/vdbxio/wiki/main/esphome/biswitch-blueprint.yaml
+  #source_url: https://gist.github.com/agdamsbo/f49277bd8dd9bbada055c49600bea9e2
 trigger:
 - platform: state
   entity_id: !input 'text_sensor_id'
