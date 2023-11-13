@@ -13,7 +13,7 @@ blueprint:
           filter:
             - integration: esphome
               domain: sensor
-              #device_class: enum
+              device_class: enum
     up_act:
       name: Up Single action
       description: The action(s) to launch for a single up click
