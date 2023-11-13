@@ -9,9 +9,10 @@ blueprint:
       name: Text Sensor for Switch
       description: The text sensor used to trigger the automation
       selector:
-        entity:
-          integration: esphome
-          domain: sensor
+        filter:
+          - integration: esphome
+            domain: sensor
+            device_class: enum
     up_act:
       name: Up Single action
       description: The action(s) to launch for a single up click
