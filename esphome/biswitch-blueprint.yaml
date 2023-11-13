@@ -8,11 +8,11 @@ blueprint:
     text_sensor_id:
       name: Text Sensor for Switch
       description: The text sensor used to trigger the automation
-      selector:
-        filter:
-          - integration: esphome
-            domain: sensor
-            
+      #selector:
+      filter:
+        - integration: esphome
+          domain: sensor
+          
     up_act:
       name: Up Single action
       description: The action(s) to launch for a single up click
