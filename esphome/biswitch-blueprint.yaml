@@ -15,7 +15,7 @@ blueprint:
               domain: sensor
               device_class: enum
     up_act:
-      name: Up Single action
+      name: Up/Right Single action
       description: The action(s) to launch for a single up click
       default: []
       selector:
@@ -56,28 +56,16 @@ blueprint:
 trigger:
 - platform: state
   entity_id: !input 'text_sensor_id'
-  to: 'Up'
-- platform: state
-  entity_id: !input 'text_sensor_id'
-  to: 'Down'
-- platform: state
-  entity_id: !input 'text_sensor_id'
-  to: 'Double Up'
-- platform: state
-  entity_id: !input 'text_sensor_id'
-  to: 'Double Down'
-- platform: state
-  entity_id: !input 'text_sensor_id'
-  to: 'Hold Up'
-- platform: state
-  entity_id: !input 'text_sensor_id'
-  to: 'Hold Down'
 action:
 - choose:
   - conditions:
-    - condition: state
-      entity_id: !input 'text_sensor_id'
-      state: 'Up'
+   - or:
+        - condition: state
+          entity_id: !input 'text_sensor_id'
+          state: 'Up'
+        - condition: state
+          entity_id: !input 'text_sensor_id'
+          state: 'Right'
     sequence: !input 'up_act'
   - conditions:
     - condition: state
