@@ -59,13 +59,13 @@ trigger:
 action:
 - choose:
   - conditions:
-   - or:
-        - condition: state
-          entity_id: !input 'text_sensor_id'
-          state: 'Up'
-        - condition: state
-          entity_id: !input 'text_sensor_id'
-          state: 'Right'
+    - or:
+      - condition: state
+        entity_id: !input 'text_sensor_id'
+        state: 'Up'
+      - condition: state
+        entity_id: !input 'text_sensor_id'
+        state: 'Right'
     sequence: !input 'up_act'
   - conditions:
     - condition: state
