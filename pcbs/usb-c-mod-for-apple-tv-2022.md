@@ -1,12 +1,12 @@
 ---
 description: Power your Apple TV with USB-C
+cover: ../.gitbook/assets/atv-modkit-wiki.jpg
+coverY: 0
 ---
 
 # USB-C Modkit for Apple TV 2022
 
-{% hint style="danger" %}
-May 2023 - Packaging is being finalized and early models are available to ship without printed instructions.
-{% endhint %}
+Illustrated installation instructions are available on [vdbx.io](https://www.vdbx.io/product/usb-c-modkit-for-appletv-2022)
 
 {% hint style="info" %}
 **For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
@@ -20,12 +20,12 @@ Torx T7 and T5 are used by Apple, but we've noticed a T6 _should_ manage to get 
 
 ## Included in kit:
 
-* 1x Modkit PCB with LDO
+* 1x Modkit PCB with Linear Regulator
 * 3x Guitar picks to open case
 * T6 Allen key to remove power supply & power connector
 * Connector shroud - `3D Printed`
 * Insulating spacer - `3D Printed`
-* 2x M2.5x10mm Screws
+* 2x M2.5x8mm Screws with T6 head
 * Quick Start Card
 
 ## Summary
@@ -81,6 +81,11 @@ ddddd
 {% file src="../.gitbook/assets/Shroud-ATV2022Modkit.stl" %}
 
 ## Change Log
+
+23.12.11
+
+* Diode removed from design
+* Submitted second batch to use with LDO boards still in stock
 
 d23.05
 
