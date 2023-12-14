@@ -4,10 +4,6 @@
 
 ## Current Products <a href="#products" id="products"></a>
 
-* [USB-BD v1.4](products/usb-bd-v1.4.md)
-* [IOByte](products/iobyte/README.md)
-  * [Specs & Files](products/iobyte/docs.md)
-* [Hactus](products/hactus.md)
 * [FLIP\_C3](products/flip\_c3/README.md)
   * [Home Assistant](products/flip\_c3/home-assistant.md)
   * [ESPHome](products/flip\_c3/esphome.md)
@@ -16,6 +12,10 @@
   * [INA237](products/pwrtool500/ina237.md)
   * [Installation](products/pwrtool500/installation.md)
   * [History & Notes](products/pwrtool500/history-and-notes.md)
+* [USB-BD v1.4](products/usb-bd-v1.4.md)
+* [IOByte](products/iobyte/README.md)
+  * [Specs & Files](products/iobyte/docs.md)
+* [Hactus](products/hactus.md)
 
 ## Circuit Boards <a href="#pcbs" id="pcbs"></a>
 
@@ -35,7 +35,7 @@
 * [FLIP Platform](prototypes/vdbx-flip-platform.md)
   * [Switching Buck Regulators](prototypes/vdbx-flip-platform/switching-buck-regulators.md)
   * [23.04 - First Batch Testing](prototypes/vdbx-flip-platform/23.04-first-batch-testing.md)
-* [FLIP//Shift - Switch Panel](prototypes/flip-shift/README.md)
+* [Shift Deck](prototypes/flip-shift/README.md)
   * [Installation](prototypes/flip-shift/installation.md)
   * [ESPHome](prototypes/flip-shift/esphome.md)
   * [Dimensions & Specs](prototypes/flip-shift/dimensions-and-specs.md)

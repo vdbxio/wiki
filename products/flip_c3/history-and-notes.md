@@ -6,6 +6,9 @@ Versions below v1.0 have differences in pin layout especially the 2P header for 
 
 ## Changelog
 
+* 23.12.10 - Prep for early 2024 production
+  * Moved C14 closer to EN pin - v1.0.1&#x20;
+  * Research potential replacements for L1 based on price and availability
 * 23.08.23 - Notable changes since last update&#x20;
   * Original DC spring connector only grabbed the tip of standard length ferrules making solid core wire the only real option
     * second option was too small & original is now discontinued - 0.9.5 is on the way with third option
@@ -21,6 +24,10 @@ Versions below v1.0 have differences in pin layout especially the 2P header for 
   * Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
 
 ## Version History
+
+1.0.1 - Move C14 closer to EN - not yet in production
+
+1.0.0 - First small production run
 
 0.9.5 - Replace DC Spring Connector
 

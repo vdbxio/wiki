@@ -1,5 +1,21 @@
 ---
 description: An ESP32-C3 with a 50+v tolerant 5v/2A buck converter & other special sauce.
+cover: ../../.gitbook/assets/Flip C3-header.jpg
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: hero
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # FLIP\_C3

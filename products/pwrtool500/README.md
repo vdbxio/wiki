@@ -4,6 +4,8 @@ description: 500A Smart Shunt for Home Assistant
 
 # PwrTool 500
 
+<figure><img src="../../.gitbook/assets/pwrtool500-wiki-features2312.jpg" alt=""><figcaption><p>PwrTool Hardware as of Dec 2023</p></figcaption></figure>
+
 {% hint style="warning" %}
 * The INA237 component for ESPHome is currently in development and testing here: [https://github.com/vdbxio/ina237](https://github.com/vdbxio/ina237)&#x20;
 * The hardware we are testing on is available at a discount on[ vdbx.io](https://www.vdbx.io)&#x20;
@@ -11,20 +13,23 @@ description: 500A Smart Shunt for Home Assistant
 
 ## Overview
 
-A 500 amp smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. An on board 45w NPN MOSFET can power fans, LED strips, or control external relays based on automations in Home Assistant. Also keep an eye on the ambient temp/humidity of your control box with the onboard sensor and catch potential issues with the on-die temp sensor of the analog-to-digital converter IC.
+A 500 amp smart shunt for DC power systems up to 60v\* ([50v for now](../flip\_c3/)). It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box.&#x20;
 
-Unlike our competitors, this is your hardware and it is fully hackable. Extend it further with ESPHome, Tasmota or your own custom Arduino or ESP-IDF code.
+An on board 45w NPN MOSFET can power fans, LED strips, or control external relays based on automations in Home Assistant. Also keep an eye on the ambient temp/humidity of your control box with the onboard sensor and catch potential issues with the on-die temp sensor of the analog-to-digital converter IC.
+
+PwrTool 500 is fully open, this is your hardware and it is fully hackable. Extend it further with ESPHome, Tasmota or your own custom Arduino or ESP-IDF code. The on-board buck converter provides a total power budget of 10w for all of the activities. Make the PwrTool the brains of your power cabinet.
 
 ## Features
 
-* Hot or Cold Side use (comes set to cold side via switch or jumper\*)
-  * Current beta hardware uses a switch - make sure it is in the correct position
-* Up to 60VDC Voltage works on up to 16s LiFePo4 systems
+* Hot or Cold Side use
+  * Current beta hardware uses a switch - make sure it is in the correct position - no silkscreen
+  * `TODO:`Polarity correction via H-bridge
+* Up to 60VDC\* - works on up to 16s LiFePo4 systems
   * Bi-directional current and power up to 500A
-  * Temp sensor on package placed near shunt&#x20;
+  * Temp sensor on die placed near shunt fins
 * SHTC3 Temperature & Humidity Sensor for environmental monitoring
 * RGB LED & Red Status LED
-* `CTRL-` Connection for external control
+* `CTRL-` Connection for external control via NPN MOSFET
 
 ## Specifications
 
