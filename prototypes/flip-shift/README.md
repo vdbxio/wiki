@@ -1,14 +1,18 @@
 ---
-description: 8-in-4 Home Assistant Remote
+description: 8-in-4 Home Assistant remote and modular switch panel system.
 ---
 
-# FLIP//Shift - Switch Panel
+# Shift Deck
 
-<figure><img src="../../.gitbook/assets/Shift-Prototype1.jpg" alt=""><figcaption><p>Prototype 001 - fully 3d printed with gaffer tape covering housing</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/shift-deck-header.jpg" alt=""><figcaption><p>December 2023 design &#x26; functionality prototype and current features.</p></figcaption></figure>
 
 ## Latest:
 
+23.12.14 - Considering design changes to enclosure. Need documentation for PCB only kits.
+
 **231112** - Working prototype PCB in testing with nearly feature full MVP ESPHome build and blueprint to integrate into Home Assistant
+
+
 
 [![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint\_import.svg)](https://my.home-assistant.io/redirect/blueprint\_import/?blueprint\_url=https%3A%2F%2Fraw.githubusercontent.com%2Fvdbxio%2Fwiki%2Fmain%2Fesphome%2Fbiswitch-blueprint.yaml)
 
