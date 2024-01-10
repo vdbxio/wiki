@@ -2,13 +2,15 @@
 
 ## Easy Installer
 
-Use any Chrome based browser (including Edge) to install our base firmware from your browser using a USB cable. Current versions cannot be connected to via USB when powered via the buck converter.
+If you order from us, your FLIP\_C3 or FLIP\_C3 based device should have a pre-installed version of ESPHome, but if you need to reinstall this base firmware, we've set up an easy installer on our main website.  This will allow you to use Chrome or Edge to install it via a USB-C cable. Current versions **cannot** be connected via USB-C while powered via the buck converter.&#x20;
 
 [https://www.vdbx.io/install](https://www.vdbx.io/install)
 
+You may need to hold the BOOT button as you connect the USB cable. Alternatively you can hold the BOOT button while you press and release the RESET button if the FLIP\_C3 is already connected via USB-C. Hold the BOOT button for a couple seconds after the device is connected to your computer and then proceed with the installation above. Once complete, power cycle the FLIP-C3 with the RESET button or disconnecting and reconnecting the cable. You can also use this time to swap to a DC power source via the 2P spring connector.&#x20;
+
 ## Adopt In ESPHome
 
-Adopting into ESPHome will generate a base YAML that references our YAML as an external package with the following lines:
+Once you've followed the steps to connect your FLIP\_C3 to Wifi, you should see it in the ESPHome dashboard available to be adopted. Adopting into ESPHome will generate a base YAML that references our YAML file on Github as an external package with the following lines:
 
 ```yaml
 packages:
@@ -31,7 +33,7 @@ We're still working on organizing and modularization. Feel free to help out.  Th
 
 ### Board Definition
 
-If you like, you can easily start a blank ESPHome device based on the ESP32-C3 using `esp32-c3-devkitm-1` board type. (This is default in ESPHome)
+If you like, you can easily start a blank ESPHome device based on the ESP32-C3 using `esp32-c3-devkitm-1` board type. This is default in ESPHome for C3 based boards and we use chip level pin numbers on our silkscreen.
 
 ```yaml
 esphome:
