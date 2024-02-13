@@ -28,7 +28,7 @@ binary_sensor:
     on_press:
       if:
           condition:
-            binary_sensor.is_on: conn_status
+            binary_sensor.is_off: conn_status
           then:
             - light.toggle:
                 id: onboard_rgb        

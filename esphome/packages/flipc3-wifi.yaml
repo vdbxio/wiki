@@ -5,7 +5,7 @@ substitutions:
 
 api:
 ota:
-# WIFI SHIT
+# WIFI Stuff
 wifi:
   ap:
     password: ${ap_password}
