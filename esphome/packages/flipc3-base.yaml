@@ -26,15 +26,7 @@ esp32:
 
 i2c:
   sda: 1
-    pin:
-      number: 1
-      mode:
-        pullup: true
-  scl: 
-    pin:
-      number: 0
-      mode:
-        pullup: true
+  scl: 0
   scan: True
   id: bus_a
   frequency: 100k
