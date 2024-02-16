@@ -7,8 +7,8 @@
 sensor:
   - platform: shtcx
     temperature:
-      name: "${friendly_name} Temperature"
+      name: "Temperature - Ambient"
     humidity:
-      name: "${friendly_name} Humidity"
+      name: "Humidity - Ambient"
     address: 0x70
     update_interval: 1s
