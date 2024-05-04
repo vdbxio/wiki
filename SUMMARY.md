@@ -13,6 +13,7 @@
   * [INA237](products/pwrtool500/ina237.md)
   * [Installation](products/pwrtool500/installation.md)
   * [History & Notes](products/pwrtool500/history-and-notes.md)
+  * [Comparison](products/pwrtool500/comparison.md)
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/iobyte/README.md)
   * [Specs & Files](products/iobyte/docs.md)
