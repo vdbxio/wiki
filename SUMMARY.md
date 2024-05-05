@@ -14,6 +14,7 @@
   * [Installation](products/pwrtool500/installation.md)
   * [History & Notes](products/pwrtool500/history-and-notes.md)
   * [Comparison](products/pwrtool500/comparison.md)
+* [USB-C Modkit for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
 * [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/iobyte/README.md)
   * [Specs & Files](products/iobyte/docs.md)
@@ -23,7 +24,6 @@
 
 * [PWM Lighting Adapter](pcbs/pwm-lighting-adapter.md)
 * [Super-Ultra Low-Profile USB 2.0 Header](pcbs/super-ultra-low-profile-usb-2.0-header.md)
-* [USB-C Modkit for Apple TV 2022](pcbs/usb-c-mod-for-apple-tv-2022.md)
 * [CSR8635 Adapter](pcbs/csr8635-adapter.md)
 
 ## Concrete
