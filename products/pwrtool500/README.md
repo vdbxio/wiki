@@ -31,7 +31,7 @@ PwrTool 500 is fully open, this is your hardware and it is fully hackable. Exten
   * Polarity and TVS protection
 * 6-60VDC - Compatible with any lithium or lead-acid system
   * Bi-directional current sensing up to 500A(300A contstant)
-  * INA238 ADC with on-die temp facing shunt fins
+  * INA238 16-bit ADC with on-die temp facing shunt
 * SHTC3 Temperature & Humidity Sensor for environmental monitoring
 * RGB LED & Red Status LED
 * `CTRL-` Connection for external control via NPN MOSFET
@@ -42,7 +42,6 @@ PwrTool 500 is fully open, this is your hardware and it is fully hackable. Exten
   * BLE 5.0 & Wifi b/g/n
   * 5v2A (10w) buck converter
   * ESP32-C3
-    * Temp Range: -40 to 105 °C
     * Internal temp sensor
 * GPIO Components
   * Red "Status" LED - GPIO 10
