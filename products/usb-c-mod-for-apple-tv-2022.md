@@ -82,6 +82,13 @@ ddddd
 
 ## Change Log
 
+24.06
+
+* Combined external LDO circuit into main board
+* Extended ground plane to get final smoothing cap closer to output&#x20;
+* Add bottom GND plane and add stitching vias
+* Remove unused secondary GND screw mount
+
 23.12.11
 
 * Diode removed from design
