@@ -1,8 +1,19 @@
 # ESPHome
 
-## Easy Installer
+## Easy Start
 
-If you order from us, your FLIP\_C3 or FLIP\_C3 based device should have a pre-installed version of ESPHome, but if you need to reinstall this base firmware, we've set up an easy installer on our main website.  This will allow you to use Chrome or Edge to install it via a USB-C cable. Current versions **cannot** be connected via USB-C while powered via the buck converter.&#x20;
+1. Plug it in - give your FLIP\_C3 6-60vdc\* or USB-C power
+2. Provision Wifi
+   1. Check Home Assistant for notifications or new devices
+      1. Enter Wifi Info - Uses bluetooth integration
+   2. Alternately look for FLIP\_C3 WiFi and use "GenericPassword"
+      1. Wait for login window or go to [_192.168.4.1_](http://192.168.4.1)
+      2. Enter WiFi info
+3. [Check ESPHome dashboard for device to adopt](esphome.md#adopt-in-esphome)
+
+## USB Recover
+
+If you need to reinstall the base firmware, we've set up an easy installer on our main website.  This will allow you to use Chrome or Edge to install it via a USB-C cable. Current versions **cannot** be connected via USB-C while powered via the buck converter.&#x20;
 
 [https://www.vdbx.io/install](https://www.vdbx.io/install)
 

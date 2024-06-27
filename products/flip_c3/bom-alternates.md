@@ -16,4 +16,4 @@ A second connector is used to connect to the RX/TX lines on GPIO 20/21 alongside
 
 ## ESP32-C3
 
-There are two variants of the ESP32-C3-MINI-1 module. The [H4 variant](https://jlcpcb.com/partdetail/EspressifSystems-ESP32\_C3\_MINI\_1H4/C2934569) has a higher temp tolerance than the [base model N4](https://jlcpcb.com/partdetail/EspressifSystems-ESP32\_C3\_MINI\_1N4/C2838502). We've focused on using the H4 variant, but supply chain issues could lead to us using the N4 model in some production runs. Our early 2024 production run may require this change.
+There are two variants of the ESP32-C3-MINI-1 module. The [H4 variant](https://jlcpcb.com/partdetail/EspressifSystems-ESP32\_C3\_MINI\_1H4/C2934569) has a higher temp tolerance than the [base model N4](https://jlcpcb.com/partdetail/EspressifSystems-ESP32\_C3\_MINI\_1N4/C2838502). We've focused on using the H4 variant, but supply chain issues could lead to us using the N4 model in some production runs.&#x20;
