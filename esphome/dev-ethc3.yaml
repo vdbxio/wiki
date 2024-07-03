@@ -13,7 +13,7 @@ logger:
   level: DEBUG
 api:
 ota:
-
+  platform: esphome
 external_components:
   - source: github://clomads/esphome-eth@w5500
     components: [ ethernet ]

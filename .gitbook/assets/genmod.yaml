@@ -34,7 +34,7 @@ logger:
 api:
 
 ota:
-
+  platform: esphome
 wifi:
   ap:
     password: "GenericPassword"
