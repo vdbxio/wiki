@@ -5,6 +5,7 @@ substitutions:
 
 api:
 ota:
+  platform: esphome
 # WIFI Stuff
 wifi:
   ap:
@@ -18,7 +19,8 @@ web_server:
 time:
   - platform: homeassistant
 
-  
+esp32_improv:
+  authorizer: none
 
 sensor:
   - platform: wifi_signal # Reports the WiFi signal strength/RSSI in dB
