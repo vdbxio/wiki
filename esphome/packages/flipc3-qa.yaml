@@ -21,6 +21,7 @@ binary_sensor:
   - platform: gpio
     pin: 
       number: 9
+      allow_other_uses: true
       mode:
         input: true
         pullup: true

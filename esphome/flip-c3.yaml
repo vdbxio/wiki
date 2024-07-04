@@ -20,5 +20,5 @@ packages:
   leds: !include packages/flipc3-leds.yaml
 # Copy any of the following into your yaml preceded by github://vdbxio/wiki/esphome/
   qaset: !include packages/flipc3-qa.yaml
-  uart: !include packages/flipc3-uart.yaml
+#  uart: !include packages/flipc3-uart.yaml
   hoursCounter: !include  {file: "packages/parts/hours-count.yaml", vars: { entid: counter1 }}
