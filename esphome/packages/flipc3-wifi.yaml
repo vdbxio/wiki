@@ -13,6 +13,7 @@ wifi:
 
 captive_portal:
 
+bluetooth_proxy:
 web_server:
   local: True
 
