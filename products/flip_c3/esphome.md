@@ -23,9 +23,13 @@ You may need to hold the BOOT button as you connect the USB cable. Alternatively
 
 Once you've followed the steps to connect your FLIP\_C3 to Wifi, you should see it in the ESPHome dashboard available to be adopted. Adopting into ESPHome will generate a base YAML that references our YAML file on Github as an external package with the following lines:
 
+{% hint style="warning" %}
+24.09 - Our config files were moved into a separate repo, please change your existing package URL to the following for the latest updates.
+{% endhint %}
+
 ```yaml
 packages:
-  vdbxio.FLIP-C3: github://vdbxio/wiki/esphome/flip-c3.yaml
+  vdbxio.FLIP-C3: github://vdbxio/esphome-configs/flip-c3.yaml
 ```
 
 This includes references to all the basics of the hardware and more. This includes the onboard WS2812, the red status LED, the Boot Button on GPIO9 and I2C is defined at id: `bus_a`
@@ -38,7 +42,7 @@ The following are snippets to properly interact with FLIP\_C3 hardware in ESPHom
 
 Direct reference to the YAML we ship with is available on Github:&#x20;
 
-[https://github.com/vdbxio/wiki/tree/main/esphome](https://github.com/vdbxio/wiki/tree/main/esphome)
+[https://github.com/vdbxio/esphome-configs](https://github.com/vdbxio/esphome-configs) - Active repo as of 24.09
 
 We're still working on organizing and modularization. Feel free to help out.  There's a lot more in there than referenced here.
 

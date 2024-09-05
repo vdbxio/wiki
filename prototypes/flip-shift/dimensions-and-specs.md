@@ -9,7 +9,7 @@ Early prototypes were very scattered, so here we rebase the geometry to build it
 * Switches
   * On center - 18mm
     * Hole dia - 6mm + 0.2mm
-* LED Insert
+* LED Diffuser
   * X/Y/Z - 50/100/3mm
     * Radius - 20mm
 * Cover-plate

@@ -12,9 +12,7 @@ description: 8-in-4 Home Assistant remote and modular switch panel system.
 
 **231112** - Working prototype PCB in testing with nearly feature full MVP ESPHome build and blueprint to integrate into Home Assistant
 
-
-
-[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint\_import.svg)](https://my.home-assistant.io/redirect/blueprint\_import/?blueprint\_url=https%3A%2F%2Fraw.githubusercontent.com%2Fvdbxio%2Fwiki%2Fmain%2Fesphome%2Fbiswitch-blueprint.yaml)
+[![Open your Home Assistant instance and show the blueprint import dialog with a specific blueprint pre-filled.](https://my.home-assistant.io/badges/blueprint\_import.svg)](https://my.home-assistant.io/redirect/blueprint\_import/?blueprint\_url=https%3A%2F%2Fraw.githubusercontent.com%2Fvdbxio%2Fesphome-configs%2Fmain%2Fblueprints%2Fbiswitch-blueprint.yaml)
 
 ## Summary
 

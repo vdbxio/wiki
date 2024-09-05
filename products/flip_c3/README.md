@@ -1,5 +1,5 @@
 ---
-description: An ESP32-C3 with a 50+v tolerant 5v/2A buck converter & other special sauce.
+description: An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce.
 cover: ../../.gitbook/assets/Flip C3-header.jpg
 coverY: 0
 layout:
@@ -32,7 +32,7 @@ Available for sale: [https://www.vdbx.io/product/flip-c3](https://www.vdbx.io/pr
 
 ## Specs & Features
 
-* On-board 5v/2A buck-converter tolerant **up to 50+v DC**
+* On-board 5v/2A buck-converter tolerant **up to 60v DC**
   * &#x20;<mark style="background-color:red;">\*60v absolute max, but do not live connect over 50v (v0.x.x - v1.0.x)</mark>&#x20;
     * Connect to battery when it is low
     * Use a low value resistor to pre-charge circuit (pro move)
