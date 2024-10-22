@@ -43,14 +43,16 @@ I'm hoping documentation improves as we test individual buck ICs.
 
 ## LMR16020 - Active Choice
 
+* 4.3 V to 60 V Input Range
+* 2A Continuous Output Current
+  * Alternate 3A version - LMR16030
+* Ultra-low 40 µA Operating Quiescent Current
+
 {% embed url="https://www.ti.com/product/LMR16020?utm_source=google&utm_medium=cpc&utm_campaign=app-null-null-gpn_en-cpc-pf-google-wwe&utm_content=lmr16020&ds_k=LMR16020&dcm=yes&gclid=CjwKCAjw9J2iBhBPEiwAErwpeZ3i6t5_4YmACY3abskvhz1PHmjeeaS0uvIbnhEyo6aU_jU9awwdgBoC8YYQAvD_BwE&gclsrc=aw.ds" %}
 Product Page on TI.com
 {% endembed %}
 
-* 4.3 V to 60 V Input Range
-* 2A Continuous Output Current
-  * LMR16030 - 3A
-* Ultra-low 40 µA Operating Quiescent Current
+*
 
 ### Datasheet
 

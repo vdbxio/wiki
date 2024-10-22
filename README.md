@@ -24,6 +24,12 @@ This is the official wiki/documentation site for VDBX as of 2023. It is built wi
 
 All documentation and design files for projects are shared as "open source" under Creative Commons 4.0 Attribution Share Alike (CC-BY-SA). Branding and marketing content are reserved as copyrights of Voidbox Industries / VDBX
 
+## Current Products
+
+<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><h3>FLIP_C3         </h3></td><td>Our ESP32 dev board with a 60v max input buck converter. Quickly build ESPHome nodes that run on 12-48v batteries. </td></tr><tr><td>USB-CModkitfor      </td><td></td><td><h3>testing </h3></td></tr><tr><td>fdfdfdfwjwuuuuaaaaaaa</td><td></td><td></td></tr></tbody></table>
+
+
+
 ## About
 
 VDBX or "Voidbox Industries" is currently focused on designing hardware for use with Home Assistant in off-grid, battery powered setups. Our hardware lineup for 2023 is focused on the FLIP-C3 node platform for creating smart devices on off-grid and battery powered systems. The project takes a priority with integrating into Home Assistant via the ESPHome firmware, but can run anything an ESP32-C3 can.&#x20;

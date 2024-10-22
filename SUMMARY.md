@@ -9,18 +9,37 @@
   * [ESPHome](products/flip\_c3/esphome.md)
   * [History & Notes](products/flip\_c3/history-and-notes.md)
   * [BOM Alternates](products/flip\_c3/bom-alternates.md)
-* [PwrTool 500](products/pwrtool500/README.md)
-  * [Installation](products/pwrtool500/installation.md)
-  * [Comparison](products/pwrtool500/comparison.md)
+  * [FLIP Platform](products/flip\_c3/vdbx-flip-platform/README.md)
+    * [Switching Buck Regulators](products/flip\_c3/vdbx-flip-platform/switching-buck-regulators.md)
+    * [23.04 - First Batch Testing](products/flip\_c3/vdbx-flip-platform/23.04-first-batch-testing.md)
 * [USB-C Modkit for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
-* [USB-BD v1.4](products/usb-bd-v1.4.md)
 * [IOByte](products/iobyte/README.md)
   * [Specs & Files](products/iobyte/docs.md)
-* [Hactus](products/hactus.md)
 
-## Circuit Boards <a href="#pcbs" id="pcbs"></a>
+## Coming Soon
 
+* [PwrTool 500](coming-soon/pwrtool500/README.md)
+  * [Installation](coming-soon/pwrtool500/installation.md)
+  * [Comparison](coming-soon/pwrtool500/comparison.md)
+
+## Coming Soon-ish
+
+* [Shift Deck](coming-soon-ish/flip-shift/README.md)
+  * [Installation](coming-soon-ish/flip-shift/installation.md)
+  * [ESPHome](coming-soon-ish/flip-shift/esphome.md)
+  * [Dimensions & Specs](coming-soon-ish/flip-shift/dimensions-and-specs.md)
+
+## Wild Ideas
+
+* [PicoFLIP C3](wild-ideas/picoflip-c3.md)
+* [Open Manufacturing](wild-ideas/open-manufacturing.md)
+* [ESPHome Configs](wild-ideas/esphome-configs.md)
+
+## Old Stuff <a href="#pcbs" id="pcbs"></a>
+
+* [Hactus](pcbs/hactus.md)
 * [PWM Lighting Adapter](pcbs/pwm-lighting-adapter.md)
+* [USB-BD v1.4](pcbs/usb-bd-v1.4.md)
 * [Super-Ultra Low-Profile USB 2.0 Header](pcbs/super-ultra-low-profile-usb-2.0-header.md)
 * [CSR8635 Adapter](pcbs/csr8635-adapter.md)
 
@@ -29,16 +48,6 @@
 * [Concrete Card Holder](concrete/concrete-card-holder.md)
 * [Handy Jr.](concrete/handy-jr..md)
 * [Aura Qi](concrete/aura-qi.md)
-
-## Prototypes
-
-* [FLIP Platform](prototypes/vdbx-flip-platform.md)
-  * [Switching Buck Regulators](prototypes/vdbx-flip-platform/switching-buck-regulators.md)
-  * [23.04 - First Batch Testing](prototypes/vdbx-flip-platform/23.04-first-batch-testing.md)
-* [Shift Deck](prototypes/flip-shift/README.md)
-  * [Installation](prototypes/flip-shift/installation.md)
-  * [ESPHome](prototypes/flip-shift/esphome.md)
-  * [Dimensions & Specs](prototypes/flip-shift/dimensions-and-specs.md)
 
 ## 3D Models
 

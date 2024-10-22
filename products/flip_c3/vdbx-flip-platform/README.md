@@ -4,18 +4,11 @@ description: A platform to create IOT devices for 12-48v battery systems.
 
 # FLIP Platform
 
-<figure><img src="../.gitbook/assets/flip-c3-render-mktg-prelaunch-v090.jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/flip-c3-render-mktg-prelaunch-v090.jpg" alt=""><figcaption><p>Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04</p></figcaption></figure>
 
-## Current State
-
-> Last updated: 23.04.25
-
-* First batch of 10 ordered
-  * Found that LDO circuitry will not work
-* Ordered 10 switching buck PCBs based on LMR16020 IC
-  * Ordered as a separate circuit for analysis before integrating into C3 circuitry - the LMR15030 (3a version) might find its way as a backback or an alternate part pick
-  * Design should fit in same space as LDO circuitry and not drastically encroach on z-height.
-  * Delivered 4/25 to VDBX mailbox in Oakland.
+{% hint style="info" %}
+Some of this is focued on the FLIP\_C3 specifically and will generalize over time. Header footprint is locked as of v1 and mounting hole is locked as of v1.1&#x20;
+{% endhint %}
 
 ## Design Philosophy
 
@@ -26,7 +19,10 @@ The mainboards should be able to power themselves and basic modules from the an 
 I2C should be considered a high-priority interconnect due to its capability for easy expansion and daisy-chaining. In as many situations as possible, modules should be able to function as either tethered I2C device or with a FLIP mainboard installed. A standalone device (mainboard with module) should be able to connect to it's mainboardless version of itself via the Qwiic & Stemma QT compatible connector. In some cases, smaller boards could stack infinitely, limited only by the available I2C addresses. We've currently coined these smaller boards as _backpacks_.
 
 * Power modules should be tolerant to 60v DC input which covers up to 16s Lifepo4 systems.
-* USB-C with 5v LDO regulator as alternate power input allows for alternate power options.
+  * 5v with at least 1A of available power without extra cooling
+  * Future should offer higher voltage ranges for electric
+  * 60v board to board header for distribution
+* USB-C with 5v buck converter
 * Standardized 2.54mm dual header layout between boards
   * Passthrough stacking pin/socket headers included
 * Stemma QT & Qwiic compatible SH 1.0 connectors
@@ -34,13 +30,26 @@ I2C should be considered a high-priority interconnect due to its capability for 
 * Home Assistant as target platform
   * ESP32 for Wifi and Ethernet
     * ESPHome Firmware
-  * EBYTE Modules for Zigbee (future)
-    * PTVO Firmware
-  * Thread (Future)
+* Future Targets
+  * RP2040
+  * EBYTE Modules for Zigbee&#x20;
+    * PTVO Firmware?
+  * Thread/Matter
+    * Must have simple device provision like ESPHome&#x20;
 
-##
+## Software
 
-## Future Products
+You will always be able to write whatever code want to a FLIP device, but our priority is ESPHome due to its ease of use with beginners. Technically minded artists, home automation enthusiasts, and other makers who struggle with will likely find it easier, especially if they have experience with somthing like HTML/CSS.&#x20;
+
+ESPHome is backed by the Open Home Foundation started by Home Assistant/Nabu Casa.
+
+WLED is a high priority platform, but we will likely work within the bounds of existing functionality. Its development is progressing steadily and there is extreme interest in WLED specific features in hardware.
+
+TASMOTA is very popular, and we look forward to seeing any work you do with it. At the moment, we are not going to be focusing any efforts on this platform.&#x20;
+
+
+
+## Possible or Realized Products based on FLIP
 
 * Switch Panel (Unnamed)
 * PwrTool Family
@@ -56,4 +65,3 @@ I2C should be considered a high-priority interconnect due to its capability for 
     * 16020 has a 16030 pin compatible 3A version but will require external component selection. Good for LED control board?
   * RGB Addressable LED control (with DC buck?)
 
-##

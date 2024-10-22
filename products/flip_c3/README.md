@@ -65,6 +65,10 @@ Our early planned product line should be more than covered by the capabilities o
 
 <figure><img src="https://cdn.jsdelivr.net/gh/vdbxio/wiki@main/pcbs/flipc3-pinout.drawio.svg" alt=""><figcaption><p>Pinout of the FLIP_C3</p></figcaption></figure>
 
+
+
+<table><thead><tr><th width="167">Pin Label</th><th width="71">GPIO</th><th>Notes</th></tr></thead><tbody><tr><td>5v</td><td></td><td>5v/2a from buck converter</td></tr><tr><td>3v3</td><td></td><td>3.3v/1a from linear regulator</td></tr><tr><td>SDA1</td><td>1</td><td>GPIO1 - Used as SDA on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>SCL0</td><td>0</td><td>GPIO0 - Used as SCL on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>RX20</td><td>20</td><td>Hardware UART RX - Reassignable</td></tr><tr><td>TX21</td><td>21</td><td>Hardware UART TX - Reassignable</td></tr><tr><td>LED10</td><td>10</td><td>Not connected to header pin</td></tr><tr><td>LED8</td><td>8*</td><td>*Connected to header via DOUT of onboard WS2812 for level shifting</td></tr><tr><td>9/BOOT</td><td>9</td><td>Hold button on boot to force bootloader mode - available as GPIO or on-board button in software</td></tr><tr><td>RESET</td><td>EN</td><td>Pulls EN pin low while pressed</td></tr><tr><td>2 - 7</td><td>2-7</td><td>GPIO Pins, check ESP32-C3-MINI-1 docs for special functions</td></tr></tbody></table>
+
 ## License & Files
 
 The FLIP\_C3 is offered as open source under the [Creative Commons 4.0 Attribution Share-Alike License](https://creativecommons.org/licenses/by-sa/4.0/) (CC 4.0 BY-SA)
