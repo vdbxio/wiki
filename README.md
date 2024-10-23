@@ -1,32 +1,15 @@
 ---
-description: The official VDBX.io documentation
 cover: .gitbook/assets/VDBX-CUBE-WHT@2x.png
 coverY: 132
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Welcome
 
-This is the official wiki/documentation site for VDBX as of 2023. It is built with Gitbook and synced with Github, where you can submit a pull request or issue if you have questions or find a problem.
-
-All documentation and design files for projects are shared as "open source" under Creative Commons 4.0 Attribution Share Alike (CC-BY-SA). Branding and marketing content are reserved as copyrights of Voidbox Industries / VDBX
+> This is the official Voidbox Industries documentation site that will serve as our main website as we've moved all sales to Amazon for the time being. This will allow us more focus on the launch of the PwrTool 500 on Crowd Supply as we near the end of 2024.&#x20;
 
 ## Current Products
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td><h3>FLIP_C3         </h3></td><td>Our ESP32 dev board with a 60v max input buck converter. Quickly build ESPHome nodes that run on 12-48v batteries. </td></tr><tr><td>USB-CModkitfor      </td><td></td><td><h3>testing </h3></td></tr><tr><td>fdfdfdfwjwuuuuaaaaaaa</td><td></td><td></td></tr></tbody></table>
+<table data-header-hidden data-full-width="true"><thead><tr><th>Pic</th><th>Name</th><th>Description</th><th>Links</th></tr></thead><tbody><tr><td><img src=".gitbook/assets/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png" alt=""></td><td><h3>FLIP_C3</h3></td><td>Our ESP32 dev board with a 60v max in buck converter for use on 12-48v batteries. Designed for ESPHome and Home Assistant.</td><td>Buy on Amazon / <a href="products/flip_c3/">Documentation</a></td></tr><tr><td><img src=".gitbook/assets/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png" alt=""></td><td><h3>USB-C for AppleTV</h3></td><td>A full modkit including tools to cleanly replace the AC PSU in an AppleTV 4k (2022) with a 5v USB-C port.</td><td>Buy on Amazon / <a href="products/usb-c-mod-for-apple-tv-2022.md">Documentation</a></td></tr><tr><td><img src=".gitbook/assets/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png" alt=""></td><td><h3>PwrTool 500</h3></td><td>A 500 amp DC battery monitor / smart shunt for Home Assistant. Based on FLIP_C3 using ESPHome. </td><td><a href="https://www.crowdsupply.com/voidbox-industries/pwrtool-500">Launching soon on Crowd Supply</a></td></tr></tbody></table>
 
 
 
@@ -38,7 +21,7 @@ Chloe Madison, resident designer and founder currently lives full time in a conv
 
 ## Support
 
-We make a lot of things that we sell, we also make a lot that is solely to be shared online freely... in either case, we provide all source files so you can hack or make these things yourself. The best way to support our work is to buy our products via our stores on Amazon, Tindie, and our website. You may also buy parts and products via our affiliate links.
+We make a lot of things that we sell, we also make a lot that is solely to be shared online freely... in either case, we provide all source files so you can hack or make these things yourself. The best way to support our work is to buy our products via our stores on Amazon, ~~Tindie, and our website~~. You may also buy parts and products via our affiliate links.
 
 &#x20;If you'd like to show additional or alternate support, you can support any of our makers directly:
 
@@ -47,7 +30,7 @@ We make a lot of things that we sell, we also make a lot that is solely to be sh
 
 ## Message from Chloe
 
-Voidbox Industries is yet another one of my brands making sure I don't have to do a bland 9-5 and instead can rely on my art. It's not always worth it, but making art is a compulsion for me and I can't imagine doing anything else (aside from a new medium that my ADHD has taken a liking to). Also I'm autistic.... have fun with that.&#x20;
+Voidbox Industries is yet another one of my brands making sure I don't have to do a bland 9-5 and instead can rely on my art. It's not always worth it, but making art is a compulsion for me and I can't imagine doing anything else (aside from the dopamine rabbit holes). Also I'm autistic.... have fun with that.&#x20;
 
 In 2017 I decided to dive deeper into a maker hobby most people would have already assumed I had years of experience with. Starting with mold making, concrete pouring and mentally mapping basic material science; all while learning to 3D model and design circuits. But I've always been a designer first ... just with a serious interest in doing so with technology. Graphic design and video production with a baseline set of IT skills has been the definition of my life up until the time I decided to dive head first into a self taught electronics engineering degree.&#x20;
 
