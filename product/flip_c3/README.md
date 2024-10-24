@@ -85,11 +85,11 @@ The FLIP\_C3 is offered as open source under the [Creative Commons 4.0 Attributi
 
 ### PCB
 
-Original design was created in EasyEDA Pro and is available to modify and fork via its listing on OSHW Lab:
+Original design was created in EasyEDA Pro and is available to download for yourself here. Recent versions of KiCAD should be able to import this, but you'll need to connect your own component libraries.
 
-{% embed url="https://oshwlab.com/vdbxio/flip_c3" %}
-OSHWLab/EasyEDA Project Page
-{% endembed %}
+{% file src="../../.gitbook/assets/ProDoc_FLIP_C3_2024-10-24.epro" %}
+EasyEDA Pro File - v1.1 - Exported 2024.10.24
+{% endfile %}
 
 ### 3D Model
 
