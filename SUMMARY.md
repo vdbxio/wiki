@@ -2,19 +2,19 @@
 
 * [Welcome](README.md)
 
-## Current Products <a href="#products" id="products"></a>
+## Current Products <a href="#product" id="product"></a>
 
-* [FLIP\_C3](products/flip\_c3/README.md)
-  * [Home Assistant](products/flip\_c3/home-assistant.md)
-  * [ESPHome](products/flip\_c3/esphome.md)
-  * [History & Notes](products/flip\_c3/history-and-notes.md)
-  * [BOM Alternates](products/flip\_c3/bom-alternates.md)
-  * [FLIP Platform](products/flip\_c3/vdbx-flip-platform/README.md)
-    * [Switching Buck Regulators](products/flip\_c3/vdbx-flip-platform/switching-buck-regulators.md)
-    * [23.04 - First Batch Testing](products/flip\_c3/vdbx-flip-platform/23.04-first-batch-testing.md)
-* [USB-C Modkit for Apple TV 2022](products/usb-c-mod-for-apple-tv-2022.md)
-* [IOByte](products/iobyte/README.md)
-  * [Specs & Files](products/iobyte/docs.md)
+* [FLIP\_C3](product/flip\_c3/README.md)
+  * [Home Assistant](product/flip\_c3/home-assistant.md)
+  * [ESPHome](product/flip\_c3/esphome.md)
+  * [History & Notes](product/flip\_c3/history-and-notes.md)
+  * [BOM Alternates](product/flip\_c3/bom-alternates.md)
+  * [FLIP Platform](product/flip\_c3/vdbx-flip-platform/README.md)
+    * [Switching Buck Regulators](product/flip\_c3/vdbx-flip-platform/switching-buck-regulators.md)
+    * [23.04 - First Batch Testing](product/flip\_c3/vdbx-flip-platform/23.04-first-batch-testing.md)
+* [USB-C Modkit for Apple TV 2022](product/usb-c-mod-for-apple-tv-2022.md)
+* [IOByte](product/iobyte/README.md)
+  * [Specs & Files](product/iobyte/docs.md)
 
 ## Coming Soon
 

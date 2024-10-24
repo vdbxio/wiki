@@ -20,21 +20,31 @@ layout:
 
 # FLIP\_C3
 
-{% hint style="warning" %}
-June 24, 2024 - We are almost out of our v1.0 boards and are finalizing the design of v1.1. The major enhancement in v1.1 is the addition of TVS protection, enabling full 60V compatibility without any caveats. This transient suppression will enhance stability across the entire voltage range and generally strengthen the input side. It will reduce or eliminate failures from hot socketing in daughterboards and protect against damage from intermittently failing circuits, frayed wires, and shorts. High-vibration environments may find use, but ultimate endurance has yet to be tested.
+{% hint style="success" %}
+v1.1 is fully compatible with 60v DC input with the major change being the addition of a bi-directional TVS diode on the input.&#x20;
+
+This transient suppression will enhance stability across the entire voltage range and generally strengthen the input side. It will reduce or eliminate failures from hot socketing in daughterboards and protect against damage from intermittently failing circuits, frayed wires, and shorts. High-vibration environments may find use, but ultimate endurance has yet to be tested.
+{% endhint %}
+
+{% hint style="danger" %}
+1.0.x versions and earlier are susceptible to transients when connected live (including switching) to over \~50v causing permanent damage to the buck converter.  Allow your battery to discharge before connecting. You may install a TVS diode in paralell with one of the input capacitors or use a pre-charge resistor to reduce these transients.&#x20;
 {% endhint %}
 
 ## Summary
 
-The first mainboard for the FLIP platform is an ESP32-C3 board that can be deployed on any battery system from 6-50\* VDC. It is designed for use with ESPHome, but can be flashed with other popular firmwares such as TASMOTA and WLED. We have a whole line of smart products based on this as their main powerhouse.
+The first development board for the FLIP platform is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED.&#x20;
 
-Available for sale: [https://www.vdbx.io/product/flip-c3](https://www.vdbx.io/product/flip-c3)
+
+
+fartas
 
 ## Specs & Features
 
-* On-board 5v/2A buck-converter tolerant **up to 60v DC**
-  * &#x20;<mark style="background-color:red;">\*60v absolute max, but do not live connect over 50v (v0.x.x - v1.0.x)</mark>&#x20;
-    * Connect to battery when it is low
+* On-board 5v/2A buck-converter tolerant **up to 60v DC input**
+  * **V1.1 -** Full 60V input tolerance with transient suppression
+  * &#x20;**v0.x.x - v1.0.x** - 60v absolute max, do not live connect over 50v
+    * Connect to battery when it is below 50v
+    * Install TVS in parallel with input capacitor
     * Use a low value resistor to pre-charge circuit (pro move)
 * Low-profile press-in wire connector for DC input
   * 24-16AWG Solid
