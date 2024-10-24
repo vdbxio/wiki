@@ -19,7 +19,9 @@ layout:
 
 # Welcome
 
-> This is the official Voidbox Industries documentation site that will serve as our main website as we've moved all sales to Amazon for the time being. This will allow us more focus on the launch of the PwrTool 500 on Crowd Supply as we near the end of 2024.&#x20;
+> This is the official Voidbox Industries documentation site that will soon serve as our main website since we've moved all sales to Amazon. This will allow us to focus more on the Crowd Supply campaign for the PwrTool 500.
+>
+> _Chloe Madison - Nov 2024_
 
 ## Current Products
 
@@ -46,17 +48,19 @@ We make a lot of things that we sell, we also make a lot that is solely to be sh
 
 Voidbox Industries is yet another one of my brands making sure I don't have to do a bland 9-5 and instead can rely on my art. It's not always worth it, but making art is a compulsion for me and I can't imagine doing anything else (aside from the dopamine rabbit holes). Also I'm autistic.... have fun with that.&#x20;
 
-In 2017 I decided to dive deeper into a maker hobby most people would have already assumed I had years of experience with. Starting with mold making, concrete pouring and mentally mapping basic material science; all while learning to 3D model and design circuits. But I've always been a designer first ... just with a serious interest in doing so with technology. Graphic design and video production with a baseline set of IT skills has been the definition of my life up until the time I decided to dive head first into a self taught electronics engineering degree.&#x20;
+In 2017, while becoming disillusioned with the tech industry, I decided to dive deeper into a maker hobby most people would have already assumed I had years of experience with. Starting with mold making, concrete pouring and mentally mapping basic material science; all while learning to 3D model and design circuits. I've always been a designer first ... just with a serious interest in doing so with technology. Going down this road opened my eyes to what I was capable of as an artist.
 
 When COVID hit, I was focused on making concrete [knicknacks](concrete/concrete-card-holder.md) and my sales immediately dried up, but a few months later, my unemployment finally went thru and I decided to make some changes. At the time I was living in a van and had a small private art studio in Berkeley amongst a shared artist warehouse. I realized this wasn't tenable long-term and I wanted to consolidate even more so that I wouldn't run into a situation where not being able to pay rent would turn to dire circumstances.&#x20;
 
-I found my bus in July 2020 and immediately started building and also moved in while it was still very much a prototype. Over the next couple years, I worked on building it closer and closer to my vision, while I prepped to get back to work as the world decided that COVID doesn't exist anymore. I spent  a significant amount of this time dealing with mental health issues , but I have recently gotten medial help and feel a lot better and am ready to go. Unfortunately this means I have to put my concrete work on hold until I can have a space to make that kind of mess again.
+I found my bus in July 2020 and immediately started building and also moved in while it was still very much a prototype. Over the next few years, I worked on building it closer and closer to my vision, while I prepped to get back to work as the world decided that COVID doesn't exist anymore. I spent a significant amount of this time dealing with physical and mental health issues, but thankfully do have access to medical care. Unfortunately this means I have to put my concrete work on hold until I have space to make that kind of mess again.
 
-I knew this was necessary when I moved everything into the bus, so I'm not upset by it despite missing it. I'm really excited about the work I've been able to do while building my house and the work I plan on doing this year, 2023. Being a part of the Home Assistant community brings me joy and while I may not be great with code, I seem to be pretty ok with hardware and I appreciate the many brilliant people who create the software.
+I knew this was necessary when I moved everything into the bus, so I'm not upset by it despite missing it. In 2023 I started refining some of my findings from building my bus and integrating Home Assistant into an off-grid application and released the FLIP\_C3 and the end of that year. In June of 2024 I got the PwrTool 500 pre-launched on Crowd Supply with the official lauch coming around Jan 2025.
 
-I hope to someday have the opportunity to turn VDBX.io into a worker co-op that manufactures & retails open hardware for other makers and artists, especially under-represented folks.  Today voidbox is just another brand to keep me from doing a 9-5... by the end of the year, I hope it's not just me... and next year more. I'm going to keep trying even though my track record isn't that great.
+I'm starting to become seen by my peers which feels really amazing.&#x20;
 
-@clomads
+I hope to someday have the opportunity to turn Voidbox into a worker co-op that manufactures & retails open hardware for other makers and artists, especially under-represented folks.  It may just be me right now, but I use "we" optimistically throughout these docs.
+
+_@clomads - Chloe Madison_
 
 ## Affiliate Marketing
 
