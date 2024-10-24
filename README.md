@@ -19,6 +19,10 @@ layout:
 
 # Welcome
 
+{% hint style="info" %}
+Please bear with us as we move functionality from our main site to this site. You can contact us on Discord or via our form above.
+{% endhint %}
+
 > This is the official Voidbox Industries documentation site that will soon serve as our main website since we've moved all sales to Amazon. This will allow us to focus more on the Crowd Supply campaign for the PwrTool 500.
 >
 > _Chloe Madison - Nov 2024_
