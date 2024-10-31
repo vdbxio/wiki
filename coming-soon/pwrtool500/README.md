@@ -16,6 +16,12 @@ We've recently started using this ESPHome component and thank the author for the
 24.04.10 - We've been accepted to do a crowdfunding campaign with Crowd Supply. More details coming soon - expect updated docs as we lock in final details.
 {% endhint %}
 
+## Working Manual
+
+We've started getting hardware into the hands of reviewers and testers. This manual, while incomplete, will get you going.
+
+{% file src="../../.gitbook/assets/2024.10-pwrtool-manual.pdf" %}
+
 ## Overview
 
 A 500 amp smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box.&#x20;
