@@ -7,6 +7,7 @@
 * [FLIP\_C3](product/flip\_c3/README.md)
   * [Home Assistant](product/flip\_c3/home-assistant.md)
   * [ESPHome](product/flip\_c3/esphome.md)
+  * [WLED](product/flip\_c3/wled.md)
   * [History & Notes](product/flip\_c3/history-and-notes.md)
   * [BOM Alternates](product/flip\_c3/bom-alternates.md)
   * [FLIP Platform](product/flip\_c3/vdbx-flip-platform/README.md)
