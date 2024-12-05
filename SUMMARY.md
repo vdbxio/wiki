@@ -4,24 +4,19 @@
 
 ## Current Products <a href="#product" id="product"></a>
 
-* [FLIP\_C3](product/flip\_c3/README.md)
-  * [Home Assistant](product/flip\_c3/home-assistant.md)
-  * [ESPHome](product/flip\_c3/esphome.md)
-  * [WLED](product/flip\_c3/wled.md)
-  * [History & Notes](product/flip\_c3/history-and-notes.md)
-  * [BOM Alternates](product/flip\_c3/bom-alternates.md)
-  * [FLIP Platform](product/flip\_c3/vdbx-flip-platform/README.md)
-    * [Switching Buck Regulators](product/flip\_c3/vdbx-flip-platform/switching-buck-regulators.md)
-    * [23.04 - First Batch Testing](product/flip\_c3/vdbx-flip-platform/23.04-first-batch-testing.md)
+* [FLIP\_C3](product/flip_c3/README.md)
+  * [Home Assistant](product/flip_c3/home-assistant.md)
+  * [ESPHome](product/flip_c3/esphome.md)
+  * [WLED](product/flip_c3/wled.md)
+  * [History & Notes](product/flip_c3/history-and-notes.md)
+  * [BOM Alternates](product/flip_c3/bom-alternates.md)
+  * [FLIP Platform](product/flip_c3/vdbx-flip-platform/README.md)
+    * [Switching Buck Regulators](product/flip_c3/vdbx-flip-platform/switching-buck-regulators.md)
+    * [23.04 - First Batch Testing](product/flip_c3/vdbx-flip-platform/23.04-first-batch-testing.md)
 * [USB-C Modkit for Apple TV 2022](product/usb-c-mod-for-apple-tv-2022.md)
-* [IOByte](product/iobyte/README.md)
-  * [Specs & Files](product/iobyte/docs.md)
-
-## Coming Soon
-
-* [PwrTool 500](coming-soon/pwrtool500/README.md)
-  * [Installation](coming-soon/pwrtool500/installation.md)
-  * [Comparison](coming-soon/pwrtool500/comparison.md)
+* [PwrTool 500](product/pwrtool500/README.md)
+  * [Installation](product/pwrtool500/installation.md)
+  * [Comparison](product/pwrtool500/comparison.md)
 
 ## Coming Soon-ish
 
@@ -29,15 +24,17 @@
   * [Installation](coming-soon-ish/flip-shift/installation.md)
   * [ESPHome](coming-soon-ish/flip-shift/esphome.md)
   * [Dimensions & Specs](coming-soon-ish/flip-shift/dimensions-and-specs.md)
+* [PicoFLIP C3](coming-soon-ish/picoflip-c3.md)
 
 ## Wild Ideas
 
-* [PicoFLIP C3](wild-ideas/picoflip-c3.md)
 * [Open Manufacturing](wild-ideas/open-manufacturing.md)
 * [ESPHome Configs](wild-ideas/esphome-configs.md)
 
 ## Old Stuff <a href="#pcbs" id="pcbs"></a>
 
+* [IOByte](pcbs/iobyte/README.md)
+  * [Specs & Files](pcbs/iobyte/docs.md)
 * [Hactus](pcbs/hactus.md)
 * [PWM Lighting Adapter](pcbs/pwm-lighting-adapter.md)
 * [USB-BD v1.4](pcbs/usb-bd-v1.4.md)
