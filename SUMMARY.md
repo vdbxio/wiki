@@ -21,6 +21,7 @@
 
 ## Coming Soon-ish
 
+* [PwrTop 18](coming-soon-ish/pwrtop-18.md)
 * [Shift Deck](coming-soon-ish/flip-shift/README.md)
   * [Installation](coming-soon-ish/flip-shift/installation.md)
   * [ESPHome](coming-soon-ish/flip-shift/esphome.md)
