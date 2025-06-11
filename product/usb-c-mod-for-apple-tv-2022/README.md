@@ -1,6 +1,6 @@
 ---
 description: Power your Apple TV with USB-C
-cover: ../.gitbook/assets/atv-modkit-wiki.jpg
+cover: ../../.gitbook/assets/atv-modkit-wiki.jpg
 coverY: 0
 ---
 
@@ -70,15 +70,15 @@ Circuit boards were designed in EasyEDA Pro and are available to fork via OSHWLa
 
 3D models were designed in Fusion 360 (not parametric)
 
-{% file src="../.gitbook/assets/Apple TV USB-C Mod v21.f3d" %}
+{% file src="../../.gitbook/assets/Apple TV USB-C Mod v21.f3d" %}
 ddddd
 {% endfile %}
 
 ## Mesh files for Printing
 
-{% file src="../.gitbook/assets/Spacer-ATV2022Modkit.stl" %}
+{% file src="../../.gitbook/assets/Spacer-ATV2022Modkit.stl" %}
 
-{% file src="../.gitbook/assets/Shroud-ATV2022Modkit.stl" %}
+{% file src="../../.gitbook/assets/Shroud-ATV2022Modkit.stl" %}
 
 ## Change Log
 
