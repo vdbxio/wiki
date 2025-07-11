@@ -2,20 +2,6 @@
 description: The Smallest 18650 Battery Bank
 cover: ../.gitbook/assets/Untitled design.jpg
 coverY: 111
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # PwrTop 18
@@ -42,7 +28,7 @@ There are currently two ways to attach the PwrTop 18 circuit board to an 18650 c
 
 <figure><img src="../.gitbook/assets/signal-2025-06-12-125511.jpeg" alt="" width="375"><figcaption><p>Two 18650s: One shows its wrap circumcised, the other has a PwrTop with 3D Printed Cap</p></figcaption></figure>
 
-The 3D printed cap adds a bit of thickness, but is the easiest way to get going and allows you to quickly switch out cells. The only modification needed is to circumcise your cell's wrap near the positive end. Use the crimped groove on this side to cleanly cut the wrap as if it's foil on a bottle of wine. Remove this little bit of plastic and any circular insulators it held in place.
+The 3D printed cap adds a bit of thickness, but is the easiest way to get going and allows you to quickly switch out cells (depending on tolerance of print). The only modification needed is to circumcise your cell's wrap near the positive end. Use the crimped groove on this side to cleanly cut the wrap as if it's foil on a bottle of wine. Remove this little bit of plastic and any circular insulators it held in place.
 
 Assembly of the PwrTop 18 circuit board into the 3D print is a bit fiddly, but once placed, you can simply friction fit the assembly on your cell. A clockwise twisting motion may help properly seat it on tighter fitting cells. I don't want to condone a quick smack on the top, but it does work.&#x20;
 
@@ -50,7 +36,11 @@ Assembly of the PwrTop 18 circuit board into the 3D print is a bit fiddly, but o
 
 ### Re-wrap Method
 
-This produces the most streamlined assembly and is great for long-term use in this configuration. You will need an 18650 heat-shrink wrap in a color of your choice and a US dime, or something of similar thickness that is less than 18mm in-diameter. Optionally insulate the base with an 18mm sticker.&#x20;
+{% hint style="warning" %}
+Due to the heat produced by the PwrTop in operation, this method may soften and reduce the integrity of the heat shrink holding the PCB in place. We no longer recommend this method until we find a way to improve it.
+{% endhint %}
+
+This produces a more streamlined assembly but is still being tested. You will need an 18650 heat-shrink wrap in a color of your choice and a US dime, or something of similar thickness that is less than 18mm in-diameter. Optionally insulate the base with an 18mm sticker.&#x20;
 
 Current Process: (Working)
 
