@@ -2,20 +2,6 @@
 description: An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce.
 cover: ../../.gitbook/assets/Flip C3-header.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # FLIP\_C3
@@ -33,10 +19,6 @@ This transient suppression will enhance stability across the entire voltage rang
 ## Summary
 
 The first development board for the FLIP platform is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED.&#x20;
-
-
-
-fartas
 
 ## Specs & Features
 
@@ -67,17 +49,17 @@ fartas
 
 ### ESP32-C3
 
-The ESP32-C3 is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for Ethernet PHYs including the LAN8720 and W5500.
+The ESP32-C3 is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for Ethernet PHYs including the LAN8720 and W5500.&#x20;
 
 Our early planned product line should be more than covered by the capabilities of the C3... the biggest concern being limited to one I2C bus, but we'll cross that bridge when we come to it.
 
 ## Pinout
 
-<figure><img src="https://cdn.jsdelivr.net/gh/vdbxio/wiki@main/pcbs/flipc3-pinout.drawio.svg" alt=""><figcaption><p>Pinout of the FLIP_C3</p></figcaption></figure>
+<figure><img src="https://cdn.jsdelivr.net/gh/vdbxio/wiki@main/pcbs/flipc3-pinout.drawio.svg" alt=""><figcaption><p>Pinout of the FLIP_C3 - Ignore call-out on v 1.1</p></figcaption></figure>
 
 
 
-<table><thead><tr><th width="167">Pin Label</th><th width="71">GPIO</th><th>Notes</th></tr></thead><tbody><tr><td>5v</td><td></td><td>5v/2a from buck converter</td></tr><tr><td>3v3</td><td></td><td>3.3v/1a from linear regulator</td></tr><tr><td>SDA1</td><td>1</td><td>GPIO1 - Used as SDA on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>SCL0</td><td>0</td><td>GPIO0 - Used as SCL on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>RX20</td><td>20</td><td>Hardware UART RX - Reassignable</td></tr><tr><td>TX21</td><td>21</td><td>Hardware UART TX - Reassignable</td></tr><tr><td>LED10</td><td>10</td><td>Not connected to header pin</td></tr><tr><td>LED8</td><td>8*</td><td>*Connected to header via DOUT of onboard WS2812 for level shifting</td></tr><tr><td>9/BOOT</td><td>9</td><td>Hold button on boot to force bootloader mode - available as GPIO or on-board button in software</td></tr><tr><td>RESET</td><td>EN</td><td>Pulls EN pin low while pressed</td></tr><tr><td>2 - 7</td><td>2-7</td><td>GPIO Pins, check ESP32-C3-MINI-1 docs for special functions</td></tr></tbody></table>
+<table><thead><tr><th width="167">Pin Label</th><th width="71">GPIO</th><th>Notes</th></tr></thead><tbody><tr><td>5v</td><td></td><td>5V/2A from buck converter</td></tr><tr><td>3v3</td><td></td><td>3.3V/1A from linear regulator</td></tr><tr><td>SDA1</td><td>1</td><td>GPIO1 - Used as SDA on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>SCL0</td><td>0</td><td>GPIO0 - Used as SCL on StemmaQT/Qwiic Connector and FLIP header compatible daughterboards</td></tr><tr><td>RX20</td><td>20</td><td>Hardware UART RX - Reassignable</td></tr><tr><td>TX21</td><td>21</td><td>Hardware UART TX - Reassignable</td></tr><tr><td>LED10</td><td>10</td><td>Not connected to header pin</td></tr><tr><td>LED8</td><td>8*</td><td>*Connected to header via DOUT of onboard WS2812 for level shifting</td></tr><tr><td>9/BOOT</td><td>9</td><td>Hold button on boot to force bootloader mode - available as GPIO or on-board button in software</td></tr><tr><td>RESET</td><td>EN</td><td>Pulls EN pin low while pressed</td></tr><tr><td>2 - 7</td><td>2-7</td><td>GPIO Pins, check ESP32-C3-MINI-1 docs for special functions</td></tr></tbody></table>
 
 ## License & Files
 

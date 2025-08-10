@@ -1,5 +1,5 @@
 ---
-description: READ THIS PAGE IN LIGHT MODE FOR NOW
+description: READ THIS PAGE IN LIGHT MODE FOR NOW, SORRY
 ---
 
 # Installation

@@ -1,20 +1,6 @@
 ---
 cover: .gitbook/assets/VDBX-CUBE-WHT@2x.png
 coverY: 132
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: false
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Welcome

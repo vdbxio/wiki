@@ -1,21 +1,14 @@
 # ESPHome
 
-## Easy Start
-
-1. Plug it in - give your FLIP\_C3 6-60vdc\* or USB-C power
-2. Provision Wifi
-   1. Check Home Assistant for notifications or new devices
-      1. Enter Wifi Info - Uses bluetooth integration
-   2. Alternately look for FLIP\_C3 WiFi and use "GenericPassword"
-      1. Wait for login window or go to [_192.168.4.1_](http://192.168.4.1)
-      2. Enter WiFi info
-3. [Check ESPHome dashboard for device to adopt](esphome.md#adopt-in-esphome)
+[Wifi Instructions](home-assistant.md)
 
 ## USB Recover
 
 If you need to reinstall the base firmware, we've set up an easy installer on our main website.  This will allow you to use Chrome or Edge to install it via a USB-C cable. Current versions **cannot** be connected via USB-C while powered via the buck converter.&#x20;
 
-[https://www.vdbx.io/install](https://www.vdbx.io/install)
+### [www.vdbx.io](https://www.vdbx.io)
+
+### Troubleshooting
 
 You may need to hold the BOOT button as you connect the USB cable. Alternatively you can hold the BOOT button while you press and release the RESET button if the FLIP\_C3 is already connected via USB-C. Hold the BOOT button for a couple seconds after the device is connected to your computer and then proceed with the installation above. Once complete, power cycle the FLIP-C3 with the RESET button or disconnecting and reconnecting the cable. You can also use this time to swap to a DC power source via the 2P spring connector.&#x20;
 
@@ -85,7 +78,6 @@ light:
   - platform: esp32_rmt_led_strip
     id: onboard_rgb
     rgb_order: GRB
-    rmt_channel: 0
     chipset: ws2812    
     pin: 8
     restore_mode: RESTORE_AND_OFF

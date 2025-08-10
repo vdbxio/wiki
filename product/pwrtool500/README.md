@@ -69,7 +69,7 @@ The PwrTool 500 is open source and files are provided under CC4.0-BY-SA
 
 ### EasyEDA Pro
 
-Schematic, Board, & BOM are originally created in EasyEDA pro. Also see [FLIP\_C3](../../product/flip\_c3/#license-and-files) files.
+Schematic, Board, & BOM are originally created in EasyEDA pro. Also see [FLIP\_C3](../flip_c3/#license-and-files) files.
 
 {% file src="../../.gitbook/assets/ProDocument_PWRTool 500_2024-05-11.epro" %}
 EasyEDA Pro file
@@ -77,7 +77,7 @@ EasyEDA Pro file
 
 ### 3D Models
 
-coming soon - made in Onshape
+coming soon
 
 ## Open Software
 

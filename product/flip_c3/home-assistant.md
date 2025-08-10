@@ -4,17 +4,24 @@ description: Get Started Quickly
 
 # Home Assistant
 
+## BLE Improv
+
+If you have the Bluetooth integration active in Home Assistant, you may be able to configure your FLIP\_C3's Wifi credentials directly. Hit the blue button below to check your integrations page.
+
 ## WiFi
 
-Upon powering your FLIP\_C3 via the DC connector or the USB-C port, it will flash a red LED and create a WiFi network named `flip-c3-xxxx`. You can connect to this network with password `GenericPassword`. It should automatically present you page to select your WiFi network, but if not, visit [http://192.168.4.1/](http://192.168.4.1/) in your browser.
+Your FLIP\_C3 will also create a Wifi access point as a backup.
+
+```
+network: flip-c3-xxxx
+pass: GenericPassword
+```
+
+It should automatically present you page to set your WiFi credentials, but if not, visit [http://192.168.4.1/](http://192.168.4.1/) in your browser.
 
 Check your Home Assistant notifications or Integrations page to adopt your FLIP\_C3 as an ESPHome device.
 
 [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
-
-## Bluetooth
-
-If you have the Bluetooth integration active in Home Assistant, you may be able to adopt your FLIP\_C3 into Home Assistant immediately upon powering. This is a new feature that is being implemented.
 
 ## ESPHome
 
