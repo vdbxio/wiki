@@ -46,9 +46,9 @@ USB-BD doesn't actually mean anything. It was a silly name an ex called them whe
 
 ## Design Files
 
-The USB-BD is currently being developed in EasyEDA Pro. The link below will take you to the public project where you can inspect and fork the schematic and board layout.
+The USB-BD was developed in EasyEDA Pro. The project file includes both the v1.1 & v1.4 board designs and is importable in KiCAD
 
-[https://oshwlab.com/vdbxio/usb-bd-1-4](https://oshwlab.com/vdbxio/usb-bd-1-4)
+{% file src="../.gitbook/assets/USB-BD v1.4_2025-09-03.epro" %}
 
 ### TODO
 
@@ -87,4 +87,4 @@ Jan 2023
 * Pushing off v2.0 version with dual position port
   * Keep switch replacement and new data alignment
 
-[![I sell on Tindie](https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png)](https://www.tindie.com/stores/vdbxio/?ref=offsite\_badges\&utm\_source=sellers\_clomads\&utm\_medium=badges\&utm\_campaign=badge\_small)
+[![I sell on Tindie](https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-smalls.png)](https://www.tindie.com/stores/vdbxio/?ref=offsite_badges\&utm_source=sellers_clomads\&utm_medium=badges\&utm_campaign=badge_small)
