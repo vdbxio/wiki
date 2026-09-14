@@ -13,6 +13,7 @@ vdbx:
   buy:
     - label: Buy on Amazon
       url: https://amzn.to/40i4fuK
+  firmware: https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json
 ---
 :::tip
 v1.1 is fully compatible with 60v DC input with the major change being the addition of a bi-directional TVS diode on the input. 

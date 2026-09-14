@@ -60,7 +60,7 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
 
   <section class="row">
     <h2>Install.</h2>
-    <p>Your FLIP_C3 should be pre-loaded with ESPHome. If you run into issues, or want to start fresh with ESPHome or WLED, the current configs and builds live in <a href="https://github.com/vdbxio/esphome-configs">vdbxio/esphome-configs</a>, and the browser installers at <a href="https://web.esphome.io/">web.esphome.io</a> and <a href="https://install.wled.me/">install.wled.me</a> flash over a USB cable in Chrome or Edge.</p>
+    <p>Your board ships with ESPHome on it. To start fresh, or to put the latest release on it, plug it in and use <button type="button" class="linkish" data-connect-open>Connect</button> in the rail. It flashes over USB from Chrome or Edge, straight from <a href="https://github.com/vdbxio/esphome-configs">vdbxio/esphome-configs</a>. For WLED use <a href="https://install.wled.me/">install.wled.me</a>.</p>
   </section>
 
   </div>
@@ -101,5 +101,6 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   .who strong { color: var(--sl-color-white); font-weight: 600; margin-inline-end: 0.5rem; }
   .protos { padding-left: 1.2rem; }
   .about { max-width: none; border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 2rem; margin-top: 2.5rem; }
+  .linkish { background: none; border: 0; padding: 0; font: inherit; color: var(--sl-color-accent); text-decoration: underline; cursor: pointer; }
   .fine { font-family: var(--sl-font-mono); font-size: 0.75rem; color: var(--sl-color-gray-4); }
 </style>
