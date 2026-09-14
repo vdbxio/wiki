@@ -9,6 +9,7 @@ vdbx:
   status: production
   section: products
   msrp: 149.95
+  hero: /attachments/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png
   works_with:
     - FLIP_C3
   buy:

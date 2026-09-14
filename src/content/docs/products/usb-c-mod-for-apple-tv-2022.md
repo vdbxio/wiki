@@ -9,7 +9,7 @@ vdbx:
   status: production
   section: products
   msrp: 29.99
-  hero: /attachments/atv-modkit-wiki.jpg
+  hero: /attachments/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png
   works_with:
     - A2843
     - A2737
