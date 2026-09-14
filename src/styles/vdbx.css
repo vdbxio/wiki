@@ -25,7 +25,8 @@
   --sl-color-gray-5: #3a3a40;
   --sl-color-gray-6: #222226;
   --sl-color-black: #111113;
-  --vdbx-tint: linear-gradient(135deg, #1c2744 0%, #3a1c3a 100%);
+  --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
+  --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.45));
 }
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffd6ff;
@@ -39,7 +40,8 @@
   --sl-color-gray-5: #d8d8d8;
   --sl-color-gray-6: #f6f6f7;
   --sl-color-black: #ffffff;
-  --vdbx-tint: linear-gradient(135deg, #dfe9ff 0%, #f7dcf6 100%);
+  --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
+  --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.35));
 }
 
 /* Type */

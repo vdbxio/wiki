@@ -63,7 +63,7 @@ const targets = products.filter((p) => p.firmware);
   .targets { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
   .target { display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--sl-color-hairline-shade); border-radius: 16px; overflow: hidden; }
   .pic { background: var(--vdbx-tint); aspect-ratio: 16 / 9; }
-  .pic img { width: 100%; height: 100%; object-fit: contain; padding: 6%; box-sizing: border-box; display: block; }
+  .pic img { width: 100%; height: 100%; object-fit: contain; padding: 6%; box-sizing: border-box; display: block; filter: var(--vdbx-render-shadow); }
   .info { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.3rem; }
   h3 { font-family: var(--vdbx-display); font-weight: 700; font-size: 1.5rem; line-height: 1; margin: 0; }
   .ver { margin: 0; font-family: var(--sl-font-mono); font-size: 0.78rem; color: var(--sl-color-gray-3); min-height: 1.2em; }

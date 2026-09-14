@@ -35,7 +35,7 @@ const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
   .prod { display: grid; gap: 1.5rem; }
   .prod .hero { margin-top: 0.5rem; }
   .prod .hero { border-radius: 18px; overflow: hidden; background: var(--vdbx-tint); aspect-ratio: 16 / 7; }
-  .prod .hero img { width: 100%; height: 100%; object-fit: contain; padding: 4%; box-sizing: border-box; display: block; }
+  .prod .hero img { width: 100%; height: 100%; object-fit: contain; padding: 4%; box-sizing: border-box; display: block; filter: var(--vdbx-render-shadow); }
   .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.5rem 0 0; font-family: var(--sl-font-mono); font-size: 0.85rem; color: var(--sl-color-gray-3); text-transform: uppercase; letter-spacing: 0.04em; }
   .meta .status { color: var(--sl-color-accent); }
   .meta .s-out_of_stock, .meta .s-validation, .meta .s-production { color: var(--vdbx-caution-edge); }
