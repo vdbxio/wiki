@@ -1,6 +1,6 @@
 ---
 import Search from '@astrojs/starlight/components/Search.astro';
-import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+import ThemeToggle from './ThemeToggle.astro';
 import cube from '../cube.svg?raw';
 
 const { sidebar } = Astro.locals.starlightRoute;
@@ -43,7 +43,7 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
 
   <div class="tools print:hidden">
     <Search />
-    <ThemeSelect />
+    <ThemeToggle />
   </div>
 
   <p class="meta">VDBX.io<br />CC-BY-SA 4.0<br />Voidbox Industries<br />Branding rights reserved</p>
@@ -66,15 +66,15 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
   .nav li.child a { padding-inline-start: 0.9rem; color: var(--sl-color-gray-3); }
   .nav a[aria-current='page'] { color: var(--sl-color-accent); }
   .nav a[aria-current='page']::before { content: '▸ '; }
-  .tools { display: flex; flex-direction: column; gap: 0.6rem; padding-top: 0.25rem; border-top: 1px solid var(--sl-color-hairline-shade); }
-  .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 0.9rem; }
+  .tools { display: flex; flex-direction: row; gap: 0.5rem; margin-top: 0.5rem; }
+  .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); }
   @media (max-width: 49.99rem) {
     .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
     .cube { width: 3.5rem; }
     .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
     .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
     .nav li.child a { padding-inline-start: 0; }
-    .tools { flex-direction: row; border: 0; padding: 0; width: 100%; }
+    .tools { margin: 0; }
     .meta { display: none; }
   }
 </style>

@@ -23,6 +23,7 @@ export default defineConfig({
         PageFrame: './src/components/PageFrame.astro',
         Sidebar: './src/components/Rail.astro',
         PageTitle: './src/components/PageTitle.astro',
+        ThemeSelect: './src/components/ThemeToggle.astro',
       },
       plugins: [starlightLlmsTxt()],
       sidebar,
