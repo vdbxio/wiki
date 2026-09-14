@@ -70,3 +70,6 @@ site-search > button[data-open-modal] svg { width: 1.1rem; height: 1.1rem; }
 
 /* No divider between the title panel and the body; spacing does the work, as in the doc layout */
 .vdbx-page .content-panel + .content-panel { border-top: 0; padding-top: 0.5rem; }
+
+/* Black-on-transparent line art marked with |invert in the vault flips in dark mode */
+:root[data-theme='dark'] .sl-markdown-content img.invert-dark { filter: invert(1) hue-rotate(180deg); }

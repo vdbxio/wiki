@@ -54,13 +54,13 @@ Use the included guitar picks to open the AppleTV by inserting them into the sea
 * The goal is all three clips on 3 sides
 * No need to go around the corners.
 
-![](https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/6464516e217778688e18df58_atv%20kit%20-%20step%201.png)
+<img src="https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/6464516e217778688e18df58_atv%20kit%20-%20step%201.png" alt="" class="invert-dark" />
 
 #### Remove PSU and Power Connector
 
 There are 5 T7 screws around the PSU and 2 T5 in the power connector. The included T6 allen key has been tested to fit both, but may be a tight fit in the T5 screws. Remove these screws and discard the PSU and connector. You may choose to keep these items in a safe place in case you choose to revert this mod.
 
-![](https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/6464523296dfb19fb7f8f43a_atv%20kit%20-%20step%202.png)
+<img src="https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/6464523296dfb19fb7f8f43a_atv%20kit%20-%20step%202.png" alt="" class="invert-dark" />
 
 #### Install the Modkit
 
@@ -70,7 +70,7 @@ There are 5 T7 screws around the PSU and 2 T5 in the power connector. The includ
 
 3\) Align the USB-C port in the opening of the shroud from Step 1 and then lower the opposite side towards the screw holes left over from removing the PSU. As shown in the image below, you want to use the two inner screw holes and not the very far one.
 
-![|570x553](https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/64645413c9dee2c7f870e0ed_atvkit%20-%20step%203.png)
+<img src="https://uploads-ssl.webflow.com/636ae8935f5e73bfc3442a0b/64645413c9dee2c7f870e0ed_atvkit%20-%20step%203.png" alt="" width="570" class="invert-dark" />
 
 ## Design Files
 
