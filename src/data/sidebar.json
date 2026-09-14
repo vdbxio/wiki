@@ -1,0 +1,107 @@
+[
+  {
+    "label": "Products",
+    "items": [
+      {
+        "label": "FLIP_C3",
+        "items": [
+          {
+            "label": "FLIP_C3",
+            "link": "/products/flip_c3/"
+          },
+          {
+            "label": "FLIP Platform",
+            "link": "/products/flip_c3/vdbx-flip-platform/"
+          }
+        ]
+      },
+      {
+        "label": "PwrTool 500",
+        "link": "/products/pwrtool500/"
+      },
+      {
+        "label": "USB-C Modkit for Apple TV 4K",
+        "link": "/products/usb-c-mod-for-apple-tv-2022/"
+      }
+    ]
+  },
+  {
+    "label": "Prototypes",
+    "items": [
+      {
+        "label": "PicoFLIP C3",
+        "link": "/prototypes/picoflip-c3/"
+      },
+      {
+        "label": "PwrTop 18",
+        "link": "/prototypes/pwrtop-18/"
+      },
+      {
+        "label": "Shift Deck",
+        "link": "/prototypes/flip-shift/"
+      },
+      {
+        "label": "Open Manufacturing",
+        "link": "/prototypes/open-manufacturing/"
+      },
+      {
+        "label": "ESPHome Configs",
+        "link": "/prototypes/esphome-configs/"
+      }
+    ]
+  },
+  {
+    "label": "Old Stuff",
+    "items": [
+      {
+        "label": "Aura Qi",
+        "link": "/pcbs/aura-qi/"
+      },
+      {
+        "label": "Concrete Business Card Holder",
+        "link": "/pcbs/concrete-card-holder/"
+      },
+      {
+        "label": "CSR8635 Breakout v1.0",
+        "link": "/pcbs/csr8635-adapter/"
+      },
+      {
+        "label": "Hactus",
+        "link": "/pcbs/hactus/"
+      },
+      {
+        "label": "Handy Jr.",
+        "link": "/pcbs/handy-jr/"
+      },
+      {
+        "label": "IOByte 8",
+        "link": "/pcbs/iobyte/"
+      },
+      {
+        "label": "PWM Lighting Adapter",
+        "link": "/pcbs/pwm-lighting-adapter/"
+      },
+      {
+        "label": "Super-Ultra Low-Profile USB 2.0 Header",
+        "link": "/pcbs/super-ultra-low-profile-usb-20-header/"
+      },
+      {
+        "label": "USB-BD",
+        "link": "/pcbs/usb-bd-v14/"
+      }
+    ]
+  },
+  {
+    "label": "3D Models",
+    "items": [
+      {
+        "label": "M12 Drill/Driver Friction Fit Holder",
+        "link": "/3d-models/m12-drill-driver-friction-fit-holder/"
+      },
+      {
+        "label": "More Coming Soon",
+        "link": "/3d-models/more-coming-soon/"
+      }
+    ]
+  }
+]
