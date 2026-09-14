@@ -18,10 +18,6 @@ vdbx:
     - label: Buy on Amazon
       url: https://amzn.to/3rvqmkk
 ---
-## Batches
-
----
-
 :::note
 **For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
 :::
