@@ -8,6 +8,8 @@ vdbx:
   status: retired
   section: pcbs
   msrp: 6.99
+  links:
+    - url: https://oshwlab.com/clomads/CSR8635_Breakout-72f90a02e918496186b20209678dd9dc
 ---
 Bluetooth audio breakout. Was selling on Tindie for $3–5 each; the remainder was moved to Amazon at $6.99 as an experiment (may start at $7.99). Version 2 was to depend on how fast these sold.
 

@@ -8,6 +8,11 @@ vdbx:
   status: retired
   section: pcbs
   menu_tag: concrete
+  links:
+    - url: https://www.youtube.com/watch?v=KN8OaVveK0U
+  files:
+    - url: /attachments/HANDY%20JR%20v28.f3z
+      name: HANDY JR v28.f3z
 ---
 ![](/attachments/handy-jr-promo-6.jpg)
 *A late 2019 promotional image for the Handy Jr.*

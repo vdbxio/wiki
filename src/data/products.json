@@ -192,6 +192,11 @@
     "status": "retired",
     "section": "pcbs",
     "msrp": 6.99,
+    "links": [
+      {
+        "url": "https://oshwlab.com/clomads/CSR8635_Breakout-72f90a02e918496186b20209678dd9dc"
+      }
+    ],
     "name": "CSR8635 Breakout v1.0",
     "path": "/pcbs/csr8635-adapter/",
     "description": ""
@@ -203,6 +208,25 @@
     "section": "pcbs",
     "msrp": 24.99,
     "hero": "/attachments/hactus-hero-splay.jpg",
+    "links": [
+      {
+        "url": "https://oshwlab.com/clomads/hacker-cactus"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/Hactus%20v28.f3d",
+        "name": "Hactus v28.f3d"
+      },
+      {
+        "url": "/attachments/hactus-pot.3mf",
+        "name": "hactus-pot.3mf"
+      },
+      {
+        "url": "/attachments/hactus-pot.stl",
+        "name": "hactus-pot.stl"
+      }
+    ],
     "name": "Hactus",
     "path": "/pcbs/hactus/",
     "description": "The Hacker's Cactus"
@@ -212,6 +236,17 @@
     "status": "retired",
     "section": "pcbs",
     "menu_tag": "concrete",
+    "links": [
+      {
+        "url": "https://www.youtube.com/watch?v=KN8OaVveK0U"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/HANDY%20JR%20v28.f3z",
+        "name": "HANDY JR v28.f3z"
+      }
+    ],
     "name": "Handy Jr.",
     "path": "/pcbs/handy-jr/",
     "description": "A concrete and bendy arm helping hands."

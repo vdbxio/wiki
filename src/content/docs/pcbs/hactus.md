@@ -10,6 +10,15 @@ vdbx:
   section: pcbs
   msrp: 24.99
   hero: /attachments/hactus-hero-splay.jpg
+  links:
+    - url: https://oshwlab.com/clomads/hacker-cactus
+  files:
+    - url: /attachments/Hactus%20v28.f3d
+      name: Hactus v28.f3d
+    - url: /attachments/hactus-pot.3mf
+      name: hactus-pot.3mf
+    - url: /attachments/hactus-pot.stl
+      name: hactus-pot.stl
 ---
 Concrete pot with a PCB set. Did not sell well on Amazon with the concrete pot (low margin). Sold a few PCB sets on Tindie; remaining PCB sets given away at Teardown 2024.
 

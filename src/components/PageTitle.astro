@@ -21,7 +21,7 @@ const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
         {price && <span class="price">{price}</span>}
       </p>
       {d.description && <p class="lede">{d.description}</p>}
-      {v.links?.length ? <p class="row">{v.links.map((l) => { const c = classifyLink(l.url, l.label); return <LinkButton href={l.url} kind={c.kind} label={c.label} />; })}</p> : null}
+      {v.links?.length ? <p class="row"><span class="k">Links</span>{v.links.map((l) => { const c = classifyLink(l.url, l.label); return <LinkButton href={l.url} kind={c.kind} label={c.label} />; })}</p> : null}
       {v.files?.length ? <p class="row files"><span class="k">Files</span>{v.files.map((f) => { const c = classifyFile(f.name, f.label); return <LinkButton href={`${base}${f.url}`} kind={c.kind} label={c.label} ext={c.ext} title={f.name} download />; })}</p> : null}
       {v.works_with?.length ? <p class="ww"><span>Works with</span> {v.works_with.join(' · ')}</p> : null}
     </div>
