@@ -15,6 +15,7 @@ vdbx:
   buy:
     - label: Pre-order on Crowd Supply
       url: https://www.crowdsupply.com/voidbox-industries/pwrtool-500
+  firmware: https://vdbxio.github.io/esphome-configs/firmware/pwrtool500/manifest.json
 ---
 ![](/attachments/pwrtool500-wiki-features2312.jpg)
 *PwrTool Hardware as of Dec 2023 (Some info out of date)*
