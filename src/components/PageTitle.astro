@@ -5,7 +5,7 @@ const v = d.vdbx;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const isLanding = Astro.url.pathname.replace(/\/$/, '') === base;
 const isProduct = v?.type === 'product';
-const STATUS = { production: 'Shipping', preorder: 'Pre-order', out_of_stock: 'Out of stock', validation: 'Validation', prototype: 'Prototype', idea: 'Idea', retired: 'Retired' };
+const STATUS = { idea: 'Idea', prototype: 'Prototype', validation: 'Validation', preorder: 'Pre-order', production: 'Production', shipping: 'Shipping', out_of_stock: 'Out of stock', retired: 'Retired' };
 const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
 ---
 {isProduct ? (
@@ -38,7 +38,7 @@ const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
   .prod .hero img { width: 100%; height: 100%; object-fit: contain; padding: 4%; box-sizing: border-box; display: block; }
   .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.5rem 0 0; font-family: var(--sl-font-mono); font-size: 0.85rem; color: var(--sl-color-gray-3); text-transform: uppercase; letter-spacing: 0.04em; }
   .meta .status { color: var(--sl-color-accent); }
-  .meta .s-out_of_stock, .meta .s-validation { color: var(--vdbx-caution-edge); }
+  .meta .s-out_of_stock, .meta .s-validation, .meta .s-production { color: var(--vdbx-caution-edge); }
   .meta .s-retired { color: var(--sl-color-gray-4); }
   .meta .note { text-transform: none; letter-spacing: 0; color: var(--sl-color-gray-3); }
   .lede { font-size: 1.15rem; color: var(--sl-color-gray-2); margin: 0.5rem 0 0; max-width: 60ch; }

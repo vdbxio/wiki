@@ -16,12 +16,12 @@
         ]
       },
       {
-        "label": "PwrTool 500",
-        "link": "/products/pwrtool500/"
-      },
-      {
         "label": "USB-C Modkit for Apple TV 4K",
         "link": "/products/usb-c-mod-for-apple-tv-2022/"
+      },
+      {
+        "label": "PwrTool 500",
+        "link": "/products/pwrtool500/"
       }
     ]
   },

@@ -2,7 +2,7 @@
 title: PwrTop 18
 description: The Smallest 18650 Battery Bank
 sidebar:
-  order: 5
+  order: 6
 vdbx:
   type: product
   status: prototype

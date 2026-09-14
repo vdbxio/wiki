@@ -2,7 +2,7 @@
 title: PwrTool 500
 description: 500A Smart Shunt for Home Assistant
 sidebar:
-  order: 1
+  order: 3
 vdbx:
   type: product
   id: VBX2350

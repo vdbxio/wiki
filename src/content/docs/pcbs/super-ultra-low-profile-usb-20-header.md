@@ -2,7 +2,7 @@
 title: Super-Ultra Low-Profile USB 2.0 Header
 description: For Motherboards
 sidebar:
-  order: 7
+  order: 8
 vdbx:
   type: product
   status: retired

@@ -2,7 +2,7 @@
 title: PWM Lighting Adapter
 description: 4x N-Channel MOSFETs designed to fit on common PCA9685 modules
 sidebar:
-  order: 7
+  order: 8
 vdbx:
   type: product
   status: retired

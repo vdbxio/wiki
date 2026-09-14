@@ -2,7 +2,7 @@
 title: Shift Deck
 description: 8-in-4 Home Assistant remote and modular switch panel system.
 sidebar:
-  order: 5
+  order: 6
 vdbx:
   type: product
   status: prototype

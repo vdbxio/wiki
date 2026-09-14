@@ -1,7 +1,7 @@
 ---
 title: CSR8635 Breakout v1.0
 sidebar:
-  order: 7
+  order: 8
 vdbx:
   type: product
   id: VBX0040

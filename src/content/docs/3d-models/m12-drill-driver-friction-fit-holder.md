@@ -4,7 +4,7 @@ sidebar:
   order: 1
 vdbx:
   type: product
-  status: production
+  status: shipping
   section: 3d-models
 ---
 ![](/attachments/Screenshot%202023-04-26%20at%2012.05.03%20AM.png)

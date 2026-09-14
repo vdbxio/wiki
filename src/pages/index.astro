@@ -5,9 +5,9 @@ import { getEntry, render } from 'astro:content';
 import products from '../data/products.json';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const LIVE = ['production', 'preorder', 'out_of_stock', 'validation'];
+const LIVE = ['shipping', 'preorder', 'production', 'out_of_stock', 'validation'];
 const current = products.filter((p) => p.section === 'products' && LIVE.includes(p.status));
-const LABEL = { production: null, preorder: 'Pre-order', out_of_stock: 'Out of stock', validation: 'In validation' };
+const LABEL = { production: 'Production', out_of_stock: 'Out of stock', validation: 'Validation' };
 const protos = products.filter((p) => (p.status === 'prototype' || p.status === 'validation') && p.section === 'prototypes');
 const about = await getEntry('docs', 'about');
 const About = about ? (await render(about)).Content : null;
@@ -20,7 +20,7 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
       <article class="card">
         <a class="hero" href={`${base}${p.path}`} aria-label={p.name}>
           {p.hero ? <img src={`${base}${p.hero}`} alt="" loading="lazy" /> : <span class="hero-empty">{p.name}</span>}
-          {p.status === 'out_of_stock' || p.status === 'validation' ? <span class="tag">{LABEL[p.status]}</span> : p.buy?.[0] && <span class="tag">{p.buy[0].label} ↗</span>}
+          {LABEL[p.status] ? <span class="tag">{LABEL[p.status]}</span> : p.buy?.[0] && <span class="tag">{p.buy[0].label} ↗</span>}
         </a>
         <h2><a href={`${base}${p.path}`}>{p.name}</a></h2>
         <p>{p.description}</p>

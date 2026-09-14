@@ -6,7 +6,7 @@ sidebar:
 vdbx:
   type: product
   id: VBX2310
-  status: production
+  status: shipping
   section: products
   msrp: 29.99
   hero: /attachments/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png

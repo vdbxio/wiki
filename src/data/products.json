@@ -2,7 +2,7 @@
   {
     "type": "product",
     "id": "VBX2360",
-    "status": "production",
+    "status": "shipping",
     "section": "products",
     "msrp": 19.95,
     "hero": "/attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png",
@@ -18,11 +18,33 @@
   },
   {
     "type": "product",
-    "status": "production",
+    "status": "shipping",
     "section": "3d-models",
     "name": "M12 Drill/Driver Friction Fit Holder",
     "path": "/3d-models/m12-drill-driver-friction-fit-holder/",
     "description": ""
+  },
+  {
+    "type": "product",
+    "id": "VBX2310",
+    "status": "shipping",
+    "section": "products",
+    "msrp": 29.99,
+    "hero": "/attachments/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png",
+    "works_with": [
+      "A2843",
+      "A2737",
+      "Apple TV 4K (2022)"
+    ],
+    "buy": [
+      {
+        "label": "Buy on Amazon",
+        "url": "https://amzn.to/3rvqmkk"
+      }
+    ],
+    "name": "USB-C Modkit for Apple TV 4K",
+    "path": "/products/usb-c-mod-for-apple-tv-2022/",
+    "description": "Power your Apple TV with USB-C"
   },
   {
     "type": "product",
@@ -43,28 +65,6 @@
     "name": "PwrTool 500",
     "path": "/products/pwrtool500/",
     "description": "500A Smart Shunt for Home Assistant"
-  },
-  {
-    "type": "product",
-    "id": "VBX2310",
-    "status": "production",
-    "section": "products",
-    "msrp": 29.99,
-    "hero": "/attachments/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png",
-    "works_with": [
-      "A2843",
-      "A2737",
-      "Apple TV 4K (2022)"
-    ],
-    "buy": [
-      {
-        "label": "Buy on Amazon",
-        "url": "https://amzn.to/3rvqmkk"
-      }
-    ],
-    "name": "USB-C Modkit for Apple TV 4K",
-    "path": "/products/usb-c-mod-for-apple-tv-2022/",
-    "description": "Power your Apple TV with USB-C"
   },
   {
     "type": "product",

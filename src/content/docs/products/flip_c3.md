@@ -6,7 +6,7 @@ sidebar:
 vdbx:
   type: product
   id: VBX2360
-  status: production
+  status: shipping
   section: products
   msrp: 19.95
   hero: /attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png
