@@ -41,19 +41,21 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
     <a class="top" href={`${base}/about/`} aria-current={isAbout ? 'page' : undefined}>About</a>
   </div>
 
-  <div class="tools print:hidden">
-    <Search />
-    <ThemeToggle />
+  <div class="foot">
+    <div class="tools print:hidden">
+      <Search />
+      <ThemeToggle />
+    </div>
+    <p class="meta">VDBX.io<br />CC-BY-SA 4.0<br />Voidbox Industries<br />Branding rights reserved</p>
   </div>
-
-  <p class="meta">VDBX.io<br />CC-BY-SA 4.0<br />Voidbox Industries<br />Branding rights reserved</p>
 </div>
 
 <style>
-  .rail { display: flex; flex-direction: column; gap: 1.6rem; font-family: var(--sl-font-mono); }
+  .rail { display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
   .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
-  .nav { display: flex; flex-direction: column; gap: 0.35rem; }
+  /* the nav takes the remaining height and scrolls on its own; logo and footer stay put */
+  .nav { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; padding-bottom: 1rem; mask-image: linear-gradient(to bottom, #000 calc(100% - 1.25rem), transparent); }
   .nav a, .nav summary { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
   .nav .top { font-size: 1.1rem; }
   .nav a:hover, .nav summary:hover { text-decoration: underline; text-underline-offset: 4px; }
@@ -66,7 +68,8 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
   .nav li.child a { padding-inline-start: 0.9rem; color: var(--sl-color-gray-3); }
   .nav a[aria-current='page'] { color: var(--sl-color-accent); }
   .nav a[aria-current='page']::before { content: '▸ '; }
-  .tools { display: flex; flex-direction: row; gap: 0.5rem; margin-top: 0.5rem; }
+  .foot { display: flex; flex-direction: column; gap: 0.7rem; flex: 0 0 auto; }
+  .tools { display: flex; flex-direction: row; gap: 0.5rem; }
   .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); }
   @media (max-width: 49.99rem) {
     .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
@@ -74,7 +77,8 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
     .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
     .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
     .nav li.child a { padding-inline-start: 0; }
-    .tools { margin: 0; }
+    .nav { flex: none; overflow: visible; mask-image: none; padding-bottom: 0; }
+    .foot { width: 100%; }
     .meta { display: none; }
   }
 </style>

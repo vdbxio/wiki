@@ -17,7 +17,7 @@ const { hasSidebar } = Astro.locals.starlightRoute;
 
   @media (min-width: 50rem) {
     .vdbx-page[data-rail] { display: grid; grid-template-columns: var(--vdbx-rail-width) minmax(0, 1fr); }
-    .vdbx-rail { position: sticky; top: 0; height: 100vh; overflow-y: auto; scrollbar-width: none; padding: var(--vdbx-rail-pad-top) 1.5rem 2rem 2.25rem; border-inline-end: 1px solid var(--sl-color-hairline-shade); }
+    .vdbx-rail { position: sticky; top: 0; height: 100vh; overflow: hidden; display: flex; flex-direction: column; padding: var(--vdbx-rail-pad-top) 1.5rem 2rem 2.25rem; border-inline-end: 1px solid var(--sl-color-hairline-shade); }
   }
   @media (max-width: 49.99rem) {
     /* the mobile TOC bar is fixed at the top; keep the rail's logo clear of it */
