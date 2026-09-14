@@ -12,6 +12,7 @@ const About = about ? (await render(about)).Content : null;
 const CTA = { production: 'Buy', preorder: 'Pre-order' };
 ---
 <StarlightPage frontmatter={{ title: 'Voidbox Industries.', description: 'Open hardware for off-grid Home Assistant.', tableOfContents: false, pagefind: false }}>
+  <div class="landing not-content">
   <section class="cards">
     {current.map((p) => (
       <article class="card">
@@ -60,17 +61,21 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
     <p>Your FLIP_C3 should be pre-loaded with ESPHome. If you run into issues, or want to start fresh with ESPHome or WLED, the current configs and builds live in <a href="https://github.com/vdbxio/esphome-configs">vdbxio/esphome-configs</a>, and the browser installers at <a href="https://web.esphome.io/">web.esphome.io</a> and <a href="https://install.wled.me/">install.wled.me</a> flash over a USB cable in Chrome or Edge.</p>
   </section>
 
+  </div>
+
   {About && (
     <section class="row about" id="about">
       <About />
     </section>
   )}
 
-  <p class="fine">As an Amazon Associate I earn from qualifying purchases.</p>
+  <p class="fine not-content">As an Amazon Associate I earn from qualifying purchases.</p>
 </StarlightPage>
 
 <style>
-  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 2rem 0 3rem; }
+  .landing { display: flex; flex-direction: column; gap: 2.5rem; margin-top: 2rem; }
+  .landing > * { margin: 0; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; }
   .card .hero { position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 22px; overflow: hidden; background: var(--vdbx-tint); }
   .card .hero img { width: 100%; height: 100%; object-fit: contain; padding: 8%; box-sizing: border-box; display: block; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
@@ -83,7 +88,8 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   .card .links a { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
   .card .links a:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
   @media (max-width: 40rem) { .cards { grid-template-columns: 1fr; } }
-  .row { margin: 0 0 2.5rem; max-width: 60ch; }
+  .row { max-width: 60ch; }
+  .row p + p, .row blockquote + p { margin-top: 0.75rem; }
   .row h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 0 0 0.6rem; }
   .row h2 a { color: var(--sl-color-white); text-decoration: none; }
   .row h2 a:hover { color: var(--sl-color-accent); }
@@ -92,6 +98,6 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   .who { font-family: var(--sl-font-mono); font-size: 0.9rem; }
   .who strong { color: var(--sl-color-white); font-weight: 600; margin-inline-end: 0.5rem; }
   .protos { padding-left: 1.2rem; }
-  .about { max-width: none; border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 2rem; }
+  .about { max-width: none; border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 2rem; margin-top: 2.5rem; }
   .fine { font-family: var(--sl-font-mono); font-size: 0.75rem; color: var(--sl-color-gray-4); }
 </style>
