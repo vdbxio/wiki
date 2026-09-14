@@ -1,0 +1,20 @@
+import { defineCollection, z } from 'astro:content';
+import { docsLoader } from '@astrojs/starlight/loaders';
+import { docsSchema } from '@astrojs/starlight/schema';
+
+// Extra frontmatter written by the vault's publish step.
+const vdbx = z.object({
+  type: z.enum(['product', 'page']),
+  id: z.string().optional(),
+  status: z.enum(['idea', 'prototype', 'preorder', 'production', 'retired']).optional(),
+  section: z.string().optional(),
+  menu_tag: z.string().optional(),
+  msrp: z.number().optional(),
+  hero: z.string().optional(),
+  works_with: z.array(z.string()).optional(),
+  parent: z.string().optional(),
+}).optional();
+
+export const collections = {
+  docs: defineCollection({ loader: docsLoader(), schema: docsSchema({ extend: z.object({ vdbx }) }) }),
+};

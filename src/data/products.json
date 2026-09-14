@@ -1,0 +1,171 @@
+[
+  {
+    "type": "product",
+    "id": "VBX2360",
+    "status": "production",
+    "section": "products",
+    "msrp": 19.95,
+    "hero": "/attachments/Flip%20C3-header.jpg",
+    "name": "FLIP_C3",
+    "path": "/products/flip_c3/",
+    "description": "An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce."
+  },
+  {
+    "type": "product",
+    "status": "production",
+    "section": "3d-models",
+    "name": "M12 Drill/Driver Friction Fit Holder",
+    "path": "/3d-models/m12-drill-driver-friction-fit-holder/",
+    "description": ""
+  },
+  {
+    "type": "product",
+    "id": "VBX2350",
+    "status": "production",
+    "section": "products",
+    "msrp": 149.95,
+    "works_with": [
+      "FLIP_C3"
+    ],
+    "name": "PwrTool 500",
+    "path": "/products/pwrtool500/",
+    "description": "500A Smart Shunt for Home Assistant"
+  },
+  {
+    "type": "product",
+    "id": "VBX2310",
+    "status": "production",
+    "section": "products",
+    "msrp": 29.99,
+    "hero": "/attachments/atv-modkit-wiki.jpg",
+    "works_with": [
+      "A2843",
+      "A2737",
+      "Apple TV 4K (2022)"
+    ],
+    "name": "USB-C Modkit for Apple TV 4K",
+    "path": "/products/usb-c-mod-for-apple-tv-2022/",
+    "description": "Power your Apple TV with USB-C"
+  },
+  {
+    "type": "product",
+    "status": "prototype",
+    "section": "prototypes",
+    "works_with": [
+      "FLIP_C3"
+    ],
+    "name": "PicoFLIP C3",
+    "path": "/prototypes/picoflip-c3/",
+    "description": "An extremely tiny LED controller based on ESP32-C3 with a mezzanine interconnect for GPIO"
+  },
+  {
+    "type": "product",
+    "status": "prototype",
+    "section": "prototypes",
+    "hero": "/attachments/Untitled%20design.jpg",
+    "name": "PwrTop 18",
+    "path": "/prototypes/pwrtop-18/",
+    "description": "The Smallest 18650 Battery Bank"
+  },
+  {
+    "type": "product",
+    "status": "prototype",
+    "section": "prototypes",
+    "works_with": [
+      "FLIP_C3",
+      "Home Assistant"
+    ],
+    "name": "Shift Deck",
+    "path": "/prototypes/flip-shift/",
+    "description": "8-in-4 Home Assistant remote and modular switch panel system."
+  },
+  {
+    "type": "product",
+    "status": "retired",
+    "section": "pcbs",
+    "menu_tag": "concrete",
+    "hero": "/attachments/aura-v1-1500-50.jpg",
+    "name": "Aura Qi",
+    "path": "/pcbs/aura-qi/",
+    "description": "A 5w Qi charging pad encased mostly in concrete with a lasered wood veneer top."
+  },
+  {
+    "type": "product",
+    "id": "VBX0010",
+    "status": "retired",
+    "section": "pcbs",
+    "menu_tag": "concrete",
+    "msrp": 30,
+    "hero": "/attachments/P1030731.jpg",
+    "name": "Concrete Business Card Holder",
+    "path": "/pcbs/concrete-card-holder/",
+    "description": "with Magnet & Steel Ball"
+  },
+  {
+    "type": "product",
+    "id": "VBX0040",
+    "status": "retired",
+    "section": "pcbs",
+    "msrp": 6.99,
+    "name": "CSR8635 Breakout v1.0",
+    "path": "/pcbs/csr8635-adapter/",
+    "description": ""
+  },
+  {
+    "type": "product",
+    "id": "VBX2001",
+    "status": "retired",
+    "section": "pcbs",
+    "msrp": 24.99,
+    "hero": "/attachments/hactus-hero-splay.jpg",
+    "name": "Hactus",
+    "path": "/pcbs/hactus/",
+    "description": "The Hacker's Cactus"
+  },
+  {
+    "type": "product",
+    "status": "retired",
+    "section": "pcbs",
+    "menu_tag": "concrete",
+    "name": "Handy Jr.",
+    "path": "/pcbs/handy-jr/",
+    "description": "A concrete and bendy arm helping hands."
+  },
+  {
+    "type": "product",
+    "id": "VBX2302",
+    "status": "retired",
+    "section": "pcbs",
+    "msrp": 6.99,
+    "name": "IOByte 8",
+    "path": "/pcbs/iobyte/",
+    "description": "A modern take on a timeless I2C IO expander"
+  },
+  {
+    "type": "product",
+    "status": "retired",
+    "section": "pcbs",
+    "name": "PWM Lighting Adapter",
+    "path": "/pcbs/pwm-lighting-adapter/",
+    "description": "4x N-Channel MOSFETs designed to fit on common PCA9685 modules"
+  },
+  {
+    "type": "product",
+    "status": "retired",
+    "section": "pcbs",
+    "name": "Super-Ultra Low-Profile USB 2.0 Header",
+    "path": "/pcbs/super-ultra-low-profile-usb-20-header/",
+    "description": "For Motherboards"
+  },
+  {
+    "type": "product",
+    "id": "VBX1901",
+    "status": "retired",
+    "section": "pcbs",
+    "msrp": 9.99,
+    "hero": "/attachments/BBD-Hero.jpg",
+    "name": "USB-BD",
+    "path": "/pcbs/usb-bd-v14/",
+    "description": "Quickly get 5v from those old Micro-USB cables you have lying around."
+  }
+]

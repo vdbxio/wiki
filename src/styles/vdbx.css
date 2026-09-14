@@ -1,0 +1,16 @@
+/* vdbx.io tokens. Phase 4 does the real design pass; this keeps the site on-brand meanwhile. */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+:root {
+  --sl-font: Inter, system-ui, sans-serif;
+  --sl-font-mono: "DM Mono", ui-monospace, Menlo, monospace;
+  --sl-color-accent: #ff00ff;
+  --sl-color-accent-high: #ff5cff;
+  --sl-color-accent-low: #3a1c3a;
+}
+:root[data-theme='light'] {
+  --sl-color-accent: #d400d4;
+  --sl-color-accent-high: #8a008a;
+  --sl-color-accent-low: #ffd6ff;
+}
+h1, h2, h3 { font-family: "League Spartan", var(--sl-font); font-weight: 700; letter-spacing: -0.01em; }
+.site-title { font-family: "League Spartan", var(--sl-font); font-weight: 700; }
