@@ -1,16 +1,64 @@
-/* vdbx.io tokens. Phase 4 does the real design pass; this keeps the site on-brand meanwhile. */
+/* vdbx.io — tokens over Starlight's variables. Layout lives in the component overrides. */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  --sl-font: Inter, system-ui, sans-serif;
-  --sl-font-mono: "DM Mono", ui-monospace, Menlo, monospace;
-  --sl-color-accent: #ff00ff;
-  --sl-color-accent-high: #ff5cff;
+  --vdbx-display: "League Spartan", "League Spartan Placeholder", var(--sl-font);
+  --sl-font: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --sl-font-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --vdbx-rail-width: 15.5rem;
+  --sl-sidebar-width: 15.5rem;
+  --sl-content-width: 46rem;
+  --sl-text-h1: 3rem;
+
+  /* dark */
   --sl-color-accent-low: #3a1c3a;
+  --sl-color-accent: #ff5cff;
+  --sl-color-accent-high: #ffb0ff;
+  --sl-color-white: #ececec;
+  --sl-color-gray-1: #dcdcdf;
+  --sl-color-gray-2: #cfcfd2;
+  --sl-color-gray-3: #a2a2a8;
+  --sl-color-gray-4: #7b7b82;
+  --sl-color-gray-5: #3a3a40;
+  --sl-color-gray-6: #222226;
+  --sl-color-black: #111113;
+  --vdbx-tint: linear-gradient(135deg, #1c2744 0%, #3a1c3a 100%);
 }
 :root[data-theme='light'] {
-  --sl-color-accent: #d400d4;
-  --sl-color-accent-high: #8a008a;
   --sl-color-accent-low: #ffd6ff;
+  --sl-color-accent: #d400d4;
+  --sl-color-accent-high: #7a007a;
+  --sl-color-white: #191919;
+  --sl-color-gray-1: #2a2a2a;
+  --sl-color-gray-2: #404040;
+  --sl-color-gray-3: #666666;
+  --sl-color-gray-4: #8a8a8a;
+  --sl-color-gray-5: #d8d8d8;
+  --sl-color-gray-6: #f6f6f7;
+  --sl-color-black: #ffffff;
+  --vdbx-tint: linear-gradient(135deg, #dfe9ff 0%, #f7dcf6 100%);
 }
-h1, h2, h3 { font-family: "League Spartan", var(--sl-font); font-weight: 700; letter-spacing: -0.01em; }
-.site-title { font-family: "League Spartan", var(--sl-font); font-weight: 700; }
+
+/* Type */
+.sl-markdown-content :is(h1, h2, h3, h4) { font-family: var(--vdbx-display); font-weight: 700; letter-spacing: -0.01em; }
+.sl-markdown-content h2 { font-size: 1.9rem; }
+.sl-markdown-content h3 { font-size: 1.35rem; font-weight: 400; }
+.sl-markdown-content :is(code, kbd) { font-family: var(--sl-font-mono); }
+.sl-markdown-content a { color: var(--sl-color-accent); }
+.sl-markdown-content img { border-radius: 12px; }
+.sl-markdown-content em:has(+ *) { color: var(--sl-color-gray-3); }
+
+/* Right-hand table of contents in DM Mono, matching the rail */
+.right-sidebar { font-family: var(--sl-font-mono); }
+.right-sidebar h2 { font-family: var(--sl-font-mono); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem; color: var(--sl-color-gray-3); }
+
+/* Asides carry the corporate accent for the neutral kinds */
+.starlight-aside--note { --sl-color-asides-text-accent: var(--sl-color-accent); --sl-color-asides-border: var(--sl-color-accent); background-color: var(--sl-color-accent-low); }
+
+/* Search button and theme select sit in the rail */
+site-search button { width: 100%; justify-content: flex-start; font-family: var(--sl-font-mono); }
+starlight-theme-select { font-family: var(--sl-font-mono); }
+
+/* Content hugs the rail instead of centering when there is no right-hand TOC (landing, About) */
+:root:not([data-has-toc]) .main-pane { --sl-content-margin-inline: 0 auto; }
+@media (min-width: 50rem) { .vdbx-page .content-panel { padding-inline: 3.25rem 2rem; } }

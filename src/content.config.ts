@@ -13,6 +13,7 @@ const vdbx = z.object({
   hero: z.string().optional(),
   works_with: z.array(z.string()).optional(),
   parent: z.string().optional(),
+  buy: z.array(z.object({ label: z.string(), url: z.string() })).optional(),
 }).optional();
 
 export const collections = {

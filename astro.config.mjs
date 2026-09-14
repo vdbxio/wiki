@@ -18,6 +18,12 @@ export default defineConfig({
       title: 'Voidbox Industries',
       description: 'Open hardware for off-grid Home Assistant. FLIP_C3, PwrTool 500, and friends.',
       customCss: ['./src/styles/vdbx.css'],
+      favicon: '/favicon.svg',
+      components: {
+        PageFrame: './src/components/PageFrame.astro',
+        Sidebar: './src/components/Rail.astro',
+        PageTitle: './src/components/PageTitle.astro',
+      },
       plugins: [starlightLlmsTxt()],
       sidebar,
       social: [

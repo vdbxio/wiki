@@ -1,0 +1,26 @@
+---
+// vdbx.io frame: a left rail and the page. No top bar.
+const { hasSidebar } = Astro.locals.starlightRoute;
+---
+<div class="vdbx-page" data-rail={hasSidebar ? '' : undefined}>
+  {hasSidebar && (
+    <nav class="vdbx-rail print:hidden" aria-label="Site navigation">
+      <slot name="sidebar" />
+    </nav>
+  )}
+  <div class="main-frame"><slot /></div>
+</div>
+
+<style is:global>
+  :root { --sl-nav-height: 0rem; }
+  .vdbx-page { min-height: 100vh; }
+
+  @media (min-width: 50rem) {
+    .vdbx-page[data-rail] { display: grid; grid-template-columns: var(--vdbx-rail-width) minmax(0, 1fr); }
+    .vdbx-rail { position: sticky; top: 0; height: 100vh; overflow-y: auto; scrollbar-width: none; padding: 2.5rem 1.5rem 2rem 2.25rem; border-inline-end: 1px solid var(--sl-color-hairline-shade); }
+  }
+  @media (max-width: 49.99rem) {
+    /* the mobile TOC bar is fixed at the top; keep the rail's logo clear of it */
+    .vdbx-rail { padding: calc(1.25rem + var(--sl-mobile-toc-height)) 1.25rem 0.75rem; border-bottom: 1px solid var(--sl-color-hairline-shade); }
+  }
+</style>

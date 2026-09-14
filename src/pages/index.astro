@@ -1,0 +1,98 @@
+---
+// Landing page, adapted from vdbx.io: product cards, then the site's standing sections, then About.
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { getEntry, render } from 'astro:content';
+import products from '../data/products.json';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const current = products.filter((p) => p.section === 'products' && (p.status === 'production' || p.status === 'preorder'));
+const protos = products.filter((p) => p.status === 'prototype' && p.section === 'prototypes');
+const about = await getEntry('docs', 'about');
+const About = about ? (await render(about)).Content : null;
+const CTA = { production: 'Buy', preorder: 'Pre-order' };
+---
+<StarlightPage frontmatter={{ title: 'Voidbox Industries', description: 'Open hardware for off-grid Home Assistant.', tableOfContents: false, pagefind: false }}>
+  <h1 class="sr-only">Voidbox Industries</h1>
+  <section class="cards">
+    {current.map((p) => (
+      <article class="card">
+        <a class="hero" href={`${base}${p.path}`} aria-label={p.name}>
+          {p.hero ? <img src={`${base}${p.hero}`} alt="" loading="lazy" /> : <span class="hero-empty">{p.name}</span>}
+          {p.buy?.[0] && <span class="tag">{p.buy[0].label} ↗</span>}
+        </a>
+        <h2><a href={`${base}${p.path}`}>{p.name}</a></h2>
+        <p>{p.description}</p>
+        <p class="links">
+          {p.buy?.[0] && <a href={p.buy[0].url} target="_blank" rel="noopener">{p.buy[0].label} ↗</a>}
+          <a href={`${base}${p.path}`}>Documentation ↗</a>
+        </p>
+      </article>
+    ))}
+  </section>
+
+  <section class="row">
+    <h2>Open By Design.</h2>
+    <p>We focus on using ESPHome for integration with Home Assistant, one of the fastest growing and largest open-source projects on GitHub. If you ever want to write your own code, we'd never stop you. You can even grab the hardware design files in the docs. Things are still new around here so bear with us and raise an issue if you need any help.</p>
+  </section>
+
+  <section class="row">
+    <h2>Tested in the field.</h2>
+    <blockquote>"I believe that automation can truly improve our lives rather than letting someone else hoard more money upon your labor. Over the years I have been investing time into automating the off-grid systems I live with. I document the lessons for anyone to use as I prototype them into real products. It means a lot that I can not only make accessibility and infrastructure for myself, but for others as well."</blockquote>
+    <p class="who"><strong>Chloe Madison</strong> <a href="https://www.clomads.com/">@clomads</a> · <a href="https://instagram.com/clomads">Instagram</a> · <a href="https://clomads.bsky.social/">Bluesky</a> · <a href="https://www.tiktok.com/@clomads">TikTok</a> · <a href="https://www.youtube.com/clomads">YouTube</a></p>
+  </section>
+
+  {protos.length > 0 && (
+    <section class="row">
+      <h2>Prototypes.</h2>
+      <ul class="protos">
+        {protos.map((p) => (
+          <li><a href={`${base}${p.path}`}>{p.name}</a>{p.description && <span> — {p.description}</span>}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="row">
+    <h2><a href="https://www.printables.com/@clomads/models" target="_blank" rel="noopener">Free 3D Models ↗</a></h2>
+  </section>
+
+  <section class="row">
+    <h2>Install.</h2>
+    <p>Your FLIP_C3 should be pre-loaded with ESPHome. If you run into issues, or want to start fresh with ESPHome or WLED, the current configs and builds live in <a href="https://github.com/vdbxio/esphome-configs">vdbxio/esphome-configs</a>, and the browser installers at <a href="https://web.esphome.io/">web.esphome.io</a> and <a href="https://install.wled.me/">install.wled.me</a> flash over a USB cable in Chrome or Edge.</p>
+  </section>
+
+  {About && (
+    <section class="row about" id="about">
+      <About />
+    </section>
+  )}
+
+  <p class="fine">As an Amazon Associate I earn from qualifying purchases.</p>
+</StarlightPage>
+
+<style>
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 0.5rem 0 3rem; }
+  .card .hero { position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 22px; overflow: hidden; background: var(--vdbx-tint); }
+  .card .hero img { width: 100%; height: 100%; object-fit: contain; padding: 8%; box-sizing: border-box; display: block; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .card .hero-empty { display: grid; place-items: center; height: 100%; font-family: var(--vdbx-display); font-size: 2rem; color: var(--sl-color-gray-3); }
+  .card .tag { position: absolute; left: 1rem; bottom: 0.9rem; font-family: var(--sl-font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sl-color-white); background: color-mix(in srgb, var(--sl-color-black) 70%, transparent); padding: 0.25rem 0.5rem; border-radius: 6px; }
+  .card h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2.25rem; line-height: 1; margin: 1rem 0 0.4rem; }
+  .card h2 a { color: var(--sl-color-white); text-decoration: none; }
+  .card p { color: var(--sl-color-gray-2); margin: 0; max-width: 40ch; }
+  .card .links { display: flex; flex-wrap: wrap; gap: 0.3rem 1.25rem; margin-top: 0.75rem; font-family: var(--sl-font-mono); font-size: 0.85rem; text-transform: uppercase; }
+  .card .links a { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
+  .card .links a:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
+  @media (max-width: 40rem) { .cards { grid-template-columns: 1fr; } }
+  .row { margin: 0 0 2.5rem; max-width: 60ch; }
+  .row h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 0 0 0.6rem; }
+  .row h2 a { color: var(--sl-color-white); text-decoration: none; }
+  .row h2 a:hover { color: var(--sl-color-accent); }
+  .row p, .row li { color: var(--sl-color-gray-2); }
+  blockquote { margin: 0 0 0.75rem; padding: 0; border: 0; font-family: var(--sl-font-mono); font-size: 0.95rem; line-height: 1.6; color: var(--sl-color-gray-2); }
+  .who { font-family: var(--sl-font-mono); font-size: 0.9rem; }
+  .who strong { color: var(--sl-color-white); font-weight: 600; margin-inline-end: 0.5rem; }
+  .protos { padding-left: 1.2rem; }
+  .about { max-width: none; border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 2rem; }
+  .fine { font-family: var(--sl-font-mono); font-size: 0.75rem; color: var(--sl-color-gray-4); }
+</style>

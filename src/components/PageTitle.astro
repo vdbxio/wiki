@@ -1,0 +1,43 @@
+---
+const { entry } = Astro.locals.starlightRoute;
+const d = entry.data;
+const v = d.vdbx;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const isLanding = Astro.url.pathname.replace(/\/$/, '') === base;
+const isProduct = v?.type === 'product';
+const STATUS = { production: 'Shipping', preorder: 'Pre-order', prototype: 'Prototype', idea: 'Idea', retired: 'Retired' };
+const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
+---
+{isLanding ? null : isProduct ? (
+  <header class="prod">
+    {v.hero && <div class="hero"><img src={`${base}${v.hero}`} alt={`${d.title}`} loading="eager" /></div>}
+    <div class="head">
+      <h1 id="_top">{d.title}</h1>
+      <p class="meta">
+        {v.id && <span class="model">{v.id}</span>}
+        {v.status && <span class={`status s-${v.status}`}>{STATUS[v.status] ?? v.status}</span>}
+        {price && <span class="price">{price}</span>}
+      </p>
+      {d.description && <p class="lede">{d.description}</p>}
+      {v.buy?.length ? <p class="buy">{v.buy.map((b) => <a href={b.url} target="_blank" rel="noopener">{b.label} ↗</a>)}</p> : null}
+      {v.works_with?.length ? <p class="ww"><span>Works with</span> {v.works_with.join(' · ')}</p> : null}
+    </div>
+  </header>
+) : (
+  <h1 id="_top">{d.title}</h1>
+)}
+
+<style>
+  h1 { font-family: var(--vdbx-display); font-weight: 700; font-size: clamp(2.2rem, 4vw, 3rem); line-height: 1; letter-spacing: -0.01em; color: var(--sl-color-white); margin-top: 0.5rem; text-wrap: balance; }
+  .prod { display: grid; gap: 1.25rem; margin-top: 0.5rem; }
+  .prod .hero { border-radius: 18px; overflow: hidden; background: var(--vdbx-tint); aspect-ratio: 16 / 7; }
+  .prod .hero img { width: 100%; height: 100%; object-fit: contain; padding: 4%; box-sizing: border-box; display: block; }
+  .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin: 0.5rem 0 0; font-family: var(--sl-font-mono); font-size: 0.85rem; color: var(--sl-color-gray-3); text-transform: uppercase; letter-spacing: 0.04em; }
+  .meta .status { color: var(--sl-color-accent); }
+  .lede { font-size: 1.15rem; color: var(--sl-color-gray-2); margin: 0.5rem 0 0; max-width: 60ch; }
+  .buy { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.9rem 0 0; font-family: var(--sl-font-mono); font-size: 1rem; text-transform: uppercase; }
+  .buy a { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
+  .buy a:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
+  .ww { margin: 0.6rem 0 0; font-family: var(--sl-font-mono); font-size: 0.8rem; color: var(--sl-color-gray-3); }
+  .ww span { text-transform: uppercase; letter-spacing: 0.04em; margin-inline-end: 0.4rem; }
+</style>

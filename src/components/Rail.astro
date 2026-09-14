@@ -1,0 +1,83 @@
+---
+import Search from '@astrojs/starlight/components/Search.astro';
+import ThemeSelect from '@astrojs/starlight/components/ThemeSelect.astro';
+import cube from '../cube.svg?raw';
+
+const { sidebar } = Astro.locals.starlightRoute;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const SHOP = 'https://amzn.to/40F2A4k';
+const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCurrent : hasCurrent(e.entries)));
+const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
+---
+<div class="rail">
+  <a class="cube" href={`${base}/`} aria-label="Voidbox Industries home" set:html={cube} />
+  <a class="wordmark" href={`${base}/`}>Voidbox Industries.</a>
+
+  <div class="nav">
+    <a class="top" href={SHOP} target="_blank" rel="noopener">Shop ↗</a>
+    {sidebar.map((g) =>
+      g.type === 'group' ? (
+        <details open={hasCurrent(g.entries)}>
+          <summary class="top">{g.label}</summary>
+          <ul>
+            {g.entries.map((e) =>
+              e.type === 'link' ? (
+                <li><a href={e.href} aria-current={e.isCurrent ? 'page' : undefined}>{e.label}</a></li>
+              ) : (
+                <li>
+                  <ul class="nest">
+                    {e.entries.map((l, i) => (
+                      <li class={i ? 'child' : ''}><a href={l.href} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a></li>
+                    ))}
+                  </ul>
+                </li>
+              )
+            )}
+          </ul>
+        </details>
+      ) : (
+        <a class="top" href={g.href} aria-current={g.isCurrent ? 'page' : undefined}>{g.label}</a>
+      )
+    )}
+    <a class="top" href={`${base}/about/`} aria-current={isAbout ? 'page' : undefined}>About</a>
+  </div>
+
+  <div class="tools print:hidden">
+    <Search />
+    <ThemeSelect />
+  </div>
+
+  <p class="meta">VDBX.io<br />CC-BY-SA 4.0<br />Voidbox Industries<br />Branding rights reserved</p>
+</div>
+
+<style>
+  .rail { display: flex; flex-direction: column; gap: 1.6rem; font-family: var(--sl-font-mono); }
+  .cube { display: block; width: 84px; color: var(--sl-color-white); }
+  .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
+  .wordmark { font-family: var(--vdbx-display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; color: var(--sl-color-white); text-decoration: none; line-height: 1.1; }
+  .nav { display: flex; flex-direction: column; gap: 0.35rem; }
+  .nav a, .nav summary { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
+  .nav .top { font-size: 1.1rem; }
+  .nav a:hover, .nav summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+  details > summary { list-style: none; cursor: pointer; user-select: none; }
+  summary::-webkit-details-marker { display: none; }
+  details[open] > summary::after { content: ''; }
+  .nav ul { list-style: none; margin: 0.15rem 0 0.4rem; padding: 0 0 0 0.9rem; border-inline-start: 1px solid var(--sl-color-hairline-light); display: flex; flex-direction: column; gap: 0.15rem; }
+  .nav ul ul.nest { margin: 0; padding: 0; border: 0; }
+  .nav ul a { font-size: 0.86rem; color: var(--sl-color-gray-2); }
+  .nav li.child a { padding-inline-start: 0.9rem; color: var(--sl-color-gray-3); }
+  .nav a[aria-current='page'] { color: var(--sl-color-accent); }
+  .nav a[aria-current='page']::before { content: '▸ '; }
+  .tools { display: flex; flex-direction: column; gap: 0.6rem; padding-top: 0.25rem; border-top: 1px solid var(--sl-color-hairline-shade); }
+  .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 0.9rem; }
+  @media (max-width: 49.99rem) {
+    .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
+    .cube { width: 48px; }
+    .wordmark { align-self: center; }
+    .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
+    .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
+    .nav li.child a { padding-inline-start: 0; }
+    .tools { flex-direction: row; border: 0; padding: 0; width: 100%; }
+    .meta { display: none; }
+  }
+</style>

@@ -9,8 +9,12 @@ vdbx:
   status: production
   section: products
   msrp: 149.95
+  hero: /attachments/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png
   works_with:
     - FLIP_C3
+  buy:
+    - label: Pre-order on Crowd Supply
+      url: https://www.crowdsupply.com/voidbox-industries/pwrtool-500
 ---
 ![](/attachments/pwrtool500-wiki-features2312.jpg)
 *PwrTool Hardware as of Dec 2023 (Some info out of date)*
