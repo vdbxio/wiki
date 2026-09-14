@@ -55,8 +55,25 @@
 .right-sidebar { font-family: var(--sl-font-mono); }
 .right-sidebar h2 { font-family: var(--sl-font-mono); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem; color: var(--sl-color-gray-3); }
 
-/* Asides carry the corporate accent for the neutral kinds */
-.starlight-aside--note { --sl-color-asides-text-accent: var(--sl-color-accent); --sl-color-asides-border: var(--sl-color-accent); background-color: var(--sl-color-accent-low); }
+/* Callouts: saturated tints built around the magenta accent. Cyan / green / yellow are magenta's
+   print-primary siblings and complement; danger leans hot pink-red so it still reads as a warning. */
+:root {
+  --vdbx-note-bg: #0b3f4f;    --vdbx-note-edge: #00d4ff;    --vdbx-note-text: #8ae9ff;
+  --vdbx-tip-bg: #0e3f26;     --vdbx-tip-edge: #00e676;     --vdbx-tip-text: #8dffb8;
+  --vdbx-caution-bg: #4a3b04; --vdbx-caution-edge: #ffc400; --vdbx-caution-text: #ffe082;
+  --vdbx-danger-bg: #4d0f27;  --vdbx-danger-edge: #ff2d6f;  --vdbx-danger-text: #ff9dbb;
+}
+:root[data-theme='light'] {
+  --vdbx-note-bg: #c7f1ff;    --vdbx-note-edge: #00b3dc;    --vdbx-note-text: #005f75;
+  --vdbx-tip-bg: #c8ffde;     --vdbx-tip-edge: #00b85c;     --vdbx-tip-text: #006636;
+  --vdbx-caution-bg: #ffeeab; --vdbx-caution-edge: #e0a800; --vdbx-caution-text: #6d5200;
+  --vdbx-danger-bg: #ffd0df;  --vdbx-danger-edge: #f0004f;  --vdbx-danger-text: #8a002e;
+}
+.starlight-aside { border-radius: 0 12px 12px 0; }
+.starlight-aside--note    { background-color: var(--vdbx-note-bg);    --sl-color-asides-border: var(--vdbx-note-edge);    --sl-color-asides-text-accent: var(--vdbx-note-text); }
+.starlight-aside--tip     { background-color: var(--vdbx-tip-bg);     --sl-color-asides-border: var(--vdbx-tip-edge);     --sl-color-asides-text-accent: var(--vdbx-tip-text); }
+.starlight-aside--caution { background-color: var(--vdbx-caution-bg); --sl-color-asides-border: var(--vdbx-caution-edge); --sl-color-asides-text-accent: var(--vdbx-caution-text); }
+.starlight-aside--danger  { background-color: var(--vdbx-danger-bg);  --sl-color-asides-border: var(--vdbx-danger-edge);  --sl-color-asides-text-accent: var(--vdbx-danger-text); }
 
 /* Search trigger in the rail is an icon only; the dialog's own buttons are left alone */
 site-search > button[data-open-modal] { width: 2.25rem; height: 2.25rem; padding: 0; justify-content: center; border: 1px solid var(--sl-color-hairline-shade); border-radius: 0.5rem; background: transparent; color: var(--sl-color-white); }
