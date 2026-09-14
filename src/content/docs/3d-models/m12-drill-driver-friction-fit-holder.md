@@ -1,10 +1,10 @@
 ---
 title: M12 Drill/Driver Friction Fit Holder
 sidebar:
-  order: 1
+  order: 5
 vdbx:
   type: product
-  status: shipping
+  status: released
   section: 3d-models
 ---
 ![](/attachments/Screenshot%202023-04-26%20at%2012.05.03%20AM.png)

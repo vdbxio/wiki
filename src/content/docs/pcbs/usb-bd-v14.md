@@ -2,7 +2,7 @@
 title: USB-BD
 description: Quickly get 5v from those old Micro-USB cables you have lying around.
 sidebar:
-  order: 8
+  order: 9
 vdbx:
   type: product
   id: VBX1901

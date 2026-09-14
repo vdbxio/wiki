@@ -2,7 +2,7 @@
 title: Aura Qi
 description: A 5w Qi charging pad encased mostly in concrete with a lasered wood veneer top.
 sidebar:
-  order: 8
+  order: 9
 vdbx:
   type: product
   status: retired

@@ -5,7 +5,7 @@ const v = d.vdbx;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const isLanding = Astro.url.pathname.replace(/\/$/, '') === base;
 const isProduct = v?.type === 'product';
-const STATUS = { idea: 'Idea', prototype: 'Prototype', validation: 'Validation', preorder: 'Pre-order', production: 'Production', shipping: 'Shipping', out_of_stock: 'Out of stock', retired: 'Retired' };
+const STATUS = { idea: 'Idea', prototype: 'Prototype', validation: 'Validation', preorder: 'Pre-order', production: 'Production', shipping: 'Shipping', released: 'Released', out_of_stock: 'Out of stock', retired: 'Retired' };
 const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
 ---
 {isProduct ? (
