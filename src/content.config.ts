@@ -6,7 +6,8 @@ import { docsSchema } from '@astrojs/starlight/schema';
 const vdbx = z.object({
   type: z.enum(['product', 'page']),
   id: z.string().optional(),
-  status: z.enum(['idea', 'prototype', 'preorder', 'production', 'retired']).optional(),
+  status: z.enum(['idea', 'prototype', 'validation', 'preorder', 'production', 'out_of_stock', 'retired']).optional(),
+  status_note: z.string().optional(),
   section: z.string().optional(),
   menu_tag: z.string().optional(),
   msrp: z.number().optional(),

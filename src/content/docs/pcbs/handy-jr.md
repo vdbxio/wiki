@@ -2,7 +2,7 @@
 title: Handy Jr.
 description: A concrete and bendy arm helping hands.
 sidebar:
-  order: 5
+  order: 7
 vdbx:
   type: product
   status: retired

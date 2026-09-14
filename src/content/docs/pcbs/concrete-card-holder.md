@@ -2,7 +2,7 @@
 title: Concrete Business Card Holder
 description: with Magnet & Steel Ball
 sidebar:
-  order: 5
+  order: 7
 vdbx:
   type: product
   id: VBX0010

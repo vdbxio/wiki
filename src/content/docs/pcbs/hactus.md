@@ -2,7 +2,7 @@
 title: Hactus
 description: The Hacker's Cactus
 sidebar:
-  order: 5
+  order: 7
 vdbx:
   type: product
   id: VBX2001

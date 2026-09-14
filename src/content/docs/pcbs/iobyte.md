@@ -2,7 +2,7 @@
 title: IOByte 8
 description: A modern take on a timeless I2C IO expander
 sidebar:
-  order: 5
+  order: 7
 vdbx:
   type: product
   id: VBX2302

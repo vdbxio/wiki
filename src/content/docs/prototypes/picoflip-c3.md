@@ -2,7 +2,7 @@
 title: PicoFLIP C3
 description: An extremely tiny LED controller based on ESP32-C3 with a mezzanine interconnect for GPIO
 sidebar:
-  order: 3
+  order: 5
 vdbx:
   type: product
   status: prototype
