@@ -1,4 +1,6 @@
 ---
+import LinkButton from './LinkButton.astro';
+import { classifyLink, classifyFile } from '../lib/links';
 const { entry } = Astro.locals.starlightRoute;
 const d = entry.data;
 const v = d.vdbx;
@@ -19,7 +21,8 @@ const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
         {price && <span class="price">{price}</span>}
       </p>
       {d.description && <p class="lede">{d.description}</p>}
-      {v.buy?.length ? <p class="buy">{v.buy.map((b) => <a href={b.url} target="_blank" rel="noopener">{b.label} ↗</a>)}</p> : null}
+      {v.links?.length ? <p class="row">{v.links.map((l) => { const c = classifyLink(l.url, l.label); return <LinkButton href={l.url} kind={c.kind} label={c.label} />; })}</p> : null}
+      {v.files?.length ? <p class="row files"><span class="k">Files</span>{v.files.map((f) => { const c = classifyFile(f.name, f.label); return <LinkButton href={`${base}${f.url}`} kind={c.kind} label={c.label} ext={c.ext} title={f.name} download />; })}</p> : null}
       {v.works_with?.length ? <p class="ww"><span>Works with</span> {v.works_with.join(' · ')}</p> : null}
     </div>
     {v.hero && <div class="hero"><img src={`${base}${v.hero}`} alt={`${d.title}`} loading="eager" /></div>}
@@ -42,9 +45,9 @@ const price = typeof v?.msrp === 'number' ? `$${v.msrp.toFixed(2)}` : null;
   .meta .s-retired { color: var(--sl-color-gray-4); }
   .meta .note { text-transform: none; letter-spacing: 0; color: var(--sl-color-gray-3); }
   .lede { font-size: 1.15rem; color: var(--sl-color-gray-2); margin: 0.5rem 0 0; max-width: 60ch; }
-  .buy { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.9rem 0 0; font-family: var(--sl-font-mono); font-size: 1rem; text-transform: uppercase; }
-  .buy a { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
-  .buy a:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
+  .row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0.9rem 0 0; }
+  .row.files { margin-top: 0.5rem; }
+  .row .k { font-family: var(--sl-font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--sl-color-gray-3); margin-inline-end: 0.2rem; }
   .ww { margin: 0.6rem 0 0; font-family: var(--sl-font-mono); font-size: 0.8rem; color: var(--sl-color-gray-3); }
   .ww span { text-transform: uppercase; letter-spacing: 0.04em; margin-inline-end: 0.4rem; }
 </style>

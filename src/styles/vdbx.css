@@ -27,6 +27,7 @@
   --sl-color-black: #111113;
   --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
   --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.45));
+  --vdbx-btn-shop: #00e676; --vdbx-btn-source: #00d4ff; --vdbx-btn-cad: #ffc400; --vdbx-btn-doc: #ff5cff; --vdbx-btn-media: #ff2d6f; --vdbx-btn-plain: var(--sl-color-gray-5);
 }
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffd6ff;
@@ -42,6 +43,7 @@
   --sl-color-black: #ffffff;
   --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
   --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.35));
+  --vdbx-btn-shop: #00e676; --vdbx-btn-source: #00d4ff; --vdbx-btn-cad: #ffc400; --vdbx-btn-doc: #ff00ff; --vdbx-btn-media: #ff2d6f; --vdbx-btn-plain: var(--sl-color-gray-5);
 }
 
 /* Type */

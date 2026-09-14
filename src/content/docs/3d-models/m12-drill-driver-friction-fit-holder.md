@@ -6,6 +6,13 @@ vdbx:
   type: product
   status: released
   section: 3d-models
+  links:
+    - url: https://www.printables.com/@clomads/models
+  files:
+    - url: /attachments/m12-friction-fit-driver-2462.3mf
+      name: m12-friction-fit-driver-2462.3mf
+    - url: /attachments/m12-friction-fit-driver-2462.stl
+      name: m12-friction-fit-driver-2462.stl
 ---
 ![](/attachments/Screenshot%202023-04-26%20at%2012.05.03%20AM.png)
 

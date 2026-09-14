@@ -3,11 +3,14 @@
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import { getEntry, render } from 'astro:content';
 import products from '../data/products.json';
+import LinkButton from '../components/LinkButton.astro';
+import { classifyLink } from '../lib/links';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const LIVE = ['shipping', 'preorder', 'production', 'out_of_stock', 'validation'];
 const current = products.filter((p) => p.section === 'products' && LIVE.includes(p.status));
 const LABEL = { production: 'Production', out_of_stock: 'Out of stock', validation: 'Validation' };
+const shopLink = (p) => (p.links ?? []).map((l) => ({ ...l, ...classifyLink(l.url, l.label) })).find((l) => l.kind === 'shop');
 const protos = products.filter((p) => (p.status === 'prototype' || p.status === 'validation') && p.section === 'prototypes');
 const about = await getEntry('docs', 'about');
 const About = about ? (await render(about)).Content : null;
@@ -20,13 +23,13 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
       <article class="card">
         <a class="hero" href={`${base}${p.path}`} aria-label={p.name}>
           {p.hero ? <img src={`${base}${p.hero}`} alt="" loading="lazy" /> : <span class="hero-empty">{p.name}</span>}
-          {LABEL[p.status] ? <span class="tag">{LABEL[p.status]}</span> : p.buy?.[0] && <span class="tag">{p.buy[0].label} ↗</span>}
+          {LABEL[p.status] ? <span class="tag">{LABEL[p.status]}</span> : shopLink(p) && <span class="tag">{shopLink(p).label} ↗</span>}
         </a>
         <h2><a href={`${base}${p.path}`}>{p.name}</a></h2>
         <p>{p.description}</p>
         <p class="links">
-          {p.buy?.[0] && <a href={p.buy[0].url} target="_blank" rel="noopener">{p.buy[0].label} ↗</a>}
-          <a href={`${base}${p.path}`}>Documentation ↗</a>
+          {shopLink(p) && <LinkButton href={shopLink(p).url} kind="shop" label={shopLink(p).label} />}
+          <a class="docs" href={`${base}${p.path}`}>Documentation ↗</a>
         </p>
       </article>
     ))}
@@ -86,9 +89,9 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   .card h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2.25rem; line-height: 1; margin: 1rem 0 0.4rem; }
   .card h2 a { color: var(--sl-color-white); text-decoration: none; }
   .card p { color: var(--sl-color-gray-2); margin: 0; max-width: 40ch; }
-  .card .links { display: flex; flex-wrap: wrap; gap: 0.3rem 1.25rem; margin-top: 0.75rem; font-family: var(--sl-font-mono); font-size: 0.85rem; text-transform: uppercase; }
-  .card .links a { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
-  .card .links a:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
+  .card .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 0.75rem; font-family: var(--sl-font-mono); font-size: 0.85rem; text-transform: uppercase; }
+  .card .links a.docs { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
+  .card .links a.docs:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
   @media (max-width: 40rem) { .cards { grid-template-columns: 1fr; } }
   .row { max-width: 60ch; }
   .row p + p, .row blockquote + p { margin-top: 0.75rem; }

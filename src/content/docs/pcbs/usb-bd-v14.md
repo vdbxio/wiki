@@ -10,6 +10,12 @@ vdbx:
   section: pcbs
   msrp: 9.99
   hero: /attachments/BBD-Hero.jpg
+  links:
+    - url: https://www.tindie.com/stores/vdbxio/
+    - url: https://github.com/vdbxio/USB-BD
+  files:
+    - url: /attachments/USB-BD%20v1.4_2025-09-03.epro
+      name: USB-BD v1.4_2025-09-03.epro
 ---
 Micro-USB 5 V breakout and power supply module for breadboards, with OTG switch and data lines. v1.0 (2018) and v1.4 (2023) share one UPC. 50 pcs of v1.4 delivered 2023-02-13.
 

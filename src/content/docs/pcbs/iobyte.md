@@ -9,6 +9,8 @@ vdbx:
   status: retired
   section: pcbs
   msrp: 6.99
+  links:
+    - url: https://oshwlab.com/vdbxio/iobyte8/
 ---
 8-channel I/O board. 120 pcs delivered 2023-02-13, packaging outstanding. Listed under "needs a rethink" in B - Future Products.
 
