@@ -11,6 +11,9 @@ vdbx:
   msrp: 149.95
   works_with:
     - FLIP_C3
+  buy:
+    - label: Pre-order on Crowd Supply
+      url: https://www.crowdsupply.com/voidbox-industries/pwrtool-500
 ---
 ![](/attachments/pwrtool500-wiki-features2312.jpg)
 *PwrTool Hardware as of Dec 2023 (Some info out of date)*

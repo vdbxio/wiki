@@ -6,6 +6,12 @@
     "section": "products",
     "msrp": 19.95,
     "hero": "/attachments/Flip%20C3-header.jpg",
+    "buy": [
+      {
+        "label": "Buy on Amazon",
+        "url": "https://amzn.to/40i4fuK"
+      }
+    ],
     "name": "FLIP_C3",
     "path": "/products/flip_c3/",
     "description": "An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce."
@@ -27,6 +33,12 @@
     "works_with": [
       "FLIP_C3"
     ],
+    "buy": [
+      {
+        "label": "Pre-order on Crowd Supply",
+        "url": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500"
+      }
+    ],
     "name": "PwrTool 500",
     "path": "/products/pwrtool500/",
     "description": "500A Smart Shunt for Home Assistant"
@@ -42,6 +54,12 @@
       "A2843",
       "A2737",
       "Apple TV 4K (2022)"
+    ],
+    "buy": [
+      {
+        "label": "Buy on Amazon",
+        "url": "https://amzn.to/3rvqmkk"
+      }
     ],
     "name": "USB-C Modkit for Apple TV 4K",
     "path": "/products/usb-c-mod-for-apple-tv-2022/",

@@ -10,6 +10,9 @@ vdbx:
   section: products
   msrp: 19.95
   hero: /attachments/Flip%20C3-header.jpg
+  buy:
+    - label: Buy on Amazon
+      url: https://amzn.to/40i4fuK
 ---
 :::tip
 v1.1 is fully compatible with 60v DC input with the major change being the addition of a bi-directional TVS diode on the input. 

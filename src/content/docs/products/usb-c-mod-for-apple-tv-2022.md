@@ -14,6 +14,9 @@ vdbx:
     - A2843
     - A2737
     - Apple TV 4K (2022)
+  buy:
+    - label: Buy on Amazon
+      url: https://amzn.to/3rvqmkk
 ---
 ## Batches
 
