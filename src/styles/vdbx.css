@@ -51,7 +51,7 @@
 .sl-markdown-content h2 { font-size: 1.9rem; }
 .sl-markdown-content h3 { font-size: 1.35rem; font-weight: 400; }
 .sl-markdown-content :is(code, kbd) { font-family: var(--sl-font-mono); }
-.sl-markdown-content a { color: var(--sl-color-accent); }
+.sl-markdown-content a:not(.lb) { color: var(--sl-color-accent); }
 .sl-markdown-content img { border-radius: 12px; }
 .sl-markdown-content em:has(+ *) { color: var(--sl-color-gray-3); }
 
