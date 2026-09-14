@@ -5,7 +5,10 @@
   --vdbx-display: "League Spartan", "League Spartan Placeholder", var(--sl-font);
   --sl-font: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --sl-font-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  --vdbx-rail-width: 15.5rem;
+  --vdbx-rail-width: 16.5rem;
+  --vdbx-rail-pad-top: 2.5rem;
+  --vdbx-cube: 8.5rem;               /* cube logo size; every page's H1 centers on it */
+  --vdbx-h1-offset: calc(var(--vdbx-rail-pad-top) + var(--vdbx-cube) / 2 - 1.5rem); /* minus the content panel's top padding */
   --sl-sidebar-width: 15.5rem;
   --sl-content-width: 46rem;
   --sl-text-h1: 3rem;
@@ -62,3 +65,6 @@ starlight-theme-select { font-family: var(--sl-font-mono); }
 /* Content hugs the rail instead of centering when there is no right-hand TOC (landing, About) */
 :root:not([data-has-toc]) .main-pane { --sl-content-margin-inline: 0 auto; }
 @media (min-width: 50rem) { .vdbx-page .content-panel { padding-inline: 3.25rem 2rem; } }
+
+/* No divider between the title panel and the body; spacing does the work, as in the doc layout */
+.vdbx-page .content-panel + .content-panel { border-top: 0; padding-top: 0.5rem; }

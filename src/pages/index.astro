@@ -11,8 +11,7 @@ const about = await getEntry('docs', 'about');
 const About = about ? (await render(about)).Content : null;
 const CTA = { production: 'Buy', preorder: 'Pre-order' };
 ---
-<StarlightPage frontmatter={{ title: 'Voidbox Industries', description: 'Open hardware for off-grid Home Assistant.', tableOfContents: false, pagefind: false }}>
-  <h1 class="sr-only">Voidbox Industries</h1>
+<StarlightPage frontmatter={{ title: 'Voidbox Industries.', description: 'Open hardware for off-grid Home Assistant.', tableOfContents: false, pagefind: false }}>
   <section class="cards">
     {current.map((p) => (
       <article class="card">
@@ -71,7 +70,7 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
 </StarlightPage>
 
 <style>
-  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 0.5rem 0 3rem; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; margin: 2rem 0 3rem; }
   .card .hero { position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 22px; overflow: hidden; background: var(--vdbx-tint); }
   .card .hero img { width: 100%; height: 100%; object-fit: contain; padding: 8%; box-sizing: border-box; display: block; }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }

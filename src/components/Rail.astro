@@ -11,7 +11,6 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
 ---
 <div class="rail">
   <a class="cube" href={`${base}/`} aria-label="Voidbox Industries home" set:html={cube} />
-  <a class="wordmark" href={`${base}/`}>Voidbox Industries.</a>
 
   <div class="nav">
     <a class="top" href={SHOP} target="_blank" rel="noopener">Shop ↗</a>
@@ -52,9 +51,8 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
 
 <style>
   .rail { display: flex; flex-direction: column; gap: 1.6rem; font-family: var(--sl-font-mono); }
-  .cube { display: block; width: 84px; color: var(--sl-color-white); }
+  .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
-  .wordmark { font-family: var(--vdbx-display); font-weight: 700; font-size: 1.35rem; letter-spacing: -0.01em; color: var(--sl-color-white); text-decoration: none; line-height: 1.1; }
   .nav { display: flex; flex-direction: column; gap: 0.35rem; }
   .nav a, .nav summary { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
   .nav .top { font-size: 1.1rem; }
@@ -72,8 +70,7 @@ const isAbout = Astro.url.pathname.replace(/\/$/, '') === `${base}/about`;
   .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 0.9rem; }
   @media (max-width: 49.99rem) {
     .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
-    .cube { width: 48px; }
-    .wordmark { align-self: center; }
+    .cube { width: 3.5rem; }
     .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
     .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
     .nav li.child a { padding-inline-start: 0; }
