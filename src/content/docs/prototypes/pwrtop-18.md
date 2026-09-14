@@ -8,6 +8,11 @@ vdbx:
   status: prototype
   section: prototypes
   hero: /attachments/Untitled%20design.jpg
+  files:
+    - url: /attachments/PwrTop%2018%20v2%20-%20cap.3mf
+      name: PwrTop 18 v2 - cap.3mf
+    - url: /attachments/pwrtop-18-6x-holder.3mf
+      name: pwrtop-18-6x-holder.3mf
 ---
 # Overview
 

@@ -14,9 +14,16 @@ vdbx:
     - A2843
     - A2737
     - Apple TV 4K (2022)
-  buy:
-    - label: Buy on Amazon
-      url: https://amzn.to/3rvqmkk
+  links:
+    - url: https://amzn.to/3rvqmkk
+    - url: https://oshwlab.com/clomads/atv4k-usb
+  files:
+    - url: /attachments/Apple%20TV%20USB-C%20Mod%20v21.f3d
+      name: Apple TV USB-C Mod v21.f3d
+    - url: /attachments/Shroud-ATV2022Modkit.stl
+      name: Shroud-ATV2022Modkit.stl
+    - url: /attachments/Spacer-ATV2022Modkit.stl
+      name: Spacer-ATV2022Modkit.stl
 ---
 :::note
 **For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)

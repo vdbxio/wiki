@@ -6,10 +6,21 @@
     "section": "products",
     "msrp": 19.95,
     "hero": "/attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png",
-    "buy": [
+    "links": [
       {
-        "label": "Buy on Amazon",
         "url": "https://amzn.to/40i4fuK"
+      },
+      {
+        "url": "https://cad.onshape.com/documents/af00e36867ef843934780936/w/5d9eced028a93600ceebb907/e/d9cc1846766a213fe9bc7628?renderMode=0&uiState=667dd6b0e3a6775cdf3a3ecc"
+      },
+      {
+        "url": "https://github.com/vdbxio/esphome-configs"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/ProDoc_FLIP_C3_2024-10-24.epro",
+        "name": "ProDoc_FLIP_C3_2024-10-24.epro"
       }
     ],
     "firmware": "https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json",
@@ -29,10 +40,26 @@
       "A2737",
       "Apple TV 4K (2022)"
     ],
-    "buy": [
+    "links": [
       {
-        "label": "Buy on Amazon",
         "url": "https://amzn.to/3rvqmkk"
+      },
+      {
+        "url": "https://oshwlab.com/clomads/atv4k-usb"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/Apple%20TV%20USB-C%20Mod%20v21.f3d",
+        "name": "Apple TV USB-C Mod v21.f3d"
+      },
+      {
+        "url": "/attachments/Shroud-ATV2022Modkit.stl",
+        "name": "Shroud-ATV2022Modkit.stl"
+      },
+      {
+        "url": "/attachments/Spacer-ATV2022Modkit.stl",
+        "name": "Spacer-ATV2022Modkit.stl"
       }
     ],
     "name": "USB-C Modkit for Apple TV 4K",
@@ -49,10 +76,22 @@
     "works_with": [
       "FLIP_C3"
     ],
-    "buy": [
+    "links": [
       {
-        "label": "Pre-order on Crowd Supply",
         "url": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500"
+      },
+      {
+        "url": "https://github.com/vdbxio/esphome-configs"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/2024.10-pwrtool-manual.pdf",
+        "name": "2024.10-pwrtool-manual.pdf"
+      },
+      {
+        "url": "/attachments/ProDocument_PWRTool%20500_2024-05-11.epro",
+        "name": "ProDocument_PWRTool 500_2024-05-11.epro"
       }
     ],
     "firmware": "https://vdbxio.github.io/esphome-configs/firmware/pwrtool500/manifest.json",
@@ -64,6 +103,21 @@
     "type": "product",
     "status": "released",
     "section": "3d-models",
+    "links": [
+      {
+        "url": "https://www.printables.com/@clomads/models"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/m12-friction-fit-driver-2462.3mf",
+        "name": "m12-friction-fit-driver-2462.3mf"
+      },
+      {
+        "url": "/attachments/m12-friction-fit-driver-2462.stl",
+        "name": "m12-friction-fit-driver-2462.stl"
+      }
+    ],
     "name": "M12 Drill/Driver Friction Fit Holder",
     "path": "/3d-models/m12-drill-driver-friction-fit-holder/",
     "description": ""
@@ -84,6 +138,16 @@
     "status": "prototype",
     "section": "prototypes",
     "hero": "/attachments/Untitled%20design.jpg",
+    "files": [
+      {
+        "url": "/attachments/PwrTop%2018%20v2%20-%20cap.3mf",
+        "name": "PwrTop 18 v2 - cap.3mf"
+      },
+      {
+        "url": "/attachments/pwrtop-18-6x-holder.3mf",
+        "name": "pwrtop-18-6x-holder.3mf"
+      }
+    ],
     "name": "PwrTop 18",
     "path": "/prototypes/pwrtop-18/",
     "description": "The Smallest 18650 Battery Bank"
@@ -158,6 +222,11 @@
     "status": "retired",
     "section": "pcbs",
     "msrp": 6.99,
+    "links": [
+      {
+        "url": "https://oshwlab.com/vdbxio/iobyte8/"
+      }
+    ],
     "name": "IOByte 8",
     "path": "/pcbs/iobyte/",
     "description": "A modern take on a timeless I2C IO expander"
@@ -185,6 +254,20 @@
     "section": "pcbs",
     "msrp": 9.99,
     "hero": "/attachments/BBD-Hero.jpg",
+    "links": [
+      {
+        "url": "https://www.tindie.com/stores/vdbxio/"
+      },
+      {
+        "url": "https://github.com/vdbxio/USB-BD"
+      }
+    ],
+    "files": [
+      {
+        "url": "/attachments/USB-BD%20v1.4_2025-09-03.epro",
+        "name": "USB-BD v1.4_2025-09-03.epro"
+      }
+    ],
     "name": "USB-BD",
     "path": "/pcbs/usb-bd-v14/",
     "description": "Quickly get 5v from those old Micro-USB cables you have lying around."

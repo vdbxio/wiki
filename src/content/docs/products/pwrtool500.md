@@ -12,9 +12,14 @@ vdbx:
   hero: /attachments/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png
   works_with:
     - FLIP_C3
-  buy:
-    - label: Pre-order on Crowd Supply
-      url: https://www.crowdsupply.com/voidbox-industries/pwrtool-500
+  links:
+    - url: https://www.crowdsupply.com/voidbox-industries/pwrtool-500
+    - url: https://github.com/vdbxio/esphome-configs
+  files:
+    - url: /attachments/2024.10-pwrtool-manual.pdf
+      name: 2024.10-pwrtool-manual.pdf
+    - url: /attachments/ProDocument_PWRTool%20500_2024-05-11.epro
+      name: ProDocument_PWRTool 500_2024-05-11.epro
   firmware: https://vdbxio.github.io/esphome-configs/firmware/pwrtool500/manifest.json
 ---
 ![](/attachments/pwrtool500-wiki-features2312.jpg)

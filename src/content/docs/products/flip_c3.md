@@ -10,9 +10,13 @@ vdbx:
   section: products
   msrp: 19.95
   hero: /attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png
-  buy:
-    - label: Buy on Amazon
-      url: https://amzn.to/40i4fuK
+  links:
+    - url: https://amzn.to/40i4fuK
+    - url: https://cad.onshape.com/documents/af00e36867ef843934780936/w/5d9eced028a93600ceebb907/e/d9cc1846766a213fe9bc7628?renderMode=0&uiState=667dd6b0e3a6775cdf3a3ecc
+    - url: https://github.com/vdbxio/esphome-configs
+  files:
+    - url: /attachments/ProDoc_FLIP_C3_2024-10-24.epro
+      name: ProDoc_FLIP_C3_2024-10-24.epro
   firmware: https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json
 ---
 :::tip
