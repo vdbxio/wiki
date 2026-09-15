@@ -57,7 +57,7 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
       <div class="mscroll" data-sec={i} hidden={i !== activeIdx}>
         <button type="button" class="chev prev" aria-label="Scroll pages left">‹</button>
         <div class="mrow pages" data-sec={i}>
-          {g.pages.map((l) => <a href={l.href} class:list={{ child: l.child }} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a>)}
+          {g.pages.map((l) => <a href={l.href} draggable="false" class:list={{ child: l.child }} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a>)}
         </div>
         <button type="button" class="chev next" aria-label="Scroll pages right">›</button>
       </div>
@@ -106,9 +106,10 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
       row.addEventListener('scroll', () => update(scroller), { passive: true });
       // drag to scroll with a mouse; a real drag swallows the click that would follow it
       let startX = 0, startLeft = 0, dragging = false, moved = false;
-      row.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') return; dragging = true; moved = false; startX = e.clientX; startLeft = row.scrollLeft; row.setPointerCapture(e.pointerId); });
+      row.addEventListener('dragstart', (e) => e.preventDefault());
+      row.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse' || e.button !== 0) return; e.preventDefault(); dragging = true; moved = false; startX = e.clientX; startLeft = row.scrollLeft; row.setPointerCapture(e.pointerId); row.classList.add('dragging'); });
       row.addEventListener('pointermove', (e) => { if (!dragging) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) moved = true; row.scrollLeft = startLeft - dx; });
-      const end = () => { dragging = false; };
+      const end = () => { dragging = false; row.classList.remove('dragging'); };
       row.addEventListener('pointerup', end); row.addEventListener('pointercancel', end);
       row.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
       update(scroller);
@@ -169,7 +170,9 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 1.25rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
     .mrow::-webkit-scrollbar { display: none; }
     .mrow > * { scroll-snap-align: start; flex: none; }
-    .mrow { cursor: grab; user-select: none; }
+    .mrow { cursor: grab; user-select: none; -webkit-user-drag: none; }
+    .mrow.dragging { scroll-snap-type: none; scroll-behavior: auto; }
+    .mrow a, .mrow button { -webkit-user-drag: none; }
     .mrow:active { cursor: grabbing; }
     .mtab { background: none; border: 0; padding: 0; font: inherit; font-size: 1.35rem; line-height: 1.2; color: var(--sl-color-white); cursor: pointer; }
     .mtab[aria-selected='true'] { color: var(--sl-color-accent); font-weight: 700; }
