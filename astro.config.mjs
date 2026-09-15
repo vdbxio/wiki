@@ -19,6 +19,10 @@ export default defineConfig({
       description: 'Open hardware for off-grid Home Assistant. FLIP_C3, PwrTool 500, and friends.',
       customCss: ['./src/styles/vdbx.css'],
       favicon: '/favicon.svg',
+      head: [
+        { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png' } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
+      ],
       components: {
         PageFrame: './src/components/PageFrame.astro',
         Sidebar: './src/components/Rail.astro',
