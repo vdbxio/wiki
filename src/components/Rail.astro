@@ -81,6 +81,18 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
 </div>
 
 <script>
+  // Desktop rail: remember how far the section list was scrolled between pages, and make sure the
+  // current page's link is visible on load.
+  {
+    const nav = document.querySelector<HTMLElement>('.rail .nav');
+    if (nav) {
+      const key = 'vdbx-rail-scroll';
+      try { const saved = sessionStorage.getItem(key); if (saved) nav.scrollTop = Number(saved); } catch {}
+      nav.querySelector<HTMLElement>('a[aria-current="page"]')?.scrollIntoView({ block: 'nearest' });
+      nav.addEventListener('scroll', () => { try { sessionStorage.setItem(key, String(nav.scrollTop)); } catch {} }, { passive: true });
+    }
+  }
+
   // Native horizontal scrolling (touch, trackpad, shift+wheel) is left alone. For mouse-only users each
   // row gets end chevrons that nudge it and click-and-drag scrolling. Section tabs swap the pages row.
   const mnav = document.querySelector('.mnav');
