@@ -1,12 +1,12 @@
 ---
 // Starlight's PageSidebar with the desktop TOC shown from 64rem up (default is 72rem).
-import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
+import MobileToc from './MobileToc.astro';
 import TableOfContents from '@astrojs/starlight/components/TableOfContents.astro';
 ---
 {
   Astro.locals.starlightRoute.toc && (
     <>
-      <div class="toc-mobile"><MobileTableOfContents /></div>
+      <div class="toc-mobile"><MobileToc /></div>
       <div class="right-sidebar-panel toc-desktop"><div class="sl-container"><TableOfContents /></div></div>
     </>
   )
