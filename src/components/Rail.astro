@@ -88,11 +88,14 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     if (nav) {
       const key = 'vdbx-rail-scroll';
       try { const saved = sessionStorage.getItem(key); if (saved) nav.scrollTop = Number(saved); } catch {}
-      const cur = nav.querySelector<HTMLElement>('a[aria-current="page"]');
-      if (cur) {
+      const reveal = () => {
+        const cur = nav.querySelector<HTMLElement>('a[aria-current="page"]');
+        if (!cur) return;
         const n = nav.getBoundingClientRect(), c = cur.getBoundingClientRect(), pad = 28; // keep it clear of the fade
-        if (c.top < n.top + pad || c.bottom > n.bottom - pad) cur.scrollIntoView({ block: 'nearest' });
-      }
+        if (c.top < n.top + pad || c.bottom > n.bottom - pad) cur.scrollIntoView({ block: 'center' });
+      };
+      reveal();
+      document.fonts?.ready.then(reveal); // web fonts shift the list after first paint
       nav.addEventListener('scroll', () => { try { sessionStorage.setItem(key, String(nav.scrollTop)); } catch {} }, { passive: true });
     }
   }
