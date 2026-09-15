@@ -10,8 +10,8 @@ const GITHUB = 'https://github.com/vdbxio';
 const DISCORD = 'https://discord.gg/mDYYXy3Erm';
 const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCurrent : hasCurrent(e.entries)));
 ---
+<button type="button" class="connect-float" data-connect-open title="Flash a board from your browser">Connect</button>
 <div class="rail">
-  <button type="button" class="connect-float" data-connect-open title="Flash a board from your browser">Connect</button>
   <a class="cube" href={`${base}/`} aria-label="Voidbox Industries home" set:html={cube} />
 
   <div class="nav">
@@ -59,7 +59,8 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
 
 <style>
   .rail { position: relative; display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
-  .connect-float { position: absolute; top: 0; right: 1.25rem; z-index: 1; padding: 0.45rem 0.85rem; border: 0; border-radius: 999px; background: var(--sl-color-accent); color: #fff; font-family: var(--sl-font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; box-shadow: 0 6px 16px color-mix(in srgb, var(--sl-color-accent) 45%, transparent); }
+  /* positioned against the rail container, which is stuck to the window's top edge */
+  .connect-float { position: absolute; top: 1rem; right: 1rem; z-index: 1; padding: 0.45rem 0.85rem; border: 0; border-radius: 999px; background: var(--sl-color-accent); color: #fff; font-family: var(--sl-font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; box-shadow: 0 6px 16px color-mix(in srgb, var(--sl-color-accent) 45%, transparent); }
   .connect-float:hover { filter: brightness(1.1); transform: translateY(-1px); }
   .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
@@ -85,7 +86,7 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   @media (max-width: 49.99rem) {
     .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
     .cube { width: 3.5rem; }
-    .connect-float { right: 0; }
+    .connect-float { top: 0.75rem; right: 0.75rem; }
     .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
     .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
     .nav li.child a { padding-inline-start: 0; }

@@ -21,6 +21,6 @@ const { hasSidebar } = Astro.locals.starlightRoute;
   }
   @media (max-width: 49.99rem) {
     /* the mobile TOC bar is fixed at the top; keep the rail's logo clear of it */
-    .vdbx-rail { padding: calc(1.25rem + var(--sl-mobile-toc-height)) 1.25rem 0.75rem; border-bottom: 1px solid var(--sl-color-hairline-shade); }
+    .vdbx-rail { position: relative; padding: calc(1.25rem + var(--sl-mobile-toc-height)) 1.25rem 0.75rem; border-bottom: 1px solid var(--sl-color-hairline-shade); }
   }
 </style>
