@@ -1,10 +1,10 @@
 /* vdbx.io — tokens over Starlight's variables. Layout lives in the component overrides. */
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Geist+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
   --vdbx-display: "League Spartan", "League Spartan Placeholder", var(--sl-font);
   --sl-font: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
-  --sl-font-mono: "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --sl-font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
   --vdbx-rail-width: 16.5rem;
   --vdbx-rail-pad-top: 2.5rem;
   --vdbx-cube: 8.5rem;               /* cube logo size; every page's H1 centers on it */
@@ -96,4 +96,4 @@ site-search > button[data-open-modal] svg { width: 1.1rem; height: 1.1rem; }
 :root[data-theme='dark'] .sl-markdown-content img.invert-dark { filter: invert(1) hue-rotate(180deg); }
 
 /* Active heading in the right-hand TOC: bold, like the rail's current page */
-starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 500; }
+starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 700; }
