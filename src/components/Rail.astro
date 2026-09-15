@@ -74,8 +74,7 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   .nav ul ul.nest { margin: 0; padding: 0; border: 0; }
   .nav ul a { font-size: 0.86rem; color: var(--sl-color-gray-2); }
   .nav li.child a { padding-inline-start: 0.9rem; color: var(--sl-color-gray-3); }
-  .nav a[aria-current='page'] { color: var(--sl-color-accent); }
-  .nav a[aria-current='page']::before { content: '▸ '; }
+  .nav a[aria-current='page'] { color: var(--sl-color-accent); font-weight: 500; }
   .foot { display: flex; flex-direction: column; gap: 0.7rem; flex: 0 0 auto; padding-inline-end: 1.5rem; }
   .tools { display: flex; flex-direction: row; gap: 0.5rem; }
   .icon { display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 1px solid var(--sl-color-hairline-shade); border-radius: 0.5rem; color: var(--sl-color-white); }
