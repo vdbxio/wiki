@@ -6,6 +6,8 @@ import redirects from './src/data/redirects.json' with { type: 'json' };
 import sidebar from './src/data/sidebar.json' with { type: 'json' };
 import remarkBase from './src/plugins/remark-base.mjs';
 
+const BASE = (process.env.SITE_BASE ?? '/').replace(/\/$/, '');
+
 // SITE_URL / SITE_BASE let the same build serve the GitHub Pages preview (…github.io/wiki/) and vdbx.io.
 export default defineConfig({
   site: process.env.SITE_URL ?? 'https://vdbx.io',
@@ -20,8 +22,8 @@ export default defineConfig({
       customCss: ['./src/styles/vdbx.css'],
       favicon: '/favicon.svg',
       head: [
-        { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon.png' } },
-        { tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' } },
+        { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '64x64', href: `${BASE}/favicon.png` } },
+        { tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: `${BASE}/apple-touch-icon.png` } },
       ],
       components: {
         PageFrame: './src/components/PageFrame.astro',
