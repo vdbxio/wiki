@@ -60,8 +60,12 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
 <style>
   .rail { position: relative; display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
   /* positioned against the rail container, which is stuck to the window's top edge */
-  .connect-float { position: absolute; top: 1rem; right: 1rem; z-index: 1; padding: 0.45rem 0.85rem; border: 0; border-radius: 999px; background: var(--sl-color-accent); color: #fff; font-family: var(--sl-font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; box-shadow: 0 6px 16px color-mix(in srgb, var(--sl-color-accent) 45%, transparent); }
-  .connect-float:hover { filter: brightness(1.1); transform: translateY(-1px); }
+  .connect-float { position: absolute; top: 1rem; right: 1rem; z-index: 1; padding: 0.4rem 0.85rem; border: 1.5px solid var(--sl-color-accent); border-radius: 999px; background: transparent; color: var(--sl-color-accent); font-family: var(--sl-font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer;
+    /* a faint glow from the border color, outside and inside */
+    box-shadow: 0 0 10px color-mix(in srgb, var(--sl-color-accent) 35%, transparent), inset 0 0 8px color-mix(in srgb, var(--sl-color-accent) 15%, transparent);
+    text-shadow: 0 0 8px color-mix(in srgb, var(--sl-color-accent) 55%, transparent);
+    transition: box-shadow 0.15s, text-shadow 0.15s; }
+  .connect-float:hover { box-shadow: 0 0 16px color-mix(in srgb, var(--sl-color-accent) 60%, transparent), inset 0 0 10px color-mix(in srgb, var(--sl-color-accent) 25%, transparent); text-shadow: 0 0 10px color-mix(in srgb, var(--sl-color-accent) 80%, transparent); }
   .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
   /* the nav takes the remaining height and scrolls on its own; logo and footer stay put */
