@@ -9,6 +9,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const GITHUB = 'https://github.com/vdbxio';
 const DISCORD = 'https://discord.gg/mDYYXy3Erm';
 const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCurrent : hasCurrent(e.entries)));
+// Mobile: sections as one scrolling row, the selected section's pages as a second row.
+const flat = (entries) => entries.flatMap((e) => (e.type === 'link' ? [{ ...e, child: false }] : e.entries.map((l, i) => ({ ...l, child: i > 0 }))));
+const groups = sidebar.filter((g) => g.type === 'group').map((g) => ({ label: g.label, pages: flat(g.entries), current: hasCurrent(g.entries) }));
+const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
 ---
 <button type="button" class="connect-float" data-connect-open title="Flash a board from your browser">Connect</button>
 <div class="rail">
@@ -41,6 +45,17 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
     )}
   </div>
 
+  <div class="mnav" aria-label="Sections">
+    <div class="mrow sections" role="tablist">
+      {groups.map((g, i) => <button type="button" role="tab" class="mtab" data-sec={i} aria-selected={i === activeIdx ? 'true' : 'false'}>{g.label}</button>)}
+    </div>
+    {groups.map((g, i) => (
+      <div class="mrow pages" data-sec={i} hidden={i !== activeIdx}>
+        {g.pages.map((l) => <a href={l.href} class:list={{ child: l.child }} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a>)}
+      </div>
+    ))}
+  </div>
+
   <div class="foot">
     <p class="meta">VDBX.io<br />CC-BY-SA 4.0<br />Voidbox Industries<br />Branding rights reserved</p>
     <div class="tools print:hidden">
@@ -56,6 +71,27 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   </div>
   <Connect />
 </div>
+
+<script>
+  // Section tabs switch the pages row; vertical wheel over a row scrolls it sideways; touch scrolls natively.
+  const mnav = document.querySelector('.mnav');
+  if (mnav) {
+    const tabs = [...mnav.querySelectorAll<HTMLButtonElement>('.mtab')];
+    const rows = [...mnav.querySelectorAll<HTMLElement>('.mrow.pages')];
+    tabs.forEach((t) => t.addEventListener('click', () => {
+      tabs.forEach((x) => x.setAttribute('aria-selected', String(x === t)));
+      rows.forEach((row) => { row.hidden = row.dataset.sec !== t.dataset.sec; });
+      t.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+    }));
+    mnav.querySelectorAll<HTMLElement>('.mrow').forEach((row) => {
+      row.addEventListener('wheel', (e) => {
+        if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && row.scrollWidth > row.clientWidth) { row.scrollLeft += e.deltaY; e.preventDefault(); }
+      }, { passive: false });
+    });
+    mnav.querySelector<HTMLElement>('.mtab[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' });
+    mnav.querySelector<HTMLElement>('.mrow.pages:not([hidden]) a[aria-current="page"]')?.scrollIntoView({ inline: 'center', block: 'nearest' });
+  }
+</script>
 
 <style>
   .rail { position: relative; display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
@@ -81,6 +117,7 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   .nav ul a { font-size: 0.86rem; color: var(--sl-color-gray-2); }
   .nav li.child a { padding-inline-start: 0.9rem; color: var(--sl-color-gray-3); }
   .nav a[aria-current='page'] { color: var(--sl-color-accent); font-weight: 700; }
+  .mnav { display: none; }
   .foot { display: flex; flex-direction: column; gap: 0.7rem; flex: 0 0 auto; padding-inline-end: 1.5rem; }
   .tools { display: flex; flex-direction: row; gap: 0.5rem; }
   .icon { display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 1px solid var(--sl-color-hairline-shade); border-radius: 0.5rem; color: var(--sl-color-white); }
@@ -88,14 +125,20 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   .icon[aria-disabled='true'] { opacity: 0.4; pointer-events: none; }
   .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); }
   @media (max-width: 49.99rem) {
-    .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
-    .cube { width: 3.5rem; }
+    .rail { flex-direction: column; gap: 0.75rem; height: auto; }
+    .cube { width: 3rem; }
     .connect-float { top: 0.75rem; right: 0.75rem; }
-    .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
-    .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
-    .nav li.child a { padding-inline-start: 0; }
-    .nav { flex: none; overflow: visible; mask-image: none; padding-bottom: 0; }
-    .foot { width: 100%; }
+    .nav { display: none; }
+    .mnav { display: flex; flex-direction: column; gap: 0.2rem; margin-inline: -1.25rem; }
+    .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
+    .mrow::-webkit-scrollbar { display: none; }
+    .mrow > * { scroll-snap-align: start; flex: none; }
+    .mtab { background: none; border: 0; padding: 0; font: inherit; font-size: 1.35rem; line-height: 1.2; color: var(--sl-color-white); cursor: pointer; }
+    .mtab[aria-selected='true'] { color: var(--sl-color-accent); font-weight: 700; }
+    .mrow.pages a { font-size: 0.9rem; color: var(--sl-color-gray-2); text-decoration: none; }
+    .mrow.pages a.child::before { content: '↳ '; color: var(--sl-color-gray-4); }
+    .mrow.pages a[aria-current='page'] { color: var(--sl-color-accent); font-weight: 700; }
+    .foot { flex-direction: row; align-items: center; padding: 0; gap: 1rem; }
     .meta { display: none; }
   }
 </style>
