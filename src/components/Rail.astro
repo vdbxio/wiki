@@ -107,11 +107,11 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
       // drag to scroll with a mouse; a real drag swallows the click that would follow it
       let startX = 0, startLeft = 0, dragging = false, moved = false;
       row.addEventListener('dragstart', (e) => e.preventDefault());
-      row.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse' || e.button !== 0) return; e.preventDefault(); dragging = true; moved = false; startX = e.clientX; startLeft = row.scrollLeft; row.setPointerCapture(e.pointerId); row.classList.add('dragging'); });
-      row.addEventListener('pointermove', (e) => { if (!dragging) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) moved = true; row.scrollLeft = startLeft - dx; });
+      row.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse' || e.button !== 0) return; dragging = true; moved = false; startX = e.clientX; startLeft = row.scrollLeft; });
+      row.addEventListener('pointermove', (e) => { if (!dragging) return; const dx = e.clientX - startX; if (!moved && Math.abs(dx) > 4) { moved = true; row.setPointerCapture(e.pointerId); row.classList.add('dragging'); } if (moved) row.scrollLeft = startLeft - dx; });
       const end = () => { dragging = false; row.classList.remove('dragging'); };
       row.addEventListener('pointerup', end); row.addEventListener('pointercancel', end);
-      row.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+      row.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); } moved = false; }, true);
       update(scroller);
     });
     new ResizeObserver(() => mnav.querySelectorAll<HTMLElement>('.mscroll').forEach(update)).observe(mnav);
