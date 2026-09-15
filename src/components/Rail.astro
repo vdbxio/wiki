@@ -88,7 +88,11 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     if (nav) {
       const key = 'vdbx-rail-scroll';
       try { const saved = sessionStorage.getItem(key); if (saved) nav.scrollTop = Number(saved); } catch {}
-      nav.querySelector<HTMLElement>('a[aria-current="page"]')?.scrollIntoView({ block: 'nearest' });
+      const cur = nav.querySelector<HTMLElement>('a[aria-current="page"]');
+      if (cur) {
+        const n = nav.getBoundingClientRect(), c = cur.getBoundingClientRect(), pad = 28; // keep it clear of the fade
+        if (c.top < n.top + pad || c.bottom > n.bottom - pad) cur.scrollIntoView({ block: 'nearest' });
+      }
       nav.addEventListener('scroll', () => { try { sessionStorage.setItem(key, String(nav.scrollTop)); } catch {} }, { passive: true });
     }
   }
@@ -144,7 +148,7 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
   .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
   /* the nav takes the remaining height and scrolls on its own; logo and footer stay put */
-  .nav { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; padding-bottom: 1rem; mask-image: linear-gradient(to bottom, #000 calc(100% - 1.25rem), transparent); }
+  .nav { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; scroll-padding-block: 1.75rem; padding-bottom: 1rem; mask-image: linear-gradient(to bottom, #000 calc(100% - 1.25rem), transparent); }
   .nav a, .nav summary { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
   .nav .top { font-size: 1.8rem; line-height: 1.15; }
   .nav a:hover, .nav summary:hover { text-decoration: underline; text-underline-offset: 4px; }
