@@ -46,12 +46,20 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
   </div>
 
   <div class="mnav" aria-label="Sections">
-    <div class="mrow sections" role="tablist">
-      {groups.map((g, i) => <button type="button" role="tab" class="mtab" data-sec={i} aria-selected={i === activeIdx ? 'true' : 'false'}>{g.label}</button>)}
+    <div class="mscroll">
+      <button type="button" class="chev prev" aria-label="Scroll sections left">‹</button>
+      <div class="mrow sections" role="tablist">
+        {groups.map((g, i) => <button type="button" role="tab" class="mtab" data-sec={i} aria-selected={i === activeIdx ? 'true' : 'false'}>{g.label}</button>)}
+      </div>
+      <button type="button" class="chev next" aria-label="Scroll sections right">›</button>
     </div>
     {groups.map((g, i) => (
-      <div class="mrow pages" data-sec={i} hidden={i !== activeIdx}>
-        {g.pages.map((l) => <a href={l.href} class:list={{ child: l.child }} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a>)}
+      <div class="mscroll" data-sec={i} hidden={i !== activeIdx}>
+        <button type="button" class="chev prev" aria-label="Scroll pages left">‹</button>
+        <div class="mrow pages" data-sec={i}>
+          {g.pages.map((l) => <a href={l.href} class:list={{ child: l.child }} aria-current={l.isCurrent ? 'page' : undefined}>{l.label}</a>)}
+        </div>
+        <button type="button" class="chev next" aria-label="Scroll pages right">›</button>
       </div>
     ))}
   </div>
@@ -73,23 +81,41 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
 </div>
 
 <script>
-  // Section tabs switch the pages row; vertical wheel over a row scrolls it sideways; touch scrolls natively.
+  // Native horizontal scrolling (touch, trackpad, shift+wheel) is left alone. For mouse-only users each
+  // row gets end chevrons that nudge it and click-and-drag scrolling. Section tabs swap the pages row.
   const mnav = document.querySelector('.mnav');
   if (mnav) {
     const tabs = [...mnav.querySelectorAll<HTMLButtonElement>('.mtab')];
-    const rows = [...mnav.querySelectorAll<HTMLElement>('.mrow.pages')];
+    const pageScrollers = [...mnav.querySelectorAll<HTMLElement>('.mscroll[data-sec]')];
     tabs.forEach((t) => t.addEventListener('click', () => {
       tabs.forEach((x) => x.setAttribute('aria-selected', String(x === t)));
-      rows.forEach((row) => { row.hidden = row.dataset.sec !== t.dataset.sec; });
+      pageScrollers.forEach((s) => { s.hidden = s.dataset.sec !== t.dataset.sec; if (!s.hidden) update(s); });
       t.scrollIntoView({ inline: 'nearest', block: 'nearest', behavior: 'smooth' });
     }));
-    mnav.querySelectorAll<HTMLElement>('.mrow').forEach((row) => {
-      row.addEventListener('wheel', (e) => {
-        if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && row.scrollWidth > row.clientWidth) { row.scrollLeft += e.deltaY; e.preventDefault(); }
-      }, { passive: false });
+    function update(scroller: HTMLElement) {
+      const row = scroller.querySelector<HTMLElement>('.mrow'); if (!row) return;
+      const over = row.scrollWidth > row.clientWidth + 2;
+      scroller.classList.toggle('at-start', row.scrollLeft <= 1);
+      scroller.classList.toggle('at-end', row.scrollLeft + row.clientWidth >= row.scrollWidth - 1);
+      scroller.classList.toggle('overflowing', over);
+    }
+    mnav.querySelectorAll<HTMLElement>('.mscroll').forEach((scroller) => {
+      const row = scroller.querySelector<HTMLElement>('.mrow'); if (!row) return;
+      scroller.querySelector('.chev.prev')?.addEventListener('click', () => row.scrollBy({ left: -row.clientWidth * 0.6, behavior: 'smooth' }));
+      scroller.querySelector('.chev.next')?.addEventListener('click', () => row.scrollBy({ left: row.clientWidth * 0.6, behavior: 'smooth' }));
+      row.addEventListener('scroll', () => update(scroller), { passive: true });
+      // drag to scroll with a mouse; a real drag swallows the click that would follow it
+      let startX = 0, startLeft = 0, dragging = false, moved = false;
+      row.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') return; dragging = true; moved = false; startX = e.clientX; startLeft = row.scrollLeft; row.setPointerCapture(e.pointerId); });
+      row.addEventListener('pointermove', (e) => { if (!dragging) return; const dx = e.clientX - startX; if (Math.abs(dx) > 4) moved = true; row.scrollLeft = startLeft - dx; });
+      const end = () => { dragging = false; };
+      row.addEventListener('pointerup', end); row.addEventListener('pointercancel', end);
+      row.addEventListener('click', (e) => { if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; } }, true);
+      update(scroller);
     });
+    new ResizeObserver(() => mnav.querySelectorAll<HTMLElement>('.mscroll').forEach(update)).observe(mnav);
     mnav.querySelector<HTMLElement>('.mtab[aria-selected="true"]')?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
-    mnav.querySelector<HTMLElement>('.mrow.pages:not([hidden]) a[aria-current="page"]')?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+    mnav.querySelector<HTMLElement>('.mrow.pages a[aria-current="page"]')?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
   }
 </script>
 
@@ -134,10 +160,17 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     .mnav { grid-area: mnav; }
     .nav { display: none; }
     .mnav { display: flex; flex-direction: column; gap: 0.2rem; margin-inline: -1.25rem; }
+    .mscroll { position: relative; }
+    .mscroll[hidden] { display: none; }
+    .chev { position: absolute; top: 50%; transform: translateY(-50%); z-index: 1; width: 1.6rem; height: 1.6rem; border: 0; border-radius: 999px; background: var(--sl-color-black); color: var(--sl-color-white); font-family: var(--sl-font-mono); font-size: 1.1rem; line-height: 1; cursor: pointer; display: none; align-items: center; justify-content: center; box-shadow: 0 0 0 1px var(--sl-color-hairline-shade); }
+    .chev.prev { left: 0.4rem; } .chev.next { right: 0.4rem; }
+    .mscroll.overflowing:not(.at-start) .chev.prev, .mscroll.overflowing:not(.at-end) .chev.next { display: inline-flex; }
+    @media (pointer: coarse) { .chev { display: none !important; } }
     .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 1.25rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
     .mrow::-webkit-scrollbar { display: none; }
-    .mrow[hidden] { display: none; }
     .mrow > * { scroll-snap-align: start; flex: none; }
+    .mrow { cursor: grab; user-select: none; }
+    .mrow:active { cursor: grabbing; }
     .mtab { background: none; border: 0; padding: 0; font: inherit; font-size: 1.35rem; line-height: 1.2; color: var(--sl-color-white); cursor: pointer; }
     .mtab[aria-selected='true'] { color: var(--sl-color-accent); font-weight: 700; }
     .mrow.pages a { font-size: 0.9rem; color: var(--sl-color-gray-2); text-decoration: none; }
