@@ -81,15 +81,15 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     tabs.forEach((t) => t.addEventListener('click', () => {
       tabs.forEach((x) => x.setAttribute('aria-selected', String(x === t)));
       rows.forEach((row) => { row.hidden = row.dataset.sec !== t.dataset.sec; });
-      t.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
+      t.scrollIntoView({ inline: 'nearest', block: 'nearest', behavior: 'smooth' });
     }));
     mnav.querySelectorAll<HTMLElement>('.mrow').forEach((row) => {
       row.addEventListener('wheel', (e) => {
         if (Math.abs(e.deltaY) > Math.abs(e.deltaX) && row.scrollWidth > row.clientWidth) { row.scrollLeft += e.deltaY; e.preventDefault(); }
       }, { passive: false });
     });
-    mnav.querySelector<HTMLElement>('.mtab[aria-selected="true"]')?.scrollIntoView({ inline: 'center', block: 'nearest' });
-    mnav.querySelector<HTMLElement>('.mrow.pages:not([hidden]) a[aria-current="page"]')?.scrollIntoView({ inline: 'center', block: 'nearest' });
+    mnav.querySelector<HTMLElement>('.mtab[aria-selected="true"]')?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
+    mnav.querySelector<HTMLElement>('.mrow.pages:not([hidden]) a[aria-current="page"]')?.scrollIntoView({ inline: 'nearest', block: 'nearest' });
   }
 </script>
 
@@ -127,11 +127,12 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
   @media (max-width: 49.99rem) {
     .rail { flex-direction: column; gap: 0.75rem; height: auto; }
     .cube { width: 3rem; }
-    .connect-float { top: 0.75rem; right: 0.75rem; }
+    .connect-float { top: calc(var(--sl-mobile-toc-height) + 0.75rem); right: 0.75rem; }
     .nav { display: none; }
     .mnav { display: flex; flex-direction: column; gap: 0.2rem; margin-inline: -1.25rem; }
     .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
     .mrow::-webkit-scrollbar { display: none; }
+    .mrow[hidden] { display: none; }
     .mrow > * { scroll-snap-align: start; flex: none; }
     .mtab { background: none; border: 0; padding: 0; font: inherit; font-size: 1.35rem; line-height: 1.2; color: var(--sl-color-white); cursor: pointer; }
     .mtab[aria-selected='true'] { color: var(--sl-color-accent); font-weight: 700; }
