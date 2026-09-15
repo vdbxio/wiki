@@ -125,9 +125,13 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
   .icon[aria-disabled='true'] { opacity: 0.4; pointer-events: none; }
   .meta { margin: 0; font-size: 0.72rem; line-height: 1.7; color: var(--sl-color-gray-4); }
   @media (max-width: 49.99rem) {
-    .rail { flex-direction: column; gap: 0.75rem; height: auto; }
-    .cube { width: 3rem; }
-    .connect-float { top: calc(var(--sl-mobile-toc-height) + 0.75rem); right: 0.75rem; }
+    /* one header row: logo · icons centered · Connect, all on a line; the nav rows beneath */
+    .rail { display: contents; }
+    :global(.vdbx-rail) { display: grid; grid-template-columns: auto 1fr auto; grid-template-areas: "cube foot connect" "mnav mnav mnav"; align-items: center; column-gap: 1rem; row-gap: 0.5rem; }
+    .cube { grid-area: cube; width: 3rem; }
+    .connect-float { grid-area: connect; position: static; justify-self: end; }
+    .foot { grid-area: foot; justify-self: center; }
+    .mnav { grid-area: mnav; }
     .nav { display: none; }
     .mnav { display: flex; flex-direction: column; gap: 0.2rem; margin-inline: -1.25rem; }
     .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 1.25rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
@@ -139,7 +143,7 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     .mrow.pages a { font-size: 0.9rem; color: var(--sl-color-gray-2); text-decoration: none; }
     .mrow.pages a.child::before { content: '↳ '; color: var(--sl-color-gray-4); }
     .mrow.pages a[aria-current='page'] { color: var(--sl-color-accent); font-weight: 700; }
-    .foot { flex-direction: row; align-items: center; padding: 0; gap: 1rem; }
+    .foot { flex-direction: row; align-items: center; padding: 0; gap: 0.75rem; }
     .meta { display: none; }
   }
 </style>
