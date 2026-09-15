@@ -1,0 +1,27 @@
+---
+// Starlight's PageSidebar with the desktop TOC shown from 64rem up (default is 72rem).
+import MobileTableOfContents from '@astrojs/starlight/components/MobileTableOfContents.astro';
+import TableOfContents from '@astrojs/starlight/components/TableOfContents.astro';
+---
+{
+  Astro.locals.starlightRoute.toc && (
+    <>
+      <div class="toc-mobile"><MobileTableOfContents /></div>
+      <div class="right-sidebar-panel toc-desktop"><div class="sl-container"><TableOfContents /></div></div>
+    </>
+  )
+}
+
+<style>
+  .toc-desktop { display: none; }
+  @media (min-width: 64rem) {
+    .toc-mobile { display: none; }
+    .toc-desktop { display: block; }
+    :root { --sl-mobile-toc-height: 0rem; }
+  }
+  .right-sidebar-panel { padding: 1rem var(--sl-sidebar-pad-x); }
+  .sl-container { width: calc(var(--sl-sidebar-width) - 2 * var(--sl-sidebar-pad-x)); }
+  .right-sidebar-panel :global(h2) { color: var(--sl-color-white); font-size: var(--sl-text-h5); font-weight: 600; line-height: var(--sl-line-height-headings); margin-bottom: 0.5rem; }
+  .right-sidebar-panel :global(:where(a)) { display: block; font-size: var(--sl-text-xs); text-decoration: none; color: var(--sl-color-gray-3); overflow-wrap: anywhere; }
+  .right-sidebar-panel :global(:where(a):hover) { color: var(--sl-color-white); }
+</style>

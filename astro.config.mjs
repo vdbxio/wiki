@@ -24,6 +24,8 @@ export default defineConfig({
         Sidebar: './src/components/Rail.astro',
         PageTitle: './src/components/PageTitle.astro',
         ThemeSelect: './src/components/ThemeToggle.astro',
+        TwoColumnContent: './src/components/TwoColumnContent.astro',
+        PageSidebar: './src/components/PageSidebar.astro',
       },
       plugins: [starlightLlmsTxt()],
       sidebar,
