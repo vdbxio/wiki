@@ -94,3 +94,6 @@ site-search > button[data-open-modal] svg { width: 1.1rem; height: 1.1rem; }
 
 /* Black-on-transparent line art marked with |invert in the vault flips in dark mode */
 :root[data-theme='dark'] .sl-markdown-content img.invert-dark { filter: invert(1) hue-rotate(180deg); }
+
+/* Active heading in the right-hand TOC: bold, like the rail's current page */
+starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 500; }
