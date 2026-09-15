@@ -11,10 +11,10 @@ const DISCORD = 'https://discord.gg/mDYYXy3Erm';
 const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCurrent : hasCurrent(e.entries)));
 ---
 <div class="rail">
+  <button type="button" class="connect-float" data-connect-open title="Flash a board from your browser">Connect</button>
   <a class="cube" href={`${base}/`} aria-label="Voidbox Industries home" set:html={cube} />
 
   <div class="nav">
-    <button type="button" class="top connect" data-connect-open>Connect</button>
     {sidebar.map((g) =>
       g.type === 'group' ? (
         <details open={hasCurrent(g.entries)}>
@@ -58,15 +58,16 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
 </div>
 
 <style>
-  .rail { display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
+  .rail { position: relative; display: flex; flex-direction: column; gap: 1.6rem; height: 100%; min-height: 0; font-family: var(--sl-font-mono); }
+  .connect-float { position: absolute; top: 0; right: 1.25rem; z-index: 1; padding: 0.45rem 0.85rem; border: 0; border-radius: 999px; background: var(--sl-color-accent); color: #fff; font-family: var(--sl-font-mono); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; box-shadow: 0 6px 16px color-mix(in srgb, var(--sl-color-accent) 45%, transparent); }
+  .connect-float:hover { filter: brightness(1.1); transform: translateY(-1px); }
   .cube { display: block; width: var(--vdbx-cube); color: var(--sl-color-white); }
   .cube :global(svg) { width: 100%; height: auto; fill: currentColor; display: block; }
   /* the nav takes the remaining height and scrolls on its own; logo and footer stay put */
   .nav { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 auto; min-height: 0; overflow-y: auto; scrollbar-width: thin; padding-bottom: 1rem; mask-image: linear-gradient(to bottom, #000 calc(100% - 1.25rem), transparent); }
-  .nav a, .nav summary, .nav button.connect { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
-  .nav button.connect { background: none; border: 0; padding: 0; text-align: left; font: inherit; font-size: 1.8rem; line-height: 1.15; cursor: pointer; color: var(--sl-color-accent); }
+  .nav a, .nav summary { text-decoration: none; color: var(--sl-color-white); line-height: 1.5; }
   .nav .top { font-size: 1.8rem; line-height: 1.15; }
-  .nav a:hover, .nav summary:hover, .nav button.connect:hover { text-decoration: underline; text-underline-offset: 4px; }
+  .nav a:hover, .nav summary:hover { text-decoration: underline; text-underline-offset: 4px; }
   details > summary { list-style: none; cursor: pointer; user-select: none; }
   summary::-webkit-details-marker { display: none; }
   details[open] > summary::after { content: ''; }
@@ -84,6 +85,7 @@ const hasCurrent = (entries) => entries.some((e) => (e.type === 'link' ? e.isCur
   @media (max-width: 49.99rem) {
     .rail { flex-direction: row; flex-wrap: wrap; align-items: flex-start; gap: 1rem 1.5rem; }
     .cube { width: 3.5rem; }
+    .connect-float { right: 0; }
     .nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 1.1rem; width: 100%; }
     .nav ul { flex-direction: row; flex-wrap: wrap; gap: 0.2rem 0.8rem; border: 0; padding-left: 0.5rem; }
     .nav li.child a { padding-inline-start: 0; }
