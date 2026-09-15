@@ -4,16 +4,7 @@
     "items": [
       {
         "label": "FLIP_C3",
-        "items": [
-          {
-            "label": "FLIP_C3",
-            "link": "/products/flip_c3/"
-          },
-          {
-            "label": "FLIP Platform",
-            "link": "/products/flip_c3/vdbx-flip-platform/"
-          }
-        ]
+        "link": "/products/flip_c3/"
       },
       {
         "label": "USB-C Modkit for Apple TV 4K",
@@ -43,10 +34,19 @@
       {
         "label": "Open Manufacturing",
         "link": "/prototypes/open-manufacturing/"
+      }
+    ]
+  },
+  {
+    "label": "Reference",
+    "items": [
+      {
+        "label": "FLIP Platform",
+        "link": "/reference/vdbx-flip-platform/"
       },
       {
         "label": "ESPHome Configs",
-        "link": "/prototypes/esphome-configs/"
+        "link": "/reference/esphome-configs/"
       }
     ]
   },

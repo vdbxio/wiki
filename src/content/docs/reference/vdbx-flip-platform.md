@@ -5,7 +5,6 @@ sidebar:
   order: 1
 vdbx:
   type: page
-  parent: VBX2360
 ---
 ![](/attachments/flip-c3-render-mktg-prelaunch-v090.jpg)
 *Marketing render of the FLIP-C3 as first prototype boards are ordered. 23.04.04*
