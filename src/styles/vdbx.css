@@ -97,3 +97,7 @@ site-search > button[data-open-modal] svg { width: 1.1rem; height: 1.1rem; }
 
 /* Active heading in the right-hand TOC: bold, like the rail's current page */
 starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 700; }
+
+/* Active TOC heading in the accent; prev/next page names in mono */
+starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { color: var(--sl-color-accent); }
+.pagination-links .link-title { font-family: var(--sl-font-mono); font-size: var(--sl-text-base); }
