@@ -130,7 +130,7 @@ const activeIdx = Math.max(0, groups.findIndex((g) => g.current));
     .connect-float { top: calc(var(--sl-mobile-toc-height) + 0.75rem); right: 0.75rem; }
     .nav { display: none; }
     .mnav { display: flex; flex-direction: column; gap: 0.2rem; margin-inline: -1.25rem; }
-    .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
+    .mrow { display: flex; gap: 0.25rem 1.1rem; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 1.25rem; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 0.35rem 1.25rem; white-space: nowrap; mask-image: linear-gradient(to right, transparent, #000 1rem, #000 calc(100% - 1.5rem), transparent); }
     .mrow::-webkit-scrollbar { display: none; }
     .mrow[hidden] { display: none; }
     .mrow > * { scroll-snap-align: start; flex: none; }
