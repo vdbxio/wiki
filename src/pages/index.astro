@@ -3,8 +3,8 @@
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import { getEntry, render } from 'astro:content';
 import products from '../data/products.json';
-import LinkButton from '../components/LinkButton.astro';
-import { classifyLink } from '../lib/links';
+import LinkButton from 'starlight-theme-luna/components/LinkButton.astro';
+import { classifyLink } from 'starlight-theme-luna/links';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const LIVE = ['shipping', 'preorder', 'production', 'out_of_stock', 'validation'];
@@ -81,12 +81,12 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   .landing { display: flex; flex-direction: column; gap: 2.5rem; margin-top: 2rem; }
   .landing > * { margin: 0; }
   .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2rem 1.75rem; }
-  .card .hero { position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 22px; overflow: hidden; background: var(--vdbx-tint); }
-  .card .hero img { width: 100%; height: 100%; object-fit: contain; padding: 8%; box-sizing: border-box; display: block; filter: var(--vdbx-render-shadow); }
+  .card .hero { position: relative; display: block; aspect-ratio: 1 / 1; border-radius: 22px; overflow: hidden; background: var(--luna-tint); }
+  .card .hero img { width: 100%; height: 100%; object-fit: contain; padding: 8%; box-sizing: border-box; display: block; filter: var(--luna-render-shadow); }
   .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-  .card .hero-empty { display: grid; place-items: center; height: 100%; font-family: var(--vdbx-display); font-size: 2rem; color: var(--sl-color-gray-3); }
+  .card .hero-empty { display: grid; place-items: center; height: 100%; font-family: var(--luna-display); font-size: 2rem; color: var(--sl-color-gray-3); }
   .card .tag { position: absolute; left: 1rem; bottom: 0.9rem; font-family: var(--sl-font-mono); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--sl-color-white); background: color-mix(in srgb, var(--sl-color-black) 70%, transparent); padding: 0.25rem 0.5rem; border-radius: 6px; }
-  .card h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2.25rem; line-height: 1; margin: 1rem 0 0.4rem; }
+  .card h2 { font-family: var(--luna-display); font-weight: 700; font-size: 2.25rem; line-height: 1; margin: 1rem 0 0.4rem; }
   .card h2 a { color: var(--sl-color-white); text-decoration: none; }
   .card p { color: var(--sl-color-gray-2); margin: 0; max-width: 40ch; }
   .card .links { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; margin-top: 0.75rem; font-family: var(--sl-font-mono); font-size: 0.85rem; text-transform: uppercase; }
@@ -95,7 +95,7 @@ const CTA = { production: 'Buy', preorder: 'Pre-order' };
   @media (max-width: 40rem) { .cards { grid-template-columns: 1fr; } }
   .row { max-width: 60ch; }
   .row p + p, .row blockquote + p { margin-top: 0.75rem; }
-  .row h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 0 0 0.6rem; }
+  .row h2 { font-family: var(--luna-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 0 0 0.6rem; }
   .row h2 a { color: var(--sl-color-white); text-decoration: none; }
   .row h2 a:hover { color: var(--sl-color-accent); }
   .row p, .row li { color: var(--sl-color-gray-2); }

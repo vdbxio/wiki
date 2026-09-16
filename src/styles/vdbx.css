@@ -1,17 +1,10 @@
-/* vdbx.io — tokens over Starlight's variables. Layout lives in the component overrides. */
+/* vdbx.io — brand tokens over starlight-theme-luna and Starlight. Layout lives in the theme. */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Geist+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap');
 
 :root {
-  --vdbx-display: "League Spartan", "League Spartan Placeholder", var(--sl-font);
+  --luna-display: "League Spartan", "League Spartan Placeholder", var(--sl-font);
   --sl-font: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
   --sl-font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  --vdbx-rail-width: 16.5rem;
-  --vdbx-rail-pad-top: 2.5rem;
-  --vdbx-cube: 8.5rem;               /* cube logo size; every page's H1 centers on it */
-  --vdbx-h1-offset: calc(var(--vdbx-rail-pad-top) + var(--vdbx-cube) / 2 - 1.5rem); /* minus the content panel's top padding */
-  --sl-sidebar-width: 13rem;           /* right-hand TOC column; the rail has its own width */
-  --sl-content-width: 46rem;
-  --sl-text-h1: 3rem;
 
   /* dark */
   --sl-color-accent-low: #3a1c3a;
@@ -25,9 +18,15 @@
   --sl-color-gray-5: #3a3a40;
   --sl-color-gray-6: #222226;
   --sl-color-black: #111113;
-  --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
-  --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.45));
-  --vdbx-btn-shop: #00e676; --vdbx-btn-source: #00d4ff; --vdbx-btn-cad: #ffc400; --vdbx-btn-doc: #ff5cff; --vdbx-btn-media: #ff2d6f; --vdbx-btn-plain: var(--sl-color-gray-5);
+  --luna-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
+  --luna-btn-shop: #00e676; --luna-btn-source: #00d4ff; --luna-btn-cad: #ffc400; --luna-btn-doc: #ff5cff; --luna-btn-media: #ff2d6f;
+
+  /* Callouts: saturated tints built around the magenta accent. Cyan / green / yellow are magenta's
+     print-primary siblings and complement; danger leans hot pink-red so it still reads as a warning. */
+  --luna-note-bg: #0b3f4f;    --luna-note-edge: #00d4ff;    --luna-note-text: #8ae9ff;
+  --luna-tip-bg: #0e3f26;     --luna-tip-edge: #00e676;     --luna-tip-text: #8dffb8;
+  --luna-caution-bg: #4a3b04; --luna-caution-edge: #ffc400; --luna-caution-text: #ffe082;
+  --luna-danger-bg: #4d0f27;  --luna-danger-edge: #ff2d6f;  --luna-danger-text: #ff9dbb;
 }
 :root[data-theme='light'] {
   --sl-color-accent-low: #ffd6ff;
@@ -41,63 +40,9 @@
   --sl-color-gray-5: #d8d8d8;
   --sl-color-gray-6: #f6f6f7;
   --sl-color-black: #ffffff;
-  --vdbx-tint: linear-gradient(135deg, #abc2ff 0%, #ff00ff 100%);
-  --vdbx-render-shadow: drop-shadow(0 14px 22px rgba(0, 0, 0, 0.35));
-  --vdbx-btn-shop: #00e676; --vdbx-btn-source: #00d4ff; --vdbx-btn-cad: #ffc400; --vdbx-btn-doc: #ff00ff; --vdbx-btn-media: #ff2d6f; --vdbx-btn-plain: var(--sl-color-gray-5);
+  --luna-btn-doc: #ff00ff;
+  --luna-note-bg: #c7f1ff;    --luna-note-edge: #00b3dc;    --luna-note-text: #005f75;
+  --luna-tip-bg: #c8ffde;     --luna-tip-edge: #00b85c;     --luna-tip-text: #006636;
+  --luna-caution-bg: #ffeeab; --luna-caution-edge: #e0a800; --luna-caution-text: #6d5200;
+  --luna-danger-bg: #ffd0df;  --luna-danger-edge: #f0004f;  --luna-danger-text: #8a002e;
 }
-
-/* Type */
-.sl-markdown-content :is(h1, h2, h3, h4) { font-family: var(--vdbx-display); font-weight: 700; letter-spacing: -0.01em; }
-.sl-markdown-content h2 { font-size: 1.9rem; }
-.sl-markdown-content h3 { font-size: 1.35rem; font-weight: 400; }
-.sl-markdown-content :is(code, kbd) { font-family: var(--sl-font-mono); }
-.sl-markdown-content a:not(.lb) { color: var(--sl-color-accent); }
-.sl-markdown-content img { border-radius: 12px; }
-.sl-markdown-content em:has(+ *) { color: var(--sl-color-gray-3); }
-
-/* Right-hand table of contents in DM Mono, matching the rail */
-.right-sidebar { font-family: var(--sl-font-mono); }
-.right-sidebar h2 { font-family: var(--sl-font-mono); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem; color: var(--sl-color-gray-3); }
-
-/* Callouts: saturated tints built around the magenta accent. Cyan / green / yellow are magenta's
-   print-primary siblings and complement; danger leans hot pink-red so it still reads as a warning. */
-:root {
-  --vdbx-note-bg: #0b3f4f;    --vdbx-note-edge: #00d4ff;    --vdbx-note-text: #8ae9ff;
-  --vdbx-tip-bg: #0e3f26;     --vdbx-tip-edge: #00e676;     --vdbx-tip-text: #8dffb8;
-  --vdbx-caution-bg: #4a3b04; --vdbx-caution-edge: #ffc400; --vdbx-caution-text: #ffe082;
-  --vdbx-danger-bg: #4d0f27;  --vdbx-danger-edge: #ff2d6f;  --vdbx-danger-text: #ff9dbb;
-}
-:root[data-theme='light'] {
-  --vdbx-note-bg: #c7f1ff;    --vdbx-note-edge: #00b3dc;    --vdbx-note-text: #005f75;
-  --vdbx-tip-bg: #c8ffde;     --vdbx-tip-edge: #00b85c;     --vdbx-tip-text: #006636;
-  --vdbx-caution-bg: #ffeeab; --vdbx-caution-edge: #e0a800; --vdbx-caution-text: #6d5200;
-  --vdbx-danger-bg: #ffd0df;  --vdbx-danger-edge: #f0004f;  --vdbx-danger-text: #8a002e;
-}
-.starlight-aside { border-radius: 0 12px 12px 0; }
-.starlight-aside--note    { background-color: var(--vdbx-note-bg);    --sl-color-asides-border: var(--vdbx-note-edge);    --sl-color-asides-text-accent: var(--vdbx-note-text); }
-.starlight-aside--tip     { background-color: var(--vdbx-tip-bg);     --sl-color-asides-border: var(--vdbx-tip-edge);     --sl-color-asides-text-accent: var(--vdbx-tip-text); }
-.starlight-aside--caution { background-color: var(--vdbx-caution-bg); --sl-color-asides-border: var(--vdbx-caution-edge); --sl-color-asides-text-accent: var(--vdbx-caution-text); }
-.starlight-aside--danger  { background-color: var(--vdbx-danger-bg);  --sl-color-asides-border: var(--vdbx-danger-edge);  --sl-color-asides-text-accent: var(--vdbx-danger-text); }
-
-/* Search trigger in the rail is an icon only; the dialog's own buttons are left alone */
-site-search > button[data-open-modal] { width: 2.25rem; height: 2.25rem; padding: 0; justify-content: center; border: 1px solid var(--sl-color-hairline-shade); border-radius: 0.5rem; background: transparent; color: var(--sl-color-white); }
-site-search > button[data-open-modal]:hover { border-color: var(--sl-color-white); }
-site-search > button[data-open-modal] > span, site-search > button[data-open-modal] > kbd { display: none !important; }
-site-search > button[data-open-modal] svg { width: 1.1rem; height: 1.1rem; }
-
-/* Content hugs the rail instead of centering when there is no right-hand TOC (landing, About) */
-:root:not([data-has-toc]) .main-pane { --sl-content-margin-inline: 0 auto; }
-@media (min-width: 50rem) { .vdbx-page .content-panel { padding-inline: 1.75rem 1.25rem; } :root[data-has-sidebar] { --sl-content-inline-start: var(--vdbx-rail-width); } }
-
-/* No divider between the title panel and the body; spacing does the work, as in the doc layout */
-.vdbx-page .content-panel + .content-panel { border-top: 0; padding-top: 0.5rem; }
-
-/* Black-on-transparent line art marked with |invert in the vault flips in dark mode */
-:root[data-theme='dark'] .sl-markdown-content img.invert-dark { filter: invert(1) hue-rotate(180deg); }
-
-/* Active heading in the right-hand TOC: bold, like the rail's current page */
-starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { font-weight: 700; }
-
-/* Active TOC heading in the accent; prev/next page names in mono */
-starlight-toc a[aria-current='true'], mobile-starlight-toc a[aria-current='true'] { color: var(--sl-color-accent); }
-.pagination-links .link-title { font-family: var(--sl-font-mono); font-size: var(--sl-text-base); }

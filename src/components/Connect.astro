@@ -47,7 +47,7 @@ const targets = products.filter((p) => p.firmware);
       fetch(el.dataset.versionFor!).then((r) => r.json()).then((m) => { el.textContent = m.version ? `Firmware ${m.version}` : ''; }).catch(() => { el.textContent = ''; });
     }
   }
-  document.querySelectorAll('[data-connect-open]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openConnect(); }));
+  document.querySelectorAll('[data-luna-action], [data-connect-open]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openConnect(); }));
   dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 </script>
 
@@ -56,20 +56,20 @@ const targets = products.filter((p) => p.firmware);
   .connect::backdrop { background: color-mix(in srgb, var(--sl-color-black) 70%, transparent); backdrop-filter: blur(6px); }
   .frame { display: flex; flex-direction: column; gap: 1.1rem; padding: 1.75rem 1.9rem 1.5rem; }
   header { display: flex; align-items: center; justify-content: space-between; }
-  h2 { font-family: var(--vdbx-display); font-weight: 700; font-size: 2.2rem; line-height: 1; margin: 0; }
+  h2 { font-family: var(--luna-display); font-weight: 700; font-size: 2.2rem; line-height: 1; margin: 0; }
   .close { width: 2.25rem; height: 2.25rem; border: 1px solid var(--sl-color-hairline-shade); border-radius: 0.5rem; background: transparent; color: var(--sl-color-white); font-family: var(--sl-font-mono); cursor: pointer; }
   .close:hover { border-color: var(--sl-color-white); }
   .lede { margin: 0; color: var(--sl-color-gray-2); max-width: 58ch; }
   .targets { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
   .target { display: grid; grid-template-rows: auto 1fr; border: 1px solid var(--sl-color-hairline-shade); border-radius: 16px; overflow: hidden; }
-  .pic { background: var(--vdbx-tint); aspect-ratio: 16 / 9; }
-  .pic img { width: 100%; height: 100%; object-fit: contain; padding: 6%; box-sizing: border-box; display: block; filter: var(--vdbx-render-shadow); }
+  .pic { background: var(--luna-tint); aspect-ratio: 16 / 9; }
+  .pic img { width: 100%; height: 100%; object-fit: contain; padding: 6%; box-sizing: border-box; display: block; filter: var(--luna-render-shadow); }
   .info { padding: 0.9rem 1rem 1rem; display: flex; flex-direction: column; gap: 0.3rem; }
-  h3 { font-family: var(--vdbx-display); font-weight: 700; font-size: 1.5rem; line-height: 1; margin: 0; }
+  h3 { font-family: var(--luna-display); font-weight: 700; font-size: 1.5rem; line-height: 1; margin: 0; }
   .ver { margin: 0; font-family: var(--sl-font-mono); font-size: 0.78rem; color: var(--sl-color-gray-3); min-height: 1.2em; }
   .go { align-self: flex-start; margin-top: 0.4rem; font-family: var(--sl-font-mono); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; padding: 0.5rem 0.9rem; border: 1px solid var(--sl-color-white); border-radius: 0.5rem; background: var(--sl-color-white); color: var(--sl-color-black); cursor: pointer; }
   .go:hover { background: var(--sl-color-accent); border-color: var(--sl-color-accent); color: #fff; }
-  .warn { font-family: var(--sl-font-mono); font-size: 0.8rem; color: var(--vdbx-caution-edge); }
+  .warn { font-family: var(--sl-font-mono); font-size: 0.8rem; color: var(--luna-caution-edge); }
   .fine { margin: 0; font-family: var(--sl-font-mono); font-size: 0.75rem; color: var(--sl-color-gray-4); }
   .fine a { color: inherit; }
 </style>

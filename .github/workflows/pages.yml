@@ -20,6 +20,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Refresh the shared theme (sites track its main branch)
+        run: npm install starlight-theme-luna@git+https://github.com/vdbxio/starlight-theme-luna.git --no-save
       - name: Build (preview URL until the custom domain is set)
         run: npm run build
         env:

@@ -2,9 +2,10 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightLlmsTxt from 'starlight-llms-txt';
+import luna from 'starlight-theme-luna';
+import remarkBase from 'starlight-theme-luna/remark-base';
 import redirects from './src/data/redirects.json' with { type: 'json' };
 import sidebar from './src/data/sidebar.json' with { type: 'json' };
-import remarkBase from './src/plugins/remark-base.mjs';
 
 const BASE = (process.env.SITE_BASE ?? '/').replace(/\/$/, '');
 
@@ -14,7 +15,7 @@ export default defineConfig({
   base: process.env.SITE_BASE ?? '/',
   trailingSlash: 'always',
   redirects,
-  markdown: { remarkPlugins: [remarkBase] },
+  markdown: { remarkPlugins: [[remarkBase, { base: BASE }]] },
   integrations: [
     starlight({
       title: 'Voidbox Industries',
@@ -25,18 +26,20 @@ export default defineConfig({
         { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '64x64', href: `${BASE}/favicon.png` } },
         { tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: `${BASE}/apple-touch-icon.png` } },
       ],
-      components: {
-        PageFrame: './src/components/PageFrame.astro',
-        Sidebar: './src/components/Rail.astro',
-        PageTitle: './src/components/PageTitle.astro',
-        ThemeSelect: './src/components/ThemeToggle.astro',
-        TwoColumnContent: './src/components/TwoColumnContent.astro',
-        PageSidebar: './src/components/PageSidebar.astro',
-      },
-      plugins: [starlightLlmsTxt()],
+      plugins: [
+        // The layout (rail, mobile nav, TOC bar, product headers, link buttons) lives in the shared theme.
+        luna({
+          logo: './src/cube.svg',
+          footer: ['VDBX.io', 'CC-BY-SA 4.0', 'Voidbox Industries', 'Branding rights reserved'],
+          action: { label: 'Connect', title: 'Flash a board from your browser', dialog: './src/components/Connect.astro' },
+          frontmatterKey: 'vdbx',
+        }),
+        starlightLlmsTxt(),
+      ],
       sidebar,
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/vdbxio' },
+        { icon: 'discord', label: 'Discord', href: 'https://discord.gg/mDYYXy3Erm' },
       ],
     }),
   ],
