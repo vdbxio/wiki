@@ -29,8 +29,6 @@ vdbx:
 **For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
 :::
 
-## Tools Note
-
 :::note
 Torx T7 and T5 are used by Apple, but we've noticed a T6 _should_ manage to get both. **We've included a T6 allen-key with your kit.**
 :::
@@ -79,55 +77,30 @@ There are 5 T7 screws around the PSU and 2 T5 in the power connector. The includ
 
 <img src="/attachments/atv-modkit-step-3.png" alt="" width="570" class="invert-dark" />
 
-## Design Files
-
-Circuit boards were designed in EasyEDA Pro and are available to fork via OSHWLab:
-
-<https://oshwlab.com/clomads/atv4k-usb>
-
-3D models were designed in Fusion 360 (not parametric)
-
-[Apple TV USB-C Mod v21.f3d](/attachments/Apple%20TV%20USB-C%20Mod%20v21.f3d)
-*ddddd*
-
-## Mesh files for Printing
-
-[Spacer-ATV2022Modkit.stl](/attachments/Spacer-ATV2022Modkit.stl)
-
-[Shroud-ATV2022Modkit.stl](/attachments/Shroud-ATV2022Modkit.stl)
-
 ## Change Log
-See board date for batch number
+There is no official versioning aside from board production dates based on YY.MM standard
+
 26.02
 - First run with Elecrow
 - Updated professional packaging
 - New getting started trading card
 - New screw supplier
 24.06
-
 * Combined external LDO circuit into main board
 * Extended ground plane to get final smoothing cap closer to output 
 * Add bottom GND plane and add stitching vias
 * Remove unused secondary GND screw mount
-
 23.12.11
-
 * Diode removed from design
 * Submitted second batch to use with LDO boards still in stock
-
 d23.05
-
 * LDO add-on board works and will be used to adapt the first batch for retail production
 * Re-design with LDO circuit on-board if first batch sells-out
-
 23.04.10
-
 * Tested with 5.1v direct from USB, would not boot. Recovered when given its average 4.7v ish.
 * OE PSU was 4.3v, but Diode does about 4.7v and is not super stable based on current draw.
 * LDO add-on board designed and ordered.
-
 v1.0 - First run in testing
-
 * Works but some questionable behavior - unable to attribute to mod kit
 * voltage is all over the place with diode used... test raw VUSB and optionally test an LDO
   * would love to test max voltage, but that would require breaking my only Apple TV
