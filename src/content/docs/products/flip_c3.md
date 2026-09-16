@@ -56,11 +56,7 @@ Now with official WAGO spring connector
 * Boot Button `GPIO9`
 * Reset Button `ENABLE`
 
-### ESP32-C3
-
-The ESP32-C3 is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for Ethernet PHYs including the LAN8720 and W5500. 
-
-Our early planned product line should be more than covered by the capabilities of the C3... the biggest concern being limited to one I2C bus, but we'll cross that bridge when we come to it.
+The `ESP32-C3` is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for SPI Ethernet PHYs like W5500. 
 
 ## Pinout
 
@@ -121,7 +117,7 @@ Check your Home Assistant notifications or Integrations page to adopt your FLIP_
 
 ### ESPHome
 
-It may behoove you to adopt into [esphome.md](/products/flip_c3/#esphome) and add your additional configuration before adopting into Home Assistant. Until you adopt into ESPHome, you will only have access to the following entities:
+It may behoove you to adopt into ESPHome Builder add your additional configuration before adopting into Home Assistant. Until you adopt into ESPHome, you will only have access to the following entities:
 
 * 1x RGB LED
 * 1x Red Status LED
@@ -260,45 +256,32 @@ The FLIP_C3 will get extremely hot over 1A. It should be able to maintain up to 
 Versions below v1.0 have differences in pin layout especially the 2P header for the DC input so there are compatibility issues with those variants and any compatible PCBs, notably the PwrTool which was designed in paralell. It is best to match batch numbers if pairing these boards sourced from us.
 
 ### Changelog
+Board dates are batch number referenced to a version number, though we haven't yet done any duplicate production runs of a single version. 
 
 * 26.06 - v1.3 - Modernization
 	* Replace TE spring connector with WAGO
 	* Add GPIO2 pull-up for stability
 	* Add 3V/5V jumper selector for Qwiic connectors
 		* 3V Default - considering 5v in future. 
-* 24.07 - V1.1 - 
-	* Add TVS diode to input - full 60v input transient suppresion
+* 24.07 - v1.1 - full input transient suppresion
+	* Add TVS diode to input - 
 	* Move LED10 further from keepout zone - it has the room
 	* Tweak inductor position lower
-* 23.12.10 - Prep for early 2024 production
-	* Moved C14 closer to EN pin - v1.0.1 
+* 23.12 - v1.0.1 - Prep for early 2024 production
+	* Moved C14 closer to EN pin 
 	* Research potential replacements for L1 based on price and availability
-* 23.08.23 - Notable changes since last update 
+* 23.08 - v0.9.4 - 
 	* Original DC spring connector only grabbed the tip of standard length ferrules making solid core wire the only real option
 		* second option was too small & original is now discontinued - 0.9.5 is on the way with third option
 	* Instead of presenting GPIO8 directly to the pin header which is used for the onboard WS2812b, we now route the D-OUT from the on-board WS2182b to an "L8" pin so it be used as a level shifter for short runs. 
-* 23.04.30 - Switching Buck Regulator
+* 23.04 - v0.9.1 -  Switching Buck Regulator
 	* LMR16020 - tested to work from 5 to 58v with only FLIP-C3 as load
 		* higher voltages seeing upwards of 0.6v wobble on output
 		* output is up to 0.7v higher at 58v input vs 5v input
 	* Missed output ground on test board and poor placement of VREF
-* 23.04.18 - LDO circuitry is not going to work, back to the drawing board. 
+* 23.04 - 0.9.0-  LDO circuitry is not going to work, back to the drawing board. 
 	* Design and order tester for switching buck
 	* Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
-
-### Version History
-
-1.0.3 - Move C14 closer to EN - replace L1 due to availability & price
-
-1.0.0 - First small production run
-
-0.9.5 - Replace DC Spring Connector
-
-0.9.4 - Reduce length, change DC spring connector, replace GPIO8 with LED-OUT 8
-
-0.9.1 - First unit with LMR16020
-
-0.9.0 - LDO Circuit was a bad idea, EN pin not pulled-up
 
 ## BOM Alternates
 
