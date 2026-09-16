@@ -20,24 +20,19 @@ vdbx:
   firmware: https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json
 ---
 :::tip
-v1.1 + contains transient suppression allowing safe connection across the full 6-60 voltage range, specifically when connecting live over 50v.
-:::
-
-> 
-> This transient suppression will enhance stability across the entire voltage range and generally strengthen the input side. It will reduce or eliminate failures from hot socketing in daughterboards and protect against damage from intermittently failing circuits, frayed wires, and shorts. High-vibration environments may find use, but ultimate endurance has yet to be tested.
-
-:::danger
-1.0.x versions and earlier are susceptible to transients when connected live (including switching) to over ~50v causing permanent damage to the buck converter.  Allow your battery to discharge before connecting. You may install a TVS diode in paralell with one of the input capacitors or use a pre-charge resistor to reduce these transients.
+v1.1+ contains transient suppression allowing safe connection across the full 6-60 voltage range, specifically when connecting live over 50v. Since this update we have had no reported failures of the buck converter. If using an older board version, please take appropriate precautions.
 :::
 
 ## Summary
 
 The first development board for the FLIP platform is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED. 
 
+Now with official WAGO spring connector
+
 ## Specs & Features
 
 * On-board 5v/2A buck-converter tolerant **up to 60v DC input**
-  * **V1.1 -** Full 60V input tolerance with transient suppression
+  * **V1.1+ -** Full 60V input tolerance with transient suppression
   *  **v0.x.x - v1.0.x** - 60v absolute max, do not live connect over 50v
     * Connect to battery when it is below 50v
     * Install TVS in parallel with input capacitor
@@ -266,25 +261,30 @@ Versions below v1.0 have differences in pin layout especially the 2P header for 
 
 ### Changelog
 
+* 26.06 - v1.3 - Modernization
+	* Replace TE spring connector with WAGO
+	* Add GPIO2 pull-up for stability
+	* Add 3V/5V jumper selector for Qwiic connectors
+		* 3V Default - considering 5v in future. 
 * 24.07 - V1.1 - 
-  * Add TVS diode to input - full 60v input transient suppresion
-  * Move LED10 further from keepout zone - it has the room
-  * Tweak inductor position lower
+	* Add TVS diode to input - full 60v input transient suppresion
+	* Move LED10 further from keepout zone - it has the room
+	* Tweak inductor position lower
 * 23.12.10 - Prep for early 2024 production
-  * Moved C14 closer to EN pin - v1.0.1 
-  * Research potential replacements for L1 based on price and availability
+	* Moved C14 closer to EN pin - v1.0.1 
+	* Research potential replacements for L1 based on price and availability
 * 23.08.23 - Notable changes since last update 
-  * Original DC spring connector only grabbed the tip of standard length ferrules making solid core wire the only real option
-    * second option was too small & original is now discontinued - 0.9.5 is on the way with third option
-  * Instead of presenting GPIO8 directly to the pin header which is used for the onboard WS2812b, we now route the D-OUT from the on-board WS2182b to an "L8" pin so it be used as a level shifter for short runs. 
+	* Original DC spring connector only grabbed the tip of standard length ferrules making solid core wire the only real option
+		* second option was too small & original is now discontinued - 0.9.5 is on the way with third option
+	* Instead of presenting GPIO8 directly to the pin header which is used for the onboard WS2812b, we now route the D-OUT from the on-board WS2182b to an "L8" pin so it be used as a level shifter for short runs. 
 * 23.04.30 - Switching Buck Regulator
-  * LMR16020 - tested to work from 5 to 58v with only FLIP-C3 as load
-    * higher voltages seeing upwards of 0.6v wobble on output
-    * output is up to 0.7v higher at 58v input vs 5v input
-  * Missed output ground on test board and poor placement of VREF
+	* LMR16020 - tested to work from 5 to 58v with only FLIP-C3 as load
+		* higher voltages seeing upwards of 0.6v wobble on output
+		* output is up to 0.7v higher at 58v input vs 5v input
+	* Missed output ground on test board and poor placement of VREF
 * 23.04.18 - LDO circuitry is not going to work, back to the drawing board. 
-  * Design and order tester for switching buck
-  * Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
+	* Design and order tester for switching buck
+	* Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
 
 ### Version History
 
