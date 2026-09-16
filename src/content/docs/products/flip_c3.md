@@ -20,10 +20,11 @@ vdbx:
   firmware: https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json
 ---
 :::tip
-v1.1 is fully compatible with 60v DC input with the major change being the addition of a bi-directional TVS diode on the input. 
-
-This transient suppression will enhance stability across the entire voltage range and generally strengthen the input side. It will reduce or eliminate failures from hot socketing in daughterboards and protect against damage from intermittently failing circuits, frayed wires, and shorts. High-vibration environments may find use, but ultimate endurance has yet to be tested.
+v1.1 + contains transient suppression allowing safe connection across the full 6-60 voltage range, specifically when connecting live over 50v.
 :::
+
+> 
+> This transient suppression will enhance stability across the entire voltage range and generally strengthen the input side. It will reduce or eliminate failures from hot socketing in daughterboards and protect against damage from intermittently failing circuits, frayed wires, and shorts. High-vibration environments may find use, but ultimate endurance has yet to be tested.
 
 :::danger
 1.0.x versions and earlier are susceptible to transients when connected live (including switching) to over ~50v causing permanent damage to the buck converter.  Allow your battery to discharge before connecting. You may install a TVS diode in paralell with one of the input capacitors or use a pre-charge resistor to reduce these transients.

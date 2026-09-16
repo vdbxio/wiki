@@ -59,13 +59,13 @@ Use the included guitar picks to open the AppleTV by inserting them into the sea
 * The goal is all three clips on 3 sides
 * No need to go around the corners.
 
-<img src="/attachments/atv-modkit-step-1.png" alt="" class="invert-dark" />
+![](/attachments/atv-modkit-step-1.png)
 
 #### Remove PSU and Power Connector
 
 There are 5 T7 screws around the PSU and 2 T5 in the power connector. The included T6 allen key has been tested to fit both, but may be a tight fit in the T5 screws. Remove these screws and discard the PSU and connector. You may choose to keep these items in a safe place in case you choose to revert this mod.
 
-<img src="/attachments/atv-modkit-step-2.png" alt="" class="invert-dark" />
+![](/attachments/atv-modkit-step-2.png)
 
 #### Install the Modkit
 
@@ -75,32 +75,33 @@ There are 5 T7 screws around the PSU and 2 T5 in the power connector. The includ
 
 3\) Align the USB-C port in the opening of the shroud from Step 1 and then lower the opposite side towards the screw holes left over from removing the PSU. As shown in the image below, you want to use the two inner screw holes and not the very far one.
 
-<img src="/attachments/atv-modkit-step-3.png" alt="" width="570" class="invert-dark" />
+<img src="/attachments/atv-modkit-step-3.png" alt="" class="invert-dark" />
 
 ## Change Log
 There is no official versioning aside from board production dates based on YY.MM standard
 
-26.02
-- First run with Elecrow
-- Updated professional packaging
-- New getting started trading card
-- New screw supplier
-24.06
-* Combined external LDO circuit into main board
-* Extended ground plane to get final smoothing cap closer to output 
-* Add bottom GND plane and add stitching vias
-* Remove unused secondary GND screw mount
-23.12.11
-* Diode removed from design
-* Submitted second batch to use with LDO boards still in stock
-d23.05
-* LDO add-on board works and will be used to adapt the first batch for retail production
-* Re-design with LDO circuit on-board if first batch sells-out
-23.04.10
-* Tested with 5.1v direct from USB, would not boot. Recovered when given its average 4.7v ish.
-* OE PSU was 4.3v, but Diode does about 4.7v and is not super stable based on current draw.
-* LDO add-on board designed and ordered.
-v1.0 - First run in testing
-* Works but some questionable behavior - unable to attribute to mod kit
-* voltage is all over the place with diode used... test raw VUSB and optionally test an LDO
-  * would love to test max voltage, but that would require breaking my only Apple TV
+- 26.02
+	- First run with Elecrow as contract manufacturer
+		- QC testing in place to maintain 4.3v +/- 0.1v 
+	- Updated professional packaging
+	- New getting started trading card
+	- New screw supplier
+- 24.06
+	- Combined external LDO circuit into main board
+	- Extended ground plane to get final smoothing cap closer to output 
+	- Add bottom GND plane and add stitching vias
+	- Remove unused secondary GND screw mount
+- 23.12.11
+	- Diode removed from design
+	- Submitted second batch to use with LDO boards still in stock
+- d23.05
+	- LDO add-on board works and will be used to adapt the first batch for retail production
+	- Re-design with LDO circuit on-board if first batch sells-out
+- 23.04.10
+	- Tested with 5.1v direct from USB, would not boot. Recovered when given its average 4.7v ish.
+	- OE PSU was 4.3v, but Diode does about 4.7v and is not super stable based on current draw.
+	- LDO add-on board designed and ordered.
+- v1.0 - First run in testing
+	- Works but some questionable behavior - unable to attribute to mod kit
+	- voltage is all over the place with diode used... test raw VUSB and optionally test an LDO
+	- would love to test max voltage, but that would require breaking my only Apple TV
