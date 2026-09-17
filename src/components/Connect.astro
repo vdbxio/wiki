@@ -47,7 +47,7 @@ const targets = products.filter((p) => p.firmware);
       fetch(el.dataset.versionFor!).then((r) => r.json()).then((m) => { el.textContent = m.version ? `Firmware ${m.version}` : ''; }).catch(() => { el.textContent = ''; });
     }
   }
-  document.querySelectorAll('[data-luna-action], [data-connect-open]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openConnect(); }));
+  document.querySelectorAll('[data-luna-action], [data-connect-open], a[href="#connect"]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openConnect(); }));
   dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 </script>
 
