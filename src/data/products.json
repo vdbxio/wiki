@@ -128,6 +128,19 @@
   },
   {
     "type": "product",
+    "id": "VBX2690",
+    "status": "prototype",
+    "section": "prototypes",
+    "hero": "/attachments/3D_LeFob_2026-09-16%20(2).png",
+    "works_with": [
+      "Home Assistant"
+    ],
+    "name": "Le'Fob",
+    "path": "/prototypes/le-fob/",
+    "description": ""
+  },
+  {
+    "type": "product",
     "status": "prototype",
     "section": "prototypes",
     "hero": "/attachments/Untitled%20design.jpg",
