@@ -20,10 +20,6 @@
     "label": "Prototypes",
     "items": [
       {
-        "label": "PicoFLIP C3",
-        "link": "/prototypes/picoflip-c3/"
-      },
-      {
         "label": "PwrTop 18",
         "link": "/prototypes/pwrtop-18/"
       },

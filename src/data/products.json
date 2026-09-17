@@ -130,17 +130,6 @@
     "type": "product",
     "status": "prototype",
     "section": "prototypes",
-    "works_with": [
-      "FLIP_C3"
-    ],
-    "name": "PicoFLIP C3",
-    "path": "/prototypes/picoflip-c3/",
-    "description": "An extremely tiny LED controller based on ESP32-C3 with a mezzanine interconnect for GPIO"
-  },
-  {
-    "type": "product",
-    "status": "prototype",
-    "section": "prototypes",
     "hero": "/attachments/Untitled%20design.jpg",
     "files": [
       {
