@@ -14,7 +14,7 @@ vdbx:
 # Overview
 Le'Fob is a four button bluetooth remote designed to act as a key fob or integrated into other button interface designs. Using the BTHome spec, Le'Fob presents its buttons and telemetry in Home Assistant allowing you to build automations against press, double-press, triple-press, long-press, & hold gestures for each button. 
 
-Currently have proof of concept hardware with AI assisted firmware builds proving concept. 
+Currently have proof of concept hardware with LLM assisted firmware builds proving concept. Join our discord to see if you can get your hands on test hardware. 
 # Specs
 
 - CH592 RISC-V BLE
@@ -24,7 +24,8 @@ Currently have proof of concept hardware with AI assisted firmware builds provin
 	- Configurable over I2C
 - Battery Fuel gauge (not implemented yet)
 - 2x N-Mos Controlled LED Flashlight
-	- alternately replace with brighter 
+	- alternately replace with brighter LEDs
+	- alternately replace with IR LED
 - Experimental: I2C OLED Header - More to come
 
 # Tasks
@@ -41,5 +42,7 @@ Currently have proof of concept hardware with AI assisted firmware builds provin
 
 - 2026.8 - First run
 	- Needs:
-		- Fuel gauge
+		- add Fuel gauge
 		- remove NTC
+		- remove direct shunt
+		-
