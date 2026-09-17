@@ -11,7 +11,7 @@ vdbx:
     - FLIP_C3
     - Home Assistant
 ---
-# Overview
+## Overview
 
 8-in-4 Home Assistant remote and modular switch panel system. Four dual-throw momentary toggles in a modular wall enclosure and faceplate, driven by a FLIP over I2C and daisy-chainable into larger panels. Working prototype PCB since 2023-11 with a near-complete ESPHome build and a Home Assistant blueprint.
 
@@ -22,18 +22,18 @@ Listed in B - Future Products as the Switch Panel, $69 target. Needs a PCB refre
 ![](/attachments/shift-deck-header.jpg)
 *December 2023 design & functionality prototype and current features.*
 
-## Latest
+### Latest
 
 - **23.12.14** — Considering design changes to enclosure. Need documentation for PCB-only kits.
 - **23.11.12** — Working prototype PCB in testing with nearly feature-full MVP ESPHome build and blueprint to integrate into Home Assistant.
 
-## Summary
+### Summary
 
 A set of four (4) dual-throw momentary toggle switches in a modular wall enclosure and faceplate system. It is designed to work directly with our FLIP platform running ESPHome. It is connected via an I2C interface allowing it also to be daisy chained to itself to create larger switch panels.
 
 **SPDT (Single Pole Dual Throw)** — A dual throw switch has two distinct motions from its center. In a momentary version, it can toggle outward in two directions, for example up/down or left/right based on the physical orientation of the switch. The most common of these is a window switch in a car. Single pole refers to the fact that there is only one bank of connections being switched. While single pole switches may be optimal, dual or triple pole may be necessary due to availability.
 
-## Installation
+### Installation
 
 1. Power up: use a USB-C cable or feed up to 60 VDC to the spring terminals.
 2. Connect to the `Unnamed Switch Panel XXXXX` Wi-Fi and enter your Wi-Fi credentials when the prompt comes up.
@@ -47,13 +47,13 @@ A set of four (4) dual-throw momentary toggle switches in a modular wall enclosu
 Coming Soon™
 :::
 
-## User Experience
+### User Experience
 
 Dual-throw momentary toggle switches allow for a direct UX comparison to legacy house switches when moving to smart automation systems. Keeping the muscle memory of Up = On and Down = Off is important to a lot of us when much of the IOT landscape is trying to get us to learn new UX patterns.
 
 Spacing between switches was previously a concern, but no longer seems to be an issue. The first prototype has so far proven that spacing is more than adequate.
 
-## Design & Manufacturing
+### Design & Manufacturing
 
 The required depth of the components created a unique opportunity to be bold in our design choices. The spacious cover plate is larger and almost floats on top of the housing which is recessed behind it. In a vacuum, its shape evokes a mid-century modern design aesthetic, though color and material choices could adapt it to any decor.
 
@@ -61,7 +61,7 @@ The cover-plate design is easily manufacturable via 2D machining methods (laser,
 
 The housing is 3D printable with the possibility of injection molding with the right modifications. It could theoretically be bent sheet metal.
 
-## Placement
+### Placement
 
 Originally intended to be mounted to a wall, it seems it may also work well on a desk as it stands up with little issue and could have power coming out the back. This changes some of the design work, but shouldn't be too big a deal.
 
@@ -73,7 +73,7 @@ Back should be closed, but interior markings could show where to make holes for 
 
 When screw mounting, remove the cover-plate screws and mount the housing first, then re-attach the cover-plate and screws.
 
-## Specs
+### Specs
 
 Hardware
 
@@ -100,7 +100,7 @@ ESPHome
 ```
 :::
 
-## Dimensions
+### Dimensions
 
 Early prototypes were very scattered, so here we rebase the geometry to build it parametrically.
 
@@ -128,7 +128,7 @@ Early prototypes were very scattered, so here we rebase the geometry to build it
       - Drill marks for wall mounting — 2
         - On center —
 
-## Resources
+### Resources
 
 - [Thin USB-A to C cables](https://s.click.aliexpress.com/e/_DefEShP) for placing next to an outlet with USB ports
 - [Thin C to C cable](https://s.click.aliexpress.com/e/_DDbsYx7)

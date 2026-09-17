@@ -37,6 +37,8 @@ export default defineConfig({
         starlightLlmsTxt(),
       ],
       sidebar,
+      // vault H1/H2/H3 sections publish as H2/H3/H4 (the title is the page's H1); keep all three in the TOC
+      tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       social: [
         { icon: 'github', label: 'GitHub', href: 'https://github.com/vdbxio' },
         { icon: 'discord', label: 'Discord', href: 'https://discord.gg/mDYYXy3Erm' },

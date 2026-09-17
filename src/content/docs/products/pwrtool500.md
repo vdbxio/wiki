@@ -25,7 +25,7 @@ vdbx:
 ![](/attachments/pwrtool500-wiki-features2312.jpg)
 *PwrTool Hardware as of Dec 2023 (Some info out of date)*
 
-# Overview
+## Overview
 
 A 500 amp smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. 
 
@@ -33,11 +33,11 @@ An on board 45w NPN MOSFET can power fans, LED strips, or control external relay
 
 PwrTool 500 is fully open, this is your hardware and it is fully hackable. Extend it further with ESPHome, Tasmota or your own custom Arduino or ESP-IDF code. The on-board buck converter provides a total power budget of 10w for all of the activities. Make the PwrTool the brains of your power cabinet.
 
-# Installation
+## Installation
 
 Follow wiring instructions and then look for device in your Home Assistant Integrations.
 
-### Wiring Example
+#### Wiring Example
 
 The basic installation of the PwrTool 500 puts it inline with the negative terminal of your battery and it's loads/chargers. Use properly sized cables for the devices you intend to connect. 
 
@@ -45,7 +45,7 @@ The basic installation of the PwrTool 500 puts it inline with the negative termi
 
 more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manual.pdf) and 
 
-# Features
+## Features
 
 * Hot or Cold Side use
   * Selectable by twisting jumper position
@@ -57,7 +57,7 @@ more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manua
 * RGB LED & Red Status LED
 * `MOS -` Connection for external control via 45w NPN MOSFET
 
-## Specifications
+### Specifications
 
 * FLIP_C3 Mainboard
   * BLE 5.0 & Wifi b/g/n
@@ -78,42 +78,42 @@ more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manua
       * changeable with on-board DIP switch
     * SHTC3 - 0x70
 
-# Open Hardware
+## Open Hardware
 
 The PwrTool 500 is open source and files are provided under CC4.0-BY-SA
 
-### EasyEDA Pro
+#### EasyEDA Pro
 
 Schematic, Board, & BOM are originally created in EasyEDA pro. Also see [FLIP_C3](/products/flip_c3/) files.
 
 [ProDocument_PWRTool 500_2024-05-11.epro](/attachments/ProDocument_PWRTool%20500_2024-05-11.epro)
 EasyEDA Pro file*
 
-### 3D Models
+#### 3D Models
 
 coming soon
 
-# Open Software
+## Open Software
 
-### ESPHome
+#### ESPHome
 
 We are building out a modular set of configuration files for our FLIP_C3 platform and the products it powers. They are currently available on github here:
 
 https://github.com/vdbxio/esphome-configs
 
-# Extra Features
+## Extra Features
 
-## Polarity
+### Polarity
 
 Most shunts of its type are "low-" or "cold-" side only, meaning the shunt itself is inserted in the ground path of your system. In some circumstances it may be difficult to intercept the ground path in a way that produces accurate results so we've built in an option to switch the PwrTool 500's polarity. The "hot-" or "high-" side mode will allow you to intersect the positive line to your load or battery.  
 
 **This should be selected before wiring** and is factory set to Cold. Do not use a metal object to remove the jumper. 
 
-## Delta Readings as a Battery Monitor
+### Delta Readings as a Battery Monitor
 
 In this configuration, current sensing will only be that which flows into and out of the battery. Reading will be the delta between loads and chargers. For example **if charging at 100 watts with a 50 watt load, the reading will be 50 watts charging.** If you want to see the actual charging and load readings you will need to compare it to other data you have in your system, such as a solar charge controller, or use additional PwrTool 500s to separate loads and chargers.
 
-## Comparison
+### Comparison
 
 These are all the direct market competitors to the PwrTool 500.
 

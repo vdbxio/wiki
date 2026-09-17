@@ -10,7 +10,7 @@ As a maker/designer/artist type person who designs products for manufacturing, t
 
 So I started working on it and as VDBX grows, I hope to continue documenting my findings. I've found that this is an excellent application for the FLIP_C3 since we usually have a higher root voltage.
 
-### Active prototypes and other dev work
+## Active prototypes and other dev work
 
 * An adjustable, multi port USB-C jig with panel ejector system.
 * Heavy modifications to commonly available _screw presenters_
