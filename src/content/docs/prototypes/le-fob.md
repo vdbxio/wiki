@@ -40,9 +40,10 @@ Currently have proof of concept hardware with LLM assisted firmware builds provi
 
 # Changelog
 
-- 2026.8 - First run
-	- Needs:
-		- add Fuel gauge
-		- remove NTC
+- 2026.8 - First run notes:
+	- confirmed ~30µA sle
+	- Reverse silkscreen button numbers
+		- Aligns top to bottom with Home Assistant
+	- Add Fuel gauge
 		- remove direct shunt
-		-
+	- remove NTC
