@@ -264,12 +264,12 @@ For Qwiic and Stemma QT compatibility we use JST-SH1.0 connectors based on `SM04
 
 A second connector is used to connect to the RX/TX lines on GPIO 20/21 alongside GND & 3v3 in the same order as the I2C connections on GPIO 1/0 - See [PINOUT](/products/flip_c3/)
 
-| LCSC | JLCPCB | Production | Price | Notes | Datasheet |
-| --- | --- | --- | --- | --- | --- |
-| [C145956](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_BOOMELE-Boom-Precision-Elec-C145956_C145956.html) | [C145956](https://jlcpcb.com/partdetail/boomele_boom_Precision_elec-C145956/C145956) | up to 1.0.0 | 0.0591 | Discontinued on JLCPCB | [C145956.pdf](/attachments/C145956.pdf) |
-| C3029343 | [C3029343](https://jlcpcb.com/partdetail/Xunpu-WAFER_SH1_04PWB/C3029343) |  | 0.0498 | thicker walls, better footprint? | [WAFER-SH1.0-4PWB.pdf](/attachments/WAFER-SH1.0-4PWB.pdf) |
-| C7430446 | [C7430446](https://jlcpcb.com/partdetail/Megastar-ZX_SH1_04PWT/C7430446) |  | 0.0393 | thicker walls, better footprint? | [ZX-SH1.0-4PWT (1).pdf](/attachments/ZX-SH1.0-4PWT%20(1).pdf) |
-| [C160404](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-SM04B-SRSS-TB-LF-SN_C160404.html) | [C160404](https://jlcpcb.com/partdetail/Jst-SM04B_SRSS_TB_LF_SN/C160404) |  | 0.123 | JST original spec | [SM04B-SRSS-TB(LF)(SN).pdf](/attachments/SM04B-SRSS-TB(LF)(SN).pdf) |
+| LCSC                                                                                                                                 | JLCPCB                                                                               | Production  | Price  | Notes                            | Datasheet                     |
+| ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------ | ----------- | ------ | -------------------------------- | ----------------------------- |
+| [C145956](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_BOOMELE-Boom-Precision-Elec-C145956_C145956.html) | [C145956](https://jlcpcb.com/partdetail/boomele_boom_Precision_elec-C145956/C145956) | up to 1.0.0 | 0.0591 | Discontinued on JLCPCB           | [C145956.pdf](/attachments/C145956.pdf)               |
+| C3029343                                                                                                                             | [C3029343](https://jlcpcb.com/partdetail/Xunpu-WAFER_SH1_04PWB/C3029343)             |             | 0.0498 | thicker walls, better footprint? | [WAFER-SH1.0-4PWB.pdf](/attachments/WAFER-SH1.0-4PWB.pdf)      |
+| C7430446                                                                                                                             | [C7430446](https://jlcpcb.com/partdetail/Megastar-ZX_SH1_04PWT/C7430446)             |             | 0.0393 | thicker walls, better footprint? | [ZX-SH1.0-4PWT (1).pdf](/attachments/ZX-SH1.0-4PWT%20(1).pdf)     |
+| [C160404](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-SM04B-SRSS-TB-LF-SN_C160404.html)             | [C160404](https://jlcpcb.com/partdetail/Jst-SM04B_SRSS_TB_LF_SN/C160404)             |             | 0.123  | JST original spec                | [SM04B-SRSS-TB(LF)(SN).pdf](/attachments/SM04B-SRSS-TB(LF)(SN).pdf) |
 
 ### ESP32-C3
 
