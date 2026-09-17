@@ -103,8 +103,6 @@ Even if we chose an IC suitable to launch the FLIP-C3 and the products it lives 
 
 I'm hoping documentation improves as we test individual buck ICs.
 
- 
-
 ### LMR16020 - Active Choice
 
 * 4.3 V to 60 V Input Range
@@ -113,9 +111,6 @@ I'm hoping documentation improves as we test individual buck ICs.
 * Ultra-low 40 µA Operating Quiescent Current
 
 [Product Page on TI.com](https://www.ti.com/product/LMR16020?utm_source=google&utm_medium=cpc&utm_campaign=app-null-null-gpn_en-cpc-pf-google-wwe&utm_content=lmr16020&ds_k=LMR16020&dcm=yes&gclid=CjwKCAjw9J2iBhBPEiwAErwpeZ3i6t5_4YmACY3abskvhz1PHmjeeaS0uvIbnhEyo6aU_jU9awwdgBoC8YYQAvD_BwE&gclsrc=aw.ds)
-
-*
-
 #### Datasheet
 
 <https://www.ti.com/lit/ds/symlink/lmr16020.pdf?ts=1682401856589>
