@@ -28,7 +28,7 @@ v1.1+ contains transient suppression allowing safe connection across the full 6-
 
 ## Summary
 
-The first development board for the FLIP platform is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED. 
+The first development board for the [FLIP Platform](/reference/vdbx-flip-platform/) is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED. 
 
 Now with official WAGO spring connector
 
