@@ -77,23 +77,6 @@ The `ESP32-C3` is considered a market replacement for the ESP8266 while bringing
 | RESET | EN | Pulls EN pin low while pressed |
 | 2 - 7 | 2-7 | GPIO Pins, check ESP32-C3-MINI-1 docs for special functions |
 
-## License & Files
-
-The FLIP_C3 is offered as open source under the [Creative Commons 4.0 Attribution Share-Alike License](https://creativecommons.org/licenses/by-sa/4.0/) (CC 4.0 BY-SA)
-
-### PCB
-
-Original design was created in EasyEDA Pro and is available to download for yourself here. Recent versions of KiCAD should be able to import this, but you'll need to connect your own component libraries.
-
-[ProDoc_FLIP_C3_2024-10-24.epro](/attachments/ProDoc_FLIP_C3_2024-10-24.epro)
-*EasyEDA Pro File - v1.1 - Exported 2024.10.24*
-
-### 3D Model
-
-EasyEDA provides a STEP file of the board which we bring into Onshape, align a vector of the silkscreen, and extrude it slightly. No bottom silkscreen at the moment. Download most formats from Onshape link:
-
-[Onshape 3D Model - 23.08 / 23.09 / 24.01](https://cad.onshape.com/documents/af00e36867ef843934780936/w/5d9eced028a93600ceebb907/e/d9cc1846766a213fe9bc7628?renderMode=0&uiState=667dd6b0e3a6775cdf3a3ecc)
-
 ## Home Assistant
 
 ### BLE Improv
@@ -128,13 +111,9 @@ It may behoove you to adopt into ESPHome Builder add your additional configurati
 
 If you change the friendly name or hostname in ESPHome, you may need to delete and re-adopt the device into Home Assistant for these changes to be seen.
 
-## ESPHome
-
-[Wifi Instructions](/products/flip_c3/#home-assistant)
-
 ### USB Recover
 
-If you need to reinstall the base firmware, we've set up an easy installer on our main website.  This will allow you to use Chrome or Edge to install it via a USB-C cable. Current versions **cannot** be connected via USB-C while powered via the buck converter. 
+Use the Connect button on the top left corner of this site to re-flash your FLIP_C3 over USB directly in Chrome or Ed
 
 #### Troubleshooting
 
