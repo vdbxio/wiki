@@ -1,63 +1,46 @@
 ---
-// Landing page: product cards from the publish data, then the Home note's copy (Pages/Home in the vault),
-// the generated Prototypes list, and the Welcome note as About.
+// Landing page: the vault's Pages/Home note, published as ordered chunks under src/data/home/.
+// Prose chunks render as Markdown; a cards chunk is a list of product paths rendered as the card grid.
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import { getEntry, render } from 'astro:content';
 import products from '../data/products.json';
-import * as Home from '../data/home.md';
+import meta from '../data/home/meta.json';
 import LinkButton from 'starlight-theme-luna/components/LinkButton.astro';
 import { classifyLink } from 'starlight-theme-luna/links';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const LIVE = ['shipping', 'preorder', 'production', 'out_of_stock', 'validation'];
-const current = products.filter((p) => p.section === 'products' && LIVE.includes(p.status));
-const LABEL = { production: 'Production', out_of_stock: 'Out of stock', validation: 'Validation' };
+const prose = import.meta.glob('../data/home/*.md', { eager: true });
+const grids = import.meta.glob('../data/home/*.cards.json', { eager: true });
+const blocks = [
+  ...Object.entries(prose).map(([k, m]) => ({ k, Content: m.Content })),
+  ...Object.entries(grids).map(([k, m]) => ({ k, cards: m.default.cards })),
+].sort((a, b) => a.k.localeCompare(b.k));
+const byPath = new Map(products.map((p) => [p.path, p]));
+const LABEL = { production: 'Production', out_of_stock: 'Out of stock', validation: 'Validation', preorder: 'Pre-order' };
 const shopLink = (p) => (p.links ?? []).map((l) => ({ ...l, ...classifyLink(l.url, l.label) })).find((l) => l.kind === 'shop');
-const protos = products.filter((p) => (p.status === 'prototype' || p.status === 'validation') && p.section === 'prototypes');
-const about = await getEntry('docs', 'about');
-const About = about ? (await render(about)).Content : null;
-const { title, description } = Home.frontmatter;
 ---
-<StarlightPage frontmatter={{ title, description, tableOfContents: false, pagefind: false }}>
+<StarlightPage frontmatter={{ title: meta.title, description: meta.description, tableOfContents: false, pagefind: false }}>
   <div class="landing not-content">
-  <section class="cards">
-    {current.map((p) => (
-      <article class="card">
-        <a class="hero" href={`${base}${p.path}`} aria-label={p.name}>
-          {p.hero ? <img src={`${base}${p.hero}`} alt="" loading="lazy" /> : <span class="hero-empty">{p.name}</span>}
-          {LABEL[p.status] ? <span class="tag">{LABEL[p.status]}</span> : shopLink(p) && <span class="tag">{shopLink(p).label} ↗</span>}
-        </a>
-        <h2><a href={`${base}${p.path}`}>{p.name}</a></h2>
-        <p>{p.description}</p>
-        <p class="links">
-          {shopLink(p) && <LinkButton href={shopLink(p).url} kind="shop" label={shopLink(p).label} />}
-          <a class="docs" href={`${base}${p.path}`}>Documentation ↗</a>
-        </p>
-      </article>
-    ))}
-  </section>
-
-  <section class="copy">
-    <Home.Content />
-  </section>
-
-  {protos.length > 0 && (
-    <section class="row">
-      <h2>Prototypes.</h2>
-      <ul class="protos">
-        {protos.map((p) => (
-          <li><a href={`${base}${p.path}`}>{p.name}</a>{p.description && <span> — {p.description}</span>}</li>
-        ))}
-      </ul>
+  {blocks.map((b) => b.cards ? (
+    <section class="cards">
+      {b.cards.map((path) => byPath.get(path)).filter(Boolean).map((p) => (
+        <article class="card">
+          <a class="hero" href={`${base}${p.path}`} aria-label={p.name}>
+            {p.hero ? <img src={`${base}${p.hero}`} alt="" loading="lazy" /> : <span class="hero-empty">{p.name}</span>}
+            {LABEL[p.status] ? <span class="tag">{LABEL[p.status]}</span> : shopLink(p) && <span class="tag">{shopLink(p).label} ↗</span>}
+          </a>
+          <h2><a href={`${base}${p.path}`}>{p.name}</a></h2>
+          <p>{p.description}</p>
+          <p class="links">
+            {shopLink(p) && <LinkButton href={shopLink(p).url} kind="shop" label={shopLink(p).label} />}
+            <a class="docs" href={`${base}${p.path}`}>Documentation ↗</a>
+          </p>
+        </article>
+      ))}
     </section>
-  )}
+  ) : (
+    <section class="copy"><b.Content /></section>
+  ))}
   </div>
-
-  {About && (
-    <section class="row about" id="about">
-      <About />
-    </section>
-  )}
 </StarlightPage>
 
 <style>
@@ -75,19 +58,18 @@ const { title, description } = Home.frontmatter;
   .card .links a.docs { color: var(--sl-color-white); text-decoration: none; border-bottom: 1px solid var(--sl-color-white); }
   .card .links a.docs:hover { color: var(--sl-color-accent); border-color: var(--sl-color-accent); }
   @media (max-width: 40rem) { .cards { grid-template-columns: 1fr; } }
-  .row, .copy { max-width: 60ch; }
-  .row h2, .copy :global(h2) { font-family: var(--luna-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 0 0 0.6rem; }
-  .row h2 a, .copy :global(h2 a) { color: var(--sl-color-white); text-decoration: none; }
-  .row h2 a:hover, .copy :global(h2 a:hover) { color: var(--sl-color-accent); }
-  .row p, .row li, .copy :global(p), .copy :global(li) { color: var(--sl-color-gray-2); }
-  /* The Home note: each H2 starts a block like the old hand-built sections */
-  .copy :global(h2) { margin-top: 2.5rem; }
+  /* Prose from the Home note: each H2 starts a block like the old hand-built sections */
+  .copy { max-width: 60ch; }
+  .copy :global(h2) { font-family: var(--luna-display); font-weight: 700; font-size: 2rem; line-height: 1.05; margin: 2.5rem 0 0.6rem; }
   .copy :global(h2:first-child) { margin-top: 0; }
-  .copy :global(p + p), .copy :global(blockquote + p) { margin-top: 0.75rem; }
-  .copy :global(a:not(.lb)) { color: var(--sl-color-accent); }
+  .copy :global(h2 a) { color: var(--sl-color-white); text-decoration: none; }
+  .copy :global(h2 a:hover) { color: var(--sl-color-accent); }
+  .copy :global(p), .copy :global(li) { color: var(--sl-color-gray-2); }
+  .copy :global(p + p), .copy :global(blockquote + p), .copy :global(ul + p) { margin-top: 0.75rem; }
+  .copy :global(ul) { padding-left: 1.2rem; }
+  .copy :global(p a), .copy :global(li a) { color: var(--sl-color-accent); }
   .copy :global(blockquote) { margin: 0 0 0.75rem; padding: 0; border: 0; font-family: var(--sl-font-mono); font-size: 0.95rem; line-height: 1.6; color: var(--sl-color-gray-2); }
   .copy :global(strong) { color: var(--sl-color-white); font-weight: 600; }
-  .copy :global(em) { font-family: var(--sl-font-mono); font-style: normal; font-size: 0.75rem; color: var(--sl-color-gray-4); }
-  .protos { padding-left: 1.2rem; }
-  .about { max-width: none; border-top: 1px solid var(--sl-color-hairline-shade); padding-top: 2rem; margin-top: 2.5rem; }
+  .copy :global(p > em:only-child) { font-family: var(--sl-font-mono); font-style: normal; font-size: 0.75rem; color: var(--sl-color-gray-4); }
+  .copy :global(.starlight-aside) { margin: 1rem 0; }
 </style>
