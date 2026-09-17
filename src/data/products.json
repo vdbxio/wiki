@@ -185,6 +185,7 @@
     "status": "retired",
     "section": "pcbs",
     "msrp": 6.99,
+    "hero": "/attachments/image-12.png",
     "links": [
       {
         "url": "https://oshwlab.com/clomads/CSR8635_Breakout-72f90a02e918496186b20209678dd9dc"
@@ -192,7 +193,7 @@
     ],
     "name": "CSR8635 Breakout v1.0",
     "path": "/pcbs/csr8635-adapter/",
-    "description": ""
+    "description": "A breakout board for a CSR8635 development module with pin labels."
   },
   {
     "type": "product",

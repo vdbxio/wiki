@@ -12,12 +12,6 @@ vdbx:
   msrp: 30
   hero: /attachments/P1030731.jpg
 ---
-Cast concrete card holder, 2018. Four batches (62 pcs total); the first 24 went to Amazon. Label sheet (30-up) is still attached in Airtable as concrete-card-holder-labels.pdf.
-
-Imported from the Airtable Products base on 2026-09-13.
-
----
-
 ## Summary
 
 A business card holder designed by Chloe Madison (@clomads) as she was exploring concrete as a medium. It began as a 3D model that was 3D printed, molded, and then cast in concrete. It features a steel ball that interfaces with an embedded magnet to keep cards in place.
