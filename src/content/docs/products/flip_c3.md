@@ -26,13 +26,13 @@ vdbx:
 v1.1+ contains transient suppression allowing safe connection across the full 6-60 voltage range, specifically when connecting live over 50v. Since this update we have had no reported failures of the buck converter. If using an older board version, please take appropriate precautions.
 :::
 
-## Summary
+# Summary
 
 The first development board for the [FLIP Platform](/reference/vdbx-flip-platform/) is an ESP32-C3 with a  60v tolerant buck converter meant for use with 12-48v battery systems.  It is designed for use with ESPHome and Home Assistant, but can be flashed with other popular firmwares such as TASMOTA and WLED. 
 
 Now with official WAGO spring connector
 
-## Specs & Features
+# Specs & Features
 
 * On-board 5v/2A buck-converter tolerant **up to 60v DC input**
   * **V1.1+ -** Full 60V input tolerance with transient suppression
@@ -61,7 +61,7 @@ Now with official WAGO spring connector
 
 The `ESP32-C3` is considered a market replacement for the ESP8266 while bringing some features from the ESP32. It's a RISC-V platform with Wifi & Bluetooth plus support for SPI Ethernet PHYs like W5500. 
 
-## Pinout
+# Pinout
 
 ![](/attachments/flipc3-pinout.drawio.svg)
 *Pinout of the FLIP_C3 - Ignore call-out on v 1.1*
@@ -80,13 +80,13 @@ The `ESP32-C3` is considered a market replacement for the ESP8266 while bringing
 | RESET | EN | Pulls EN pin low while pressed |
 | 2 - 7 | 2-7 | GPIO Pins, check ESP32-C3-MINI-1 docs for special functions |
 
-## Home Assistant
+# Home Assistant
 
-### BLE Improv
+## BLE Improv
 
 If you have the Bluetooth integration active in Home Assistant, you may be able to configure your FLIP_C3's Wifi credentials directly. Hit the blue button below to check your integrations page.
 
-### WiFi
+## WiFi
 
 Your FLIP_C3 will also create a Wifi access point as a backup.
 
@@ -101,7 +101,7 @@ Check your Home Assistant notifications or Integrations page to adopt your FLIP_
 
 [![Open your Home Assistant instance and show your integrations.](https://my.home-assistant.io/badges/integrations.svg)](https://my.home-assistant.io/redirect/integrations/)
 
-### ESPHome
+# ESPHome
 
 It may behoove you to adopt into ESPHome Builder add your additional configuration before adopting into Home Assistant. Until you adopt into ESPHome, you will only have access to the following entities:
 
@@ -114,15 +114,15 @@ It may behoove you to adopt into ESPHome Builder add your additional configurati
 
 If you change the friendly name or hostname in ESPHome, you may need to delete and re-adopt the device into Home Assistant for these changes to be seen.
 
-### USB Recover
+## USB Recover
 
 Use the Connect button on the top left corner of this site to re-flash your FLIP_C3 over USB directly in Chrome or Edge.
 
-### Troubleshooting
+## Troubleshooting
 
 You may need to hold the BOOT button as you connect the USB cable. Alternatively you can hold the BOOT button while you press and release the RESET button if the FLIP_C3 is already connected via USB-C. Hold the BOOT button for a couple seconds after the device is connected to your computer and then proceed with the installation above. Once complete, power cycle the FLIP-C3 with the RESET button or disconnecting and reconnecting the cable. You can also use this time to swap to a DC power source via the 2P spring connector. 
 
-### Adopt In ESPHome
+## Adopt In ESPHome
 
 Once you've followed the steps to connect your FLIP_C3 to Wifi, you should see it in the ESPHome dashboard available to be adopted. Adopting into ESPHome will generate a base YAML that references our YAML file on Github as an external package with the following lines:
 
@@ -139,7 +139,7 @@ This includes references to all the basics of the hardware and more. This includ
 
 You can add ESPHome YAML to the end of this to get started quickly.
 
-### YAML Reference
+## YAML Reference
 
 The following are snippets to properly interact with FLIP_C3 hardware in ESPHome while direct reference to the YAML we ship is available on Github: 
 
@@ -200,15 +200,15 @@ light:
     pin: 10
 ```
 
-## WLED
+# WLED
 
-### Get started with WLED
+## Get started with WLED
 
 WLED is designed for running addressable LEDs on ESP32 based devices and the FLIP_C3 is a great board for running it.
 
 **Use the installer at** [**install.wled.me**](https://install.wled.me/) **->**
 
-#### SETUP
+## SETUP
 
 **Under LED Settings:**
 
@@ -226,7 +226,7 @@ If using 5v LEDs with the on-board buck converter make sure not to exceed the 2A
 
 The FLIP_C3 will get extremely hot over 1A. It should be able to maintain up to 2A in open air, but consider cooling when installing in an enclosure. Do not touch on-board components when in operation.
 
-## Changelog
+# Changelog
 Board dates are batch number referenced to a version number, though we haven't yet done any duplicate production runs of a single version. 
 
 * 26.06 - v1.3 - Modernization
@@ -254,11 +254,11 @@ Board dates are batch number referenced to a version number, though we haven't y
 	* Design and order tester for switching buck
 	* Remove LDO circuitry from FLIP-C3 and ~~reconsider footprint size~~.
 
-## BOM Alternates
+# BOM Alternates
 
 The retail version of the FLIP_C3 is currently manufactured by JLCPCB using their parts library. While it is said that JLCPCB uses their sister company LCSC for parts, the two companies usually have different stock. This is a living document of potential alternates for major parts including those used in production or considered for production. This document can be used in case of stock declines or discontinuation of parts. Basic passives like resistors and capacitors may not be included as this is intended for major functional parts and those parts can be easily replaced with a simple search when using the BOM directly from the EasyEDA files.
 
-### I2C & UART Connectors
+## I2C & UART Connectors
 
 For Qwiic and Stemma QT compatibility we use JST-SH1.0 connectors based on `SM04B-SRSS-TB(LF)(SN)` via reference document from [Sparkfun](https://www.sparkfun.com/qwiic#faqs) 
 
