@@ -10,6 +10,9 @@ vdbx:
   section: products
   msrp: 19.95
   hero: /attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png
+  works_with:
+    - Home Assistant
+    - ESPHome
   links:
     - url: https://amzn.to/40i4fuK
     - url: https://cad.onshape.com/documents/af00e36867ef843934780936/w/5d9eced028a93600ceebb907/e/d9cc1846766a213fe9bc7628?renderMode=0&uiState=667dd6b0e3a6775cdf3a3ecc
@@ -113,9 +116,9 @@ If you change the friendly name or hostname in ESPHome, you may need to delete a
 
 ### USB Recover
 
-Use the Connect button on the top left corner of this site to re-flash your FLIP_C3 over USB directly in Chrome or Ed
+Use the Connect button on the top left corner of this site to re-flash your FLIP_C3 over USB directly in Chrome or Edge.
 
-#### Troubleshooting
+### Troubleshooting
 
 You may need to hold the BOOT button as you connect the USB cable. Alternatively you can hold the BOOT button while you press and release the RESET button if the FLIP_C3 is already connected via USB-C. Hold the BOOT button for a couple seconds after the device is connected to your computer and then proceed with the installation above. Once complete, power cycle the FLIP-C3 with the RESET button or disconnecting and reconnecting the cable. You can also use this time to swap to a DC power source via the 2P spring connector. 
 
@@ -138,14 +141,9 @@ You can add ESPHome YAML to the end of this to get started quickly.
 
 ### YAML Reference
 
-The following are snippets to properly interact with FLIP_C3 hardware in ESPHome
-
-Direct reference to the YAML we ship with is available on Github: 
+The following are snippets to properly interact with FLIP_C3 hardware in ESPHome while direct reference to the YAML we ship is available on Github: 
 
 [https://github.com/vdbxio/esphome-configs](https://github.com/vdbxio/esphome-configs) - Active repo as of 24.09
-
-We're still working on organizing and modularization. Feel free to help out.  There's a lot more in there than referenced here.
-
 #### Board Definition
 
 If you like, you can easily start a blank ESPHome device based on the ESP32-C3 using `esp32-c3-devkitm-1` board type. This is default in ESPHome for C3 based boards and we use chip level pin numbers on our silkscreen.
@@ -228,13 +226,7 @@ If using 5v LEDs with the on-board buck converter make sure not to exceed the 2A
 
 The FLIP_C3 will get extremely hot over 1A. It should be able to maintain up to 2A in open air, but consider cooling when installing in an enclosure. Do not touch on-board components when in operation.
 
-## History & Notes
-
-### Notes
-
-Versions below v1.0 have differences in pin layout especially the 2P header for the DC input so there are compatibility issues with those variants and any compatible PCBs, notably the PwrTool which was designed in paralell. It is best to match batch numbers if pairing these boards sourced from us.
-
-### Changelog
+## Changelog
 Board dates are batch number referenced to a version number, though we haven't yet done any duplicate production runs of a single version. 
 
 * 26.06 - v1.3 - Modernization
