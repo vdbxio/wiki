@@ -34,18 +34,18 @@ This device requires modification, removal, and/or replacement of the heat shrin
 Use at your own risk. **Don't put uncovered 18650s in your pocket.**
 :::
 
-### Configurations
+## Configurations
 
 There are currently two ways to attach the PwrTop 18 circuit board to an 18650 cell. We welcome you to [submit your own ideas](https://github.com/vdbxio/wiki/issues) to make this project as widely useful as possible.
 
-#### 3D Printed Cap
+### 3D Printed Cap
 ![](/attachments/signal-2025-06-12-125511.jpeg)
 *Two 18650s: One shows its wrap circumcised, the other has a PwrTop with 3D Printed Cap*
 
 The 3D printed cap adds a bit of thickness, but is the easiest way to get going and allows you to quickly switch out cells (depending on tolerance of print). The only modification needed is to circumcise your cell's wrap near the positive end. Use the crimped groove on this side to cleanly cut the wrap as if it's foil on a bottle of wine. Remove this little bit of plastic and any circular insulators it held in place.
 
 Assembly of the PwrTop 18 circuit board into the 3D print is a bit fiddly, but once placed, you can simply friction fit the assembly on your cell. A clockwise twisting motion may help properly seat it on tighter fitting cells. I don't want to condone a quick smack on the top, but it does work. 
-#### Re-wrap Method
+### Re-wrap Method
 
 :::caution
 Due to the heat produced by the PwrTop in operation, this method may soften and reduce the integrity of the heat shrink holding the PCB in place. We no longer recommend this method until we find a way to improve it.
@@ -71,7 +71,7 @@ Current Process: (Working)
 
 A 3D printed cover is in the works to make this method a little cleaner, but it needs tuning.
 
-### Eratta & Known Issues
+## Eratta & Known Issues
 
 The PwrTop 18 is being shown off at Teardown 2025 with over 200 units being given away to attendees for testing. Please note the following known quirks.
 
@@ -82,17 +82,17 @@ The PwrTop 18 is being shown off at Teardown 2025 with over 200 units being give
 3. Lower capacity and older cells may be better served by lowering the charging current
    1. Remove 0 ohm resistor jumper from the 2A/3A selector and short the opposite set of pads
 
-### Feedback
+## Feedback
 
 Please submit issues and ideas as an [Issue on our wiki's Github.](https://github.com/vdbxio/wiki/issues)
 
-### Accessories
+## Accessories
 
 USB-C accessories for the PwrTop 18 will focus on compactness.  Please share your ideas, 3D models, and PCB files on our [wiki's GitHub](https://github.com/vdbxio/wiki/issues). We will soon offer advice and specific parts (eg, short USB-C plugs) that will offer a starting point for your accessories.
 
 An initial concept for a flashlight accessory was designed alongside v1 and is currently being updated based on use of this accessory.
 
-### Future
+## Future
 
 While 18650s are the most popular and thus our first variant, we want to make more versions and would love your feedback. 
 
@@ -100,13 +100,13 @@ While 18650s are the most popular and thus our first variant, we want to make mo
 
 **PwrTop 21/26** - More features, ports ???? 
 
-### Specs & Docs
+## Specs & Docs
 
 Designed for 18650 cells capable of up to 3A(2A Selectable) charge/discharge. 5v input/output split across 2 USB-C ports. Lithium-Ion only charges to 4.2v.
 
 Circuit board layouts and schematics were designed in EasyEDA Pro and will be offered in the spirit of Open Source upon the official retail release.
 
-### Changelog
+## Changelog
 
 v2 - Add second port and re-arrange layout - more copper pours and vias for thermal dissipation. Select better spring contact.
 
