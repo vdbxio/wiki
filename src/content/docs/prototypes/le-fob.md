@@ -16,7 +16,7 @@ Le'Fob is a four button bluetooth remote designed to act as a key fob or integra
 
 Currently have proof of concept hardware with LLM assisted firmware builds proving concept. Join our discord to see if you can get your hands on test hardware. 
 
-Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardware, but designed for running addressable LEDs with USB-C PD. Other Le'Dev boards will explore ways to maintain basic home automations
+Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardware, but designed for running addressable LEDs with USB-C PD. Other Le'Dev boards will explore ways to maintain basic home automation in spaces where a whole network doesn't make sense.
 ## Specs
 
 - CH592 RISC-V BLE
@@ -46,6 +46,8 @@ Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardw
 - [ ] Web Configurator Basic
 - [ ] Le'Configurator
 - [ ] Response Chirps
+- [ ] Other protocols
+- [ ] custom integration and format?
 
 ## Changelog
 
