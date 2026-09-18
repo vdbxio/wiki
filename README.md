@@ -13,4 +13,4 @@ Content is **not edited here**. Everything under `src/content/docs/`, `public/at
 
 The theme is installed from its GitHub repo and tracks `main`; the Pages workflow refreshes it on every build so theme changes land here without a version bump.
 
-Local: `npm install`, `npm run dev`. The `astro` branch deploys to the GitHub Pages preview; `main` still feeds GitBook until cutover.
+Local: `npm install`, `npm run dev`. `main` deploys to GitHub Pages (vdbx.io). The GitBook-era tree lives in history before the 2026-09-17 cutover.
