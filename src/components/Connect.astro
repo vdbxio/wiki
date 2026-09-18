@@ -38,6 +38,7 @@ const targets = products.filter((p) => p.firmware);
   async function openConnect() {
     if (!dlg) return;
     dlg.showModal();
+    (window as any).umami?.track('connect', { page: location.pathname });
     if (loaded) return;
     loaded = true;
     try {
@@ -49,6 +50,8 @@ const targets = products.filter((p) => p.firmware);
   }
   document.querySelectorAll('[data-luna-action], [data-connect-open], a[href="#connect"]').forEach((b) => b.addEventListener('click', (e) => { e.preventDefault(); openConnect(); }));
   dlg?.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  // an Install click, by product (the flash itself happens inside ESP Web Tools)
+  dlg?.querySelectorAll<HTMLElement>('.target').forEach((t) => t.querySelector('.go')?.addEventListener('click', () => { (window as any).umami?.track('install', { product: t.querySelector('h3')?.textContent?.trim() ?? '' }); }));
 </script>
 
 <style>
