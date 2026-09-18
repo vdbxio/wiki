@@ -15,6 +15,8 @@ vdbx:
 Le'Fob is a four button bluetooth remote designed to act as a key fob or integrated into other button interface designs. Using the [BTHome](https://bthome.io/) spec, Le'Fob presents its buttons and telemetry in Home Assistant allowing you to build automations against press, double-press, triple-press, long-press, & hold gestures for each button. 
 
 Currently have proof of concept hardware with LLM assisted firmware builds proving concept. Join our discord to see if you can get your hands on test hardware. 
+
+Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardware, but designed for running addressable LEDs with USB-C PD. Other Le'Dev boards will explore ways to maintain basic home automations
 ## Specs
 
 - CH592 RISC-V BLE
