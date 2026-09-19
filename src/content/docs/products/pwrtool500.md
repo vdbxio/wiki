@@ -27,7 +27,7 @@ vdbx:
 
 ## Overview
 
-A 500A peak / 300A continuous smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. Perfect for 12-48v lithium
+A 500A peak / 300A continuous smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. Perfect for 12-48v lithium systems.
 
 An on board 45w NPN MOSFET can power fans, LED strips, or control external relays based on automations in Home Assistant. Also keep an eye on the ambient temp/humidity of your control box with the onboard sensor and catch potential issues with the on-die temp sensor of the analog-to-digital converter IC.
 
@@ -35,11 +35,11 @@ PwrTool 500 is fully open, this is your hardware and it is fully hackable. Exten
 
 ## Installation
 
-Follow wiring instructions and then look for device in your Home Assistant Integrations.
+Follow wiring instructions and then look for device in your Home Assistant Integrations. 
 
 #### Wiring Example
 
-The basic installation of the PwrTool 500 puts it inline with the negative terminal of your battery and it's loads/chargers. Use properly sized cables for the devices you intend to connect. 
+The basic installation of the PwrTool 500 puts it inline with the negative terminal of your battery and it's loads/chargers. **Use properly sized cables and fuses for the devices you intend to connect.** This is not an overcurrent safety device.
 
 <img src="/attachments/2406-wiring-diagram-pwrtool-1610_jpg_md-xl.jpg" alt="" width="457" />
 
@@ -80,18 +80,7 @@ more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manua
 
 ## Open Hardware
 
-The PwrTool 500 is open source and files are provided under CC4.0-BY-SA
-
-#### EasyEDA Pro
-
-Schematic, Board, & BOM are originally created in EasyEDA pro. Also see [FLIP_C3](/products/flip_c3/) files.
-
-[ProDocument_PWRTool 500_2024-05-11.epro](/attachments/ProDocument_PWRTool%20500_2024-05-11.epro)
-EasyEDA Pro file*
-
-#### 3D Models
-
-coming soon
+The PwrTool 500 is open source and files are provided under CC4.0-BY-SA above.
 
 ## Open Software
 
