@@ -1,6 +1,6 @@
 ---
 title: PwrTool 500
-description: 500A Smart Shunt for Home Assistant
+description: 12-48v / 500A Smart Shunt for Home Assistant based on ESPHome
 sidebar:
   order: 3
 vdbx:
@@ -27,7 +27,7 @@ vdbx:
 
 ## Overview
 
-A 500 amp smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. 
+A 500A peak / 300A continuous smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless integration with Home Assistant out of the box. Perfect for 12-48v lithium
 
 An on board 45w NPN MOSFET can power fans, LED strips, or control external relays based on automations in Home Assistant. Also keep an eye on the ambient temp/humidity of your control box with the onboard sensor and catch potential issues with the on-die temp sensor of the analog-to-digital converter IC.
 

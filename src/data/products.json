@@ -30,7 +30,7 @@
     "firmware": "https://vdbxio.github.io/esphome-configs/firmware/flip-c3/manifest.json",
     "name": "FLIP_C3",
     "path": "/products/flip_c3/",
-    "description": "An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce."
+    "description": "An ESP32-C3 with a 60v tolerant, 5v/2A buck converter & other special sauce."
   },
   {
     "type": "product",
@@ -101,7 +101,7 @@
     "firmware": "https://vdbxio.github.io/esphome-configs/firmware/pwrtool500/manifest.json",
     "name": "PwrTool 500",
     "path": "/products/pwrtool500/",
-    "description": "500A Smart Shunt for Home Assistant"
+    "description": "12-48v / 500A Smart Shunt for Home Assistant based on ESPHome"
   },
   {
     "type": "product",

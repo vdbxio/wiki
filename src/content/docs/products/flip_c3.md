@@ -1,6 +1,6 @@
 ---
 title: FLIP_C3
-description: An ESP32-C3 with a 60v tolerant 5v/2A buck converter & other special sauce.
+description: An ESP32-C3 with a 60v tolerant, 5v/2A buck converter & other special sauce.
 sidebar:
   order: 1
 vdbx:
@@ -143,7 +143,7 @@ You can add ESPHome YAML to the end of this to get started quickly.
 The following are snippets to properly interact with FLIP_C3 hardware in ESPHome while direct reference to the YAML we ship is available on Github: 
 
 [https://github.com/vdbxio/esphome-configs](https://github.com/vdbxio/esphome-configs) - Active repo as of 24.09
-##### Board Definition
+#### Board Definition
 
 If you like, you can easily start a blank ESPHome device based on the ESP32-C3 using `esp32-c3-devkitm-1` board type. This is default in ESPHome for C3 based boards and we use chip level pin numbers on our silkscreen.
 
@@ -159,7 +159,7 @@ esp32:
 
 ```
 
-##### Boot Button
+#### Boot Button
 
 The `BOOT` button is available in software on `GPIO9` after boot. If held during boot, FLIP_C3 will be put into bootloader/flash mode.
 
@@ -175,7 +175,7 @@ binary_sensor:
         pullup: True
 ```
 
-##### WS2812
+#### WS2812
 
 ```yaml
 light:
@@ -189,7 +189,7 @@ light:
     name: "RGB LED"
 ```
 
-##### Status LED
+#### Status LED
 
 ```yaml
 light:
@@ -270,6 +270,6 @@ A second connector is used to connect to the RX/TX lines on GPIO 20/21 alongside
 | C7430446                                                                                                                             | [C7430446](https://jlcpcb.com/partdetail/Megastar-ZX_SH1_04PWT/C7430446)             |             | 0.0393 | thicker walls, better footprint? | [ZX-SH1.0-4PWT (1).pdf](/attachments/ZX-SH1.0-4PWT%20(1).pdf)     |
 | [C160404](https://www.lcsc.com/product-detail/Wire-To-Board-Wire-To-Wire-Connector_JST-SM04B-SRSS-TB-LF-SN_C160404.html)             | [C160404](https://jlcpcb.com/partdetail/Jst-SM04B_SRSS_TB_LF_SN/C160404)             |             | 0.123  | JST original spec                | [SM04B-SRSS-TB(LF)(SN).pdf](/attachments/SM04B-SRSS-TB(LF)(SN).pdf) |
 
-#### ESP32-C3
+### ESP32-C3
 
 There are two variants of the ESP32-C3-MINI-1 module. The [H4 variant](https://jlcpcb.com/partdetail/EspressifSystems-ESP32_C3_MINI_1H4/C2934569) has a higher temp tolerance than the [base model N4](https://jlcpcb.com/partdetail/EspressifSystems-ESP32_C3_MINI_1N4/C2838502). We've focused on using the H4 variant, but supply chain issues could lead to us using the N4 model in some production runs.
