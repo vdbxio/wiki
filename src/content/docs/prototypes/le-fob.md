@@ -41,6 +41,7 @@ Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardw
 - [ ] Reverse silkscreen button numbers
 - [ ] Test actual AVX IDC connector (wrong part placed)
 - [ ] Test flashlight MOS/LEDs at full bore
+- [ ] Flip antenna to top side?
 
 ### Firmware
 - [x] BTHome Buttons basic firmware ✅ 2026-09-16
