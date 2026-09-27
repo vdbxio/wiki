@@ -7,7 +7,7 @@ vdbx:
   id: VBX2690
   status: prototype
   section: prototypes
-  hero: /attachments/3D_LeFob_2026-09-16%20(2).png
+  hero: /attachments/le-fob-2609.png
   works_with:
     - Home Assistant
 ---
@@ -59,3 +59,8 @@ Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardw
 	- Add Fuel gauge
 		- remove direct shunt
 	- Remove NTC - avoid all voltage dividers for deep sleep
+
+## More Stuff
+
+Le'Fob render with 
+![](/attachments/3D_LeFob_2026-09-16.png)
