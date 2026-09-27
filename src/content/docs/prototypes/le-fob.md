@@ -7,7 +7,7 @@ vdbx:
   id: VBX2690
   status: prototype
   section: prototypes
-  hero: /attachments/le-fob-2609.png
+  hero: /attachments/lefob-hero.png
   works_with:
     - Home Assistant
 ---
@@ -17,6 +17,8 @@ Le'Fob is a four button bluetooth remote designed to act as a key fob or integra
 Currently have proof of concept hardware with LLM assisted firmware builds proving concept. Join our discord to see if you can get your hands on test hardware. 
 
 Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardware, but designed for running addressable LEDs with USB-C PD. Other Le'Dev boards will explore ways to maintain basic home automation in spaces where a whole network doesn't make sense.
+
+![](/attachments/lefob-back.png)
 ## Specs
 
 - CH592 RISC-V BLE
