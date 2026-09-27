@@ -36,12 +36,14 @@ Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardw
 
 ### Hardware
 - [x] Validate Base hardware ✅ 2026-09-16
-- [ ] Add Fuel Gauge
-- [ ] Remove NTC
-- [ ] Reverse silkscreen button numbers
+- [ ] respin
+	- [ ] Add Fuel Gauge
+	- [ ] Remove NTC
+	- [ ] Reverse silkscreen button numbers
+	- [ ] Flip antenna to top side?
 - [ ] Test actual AVX IDC connector (wrong part placed)
+	- [ ] order from digkey/mouser
 - [ ] Test flashlight MOS/LEDs at full bore
-- [ ] Flip antenna to top side?
 
 ### Firmware
 - [x] BTHome Buttons basic firmware ✅ 2026-09-16
