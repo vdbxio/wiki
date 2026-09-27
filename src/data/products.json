@@ -143,7 +143,7 @@
     "type": "product",
     "status": "prototype",
     "section": "prototypes",
-    "hero": "/attachments/Untitled%20design.jpg",
+    "hero": "/attachments/pwrtop18-holder.png",
     "files": [
       {
         "url": "/attachments/PwrTop%2018%20v2%20-%20cap.3mf",
@@ -169,6 +169,14 @@
     "name": "Shift Deck",
     "path": "/prototypes/flip-shift/",
     "description": "8-in-4 Home Assistant remote and modular switch panel system."
+  },
+  {
+    "type": "product",
+    "status": "idea",
+    "section": "prototypes",
+    "name": "Key-Gle",
+    "path": "/prototypes/key-gle/",
+    "description": "The USB-C Keyboard Dongle"
   },
   {
     "type": "product",

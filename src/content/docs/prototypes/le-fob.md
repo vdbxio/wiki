@@ -62,5 +62,5 @@ Le'Fob is a sister board to the upcoming Le'Dongle which will have similar hardw
 
 ## More Stuff
 
-Le'Fob render with 
+Le'Fob render with OLED
 ![](/attachments/3D_LeFob_2026-09-16.png)
