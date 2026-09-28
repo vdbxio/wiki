@@ -25,6 +25,7 @@ export default defineConfig({
       head: [
         { tag: 'link', attrs: { rel: 'icon', type: 'image/png', sizes: '64x64', href: `${BASE}/favicon.png` } },
         { tag: 'link', attrs: { rel: 'apple-touch-icon', sizes: '180x180', href: `${BASE}/apple-touch-icon.png` } },
+        { tag: 'link', attrs: { rel: 'alternate', type: 'application/rss+xml', title: 'Voidbox Industries blog', href: `${BASE}/rss.xml` } },
         // Umami: cookie-free page analytics (dashboard at cloud.umami.is)
         { tag: 'script', attrs: { defer: true, src: 'https://cloud.umami.is/script.js', 'data-website-id': '88d2fea6-1973-480f-bd11-79b7c61ea444' } },
         // Events: shop / file / link buttons and other outbound links, by kind, label and page.

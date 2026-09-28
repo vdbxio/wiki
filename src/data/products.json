@@ -105,29 +105,6 @@
   },
   {
     "type": "product",
-    "status": "released",
-    "section": "3d-models",
-    "links": [
-      {
-        "url": "https://www.printables.com/@clomads/models"
-      }
-    ],
-    "files": [
-      {
-        "url": "/attachments/m12-friction-fit-driver-2462.3mf",
-        "name": "m12-friction-fit-driver-2462.3mf"
-      },
-      {
-        "url": "/attachments/m12-friction-fit-driver-2462.stl",
-        "name": "m12-friction-fit-driver-2462.stl"
-      }
-    ],
-    "name": "M12 Drill/Driver Friction Fit Holder",
-    "path": "/3d-models/m12-drill-driver-friction-fit-holder/",
-    "description": ""
-  },
-  {
-    "type": "product",
     "id": "VBX2690",
     "status": "prototype",
     "section": "prototypes",

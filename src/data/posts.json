@@ -1,0 +1,52 @@
+[
+  {
+    "title": "We're in Production!",
+    "date": "2026-06-18",
+    "path": "/blog/were-in-production/",
+    "description": "We have just finished testing and validating the manufacturing process of the PwrTool 500 and are in production as of last week. We'd like to apologize for the delays as we worked through bugs in the process. This included making some final changes to the hardware that will improve your user experience and overall safety.",
+    "author": "Chloe Madison",
+    "source": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500/updates/were-in-production",
+    "source_name": "Crowd Supply",
+    "product": "VBX2350"
+  },
+  {
+    "title": "Glanceable Data",
+    "date": "2025-09-18",
+    "path": "/blog/glanceable-data/",
+    "description": "Home Assistant is excellent, but sometimes you want key data available at a glance. While we haven’t built our own dedicated display yet, we want to give you an easy DIY path using existing, affordable hardware.",
+    "author": "Chloe Madison",
+    "source": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500/updates/glanceable-data",
+    "source_name": "Crowd Supply",
+    "product": "VBX2350"
+  },
+  {
+    "title": "Data Considerations: Keeping Track of Your Energy System",
+    "date": "2025-09-11",
+    "path": "/blog/data-considerations-keeping-track-of-your-energy-system/",
+    "description": "Keeping track of your energy system can be as simple or as advanced as you want it to be. PwrTool 500 works right out-of-the-box to give you clear, reliable insight into your battery. And when you’re ready, it can scale into a powerful tool for detailed monitoring, optimization, and experimentation.",
+    "author": "Chloe Madison",
+    "source": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500/updates/data-considerations-keeping-track-of-your-energy-system",
+    "source_name": "Crowd Supply",
+    "product": "VBX2350"
+  },
+  {
+    "title": "How to Update Your Firmware",
+    "date": "2025-09-05",
+    "path": "/blog/how-to-update-your-firmware/",
+    "description": "Keeping your PwrTool 500's software up-to-date is important for a multitude of reasons. We will offer two main pipelines you can use to update your PwrTool 500, based on if you've adopted it in the ESPHome Builder or not.",
+    "author": "Chloe Madison",
+    "source": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500/updates/how-to-update-your-firmware",
+    "source_name": "Crowd Supply",
+    "product": "VBX2350"
+  },
+  {
+    "title": "Our Campaign is Now Live!",
+    "date": "2025-08-26",
+    "path": "/blog/our-campaign-is-now-live/",
+    "description": "PwrTool 500 gives Home Assistant users better tools for off-grid systems. It’s fully open source, built on the ESP32, and works out of the box with 12–48 V battery systems up to 500 A peak draw. You get real-time monitoring of current, voltage, power, and even environmental data, all in Home Assistant with no coding required.",
+    "author": "Chloe Madison",
+    "source": "https://www.crowdsupply.com/voidbox-industries/pwrtool-500/updates/our-campaign-is-now-live",
+    "source_name": "Crowd Supply",
+    "product": "VBX2350"
+  }
+]

@@ -96,15 +96,31 @@
     ]
   },
   {
-    "label": "3D Models",
+    "label": "Blog",
     "items": [
       {
-        "label": "M12 Drill/Driver Friction Fit Holder",
-        "link": "/3d-models/m12-drill-driver-friction-fit-holder/"
+        "label": "All posts",
+        "link": "/blog/"
       },
       {
-        "label": "More Coming Soon",
-        "link": "/3d-models/more-coming-soon/"
+        "label": "We're in Production!",
+        "link": "/blog/were-in-production/"
+      },
+      {
+        "label": "Glanceable Data",
+        "link": "/blog/glanceable-data/"
+      },
+      {
+        "label": "Data Considerations: Keeping Track of Your Energy System",
+        "link": "/blog/data-considerations-keeping-track-of-your-energy-system/"
+      },
+      {
+        "label": "How to Update Your Firmware",
+        "link": "/blog/how-to-update-your-firmware/"
+      },
+      {
+        "label": "Our Campaign is Now Live!",
+        "link": "/blog/our-campaign-is-now-live/"
       }
     ]
   }

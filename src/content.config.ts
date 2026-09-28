@@ -5,7 +5,7 @@ import { productSchema } from 'starlight-theme-luna/schema';
 
 // Extra frontmatter written by the vault's publish step: the theme's product block, with our status vocabulary.
 const vdbx = productSchema.extend({
-  type: z.enum(['product', 'page']),
+  type: z.enum(['product', 'page', 'post']),
   status: z.enum(['idea', 'prototype', 'validation', 'preorder', 'production', 'shipping', 'released', 'out_of_stock', 'retired']).optional(),
 }).optional();
 
