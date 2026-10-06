@@ -114,7 +114,7 @@
     ],
     "name": "Le'Fob",
     "path": "/prototypes/le-fob/",
-    "description": ""
+    "description": "A four-button BTHome keyfob for Home Assistant with a flashlight."
   },
   {
     "type": "product",

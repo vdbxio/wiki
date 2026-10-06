@@ -1,5 +1,6 @@
 ---
 title: Le'Fob
+description: A four-button BTHome keyfob for Home Assistant with a flashlight.
 sidebar:
   order: 7
 vdbx:
