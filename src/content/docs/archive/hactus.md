@@ -7,7 +7,7 @@ vdbx:
   type: product
   id: VBX2001
   status: retired
-  section: pcbs
+  section: archive
   msrp: 24.99
   hero: /attachments/hactus-hero-splay.jpg
   links:

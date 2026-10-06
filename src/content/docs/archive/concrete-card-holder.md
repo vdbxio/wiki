@@ -7,7 +7,7 @@ vdbx:
   type: product
   id: VBX0010
   status: retired
-  section: pcbs
+  section: archive
   menu_tag: concrete
   msrp: 30
   hero: /attachments/P1030731.jpg

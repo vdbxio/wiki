@@ -6,7 +6,7 @@ sidebar:
 vdbx:
   type: product
   status: retired
-  section: pcbs
+  section: archive
   menu_tag: concrete
   hero: /attachments/aura-v1-1500-50.jpg
 ---

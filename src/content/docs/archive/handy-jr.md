@@ -6,7 +6,7 @@ sidebar:
 vdbx:
   type: product
   status: retired
-  section: pcbs
+  section: archive
   menu_tag: concrete
   links:
     - url: https://www.youtube.com/watch?v=KN8OaVveK0U

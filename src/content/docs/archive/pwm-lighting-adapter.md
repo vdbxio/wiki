@@ -6,7 +6,7 @@ sidebar:
 vdbx:
   type: product
   status: retired
-  section: pcbs
+  section: archive
 ---
 ## Overview
 

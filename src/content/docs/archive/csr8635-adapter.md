@@ -7,7 +7,7 @@ vdbx:
   type: product
   id: VBX0040
   status: retired
-  section: pcbs
+  section: archive
   msrp: 6.99
   hero: /attachments/image-12.png
   links:

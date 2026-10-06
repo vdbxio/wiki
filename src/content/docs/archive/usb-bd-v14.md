@@ -7,7 +7,7 @@ vdbx:
   type: product
   id: VBX1901
   status: retired
-  section: pcbs
+  section: archive
   msrp: 9.99
   hero: /attachments/BBD-Hero.jpg
   links:

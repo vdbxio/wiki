@@ -7,7 +7,7 @@ vdbx:
   type: product
   id: VBX2302
   status: retired
-  section: pcbs
+  section: archive
   msrp: 6.99
   links:
     - url: https://oshwlab.com/vdbxio/iobyte8/

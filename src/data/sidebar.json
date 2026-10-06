@@ -59,39 +59,39 @@
     "items": [
       {
         "label": "Aura Qi",
-        "link": "/pcbs/aura-qi/"
+        "link": "/archive/aura-qi/"
       },
       {
         "label": "Concrete Business Card Holder",
-        "link": "/pcbs/concrete-card-holder/"
+        "link": "/archive/concrete-card-holder/"
       },
       {
         "label": "CSR8635 Breakout v1.0",
-        "link": "/pcbs/csr8635-adapter/"
+        "link": "/archive/csr8635-adapter/"
       },
       {
         "label": "Hactus",
-        "link": "/pcbs/hactus/"
+        "link": "/archive/hactus/"
       },
       {
         "label": "Handy Jr.",
-        "link": "/pcbs/handy-jr/"
+        "link": "/archive/handy-jr/"
       },
       {
         "label": "IOByte 8",
-        "link": "/pcbs/iobyte/"
+        "link": "/archive/iobyte/"
       },
       {
         "label": "PWM Lighting Adapter",
-        "link": "/pcbs/pwm-lighting-adapter/"
+        "link": "/archive/pwm-lighting-adapter/"
       },
       {
         "label": "Super-Ultra Low-Profile USB 2.0 Header",
-        "link": "/pcbs/super-ultra-low-profile-usb-20-header/"
+        "link": "/archive/super-ultra-low-profile-usb-20-header/"
       },
       {
         "label": "USB-BD",
-        "link": "/pcbs/usb-bd-v14/"
+        "link": "/archive/usb-bd-v14/"
       }
     ]
   },

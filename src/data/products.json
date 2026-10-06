@@ -158,30 +158,30 @@
   {
     "type": "product",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "menu_tag": "concrete",
     "hero": "/attachments/aura-v1-1500-50.jpg",
     "name": "Aura Qi",
-    "path": "/pcbs/aura-qi/",
+    "path": "/archive/aura-qi/",
     "description": "A 5w Qi charging pad encased mostly in concrete with a lasered wood veneer top."
   },
   {
     "type": "product",
     "id": "VBX0010",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "menu_tag": "concrete",
     "msrp": 30,
     "hero": "/attachments/P1030731.jpg",
     "name": "Concrete Business Card Holder",
-    "path": "/pcbs/concrete-card-holder/",
+    "path": "/archive/concrete-card-holder/",
     "description": "with Magnet & Steel Ball"
   },
   {
     "type": "product",
     "id": "VBX0040",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "msrp": 6.99,
     "hero": "/attachments/image-12.png",
     "links": [
@@ -190,14 +190,14 @@
       }
     ],
     "name": "CSR8635 Breakout v1.0",
-    "path": "/pcbs/csr8635-adapter/",
+    "path": "/archive/csr8635-adapter/",
     "description": "A breakout board for a CSR8635 development module with pin labels."
   },
   {
     "type": "product",
     "id": "VBX2001",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "msrp": 24.99,
     "hero": "/attachments/hactus-hero-splay.jpg",
     "links": [
@@ -220,13 +220,13 @@
       }
     ],
     "name": "Hactus",
-    "path": "/pcbs/hactus/",
+    "path": "/archive/hactus/",
     "description": "The Hacker's Cactus"
   },
   {
     "type": "product",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "menu_tag": "concrete",
     "links": [
       {
@@ -240,14 +240,14 @@
       }
     ],
     "name": "Handy Jr.",
-    "path": "/pcbs/handy-jr/",
+    "path": "/archive/handy-jr/",
     "description": "A concrete and bendy arm helping hands."
   },
   {
     "type": "product",
     "id": "VBX2302",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "msrp": 6.99,
     "links": [
       {
@@ -255,30 +255,30 @@
       }
     ],
     "name": "IOByte 8",
-    "path": "/pcbs/iobyte/",
+    "path": "/archive/iobyte/",
     "description": "A modern take on a timeless I2C IO expander"
   },
   {
     "type": "product",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "name": "PWM Lighting Adapter",
-    "path": "/pcbs/pwm-lighting-adapter/",
+    "path": "/archive/pwm-lighting-adapter/",
     "description": "4x N-Channel MOSFETs designed to fit on common PCA9685 modules"
   },
   {
     "type": "product",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "name": "Super-Ultra Low-Profile USB 2.0 Header",
-    "path": "/pcbs/super-ultra-low-profile-usb-20-header/",
+    "path": "/archive/super-ultra-low-profile-usb-20-header/",
     "description": "For Motherboards"
   },
   {
     "type": "product",
     "id": "VBX1901",
     "status": "retired",
-    "section": "pcbs",
+    "section": "archive",
     "msrp": 9.99,
     "hero": "/attachments/BBD-Hero.jpg",
     "links": [
@@ -296,7 +296,7 @@
       }
     ],
     "name": "USB-BD",
-    "path": "/pcbs/usb-bd-v14/",
+    "path": "/archive/usb-bd-v14/",
     "description": "Quickly get 5v from those old Micro-USB cables you have lying around."
   }
 ]
