@@ -2,11 +2,12 @@
 title: PwrTool 500
 description: 12-48v / 500A Smart Shunt for Home Assistant based on ESPHome
 sidebar:
-  order: 3
+  order: 1
 vdbx:
   type: product
   id: VBX2350
-  status: production
+  status: shipping
+  status_note: Est Late October to Backers
   section: products
   msrp: 149.95
   hero: /attachments/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png
