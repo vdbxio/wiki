@@ -9,7 +9,7 @@ vdbx:
   status: shipping
   section: products
   msrp: 19.95
-  hero: /attachments/6529c4b4b05ba5609da0c0d6_flip-c3-front-angle2302-trans-p-500.png
+  hero: /attachments/Pasted%20Image%2020260918125623_173.png
   works_with:
     - Home Assistant
     - ESPHome
