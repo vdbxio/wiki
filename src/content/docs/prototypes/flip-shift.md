@@ -1,12 +1,13 @@
 ---
 title: Shift Deck
-description: 8-in-4 Home Assistant remote and modular switch panel system.
+description: 8-in-4 Home Assistant remote and modular switch panel system. Four dual-throw momentary toggles in a modular wall enclosure and faceplate, driven by a FLIP…
 sidebar:
   order: 7
 vdbx:
   type: product
   status: prototype
   section: prototypes
+  tagline: 8-in-4 Home Assistant remote and modular switch panel system.
   works_with:
     - FLIP_C3
     - Home Assistant

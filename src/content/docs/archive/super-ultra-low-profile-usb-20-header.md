@@ -1,12 +1,13 @@
 ---
 title: Super-Ultra Low-Profile USB 2.0 Header
-description: For Motherboards
+description: A USB header for PC motherboards designed to be as minimal as possible. It may interfere with components on some motherboards.
 sidebar:
   order: 9
 vdbx:
   type: product
   status: retired
   section: archive
+  tagline: For Motherboards
 ---
 :::caution
 These are no longer in production.

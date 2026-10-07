@@ -1,6 +1,6 @@
 ---
 title: Le'Fob
-description: A four-button BTHome keyfob for Home Assistant with a flashlight.
+description: Le'Fob is a four button bluetooth remote designed to act as a key fob or integrated into other button interface designs.
 sidebar:
   order: 7
 vdbx:
@@ -8,6 +8,7 @@ vdbx:
   id: VBX2690
   status: prototype
   section: prototypes
+  tagline: A four-button BTHome keyfob for Home Assistant with a flashlight.
   hero: /attachments/lefob-hero.png
   works_with:
     - Home Assistant

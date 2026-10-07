@@ -1,6 +1,6 @@
 ---
 title: USB-C Modkit for Apple TV 4K
-description: Power your Apple TV with USB-C
+description: The AppleTV seems to have always been the only TV streaming box that isn't powered by a USB cable. This mod kit changes that, keeping a clean unmodified look.
 sidebar:
   order: 1
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: shipping
   section: products
   msrp: 29.99
+  tagline: Power your Apple TV with USB-C
   hero: /attachments/64644f12469810b92b8c4ed9_appletvUSBc-trans-p-500.png
   works_with:
     - A2843

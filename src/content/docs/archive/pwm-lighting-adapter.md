@@ -1,12 +1,13 @@
 ---
 title: PWM Lighting Adapter
-description: 4x N-Channel MOSFETs designed to fit on common PCA9685 modules
+description: An extremely simple test of using a commonly available PCA9685 module to modulate low-power LEDs like DC puck lights.
 sidebar:
   order: 9
 vdbx:
   type: product
   status: retired
   section: archive
+  tagline: 4x N-Channel MOSFETs designed to fit on common PCA9685 modules
 ---
 ## Overview
 

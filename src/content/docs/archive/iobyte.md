@@ -1,6 +1,6 @@
 ---
 title: IOByte 8
-description: A modern take on a timeless I2C IO expander
+description: The goal of the IOByte is to create a better breakout for the PCF8574 GPIO Extender mostly focused on quickly deploying relays and switch panels via i2c.
 sidebar:
   order: 9
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: retired
   section: archive
   msrp: 6.99
+  tagline: A modern take on a timeless I2C IO expander
   links:
     - url: https://oshwlab.com/vdbxio/iobyte8/
 ---

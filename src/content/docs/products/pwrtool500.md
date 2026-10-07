@@ -1,6 +1,6 @@
 ---
 title: PwrTool 500
-description: 12-48v / 500A Smart Shunt for Home Assistant based on ESPHome
+description: A 500A peak / 300A continuous smart shunt for DC power systems up to 60v. It is based on our FLIP-C3 mainboard and power center running ESPHome for seamless…
 sidebar:
   order: 1
 vdbx:
@@ -10,6 +10,7 @@ vdbx:
   status_note: Est Late October to Backers
   section: products
   msrp: 149.95
+  tagline: 12-48v / 500A Smart Shunt for Home Assistant based on ESPHome
   hero: /attachments/667dea72eac45e565979f3ef_2406-PwrTool500-cover-3dp-p-500.png
   works_with:
     - FLIP_C3

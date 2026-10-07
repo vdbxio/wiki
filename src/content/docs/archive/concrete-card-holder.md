@@ -1,6 +1,6 @@
 ---
 title: Concrete Business Card Holder
-description: with Magnet & Steel Ball
+description: A business card holder designed by Chloe Madison (@clomads) as she was exploring concrete as a medium.
 sidebar:
   order: 9
 vdbx:
@@ -10,6 +10,7 @@ vdbx:
   section: archive
   menu_tag: concrete
   msrp: 30
+  tagline: with Magnet & Steel Ball
   hero: /attachments/P1030731.jpg
 ---
 ## Summary

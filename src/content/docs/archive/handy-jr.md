@@ -1,6 +1,6 @@
 ---
 title: Handy Jr.
-description: A concrete and bendy arm helping hands.
+description: The Handy family of products is a pair of helping hands stands made from concrete with embedded thin-bodied goosenecks.
 sidebar:
   order: 9
 vdbx:
@@ -8,6 +8,7 @@ vdbx:
   status: retired
   section: archive
   menu_tag: concrete
+  tagline: A concrete and bendy arm helping hands.
   links:
     - url: https://www.youtube.com/watch?v=KN8OaVveK0U
   files:

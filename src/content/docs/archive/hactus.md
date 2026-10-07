@@ -1,6 +1,6 @@
 ---
 title: Hactus
-description: The Hacker's Cactus
+description: The Hactus is a manufacturable and functional art piece by Chloe Madison (@clomads) that embodies the visual of a cactus succulent using two interlocking PCB…
 sidebar:
   order: 9
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: retired
   section: archive
   msrp: 24.99
+  tagline: The Hacker's Cactus
   hero: /attachments/hactus-hero-splay.jpg
   links:
     - url: https://oshwlab.com/clomads/hacker-cactus

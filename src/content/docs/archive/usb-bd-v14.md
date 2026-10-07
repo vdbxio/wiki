@@ -1,6 +1,6 @@
 ---
 title: USB-BD
-description: Quickly get 5v from those old Micro-USB cables you have lying around.
+description: A handy Micro-USB power and data breakout designed for breadboards, but useful in all kinds of projects. Put that drawer full of micro USB cables to good use.
 sidebar:
   order: 9
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: retired
   section: archive
   msrp: 9.99
+  tagline: Quickly get 5v from those old Micro-USB cables you have lying around.
   hero: /attachments/BBD-Hero.jpg
   links:
     - url: https://www.tindie.com/stores/vdbxio/

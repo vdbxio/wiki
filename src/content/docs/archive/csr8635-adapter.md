@@ -1,6 +1,6 @@
 ---
 title: CSR8635 Breakout v1.0
-description: A breakout board for a CSR8635 development module with pin labels.
+description: I was working on building a Bluetooth audio headset but didn't realize how small the pins on these modules are.
 sidebar:
   order: 9
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: retired
   section: archive
   msrp: 6.99
+  tagline: A breakout board for a CSR8635 development module with pin labels.
   hero: /attachments/image-12.png
   links:
     - url: https://oshwlab.com/clomads/CSR8635_Breakout-72f90a02e918496186b20209678dd9dc

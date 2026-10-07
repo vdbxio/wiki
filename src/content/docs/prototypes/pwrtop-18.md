@@ -1,12 +1,13 @@
 ---
 title: PwrTop 18
-description: The Smallest 18650 Battery Bank
+description: The smallest 18650 battery bank. Takes inspiration from "lipstick" style banks but removes the bulk by taking both positive and negative from a single side of…
 sidebar:
   order: 7
 vdbx:
   type: product
   status: prototype
   section: prototypes
+  tagline: The Smallest 18650 Battery Bank
   hero: /attachments/pwrtop18-holder.png
   files:
     - url: /attachments/PwrTop%2018%20v2%20-%20cap.3mf

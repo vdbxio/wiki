@@ -1,12 +1,13 @@
 ---
 title: Key-Gle
-description: The USB-C Keyboard Dongle
+description: A three-button macropad that sits flush with any USB-C port. Based on an 8051 core from WCH, it's configurable and upgradeable via a web UI in Chrome or Edge.
 sidebar:
   order: 8
 vdbx:
   type: product
   status: idea
   section: prototypes
+  tagline: The USB-C Keyboard Dongle
 ---
 ## Overview
 

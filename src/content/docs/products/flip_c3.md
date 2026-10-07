@@ -1,6 +1,6 @@
 ---
 title: FLIP_C3
-description: An ESP32-C3 with a 60v tolerant, 5v/2A buck converter & other special sauce.
+description: The first development board for the FLIP Platform is an ESP32-C3 with a 60v tolerant buck converter meant for use with 12-48v battery systems.
 sidebar:
   order: 1
 vdbx:
@@ -9,6 +9,7 @@ vdbx:
   status: shipping
   section: products
   msrp: 19.95
+  tagline: An ESP32-C3 with a 60v tolerant, 5v/2A buck converter & other special sauce.
   hero: /attachments/Pasted%20Image%2020260918125623_173.png
   works_with:
     - Home Assistant
