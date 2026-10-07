@@ -44,7 +44,7 @@ The basic installation of the PwrTool 500 puts it inline with the negative termi
 
 <img src="/attachments/2406-wiring-diagram-pwrtool-1610_jpg_md-xl.jpg" alt="" width="457" />
 
-more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manual.pdf) and 
+more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manual.pdf)
 
 ## Features
 
@@ -57,6 +57,7 @@ more examples in [2024.10-pwrtool-manual.pdf](/attachments/2024.10-pwrtool-manua
 * SHTC3 Temperature & Humidity Sensor for environmental monitoring
 * RGB LED & Red Status LED
 * `MOS -` Connection for external control via 45w NPN MOSFET
+  * Only connect ground from load
 
 ### Specifications
 
