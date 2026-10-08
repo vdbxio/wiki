@@ -1,12 +1,10 @@
 // Social preview cards: every page gets its own 1200x630 image at /og/<slug>.jpg.
-// The picture is the page's hero, else the first attachment in its body, else (posts) its product's hero,
-// else a plain branded card with the title. Built by src/pages/og/[...slug].jpg.ts, linked by src/routeData.ts.
+// The picture is the page's hero, else the first attachment in its body,
+// else a branded card with the title. Built by src/pages/og/[...slug].jpg.ts, linked by src/routeData.ts.
 import fs from 'node:fs';
 import path from 'node:path';
 import { getCollection } from 'astro:content';
 import sharp from 'sharp';
-import products from '../data/products.json';
-import posts from '../data/posts.json';
 import meta from '../data/home/meta.json';
 
 export const OG_W = 1200;
@@ -15,8 +13,6 @@ export const OG_H = 630;
 type Card = { slug: string; title: string; image?: string };
 
 const PUBLIC = path.resolve('public');
-const heroById = new Map(products.map((p: any) => [p.id, p.hero]));
-const productByPost = new Map(posts.map((p: any) => [p.path.replace(/^\/|\/$/g, ''), p.product]));
 
 /** A site path like /attachments/Foo%20Bar.png → the file under public/, if it exists and is a raster image. */
 function localFile(src?: string) {
@@ -45,7 +41,7 @@ export function getCards() {
     out.set('blog', { slug: 'blog', title: 'Blog.' });
     for (const e of await getCollection('docs')) {
       const v: any = e.data.vdbx ?? {};
-      const image = localFile(v.hero) ?? firstBodyImage(e.body) ?? localFile(heroById.get(productByPost.get(e.id)));
+      const image = localFile(v.hero) ?? firstBodyImage(e.body);
       out.set(e.id, { slug: e.id, title: e.data.title, image });
     }
     return out;
