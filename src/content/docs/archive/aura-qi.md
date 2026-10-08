@@ -9,7 +9,7 @@ vdbx:
   section: archive
   menu_tag: concrete
   tagline: A 5w Qi charging pad encased mostly in concrete with a lasered wood veneer top.
-  hero: /attachments/aura-v1-1500-50.jpg
+  hero: /attachments/aura-v1-1500-50.png
 ---
 ## Summary
 
