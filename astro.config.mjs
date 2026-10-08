@@ -50,6 +50,8 @@ export default defineConfig({
         starlightLlmsTxt(),
       ],
       sidebar,
+      // og:image / twitter:image per page (src/lib/og.ts builds the cards)
+      routeMiddleware: './src/routeData.ts',
       // vault H1/H2/H3 sections publish as H2/H3/H4 (the title is the page's H1); keep all three in the TOC
       tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 4 },
       social: [
