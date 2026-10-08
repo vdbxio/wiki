@@ -26,12 +26,12 @@ vdbx:
     - url: /attachments/Spacer-ATV2022Modkit.stl
       name: Spacer-ATV2022Modkit.stl
 ---
-:::note
-**For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
+:::danger[New AppleTV Coming]
+We are keeping an eye on the upcoming Apple event where a new Apple TV is expected to be released. We will be ordering one as soon as possible to check for compatibility.
 :::
 
 :::note
-Torx T7 and T5 are used by Apple, but we've noticed a T6 _should_ manage to get both. **We've included a T6 allen-key with your kit.**
+**For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
 :::
 
 ## Included in kit:
@@ -50,6 +50,10 @@ The AppleTV seems to have always been the only TV streaming box that isn't power
 
 ![](/attachments/atv-card-art-front-back.png)
 ## Installation
+
+:::note
+Torx T7 and T5 are used by Apple, but we've noticed a T6 _should_ manage to get both. **We've included a T6 allen-key with your kit.**
+:::
 
 #### Opening the Apple TV
 

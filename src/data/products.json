@@ -3,6 +3,7 @@
     "type": "product",
     "id": "VBX2360",
     "status": "shipping",
+    "status_note": "v1.3 on Amazon",
     "section": "products",
     "msrp": 19.95,
     "hero": "/attachments/Pasted%20Image%2020260918125623_173.png",

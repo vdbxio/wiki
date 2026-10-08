@@ -7,6 +7,7 @@ vdbx:
   type: product
   id: VBX2360
   status: shipping
+  status_note: v1.3 on Amazon
   section: products
   msrp: 19.95
   tagline: An ESP32-C3 with a 60v tolerant, 5v/2A buck converter & other special sauce.
@@ -95,7 +96,7 @@ network: flip-c3-xxxx
 pass: GenericPassword
 ```
 
-It should automatically present you page to set your WiFi credentials, but if not, visit [http://192.168.4.1/](http://192.168.4.1/) in your browser.
+It should automatically present you a page to set your WiFi credentials, but if not, visit [http://192.168.4.1/](http://192.168.4.1/) in your browser.
 
 Check your Home Assistant notifications or Integrations page to adopt your FLIP_C3 as an ESPHome device.
 
