@@ -9,10 +9,6 @@ vdbx:
   section: archive
   tagline: For Motherboards
 ---
-:::caution
-These are no longer in production.
-:::
-
 ## Summary
 
 A USB header for PC motherboards designed to be as minimal as possible. It may interfere with components on some motherboards. Its intended use is for keeping small flash-drives, wireless controllers, or USB license keys inside a computer enclosure.
