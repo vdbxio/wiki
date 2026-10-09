@@ -11,7 +11,7 @@ vdbx:
   menu_tag: concrete
   msrp: 30
   tagline: with Magnet & Steel Ball
-  hero: /attachments/P1030731.jpg
+  hero: /attachments/concrete-card-holder-hero.png
 ---
 ## Summary
 

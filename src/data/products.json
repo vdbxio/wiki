@@ -174,7 +174,7 @@
     "section": "archive",
     "menu_tag": "concrete",
     "msrp": 30,
-    "hero": "/attachments/P1030731.jpg",
+    "hero": "/attachments/concrete-card-holder-hero.png",
     "name": "Concrete Business Card Holder",
     "path": "/archive/concrete-card-holder/",
     "description": "with Magnet & Steel Ball"
@@ -201,7 +201,7 @@
     "status": "retired",
     "section": "archive",
     "msrp": 24.99,
-    "hero": "/attachments/hactus-hero-splay.jpg",
+    "hero": "/attachments/hactus-hero.png",
     "links": [
       {
         "url": "https://oshwlab.com/clomads/hacker-cactus"
@@ -282,7 +282,7 @@
     "status": "retired",
     "section": "archive",
     "msrp": 9.99,
-    "hero": "/attachments/BBD-Hero.jpg",
+    "hero": "/attachments/usb-bd-hero.png",
     "links": [
       {
         "url": "https://www.tindie.com/stores/vdbxio/"

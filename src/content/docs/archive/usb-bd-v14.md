@@ -10,7 +10,7 @@ vdbx:
   section: archive
   msrp: 9.99
   tagline: Quickly get 5v from those old Micro-USB cables you have lying around.
-  hero: /attachments/BBD-Hero.jpg
+  hero: /attachments/usb-bd-hero.png
   links:
     - url: https://www.tindie.com/stores/vdbxio/
     - url: https://github.com/vdbxio/USB-BD

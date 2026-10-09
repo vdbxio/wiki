@@ -10,7 +10,7 @@ vdbx:
   section: archive
   msrp: 24.99
   tagline: The Hacker's Cactus
-  hero: /attachments/hactus-hero-splay.jpg
+  hero: /attachments/hactus-hero.png
   links:
     - url: https://oshwlab.com/clomads/hacker-cactus
   files:
