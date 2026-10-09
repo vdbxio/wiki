@@ -10,7 +10,7 @@ vdbx:
   section: archive
   msrp: 9.99
   tagline: Quickly get 5v from those old Micro-USB cables you have lying around.
-  hero: /attachments/usb-bd-hero.png
+  hero: /attachments/BBD-pile-trans.png
   links:
     - url: https://www.tindie.com/stores/vdbxio/
     - url: https://github.com/vdbxio/USB-BD
@@ -18,20 +18,6 @@ vdbx:
     - url: /attachments/USB-BD%20v1.4_2025-09-03.epro
       name: USB-BD v1.4_2025-09-03.epro
 ---
-Micro-USB 5 V breakout and power supply module for breadboards, with OTG switch and data lines. v1.0 (2018) and v1.4 (2023) share one UPC. 50 pcs of v1.4 delivered 2023-02-13.
-
-Amazon titles used:
-- VDBX.IO USB-BD 5 Pack - DIY Micro-USB Power Supply Module and Breakout for Breadboard Prototyping 5v OTG Switch Data
-- VDBX.io Micro-USB 5v Breakout for Breadboards - Original USB-BD Power Supply & Prototyping Tool OTG Switch Data
-
-Imported from the Airtable Products base on 2026-09-13.
-
----
-
-:::note
-A Type-C variant is on its way, so let us know what you'd like to see!
-:::
-
 ## Summary
 
 A handy Micro-USB power and data breakout designed for breadboards, but useful in all kinds of projects. Put that drawer full of micro USB cables to good use.
