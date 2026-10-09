@@ -13,12 +13,6 @@ vdbx:
   links:
     - url: https://oshwlab.com/vdbxio/iobyte8/
 ---
-8-channel I/O board. 120 pcs delivered 2023-02-13, packaging outstanding. Listed under "needs a rethink" in B - Future Products.
-
-Imported from the Airtable Products base on 2026-09-13.
-
----
-
 :::danger
 **v1.2** has a slight oversight having to do with the chip we tested vs the one we went to production with - **All address jumpers must be set ON or OFF** - leaving the address unset will inhibit functionality.
 :::
