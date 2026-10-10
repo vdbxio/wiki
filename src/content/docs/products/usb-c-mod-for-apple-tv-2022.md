@@ -26,7 +26,7 @@ vdbx:
     - url: /attachments/Spacer-ATV2022Modkit.stl
       name: Spacer-ATV2022Modkit.stl
 ---
-:::danger[New AppleTV Coming]
+:::danger[New Apple TV Coming]
 We are keeping an eye on the upcoming Apple event where a new Apple TV is expected to be released. We will be ordering one as soon as possible to check for compatibility.
 :::
 
