@@ -36,7 +36,7 @@ We are keeping an eye on the upcoming Apple event where a new Apple TV is expect
 
 ## Included in kit:
 
-* 1x Modkit PCB with Linear Regulator
+* 1x Modkit PCB
 * 3x Guitar picks to open case
 * T6 Allen key to remove power supply & power connector
 * Connector shroud - `3D Printed`
