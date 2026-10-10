@@ -30,7 +30,7 @@ vdbx:
 We are keeping an eye on the upcoming Apple event where a new Apple TV is expected to be released. We will be ordering one as soon as possible to check for compatibility.
 :::
 
-:::note
+:::note[Compatbility]
 **For 2022 / "3rd Gen" Apple TV 4k ONLY.**  Works with both ethernet and Wifi variants. Model numbers A2737 and A2843 as defined here: [https://support.apple.com/en-us/101605](https://support.apple.com/en-us/101605)
 :::
 
